@@ -297,6 +297,46 @@ body {
 			
 				`;
 				
+				template_results = `
+					<div>
+			
+					<% for(var i in data) {%>
+						<div class="col 12">
+							<div>
+								<h5>
+								<a href="reference/<%- i.replace(/biostor-/, '') %>">
+								<%- balance(data[i].name) %>
+								</a>
+								</h5>
+							</div>
+						
+							<div class="row">
+							
+								<div class="col s2 center">
+									<% if (data[i].thumbnailUrl)  {%>
+										<a href="reference/<%- i.replace(/biostor-/, '') %>">
+											<img class="z-depth-1" style="background:white;" src="http://exeg5le.cloudimg.io/s/height/100/<%- data[i].thumbnailUrl %>" >
+										</a>
+									<% } %>
+						
+								</div>
+							
+							
+								<div class="col s10">
+								<span style="color:rgb(64,64,64);">			
+									<%- data[i].description %>
+								</span>
+								</div>
+							</div>
+
+						</div>
+						<div class="divider"></div>
+			
+					<% } %>
+					</div>
+			
+				`;				
+				
 			        //--------------------------------------------------------------------------------
 				var template_record = `
 				<%
@@ -448,13 +488,6 @@ body {
 				
 			        //--------------------------------------------------------------------------------
 				function show_record(id) {
-					/*
-					$.getJSON('./proxy.php?url=' 
-							//+ encodeURI('http://user:7WbQZedlAvzQ@35.204.73.93/elasticsearch/biostor/_doc/' + id)
-							+ encodeURI('http://user:7WbQZedlAvzQ@35.204.73.93/elasticsearch/bslite/_doc/' + id)
-							+ '&callback=?',
-							*/
-
 					$.getJSON('./api.php?id=' + encodeURIComponent(id)
 							+ '&callback=?',
 						function(data){ 
