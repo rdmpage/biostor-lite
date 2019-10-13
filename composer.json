@@ -1,0 +1,10 @@
+{
+    "name": "rpage/biostor-lite",
+    "authors": [
+        {
+            "name": "Roderic Page",
+            "email": "rdmpage@gmail.com"
+        }
+    ],
+    "require": {}
+}

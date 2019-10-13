@@ -1,0 +1,4 @@
+/vendor/
+
+# Local environment variables
+env.php
