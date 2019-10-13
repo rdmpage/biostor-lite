@@ -15,6 +15,10 @@ global $config;
 date_default_timezone_set('UTC');
 
 
+$config['web_root']		= '/';
+//$config['web_root']		= '/~rpage/biostor-lite/';
+
+
 // Elastic--------------------------------------------------------------------------------
 
 $config['use_elastic'] = true;

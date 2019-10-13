@@ -1,3 +1,9 @@
+<?php
+
+require_once(dirname(__FILE__) . '/config.inc.php');
+
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -30,7 +36,8 @@ body {
 		
 		
 		<!-- base -->
-    	<base href="/~rpage/biostor-lite/" /><!--[if IE]></base><![endif]-->
+    	<base href="<?php echo $config['web_root']; ?>" /><!--[if IE]></base><![endif]-->
+
 		
 		<!--Let browser know website is optimized for mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
