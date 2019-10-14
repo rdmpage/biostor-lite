@@ -397,15 +397,15 @@ body {
 			
 					<div class="row">
 					
-					<div class="col s2">
+					<div class="col s12 m2 hide-on-small-only">
 										
 							<% if (data.thumbnailUrl)  {%>
-								<img  class="z-depth-1" style="background:white;" src="http://exeg5le.cloudimg.io/s/height/100/<%- data.thumbnailUrl %>" >
+								<img  class="z-depth-2" style="background:white;" src="http://exeg5le.cloudimg.io/s/height/100/<%- data.thumbnailUrl %>" >
 							<% } %>
 
 					</div>
 					
-					<div class="col s10">
+					<div class="col s12 m10">
 			
 					<!-- headline is item name -->
 					<b style="font-size:1.5em;">				
@@ -413,26 +413,28 @@ body {
 					</b>
 					
 					<!-- authors -->
-					<div class="section">
-					<% for(var i in data.csl.author) {
-						var parts = [];
-						if (data.csl.author[i].literal) {
-							parts.push(data.csl.author[i].literal);
-						} else {
-							if (data.csl.author[i].given) {
-								parts.push(data.csl.author[i].given);
-							}
-							if (data.csl.author[i].family) {
-								parts.push(data.csl.author[i].family);
-							}
-						} %>
-						<div class="chip">
-							<a href="?q=<%- encodeURIComponent(parts.join(' ')) %>">
-							<%- parts.join(' ') %>
-							</a>
+					<% if (data.csl.author) { %>
+						<div class="section">					
+						<% for(var i in data.csl.author) {
+							var parts = [];
+							if (data.csl.author[i].literal) {
+								parts.push(data.csl.author[i].literal);
+							} else {
+								if (data.csl.author[i].given) {
+									parts.push(data.csl.author[i].given);
+								}
+								if (data.csl.author[i].family) {
+									parts.push(data.csl.author[i].family);
+								}
+							} %>
+							<div class="chip">
+								<a href="?q=<%- encodeURIComponent(parts.join(' ')) %>">
+								<%- parts.join(' ') %>
+								</a>
+							</div>
+						<% } %>
 						</div>
 					<% } %>
-					</div>
 					
 					<!-- publication outlet -->
 					<div>

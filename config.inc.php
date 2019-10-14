@@ -14,9 +14,23 @@ global $config;
 // Date timezone
 date_default_timezone_set('UTC');
 
+$local = false;
 
-$config['web_root']		= '/';
-//$config['web_root']		= '/~rpage/biostor-lite/';
+
+if ($local)
+{
+	$config['web_server']	= 'http://localhost';
+	$config['web_root']		= '/~rpage/biostor-lite/';
+}
+else
+{
+	$config['web_server']	= 'https://biostor-lite.herokuapp.com';
+	$config['web_root']		= '/';
+}
+
+// Cloudimage-----------------------------------------------------------------------------
+
+$config['use_cloudimage'] = true;
 
 
 // Elastic--------------------------------------------------------------------------------

@@ -2,3 +2,9 @@
 
 # Local environment variables
 env.php
+
+
+upload/*.json
+upload/*.jsonl
+
+upload/go.sh
