@@ -8,8 +8,12 @@ require_once(dirname(__FILE__) . '/config.inc.php');
 <html>
 	<head>
 		<meta charset="utf-8" /> 
+		
+   		<!-- favicon -->
+		<link href="static/biostor-shadow32x32.png" rel="icon" type="image/png">    
+		
 		<title>
-			BioStor Lite
+			BioStor-Lite
 		</title>
 		<style>
 		
@@ -474,13 +478,20 @@ body {
 					<div class="section" >
 						<a class="btn" onclick='show_cite(<%- JSON.stringify(data.csl) %>)';><i class="material-icons">format_quote</i></a>
 					
+						<% if (data.url)  {%>
+							<a class="btn" href="<%- data.url %>">View at BHL</a>
+						<% } %>	
+						
+						
 						<% if (data.csl.DOI)  {%>
 							<a class="btn" href="https://doi.org/<%- data.csl.DOI %>">DOI:<%- data.csl.DOI %></a>
 						<% } %>	
-					
-						<% if (data.url)  {%>
-							<a class="btn" href="<%- data.url %>">View</a>
-						<% } %>	
+
+
+						<!-- PDF -->
+						<a id="pdf" style="display:none;" class="btn" href="">PDF</a>												
+						
+						
 					</div>
 					
 					<!-- map -->
@@ -490,6 +501,8 @@ body {
 				
 			        //--------------------------------------------------------------------------------
 				function show_record(id) {
+					document.getElementById('results').innerHTML = "Retrieving...";
+
 					$.getJSON('./api.php?id=' + encodeURIComponent(id)
 							+ '&callback=?',
 						function(data){ 
@@ -501,21 +514,47 @@ body {
 								// Display
 								document.getElementById('results').innerHTML = html;
 								
+								// Map
 								if (data._source.search_data.geometry) {
 									create_map();
     	        					add_data(data._source.search_data.geometry);
     	        				}
+    	        				
+    	        				// Do we have a PDF?
+    	        				have_pdf(id);
+    	        				
+    	        				
 							}
 						}
 					);
 				}
 				
 			        //--------------------------------------------------------------------------------
+				function have_pdf(id) {
+				
+					var pdf_url = 'https://archive.org/download/' + id + '/' + id + '.pdf';
+					
+					$.getJSON('./api.php?pdf=' + encodeURIComponent(pdf_url)
+							+ '&callback=?',
+						function(data){ 
+							if (data.found) {
+								var e = document.getElementById('pdf');
+								if (e) {
+									e.style.display = 'inline-block';
+									e.href = pdf_url;
+								}
+							}
+						}
+					);
+				}
+				
+				
+				
+			        //--------------------------------------------------------------------------------
 				function show_cite(csl) {
 					
 					var data = new Cite(csl);
-					
-					
+											
 					var template_cite = `
 					<h5>Cite</h5>
 					<table>
@@ -529,7 +568,7 @@ body {
 							<td>BibTeX</td>
 							<td>
 								<div style="white-space:pre;">
-<%- data.format('bibtex'); %>
+<%=	data.format('bibtex'); %>
 								</div>
 							</td>
 						</tr>
@@ -567,7 +606,7 @@ body {
 			        //--------------------------------------------------------------------------------
 				function search() {      
 			      	document.activeElement.blur();
-			      	document.getElementById('results').innerHTML = "";
+			      	document.getElementById('results').innerHTML = "Searching...";
 			      
 					var text = document.getElementById('query').value;
 					
@@ -589,10 +628,14 @@ body {
 									}
 
 									// Render template 	
-									html = ejs.render(template_results, { data : hits });
+									var html = ejs.render(template_results, { data : hits });
 			
 									// Display
 									document.getElementById('results').innerHTML = html;
+								}
+								else
+								{
+									document.getElementById('results').innerHTML = 'Nothing found!';
 								}
 							}		
 					
@@ -717,6 +760,14 @@ body {
 				{ pageID: 49942215, referenceID: 192990},
 				{ pageID: 48951678, referenceID: 167448},
 				{ pageID: 52110073, referenceID: 232256},
+				{ pageID: 41229695, referenceID: 115363},
+				
+				// { pageID: 0, referenceID: 0},
+				// { pageID: 0, referenceID: 0},
+				// { pageID: 0, referenceID: 0},
+				// { pageID: 0, referenceID: 0},
+				
+
 				];
 				
 				var html = ejs.render(template_home, { data : examples });

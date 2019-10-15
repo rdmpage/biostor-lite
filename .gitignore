@@ -8,3 +8,4 @@ upload/*.json
 upload/*.jsonl
 
 upload/go.sh
+.DS_Store

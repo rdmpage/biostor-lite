@@ -11,6 +11,25 @@ function default_display()
 {
 	echo "hi";
 }
+
+//--------------------------------------------------------------------------------------------------
+// URL (e.g., PDF) exists
+function display_head ($url, $callback)
+{
+	$obj = new stdclass;
+	$obj->url = $url;
+	$obj->found = false;
+
+	$status = 404;
+	
+	if (api_head($url))
+	{
+		$status = 200;
+		$obj->found = true;
+	}
+		
+	api_output($obj, $callback, $status);
+}	
 	
 //--------------------------------------------------------------------------------------------------
 // One record
@@ -216,6 +235,18 @@ function main()
 			
 		}
 	}
+	
+	if (!$handled)
+	{
+		if (isset($_GET['pdf']))
+		{	
+			$pdf = $_GET['pdf'];
+			
+			display_head($pdf, $callback);
+			$handled = true;
+		}
+	}
+	
 	
 	if (!$handled)
 	{

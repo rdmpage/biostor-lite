@@ -1,6 +1,50 @@
 <?php
 
 //----------------------------------------------------------------------------------------
+// Does URL exist?
+function api_head($url, $userAgent = '', $content_type = '')
+{
+	global $config;
+	
+	$result = false;
+
+	$ch = curl_init(); 
+	curl_setopt ($ch, CURLOPT_URL, $url); 
+	curl_setopt ($ch, CURLOPT_RETURNTRANSFER, true); 
+	curl_setopt ($ch, CURLOPT_FOLLOWLOCATION, true);
+	curl_setopt ($ch, CURLOPT_HEADER,		  true);   
+	
+	if ($userAgent != '')
+	{
+		curl_setopt($ch, CURLOPT_USERAGENT, $userAgent);
+	}	
+	
+	if ($content_type != '')
+	{
+		curl_setopt ($ch, CURLOPT_HTTPHEADER, array ("Accept: " . $content_type));
+    }
+    
+    //curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'HEAD');
+    curl_setopt($ch, CURLOPT_NOBODY, true);
+	
+	$curl_result = curl_exec ($ch); 
+	
+	if (curl_errno ($ch) != 0 )
+	{
+		echo "CURL error: ", curl_errno ($ch), " ", curl_error($ch);
+	}
+	else
+	{
+		$info = curl_getinfo($ch);
+		
+		$http_code = $info['http_code'];
+		
+		$result = ($http_code == 200);
+	}
+	return $result;
+}
+
+//----------------------------------------------------------------------------------------
 // 
 function api_get($url, $format='application/json')
 {
