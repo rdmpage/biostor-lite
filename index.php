@@ -260,7 +260,7 @@ body {
 							<div class="col s2 center">
 								<% if (data[i].thumbnailUrl)  {%>
 									<a href="reference/<%- i.replace(/biostor-/, '') %>">
-										<img class="z-depth-1" style="background:white;" src="http://exeg5le.cloudimg.io/s/height/100/<%- data[i].thumbnailUrl %>" >
+										<img class="z-depth-2" style="background:white;" src="http://exeg5le.cloudimg.io/s/height/100/<%- data[i].thumbnailUrl %>" >
 									</a>
 								<% } %>
 						
