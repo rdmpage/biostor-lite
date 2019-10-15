@@ -650,7 +650,7 @@ body {
 			<div class="container">
             	<div class="row">
             	<div class="divider"></div>
-            		BioStor-Lite is a project by Rod Page.
+            		<a href=".">BioStor-Lite</a> is a project by Rod Page. It's goal is to make discoverable articles in the <a href="https://www.biodiversitylibrary.org">Biodiversity Heritage Library</a> (BHL).
             	</div>
             </div>
 			
@@ -661,11 +661,15 @@ body {
 		<script>
 			<?php
 			
+			$has_parameters = false;
+			
 			$q = '';			
 			
 			if (isset($_GET['q']))
 			{
 				$q = $_GET['q'];
+				
+				$has_parameters = true;
 				
 				echo '
 				var query = decodeURIComponent("' . addcslashes($q, '"') . '");
@@ -680,7 +684,45 @@ body {
 			{
 				$id = $_GET['id'];
 				
+				$has_parameters = true;
+				
 				echo 'show_record("' . $id . '");';			
+			}
+			
+			if (!$has_parameters)
+			{
+			?>
+			
+				// Home page
+				
+				var template_home = `
+					<h2>BioStor-Lite: find articles in BHL</h2>
+					<div class="row">
+					<% for (var i in data) {%>
+						
+						<a href="reference/<%= data[i].referenceID %>">
+						<img class="z-depth-2" src="http://exeg5le.cloudimg.io/s/height/200/https://www.biodiversitylibrary.org/pagethumb/<%= data[i].pageID %>,200,200">
+						</a>
+						
+					<%}%>
+					</div>
+				
+				`;		
+				
+				var examples = [
+				{ pageID: 43605918, referenceID: 248475},
+				{ pageID: 35669296, referenceID: 114607},
+				{ pageID: 43276884, referenceID: 201883},
+				{ pageID: 48184882, referenceID: 149688},
+				{ pageID: 49942215, referenceID: 192990},
+				{ pageID: 48951678, referenceID: 167448},
+				{ pageID: 52110073, referenceID: 232256},
+				];
+				
+				var html = ejs.render(template_home, { data : examples });
+				document.getElementById('results').innerHTML = html;
+
+			<?php
 			}
 			
 			?>
