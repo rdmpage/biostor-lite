@@ -16,7 +16,8 @@ require_once(dirname(__FILE__) . '/config.inc.php');
 			BioStor-Lite
 		</title>
 		<style>
-		
+	
+	/* body and main styles to give us a fixed footer, see https://materializecss.com/footer.html */	
 body {
     display: flex;
     min-height: 100vh;
@@ -284,13 +285,10 @@ body {
 											<%- data[i].description %>
 										</span>
 									</div>
-								
-																
+																								
 									<div>
 										<a  onclick='show_cite(<%- JSON.stringify(data[i].csl) %>)';><i class="material-icons">format_quote</i></a>
 									</div>	
-									
-													
 								
 							</div>
 
@@ -305,28 +303,24 @@ body {
 					<div>
 			
 					<% for(var i in data) {%>
-						<div class="col 12">
-							<div>
-								<h5>
-								<a href="reference/<%- i.replace(/biostor-/, '') %>">
-								<%- balance(data[i].name) %>
-								</a>
-								</h5>
+						<div class="row">
+						
+							<div class="col s12 m2 hide-on-small-only">
+								<% if (data[i].thumbnailUrl)  {%>
+									<a href="reference/<%- i.replace(/biostor-/, '') %>">
+										<img class="z-depth-1" style="background:white;" src="http://exeg5le.cloudimg.io/s/height/100/<%- data[i].thumbnailUrl %>" >
+									</a>
+								<% } %>
 							</div>
-						
-							<div class="row">
-							
-								<div class="col s2 center">
-									<% if (data[i].thumbnailUrl)  {%>
-										<a href="reference/<%- i.replace(/biostor-/, '') %>">
-											<img class="z-depth-1" style="background:white;" src="http://exeg5le.cloudimg.io/s/height/100/<%- data[i].thumbnailUrl %>" >
-										</a>
-									<% } %>
-						
+					
+							<div class="col s12 m10">
+								<div style="font-size:1.5em;line-height:1.2em;">
+									<a href="reference/<%- i.replace(/biostor-/, '') %>">
+									<%- balance(data[i].name) %>
+									</a>
 								</div>
 							
-							
-								<div class="col s10">
+								<div>
 								<span style="color:rgb(64,64,64);">			
 									<%- data[i].description %>
 								</span>
@@ -334,7 +328,7 @@ body {
 							</div>
 
 						</div>
-						<div class="divider"></div>
+						
 			
 					<% } %>
 					</div>
