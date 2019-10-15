@@ -25,7 +25,8 @@ if ($local)
 }
 else
 {
-	$config['web_server']	= 'https://biostor-lite.herokuapp.com';
+	//$config['web_server']	= 'https://biostor-lite.herokuapp.com';
+	$config['web_server']	= 'https://biostor.org';
 	$config['web_root']		= '/';
 }
 
