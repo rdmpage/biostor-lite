@@ -28,6 +28,7 @@ body {
     flex: 1 0 auto;
   }		
 			
+/* dot on map */
 .mydivicon{
     width: 12px
     height: 12px;
@@ -36,6 +37,31 @@ body {
     border: 1px solid #000;
     opacity: 0.85
 }			
+
+
+section.covers{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section.covers::after{
+  content: \'\';
+  flex-grow: 999999999;
+}
+
+div.covers{
+  flex-grow: 1;
+  margin: 4px;
+  height: 160px;
+}
+
+img.covers{
+  height: 160px;
+  object-fit: contain;
+  max-width: 100%;
+  min-width: 100%;
+  vertical-align: bottom;
+}	
 			
 		</style>
 		
@@ -732,39 +758,48 @@ body {
 			
 				// Home page
 				
-				var template_home = `
-					<h2>BioStor-Lite: find articles in BHL</h2>
+				var template_home = `					
 					<div class="row">
-					<% for (var i in data) {%>
-						
-						<a href="reference/<%= data[i].referenceID %>">
-						<img class="z-depth-2" src="http://exeg5le.cloudimg.io/s/height/200/https://www.biodiversitylibrary.org/pagethumb/<%= data[i].pageID %>,200,200">
-						</a>
-						
-					<%}%>
+					<section class="covers">
+						<% for (var i in data) {%>
+							<div class="covers">
+								<a href="reference/<%= data[i].referenceID %>">
+								<img class="covers" src="http://exeg5le.cloudimg.io/s/height/200/https://www.biodiversitylibrary.org/pagethumb/<%= data[i].pageID %>,200,200">
+								</a>
+							</div>						
+						<%}%>
+					</section>
 					</div>
 				
 				`;		
 				
-				var examples = [
+				var examples_1 = [
 				{ pageID: 43605918, referenceID: 248475},
 				{ pageID: 35669296, referenceID: 114607},
 				{ pageID: 43276884, referenceID: 201883},
-				{ pageID: 48184882, referenceID: 149688},
+				{ pageID: 48184882, referenceID: 149688}
+				];
+				
+				var examples_2 = [
+				,
 				{ pageID: 49942215, referenceID: 192990},
 				{ pageID: 48951678, referenceID: 167448},
 				{ pageID: 52110073, referenceID: 232256},
 				{ pageID: 41229695, referenceID: 115363},
-				
-				// { pageID: 0, referenceID: 0},
-				// { pageID: 0, referenceID: 0},
-				// { pageID: 0, referenceID: 0},
-				// { pageID: 0, referenceID: 0},
-				
-
 				];
 				
-				var html = ejs.render(template_home, { data : examples });
+				// { pageID: 0, referenceID: 0},
+				// { pageID: 0, referenceID: 0},
+				// { pageID: 0, referenceID: 0},
+				// { pageID: 0, referenceID: 0},
+				
+			
+				var html = '<h2>BioStor-Lite: find articles in BHL</h2>';
+				
+				html += ejs.render(template_home, { data : examples_1 });
+				
+				html += ejs.render(template_home, { data : examples_2 });
+				
 				document.getElementById('results').innerHTML = html;
 
 			<?php
