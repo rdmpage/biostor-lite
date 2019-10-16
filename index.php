@@ -579,16 +579,24 @@ img.covers{
 					<h5>Cite</h5>
 					<table>
 						<tr>
-							<td>APA</td>
+							<td style="vertical-align:top;font-weight:bold;">APA</td>
 							<td>
 								<%- data.format('bibliography', {format: 'html', template: 'apa', lang: 'en' }); %>
 							</td>
 						</tr>
 						<tr>
-							<td>BibTeX</td>
+							<td style="vertical-align:top;font-weight:bold;">BibTeX</td>
 							<td>
-								<div style="white-space:pre;">
+								<div style="font-family:monospace;white-space:pre;">
 <%=	data.format('bibtex'); %>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style="vertical-align:top;font-weight:bold;">RIS</td>
+							<td>
+								<div style="font-family:monospace;white-space:pre;">
+<%=	data.format('ris'); %>
 								</div>
 							</td>
 						</tr>
