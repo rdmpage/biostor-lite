@@ -42,18 +42,18 @@ function display_documentcloud ($id, $callback = '')
 			$dc->id = $id;
 			$dc->canonical_url = $config['web_server'] . $config['web_root'] . 'reference/' . str_replace('biostor-', '', $id);
 			
-			//$dc->pages = count((array)$obj->bhl_pages);
+			$dc->pages = count($obj->_source->search_result_data->bhl_pages);
 		
 			$dc->resources = new stdclass;
 			$dc->resources->page = new stdclass;
 
 			$dc->resources->page->image = $config['web_server'] . $config['web_root'] . 'documentcloud/' . $id . '/pages/{page}-{size}';		
 			$dc->resources->page->text  = $config['web_server'] . $config['web_root'] . 'documentcloud/' . $id . '/pages/{page}';		
-				
 			//$dc->resources->search = "http://direct.biostor.org/dvs/100700/json?q={query}";			
 				
 			$dc->sections = array();
-			$dc->annotations = array();			
+			$dc->annotations = array();	
+			$dc = json_decode($j);		
 			
 			$status = 200;
 		}
