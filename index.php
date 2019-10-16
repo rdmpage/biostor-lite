@@ -286,51 +286,6 @@ img.covers{
 					<% for(var i in data) {%>
 						<div class="row">
 						
-							<!-- http://exeg5le.cloudimg.io/s/height/100/ -->
-						
-							<div class="col s2 center">
-								<% if (data[i].thumbnailUrl)  {%>
-									<a href="reference/<%- i.replace(/biostor-/, '') %>">
-										<img class="z-depth-2" style="background:white;" src="http://exeg5le.cloudimg.io/s/height/100/<%- data[i].thumbnailUrl %>" >
-									</a>
-								<% } %>
-						
-							</div>
-						
-							<div class="col s10">
-									<div>
-										<b>
-										<a href="reference/<%- i.replace(/biostor-/, '') %>">
-										<%- balance(data[i].name) %>
-										</a>
-										</b>
-									</div>
-								
-									<div>
-										<span style="color:rgb(64,64,64);">			
-											<%- data[i].description %>
-										</span>
-									</div>
-																								
-									<div>
-										<a  onclick='show_cite(<%- JSON.stringify(data[i].csl) %>)';><i class="material-icons">format_quote</i></a>
-									</div>	
-								
-							</div>
-
-						</div>
-			
-					<% } %>
-					</div>
-			
-				`;
-				
-				template_results = `
-					<div>
-			
-					<% for(var i in data) {%>
-						<div class="row">
-						
 							<div class="col s12 m2 hide-on-small-only">
 								<% if (data[i].thumbnailUrl)  {%>
 									<a href="reference/<%- i.replace(/biostor-/, '') %>">
@@ -496,8 +451,7 @@ img.covers{
 													
 					<!-- actions -->
 					<div class="section" >
-						<a class="btn" onclick='show_cite(<%- JSON.stringify(data.csl) %>)';><i class="material-icons">format_quote</i></a>
-					
+						<a class="btn" onclick="show_cite('<%- encodeURIComponent(JSON.stringify(data.csl)).replace(/\'/g, "\\\\'") %>')";><i class="material-icons">format_quote</i></a>					
 						<% if (data.url)  {%>
 							<a class="btn" href="<%- data.url %>">View at BHL</a>
 						<% } %>	
@@ -527,6 +481,8 @@ img.covers{
 							+ '&callback=?',
 						function(data){ 
 							if (data._source) {
+			
+								//console.log(JSON.stringify(data._source.search_result_data.csl));
 			
 								// Render template 	
 								html = ejs.render(template_record, { data: data._source.search_result_data });
@@ -572,6 +528,8 @@ img.covers{
 				
 			        //--------------------------------------------------------------------------------
 				function show_cite(csl) {
+				
+					csl = decodeURIComponent(csl);
 					
 					var data = new Cite(csl);
 											

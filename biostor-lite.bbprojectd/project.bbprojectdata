@@ -16,7 +16,7 @@
 		<string>B6886042-AE9B-4863-9B41-2393DFA4AAC0</string>
 		<string>3D4BDB54-D9A5-4FD9-ACF5-E16DE5EB393B</string>
 		<string>6AE155B5-8363-4C33-A746-D2265D3669E0</string>
-		<string>59A77E6B-62ED-4F50-97E4-0130F387AC12</string>
+		<string>DCDD1C2B-E75A-4179-BD04-58F209C854B7</string>
 		<string>EBCBA443-8AE8-4A9E-898D-77735F1168EE</string>
 		<string>D40297A0-E726-4A03-85BB-BB366A835106</string>
 		<string>AAE54D61-6464-4648-90E0-2F7DA72412D8</string>
@@ -212,56 +212,6 @@
 			</dict>
 			<key>ItemName</key>
 			<string>.gitignore</string>
-			<key>ItemType</key>
-			<string>FileReference</string>
-			<key>UserOverrideItemName</key>
-			<true/>
-		</dict>
-		<key>59A77E6B-62ED-4F50-97E4-0130F387AC12</key>
-		<dict>
-			<key>ItemData</key>
-			<dict>
-				<key>BookmarkData</key>
-				<data>
-				Ym9vayADAAAAAAQQMAAAAMOjrtRXdDh6kAUdsCVtg7Z6
-				LSgzwYyRVDxZ2WYKfqqEEAIAAAQAAAADAwAAAAgAKAUA
-				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAABQAA
-				AAEBAABTaXRlcwAAAAwAAAABAQAAYmlvc3Rvci1saXRl
-				CQAAAAEBAABpbmRleC5waHAAAAAUAAAAAQYAABAAAAAg
-				AAAAMAAAAEAAAABUAAAACAAAAAQDAAAQZwIAAAAAAAgA
-				AAAEAwAAhXQNAAAAAAAIAAAABAMAAARWTAAAAAAACAAA
-				AAQDAADZNTwCAwAAAAgAAAAEAwAAamE8AgMAAAAUAAAA
-				AQYAAIQAAACUAAAApAAAALQAAADEAAAACAAAAAAEAABB
-				wamwVEEqRxgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAA
-				AAAAAAAACAAAAAQDAAADAAAAAAAAAAQAAAADAwAA9QEA
-				AAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9z
-				aCBIRAgAAAAEAwAAAOAEA2kAAAAIAAAAAAQAAEG+3V1i
-				AAAAJAAAAAEBAAAyNUU0Mjg2RC03MTJDLTM4OTktQjQz
-				Ri01RDNGNkE4QkQxMjEYAAAAAQIAAIEAAAABAAAA7xMA
-				AAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAA
-				GgAAAAEBAABOU1VSTERvY3VtZW50SWRlbnRpZmllcktl
-				eQAABAAAAAMDAADNBQEA2AAAAP7///8BAAAAAAAAABEA
-				AAAEEAAAaAAAAAAAAAAFEAAA1AAAAAAAAAAQEAAAAAEA
-				AAAAAABAEAAA8AAAAAAAAAACIAAAzAEAAAAAAAAFIAAA
-				PAEAAAAAAAAQIAAATAEAAAAAAAARIAAAgAEAAAAAAAAS
-				IAAAYAEAAAAAAAATIAAAcAEAAAAAAAAgIAAArAEAAAAA
-				AAAwIAAA2AEAAAAAAAABwAAAIAEAAAAAAAARwAAAIAAA
-				AAAAAAASwAAAMAEAAAAAAAAQ0AAABAAAAAAAAADgAQCA
-				BAIAAAAAAAA=
-				</data>
-				<key>FileURL</key>
-				<string>file:///Users/rpage/Sites/biostor-lite/index.php</string>
-				<key>HasSecurityScope</key>
-				<true/>
-				<key>RelativePath</key>
-				<string>./index.php</string>
-				<key>TypeID</key>
-				<string>_CFileLocator</string>
-				<key>Version</key>
-				<integer>1</integer>
-			</dict>
-			<key>ItemName</key>
-			<string>index.php</string>
 			<key>ItemType</key>
 			<string>FileReference</string>
 			<key>UserOverrideItemName</key>
@@ -652,6 +602,54 @@
 			</dict>
 			<key>ItemName</key>
 			<string>original-index.html</string>
+			<key>ItemType</key>
+			<string>FileReference</string>
+			<key>UserOverrideItemName</key>
+			<true/>
+		</dict>
+		<key>DCDD1C2B-E75A-4179-BD04-58F209C854B7</key>
+		<dict>
+			<key>ItemData</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9va+QCAAAAAAQQMAAAAEiDmsYUbwh0aqG17ALVe6B3
+				zsz8NCtZMBRURyITg/Tl4AEAAAQAAAADAwAAAAgAKAUA
+				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAABQAA
+				AAEBAABTaXRlcwAAAAwAAAABAQAAYmlvc3Rvci1saXRl
+				CQAAAAEBAABpbmRleC5waHAAAAAUAAAAAQYAABAAAAAg
+				AAAAMAAAAEAAAABUAAAACAAAAAQDAAAQZwIAAAAAAAgA
+				AAAEAwAAhXQNAAAAAAAIAAAABAMAAARWTAAAAAAACAAA
+				AAQDAADZNTwCAwAAAAgAAAAEAwAAoqRCAgMAAAAUAAAA
+				AQYAAIQAAACUAAAApAAAALQAAADEAAAACAAAAAAEAABB
+				waui9en8hhgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAA
+				AAAAAAAACAAAAAQDAAADAAAAAAAAAAQAAAADAwAA9QEA
+				AAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9z
+				aCBIRAgAAAAEAwAAAOAEA2kAAAAIAAAAAAQAAEG+3V1i
+				AAAAJAAAAAEBAAAyNUU0Mjg2RC03MTJDLTM4OTktQjQz
+				Ri01RDNGNkE4QkQxMjEYAAAAAQIAAIEAAAABAAAA7xMA
+				AAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAA
+				zAAAAP7///8BAAAAAAAAABAAAAAEEAAAaAAAAAAAAAAF
+				EAAA1AAAAAAAAAAQEAAAAAEAAAAAAABAEAAA8AAAAAAA
+				AAACIAAAzAEAAAAAAAAFIAAAPAEAAAAAAAAQIAAATAEA
+				AAAAAAARIAAAgAEAAAAAAAASIAAAYAEAAAAAAAATIAAA
+				cAEAAAAAAAAgIAAArAEAAAAAAAAwIAAA2AEAAAAAAAAB
+				wAAAIAEAAAAAAAARwAAAIAAAAAAAAAASwAAAMAEAAAAA
+				AAAQ0AAABAAAAAAAAAA=
+				</data>
+				<key>FileURL</key>
+				<string>file:///Users/rpage/Sites/biostor-lite/index.php</string>
+				<key>HasSecurityScope</key>
+				<true/>
+				<key>RelativePath</key>
+				<string>./index.php</string>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+			<key>ItemName</key>
+			<string>index.php</string>
 			<key>ItemType</key>
 			<string>FileReference</string>
 			<key>UserOverrideItemName</key>
