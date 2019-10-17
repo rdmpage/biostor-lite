@@ -463,7 +463,7 @@ img.covers{
 
 
 						<!-- PDF -->
-						<a id="pdf" style="display:none;" class="btn" href="">PDF</a>												
+						<a id="pdf" style="display:none;" class="btn" href="" onClick="_gaq.push(['_trackEvent', 'Export', 'pdf']);">PDF</a>												
 						
 						
 					</div>
