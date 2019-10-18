@@ -257,7 +257,7 @@ function message(doc) {
 
 	  if (Array.isArray(doc.bhl_pages)) {
 	    edoc.search_result_data.thumbnailUrl = 'https://www.biodiversitylibrary.org/pagethumb/' + doc.bhl_pages[0] + ',60,60';
-	    edoc.search_result_data.url = 'https://www.biodiversitylibrary.org/page/' + doc.bhl_pages[key];
+	    edoc.search_result_data.url = 'https://www.biodiversitylibrary.org/page/' + doc.bhl_pages[0];
 	    
 	    edoc.search_result_data.bhl_pages = doc.bhl_pages;
 	  } else {
