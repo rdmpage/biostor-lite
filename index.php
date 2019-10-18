@@ -517,7 +517,8 @@ img.covers{
 								var e = document.getElementById('pdf');
 								if (e) {
 									e.style.display = 'inline-block';
-									e.href = pdf_url;
+									//e.href = pdf_url;
+									e.href = 'pdfproxy.php?url=' + encodeURIComponent(pdf_url);
 								}
 							}
 						}
