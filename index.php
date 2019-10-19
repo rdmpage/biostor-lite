@@ -7,6 +7,17 @@ require_once(dirname(__FILE__) . '/config.inc.php');
 <!DOCTYPE html>
 <html>
 	<head>
+	
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-12127487-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-12127487-1');
+		</script>
+	
 		<meta charset="utf-8" /> 
 		
    		<!-- favicon -->
@@ -33,8 +44,8 @@ body {
     width: 12px
     height: 12px;
     border-radius: 10px;
-    background: #ff7800;
-    border: 1px solid #000;
+    background: rgb(208,104,85);
+    border: 1px solid rgb(38,38,38);
     opacity: 0.85
 }			
 
@@ -286,7 +297,7 @@ img.covers{
 					<% for(var i in data) {%>
 						<div class="row">
 						
-							<div class="col s12 m2 hide-on-small-only">
+							<div class="col s12 m2 hide-on-small-only" style="text-align:center">
 								<% if (data[i].thumbnailUrl)  {%>
 									<a href="reference/<%- i.replace(/biostor-/, '') %>">
 										<img class="z-depth-1" style="background:white;" src="http://exeg5le.cloudimg.io/s/height/100/<%- data[i].thumbnailUrl %>" >
@@ -680,7 +691,7 @@ img.covers{
 			<div class="container">
             	<div class="row">
             	<div class="divider"></div>
-            		<a href=".">BioStor-Lite</a> is a project by Rod Page. It's goal is to make discoverable articles in the <a href="https://www.biodiversitylibrary.org">Biodiversity Heritage Library</a> (BHL).
+            		<a href=".">BioStor-Lite</a> is a project by <a href="https://twitter.com/rdmpage">Rod Page</a>. It's goal is to make discoverable articles in the <a href="https://www.biodiversitylibrary.org">Biodiversity Heritage Library</a> (BHL).
             	</div>
             </div>
 			
@@ -794,22 +805,7 @@ img.covers{
 			*/
 					
 		</script>
-		
-	<script type="text/javascript">
 
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-12127487-1']);
-	  _gaq.push(['_trackPageview']);
-
-	  (function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-
-	</script>		
-		
-		
 	</body>
 </html>
 
