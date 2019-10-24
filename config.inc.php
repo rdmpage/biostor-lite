@@ -15,7 +15,7 @@ global $config;
 date_default_timezone_set('UTC');
 
 $local = false;
-//$local = true;
+$local = true;
 
 
 if ($local)
