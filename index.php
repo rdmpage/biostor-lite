@@ -466,7 +466,15 @@ img.covers{
 						<% if (data.url)  {%>
 							<a class="btn" href="<%- data.url %>">View at BHL</a>
 						<% } %>	
-			
+
+						<% if (data.csl.URL)  {
+						    var biostor_id = data.csl.URL;
+						    biostor_id = biostor_id.replace(/https?:\/\/biostor.org\/reference\//, '');
+							var manifest = 'https://iiif.archivelab.org/iiif/biostor-' + biostor_id + '/manifest.json';
+						%>
+							<a class="btn" href="viewer/viewer.php?manifest_uri=<%- manifest %>">View IIIF</a>
+						<% } %>	
+						
 						
 						<% if (data.csl.DOI)  {%>
 							<a class="btn" href="https://doi.org/<%- data.csl.DOI %>">DOI:<%- data.csl.DOI %></a>
