@@ -37,5 +37,10 @@ To install Universal Viewer clone the respository, make sure you have node.js, b
 
         grunt build
 
+1. Put the files in the ```dist``` folder on your web site (e.g., in a folder called ```uv```)
+
+1. Add a tweaked version of Roger’s ```viewer.php``` script from [iiif_poc](https://github.com/rogerhyam/iiif_poc) and use the InternetArchive IIIF server as the source of the IIIF manifest, e.g. [https://iiif.archivelab.org/iiif/biostor-244961/manifest.json](https://iiif.archivelab.org/iiif/biostor-244961/manifest.json).
+
+Note that IA’s IIIF server seems a bit flaky, so your mileage may vary.
 
            

@@ -466,7 +466,7 @@ img.covers{
 						<% if (data.url)  {%>
 							<a class="btn" href="<%- data.url %>">View at BHL</a>
 						<% } %>	
-						
+			
 						
 						<% if (data.csl.DOI)  {%>
 							<a class="btn" href="https://doi.org/<%- data.csl.DOI %>">DOI:<%- data.csl.DOI %></a>
