@@ -472,7 +472,7 @@ img.covers{
 						    biostor_id = biostor_id.replace('https://biostor.org/reference/', '');
 							var manifest = 'https://iiif.archivelab.org/iiif/biostor-' + biostor_id + '/manifest.json';
 						%>
-							<a class="btn" href="viewer/viewer.php?manifest_uri=<%- manifest %>">View IIIF</a>
+							<a id="iiif" style="display:none;" class="btn" href="viewer/viewer.php?manifest_uri=<%- manifest %>">View IIIF</a>
 						<% } %>	
 						
 						
@@ -533,11 +533,17 @@ img.covers{
 							+ '&callback=?',
 						function(data){ 
 							if (data.found) {
+								// show PDF button
 								var e = document.getElementById('pdf');
 								if (e) {
 									e.style.display = 'inline-block';
 									//e.href = pdf_url;
 									e.href = 'pdfproxy.php?url=' + encodeURIComponent(pdf_url);
+								}
+								// if we have PDF we have IIIF
+								e = document.getElementById('iiif');
+								if (e) {
+									e.style.display = 'inline-block';
 								}
 							}
 						}
