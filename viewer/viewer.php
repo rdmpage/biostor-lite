@@ -6,6 +6,14 @@
 	
 $manifest_uri = $_GET['manifest_uri'];
 	
+// which canvas (=page) to show?
+$cv = 0;
+	
+if (isset($_GET['cv']))
+{
+	$cv = $_GET['cv'];
+}
+	
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +43,8 @@ $manifest_uri = $_GET['manifest_uri'];
 	        window.addEventListener('uvLoaded', function (e) {
 	            createUV('#uv', {
 	                iiifResourceUri: '<?php echo $manifest_uri ?>',
-					configUri: 'uv-config.json'
+					configUri: 'uv-config.json',
+					canvasIndex: <?php echo $cv ?>,
 	            }, new UV.URLDataProvider());
 	        }, false);
 	    </script>
@@ -45,4 +54,5 @@ $manifest_uri = $_GET['manifest_uri'];
 </body>
 </html>
 	
+
 	
