@@ -464,7 +464,7 @@ img.covers{
 					<div class="section" >
 						<a class="btn" onclick="show_cite('<%- encodeURIComponent(JSON.stringify(data.csl)).replace(/\'/g, "\\\\'") %>')";><i class="material-icons">format_quote</i></a>					
 						<% if (data.url)  {%>
-							<a class="btn" href="<%- data.url %>" onClick="_gaq.push(['_trackEvent', 'Export', 'bhl']);>View at BHL</a>
+							<a class="btn" href="<%- data.url %>">View at BHL</a>
 						<% } %>	
 
 						<% if (data.csl.URL)  {
@@ -472,12 +472,12 @@ img.covers{
 						    biostor_id = biostor_id.replace('https://biostor.org/reference/', '');
 							var manifest = 'https://iiif.archivelab.org/iiif/biostor-' + biostor_id + '/manifest.json';
 						%>
-							<a id="iiif" style="display:none;" class="btn" href="viewer/viewer.php?manifest_uri=<%- manifest %>" onClick="_gaq.push(['_trackEvent', 'Export', 'iiif']);>View IIIF</a>
+							<a id="iiif" style="display:none;" class="btn" href="viewer/viewer.php?manifest_uri=<%- manifest %>">View IIIF</a>
 						<% } %>	
 						
 						
 						<% if (data.csl.DOI)  {%>
-							<a class="btn" href="https://doi.org/<%- data.csl.DOI %>" onClick="_gaq.push(['_trackEvent', 'Export', 'doi']);>DOI:<%- data.csl.DOI %></a>
+							<a class="btn" href="https://doi.org/<%- data.csl.DOI %>">DOI:<%- data.csl.DOI %></a>
 						<% } %>	
 
 
