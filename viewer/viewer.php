@@ -3,6 +3,8 @@
 /*
 	This is a simple page to load a viewer for a manifest
 */
+
+error_reporting(E_ALL);
 	
 $manifest_uri = $_GET['manifest_uri'];
 	
