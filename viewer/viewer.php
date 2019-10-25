@@ -6,20 +6,12 @@
 	
 $manifest_uri = $_GET['manifest_uri'];
 	
-// which canvas (=page) to show?
-$cv = 0;
-	
-if (isset($_GET['cv']))
-{
-	$cv = $_GET['cv'];
-}
-	
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="uv/uv.css">
@@ -43,8 +35,7 @@ if (isset($_GET['cv']))
 	        window.addEventListener('uvLoaded', function (e) {
 	            createUV('#uv', {
 	                iiifResourceUri: '<?php echo $manifest_uri ?>',
-					configUri: 'uv-config.json',
-					canvasIndex: <?php echo $cv ?>,
+					configUri: 'uv-config.json'
 	            }, new UV.URLDataProvider());
 	        }, false);
 	    </script>
@@ -54,5 +45,4 @@ if (isset($_GET['cv']))
 </body>
 </html>
 	
-
 	
