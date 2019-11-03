@@ -34,11 +34,13 @@ if (isset($_GET['cv']))
     	}
         #uv {
             width: 100%;
-            height: 1000px;
+            height: 400px;
         }
     </style>
+    
+    
 </head>
-<body>
+<body onload="$(window).resize();">
 	
 		<div id="uv" class="uv"></div>
 	    <script>
@@ -46,12 +48,19 @@ if (isset($_GET['cv']))
 	            createUV('#uv', {
 	                iiifResourceUri: '<?php echo $manifest_uri ?>',
 					configUri: 'uv-config.json',
-					canvasIndex: <?php echo $cv ?>
+					canvasIndex: <?php echo $cv ?>,
 	            }, new UV.URLDataProvider());
 	        }, false);
 	    </script>
 	    <script src="uv/uv.js"></script>
 	
+<script>
+	/* http://stackoverflow.com/questions/6762564/setting-div-width-according-to-the-screen-size-of-user */
+	$(window).resize(function() { 
+		var windowHeight =$(window).height();		
+		$("#uv").css({"height":windowHeight });
+	});	
+</script>	
 	
 </body>
 </html>
