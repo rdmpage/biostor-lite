@@ -31,6 +31,7 @@ if (isset($_GET['cv']))
     <style>
     	body {
     		margin:0px;
+    		background: black;
     	}
         #uv {
             width: 100%;
