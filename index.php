@@ -10,15 +10,17 @@ require_once(dirname(__FILE__) . '/config.inc.php');
 <html>
 	<head>
 	
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-12127487-1"></script>
+		<!-- Google Analytics -->
 		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-		  gtag('config', 'UA-12127487-1');
+		ga('create', 'UA-12127487-1', 'auto');
+		ga('send', 'pageview');
 		</script>
+		<!-- End Google Analytics -->	
 	
 		<meta charset="utf-8" /> 
 		
@@ -466,7 +468,7 @@ img.covers{
 					<div class="section" >
 						<a class="btn" onclick="show_cite('<%- encodeURIComponent(JSON.stringify(data.csl)).replace(/\'/g, "\\\\'") %>')";><i class="material-icons">format_quote</i></a>					
 						<% if (data.url)  {%>
-							<a class="btn" href="<%- data.url %>"  onClick="_gaq.push(['_trackEvent', 'Export', 'bhl']);">View at BHL</a>
+							<a class="btn" href="<%- data.url %>" onClick="ga('send', 'event', { eventCategory: 'Outbound Link', eventAction: 'BHL', eventLabel: event.target.href} );">View at BHL</a>
 						<% } %>	
 
 						<% if (data.csl.URL)  {
@@ -474,17 +476,17 @@ img.covers{
 						    biostor_id = biostor_id.replace('https://biostor.org/reference/', '');
 							var manifest = 'https://iiif.archivelab.org/iiif/biostor-' + biostor_id + '/manifest.json';
 						%>
-							<a id="iiif" style="display:none;" class="btn" href="viewer/viewer.php?manifest_uri=<%- manifest %>" onClick="_gaq.push(['_trackEvent', 'Export', 'iiif']);">View IIIF</a>
+							<a id="iiif" style="display:none;" class="btn" href="viewer/viewer.php?manifest_uri=<%- manifest %>" onClick="ga('send', 'event', { eventCategory: 'Outbound Link', eventAction: 'IIIF', eventLabel: event.target.href} );">View IIIF</a>
 						<% } %>	
 						
 						
 						<% if (data.csl.DOI)  {%>
-							<a class="btn" href="https://doi.org/<%- data.csl.DOI %>">DOI:<%- data.csl.DOI %></a>
+							<a class="btn" href="https://doi.org/<%- data.csl.DOI %>" onClick="ga('send', 'event', { eventCategory: 'Outbound Link', eventAction: 'DOI', eventLabel: event.target.href} );">DOI:<%- data.csl.DOI %></a>
 						<% } %>	
 
 
 						<!-- PDF -->
-						<a id="pdf" style="display:none;" class="btn" href="" onClick="_gaq.push(['_trackEvent', 'Export', 'pdf']);">PDF</a>												
+						<a id="pdf" style="display:none;" class="btn" href="" onClick="ga('send', 'event', { eventCategory: 'Outbound Link', eventAction: 'PDF', eventLabel: event.target.href} );">PDF</a>												
 						
 						
 					</div>
