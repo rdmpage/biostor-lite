@@ -28,4 +28,8 @@ RewriteRule ^documentcloud/([0-9]+).json			api_documentcloud.php?id=biostor-$1		
 RewriteRule ^documentcloud/biostor/([0-9]+).json	api_documentcloud.php?id=biostor-$1						[QSA,L]
 RewriteRule ^documentcloud/biostor-([0-9]+).json	api_documentcloud.php?id=biostor-$1						[QSA,L]
 
+#-----------------------------------------------------------------------------------------
+# ISSN
+RewriteRule ^issn/([0-9]{4})-([0-9]{3})([0-9]|X)/year/([0-9]{4})   ?issn=$1-$2$3&year=$4 [NC,L]
+RewriteRule ^issn/([0-9]{4})-([0-9]{3})([0-9]|X)$   ?issn=$1-$2$3 [NC,L]
 

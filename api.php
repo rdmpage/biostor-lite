@@ -66,7 +66,7 @@ function display_elastic_search ($q, $filter=null, $from = 0, $size = 20, $callb
 {
 	global $elastic;
 	
-	$sttaus = 404;
+	$status = 404;
 				
 	if ($q == '')
 	{

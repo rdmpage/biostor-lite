@@ -38,6 +38,19 @@ body {
     min-height: 100vh;
     flex-direction: column;
   }
+  
+/* https://codepen.io/furnace/pen/PGygEd */
+nav.clean {
+  background: none;
+  box-shadow: none;
+}
+nav.clean .breadcrumb {
+  color: black;
+}
+nav.clean .breadcrumb:before {
+  color: rgba(0, 0, 0, 0.7);
+}
+
 
   main {
     flex: 1 0 auto;
@@ -400,7 +413,29 @@ img.covers{
 					</div>
 					
 					<div class="col s12 m10">
-			
+					
+					<!-- bread crumbs -->
+					<% if (data.csl['container-title'] && data.csl.ISSN) { %>
+						<nav class="clean">
+							<div class="nav-wrapper">
+								<a href="./" class="breadcrumb">Home</a>
+								
+								<% 
+								var container = data.csl['container-title'];
+								if (container.length > 30) {
+									container = container.substring(0,30) + '…';
+								}
+								%>
+								
+								<span class="breadcrumb"><%- container %></span>
+								
+								<% if (data.csl.issued) { %>
+									<a href="issn/<%- data.csl.ISSN[0] %>/year/<%- data.csl.issued['date-parts'][0][0] %>" class="breadcrumb"><%- data.csl.issued['date-parts'][0][0] %></a>
+								<% } %>
+							</div>
+						</nav>
+					<% } %>
+								
 					<!-- headline is item name -->
 					<b style="font-size:1.5em;">				
 						<%- data.name %>				
@@ -506,6 +541,8 @@ img.covers{
 							if (data._source) {
 			
 								//console.log(JSON.stringify(data._source.search_result_data.csl));
+								
+								//history.pushState(null, data._source.search_result_data.name, id.replace(/biostor-/, 'reference/'));
 			
 								// Render template 	
 								html = ejs.render(template_record, { data: data._source.search_result_data });
@@ -658,6 +695,41 @@ img.covers{
 						}
 					);  			
 				}		
+				
+			        //--------------------------------------------------------------------------------
+				function show_issn_year(issn, year) {      
+			      	document.getElementById('results').innerHTML = "Searching...";
+			      
+					var text = document.getElementById('query').value;
+									
+					$.getJSON('./api_journal.php?issn=' + issn + '&year=' + year
+							+ '&callback=?',			
+						function(data){
+					
+							console.log(JSON.stringify(data, null, 2));
+								
+							if (data.hits) {
+								if (data.hits.total > 0) {
+									var hits = [];
+									for (var i in data.hits.hits) {
+										hits[data.hits.hits[i]._id] = data.hits.hits[i]._source.search_result_data;
+									}
+
+									// Render template 	
+									var html = ejs.render(template_results, { data : hits });
+			
+									// Display
+									document.getElementById('results').innerHTML = html;
+								}
+								else
+								{
+									document.getElementById('results').innerHTML = 'Nothing found!';
+								}
+							}		
+					
+						}
+					);  			
+				}						
 			
 			
 		</script>
@@ -748,6 +820,29 @@ img.covers{
 				echo 'show_record("' . $id . '");';			
 			}
 			
+			if (isset($_GET['issn']))
+			{
+				$has_parameters = true;
+				
+				$issn = $_GET['issn'];
+				
+				if (isset($_GET['year']))
+				{
+					$year = $_GET['year'];
+					
+					// works for a year
+					echo 'show_issn_year("' . $issn . '", "' . $year . '");';							
+				}
+				else
+				{
+					// whole journal
+				}
+				
+				
+				
+					
+			}			
+			
 			if (!$has_parameters)
 			{
 			?>
@@ -783,6 +878,16 @@ img.covers{
 				{ pageID: 52110073, referenceID: 232256},
 				{ pageID: 41229695, referenceID: 115363},
 				];
+				
+				/*
+				var examples_3 = [
+				,
+				{ pageID: 59075507, referenceID: 252946},
+				{ pageID: 59107876, referenceID: 252963 }, // Death comes on two wings: a review of dipteran natural enemies of arachnids
+				{ pageID: , referenceID: },
+				{ pageID: , referenceID: },
+				];
+				*/
 				
 				// { pageID: 0, referenceID: 0},
 				// { pageID: 0, referenceID: 0},
