@@ -43,9 +43,13 @@ body {
 nav.clean {
   background: none;
   box-shadow: none;
+  height:2em;
+  line-height:2em;
+  
 }
 nav.clean .breadcrumb {
   color: black;
+  font-size:1em;
 }
 nav.clean .breadcrumb:before {
   color: rgba(0, 0, 0, 0.7);
@@ -712,7 +716,19 @@ img.covers{
 								if (data.hits.total > 0) {
 									var hits = [];
 									for (var i in data.hits.hits) {
-										hits[data.hits.hits[i]._id] = data.hits.hits[i]._source.search_result_data;
+										// filter out approximate ISSN matches (horrible kludge)
+										var ok = true;
+											
+										if (data.hits.hits[i]._source.search_result_data.csl.ISSN) {
+											ok = (data.hits.hits[i]._source.search_result_data.csl.ISSN[0] == issn);
+										} else {
+											ok = false;
+										}
+										
+										if (ok) {
+											hits[data.hits.hits[i]._id] = data.hits.hits[i]._source.search_result_data;
+										}
+											
 									}
 
 									// Render template 	

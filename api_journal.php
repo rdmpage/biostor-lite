@@ -24,7 +24,7 @@ function display_articles_year ($namespace, $value, $year, $callback = '')
 	
 	$query_json = '{
 	"size": 500,
-	"_source": ["id", "search_result_data.name", "search_result_data.description", "search_result_data.thumbnailUrl", "search_data.year"],
+	"_source": ["id", "search_result_data.name", "search_result_data.description", "search_result_data.thumbnailUrl", "search_data.year", "search_result_data.csl"],
 	"query": {
 		"bool": {
 			"must": [{
