@@ -94,6 +94,60 @@ img.covers{
   min-width: 100%;
   vertical-align: bottom;
 }	
+
+section.works{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section.works::after{
+  content: \'\';
+  flex-grow: 999999999;
+}
+
+div.works{
+  /*flex-grow: 1;*/
+  margin: 4px;
+  height: 100px;
+  width:80px;
+  border:1px solid #4db6ac;
+  overflow-wrap:break-word;
+  overflow:hidden;
+  font-size:1em;
+  line-height:1.0em;
+  padding:0px;
+  position:relative;
+}
+
+div.works.year {
+	text-align:center;
+	line-height:100px;
+	font-size:2em;
+	padding:0px;
+}
+
+img.works{
+  object-fit: cover;
+  max-width: 100%;
+  min-width: 100%;
+  vertical-align: bottom;
+}	
+
+span.works {
+	font-size:0.7em;
+	line-height:1em;
+	position:absolute;
+	overflow-wrap:break-word;
+	overflow:hidden;
+	left:0px;
+	top:60px;
+	height:40px;
+	width:100%;
+	background-color:rgba(13, 77, 64, 0.4);
+	/*color:white;&*/
+	z-index:10;
+	padding:4px;
+}
 			
 		</style>
 		
@@ -309,6 +363,53 @@ img.covers{
 		
 		
 		<script>
+		
+			        //--------------------------------------------------------------------------------
+				var template_decades = `
+					<% for(var decade in data) {%>
+						<li>
+							<div class="collapsible-header"><%= (decade * 10) %></div>
+							<div class="collapsible-body">
+					
+								<div class="row">
+								
+								<section class="works">
+							
+						
+								<% for (var year in data[decade]) { %>
+						
+									<div class="works year teal lighten-2 ">
+										<%= year %>
+									</div>
+							
+									<% for (var i in data[decade][year]) { %>
+										<div class="works">
+											<!-- <%= data[decade][year][i].name %> -->
+											<a href="reference/<%- i.replace(/biostor-/, '') %>">
+											<img class="works" src="http://exeg5le.cloudimg.io/s/height/200/<%= data[decade][year][i].thumbnailUrl %>">
+											</a>
+											<span class="works"><%= data[decade][year][i].name %></span>
+										</div>
+									<% } %>
+
+								<% } %>
+								
+								</section>
+							
+								</div>
+							
+							
+							
+						</div>
+						</li>
+						
+			
+					<% } %>
+			
+				`;				
+				
+
+						
 			
 			
 			        //--------------------------------------------------------------------------------
@@ -431,7 +532,9 @@ img.covers{
 								}
 								%>
 								
-								<span class="breadcrumb"><%- container %></span>
+								<a href="./issn/<%- data.csl.ISSN %>" class="breadcrumb">
+									<%- container %>
+								</a>
 								
 								<% if (data.csl.issued) { %>
 									<a href="issn/<%- data.csl.ISSN[0] %>/year/<%- data.csl.issued['date-parts'][0][0] %>" class="breadcrumb"><%- data.csl.issued['date-parts'][0][0] %></a>
@@ -663,8 +766,9 @@ img.covers{
 			        //--------------------------------------------------------------------------------
 				function search() {      
 			      	document.activeElement.blur();
+			      	document.getElementById('collapsible').innerHTML = "";
 			      	document.getElementById('results').innerHTML = "Searching...";
-			      
+			      	
 					var text = document.getElementById('query').value;
 					
 					// Add query to browser history
@@ -745,7 +849,73 @@ img.covers{
 					
 						}
 					);  			
-				}						
+				}	
+				
+			        //--------------------------------------------------------------------------------
+				function show_issn(issn) {      
+			      	document.getElementById('results').innerHTML = "Searching...";
+			      
+					var text = document.getElementById('query').value;
+									
+					$.getJSON('./api_journal.php?issn=' + issn 
+							+ '&callback=?',			
+						function(data){
+					
+							console.log(JSON.stringify(data, null, 2));
+								
+							if (data.hits) {
+								if (data.hits.total > 0) {
+									var hits = [];
+									var decades = {};
+									for (var i in data.hits.hits) {
+										// filter out approximate ISSN matches (horrible kludge)
+										var ok = true;
+											
+										if (data.hits.hits[i]._source.search_result_data.csl.ISSN) {
+											ok = (data.hits.hits[i]._source.search_result_data.csl.ISSN[0] == issn);
+										} else {
+											ok = false;
+										}
+										
+										if (ok) {
+											hits[data.hits.hits[i]._id] = data.hits.hits[i]._source.search_result_data;
+											
+											if (data.hits.hits[i]._source.search_result_data.csl.issued) {
+												var year = data.hits.hits[i]._source.search_result_data.csl.issued['date-parts'][0][0];
+												var decade = Math.floor(year / 10);
+			
+												if (!decades[decade]) {
+													decades[decade] = {};
+												}
+												if (!decades[decade][year]) {
+													decades[decade][year] = {};
+												}
+												decades[decade][year][data.hits.hits[i]._id] = data.hits.hits[i]._source.search_result_data;												
+											
+											}
+											
+											
+										}
+											
+									}
+
+									// Render template 	
+									var html = ejs.render(template_decades, { data : decades });
+			
+									// Display
+									//document.getElementById('results').innerHTML = JSON.stringify(decades);
+									document.getElementById('collapsible').innerHTML = html;
+									document.getElementById('results').innerHTML = '';
+								}
+								else
+								{
+									document.getElementById('results').innerHTML = 'Nothing found!';
+								}
+							}		
+					
+						}
+					);  			
+				}										
 			
 			
 		</script>
@@ -753,8 +923,11 @@ img.covers{
 			window.onload=function(){
 			  
 					$(document).ready(function() {
-					  $('#modal').modal();  
+					  $('#modal').modal(); 	
+					  $('.collapsible').collapsible();				 
 					});
+					
+					
 			   }
 		</script>
 	</head>
@@ -787,6 +960,9 @@ img.covers{
 							Close
 						</a>
 					</div>
+				</div>
+				<div id="container">
+					<ul id="collapsible" class="collapsible"></ul>
 				</div>
 				<div id="results">
 				</div>
@@ -852,11 +1028,8 @@ img.covers{
 				else
 				{
 					// whole journal
+					echo 'show_issn("' . $issn . '");';							
 				}
-				
-				
-				
-					
 			}			
 			
 			if (!$has_parameters)

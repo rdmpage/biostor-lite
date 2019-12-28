@@ -62,6 +62,48 @@ function display_articles_year ($namespace, $value, $year, $callback = '')
 }
 
 
+//----------------------------------------------------------------------------------------
+// Journal articles for a given journal 
+function display_articles($namespace, $value, $callback = '')
+{
+	global $elastic;
+	
+	$status = 404;
+	
+	$query_json = '{
+	"size": 500,
+	"_source": ["id", "search_result_data.name", "search_result_data.description", "search_result_data.thumbnailUrl", "search_data.year", "search_result_data.csl"],
+	"query": {
+		"bool": {
+			"must": [{
+				"multi_match": {
+					"query": "' . $value .'",
+					"fields": ["search_result_data.csl.ISSN"]
+				}
+			}]
+		}
+	},
+	"aggs": {
+		"year": {
+			"terms": {
+				"field": "search_data.year",
+				"size": 500
+			}
+		}
+	}
+}';
+	
+	$resp = $elastic->send('POST', '_search?pretty', $post_data = $query_json);
+	
+
+	$obj = json_decode($resp);
+
+	$status = 200;
+
+	
+	api_output($obj, $callback, $status);
+}
+
 
 
 
@@ -109,7 +151,7 @@ function main()
 			
 			if (!$handled)
 			{
-				display_issn($issn, $callback);
+				display_articles('issn', $issn, $callback);
 				
 				$handled = true;			
 			}	
