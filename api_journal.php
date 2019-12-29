@@ -71,7 +71,7 @@ function display_articles($namespace, $value, $callback = '')
 	$status = 404;
 	
 	$query_json = '{
-	"size": 500,
+	"size": 5000,
 	"_source": ["id", "search_result_data.name", "search_result_data.description", "search_result_data.thumbnailUrl", "search_data.year", "search_result_data.csl"],
 	"query": {
 		"bool": {

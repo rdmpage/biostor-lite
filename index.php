@@ -107,10 +107,10 @@ section.works::after{
 
 div.works{
   /*flex-grow: 1;*/
-  margin: 4px;
-  height: 100px;
+  margin: 2px;
+  height: 120px;
   width:80px;
-  border:1px solid #4db6ac;
+  border:1px solid #b2dfdb;
   overflow-wrap:break-word;
   overflow:hidden;
   font-size:1em;
@@ -121,9 +121,16 @@ div.works{
 
 div.works.year {
 	text-align:center;
-	line-height:100px;
+	line-height:120px;
 	font-size:2em;
 	padding:0px;
+	color:#004d40 ;
+}
+
+a.works {
+	text-decoration:none;
+	color:#004d40;
+	
 }
 
 img.works{
@@ -141,9 +148,9 @@ span.works {
 	overflow:hidden;
 	left:0px;
 	top:60px;
-	height:40px;
+	height:60px;
 	width:100%;
-	background-color:rgba(13, 77, 64, 0.4);
+	background-color:rgba(13, 77, 64, 0.3);
 	/*color:white;&*/
 	z-index:10;
 	padding:4px;
@@ -385,10 +392,11 @@ span.works {
 									<% for (var i in data[decade][year]) { %>
 										<div class="works">
 											<!-- <%= data[decade][year][i].name %> -->
-											<a href="reference/<%- i.replace(/biostor-/, '') %>">
+											<a class="works" href="reference/<%- i.replace(/biostor-/, '') %>">
 											<img class="works" src="http://exeg5le.cloudimg.io/s/height/200/<%= data[decade][year][i].thumbnailUrl %>">
-											</a>
+											
 											<span class="works"><%= data[decade][year][i].name %></span>
+											</a>
 										</div>
 									<% } %>
 
@@ -865,6 +873,9 @@ span.works {
 								
 							if (data.hits) {
 								if (data.hits.total > 0) {
+								
+									var container = '';
+								
 									var hits = [];
 									var decades = {};
 									for (var i in data.hits.hits) {
@@ -879,6 +890,10 @@ span.works {
 										
 										if (ok) {
 											hits[data.hits.hits[i]._id] = data.hits.hits[i]._source.search_result_data;
+											
+											if (container == '') {
+												container = data.hits.hits[i]._source.search_result_data.csl['container-title'];
+											}
 											
 											if (data.hits.hits[i]._source.search_result_data.csl.issued) {
 												var year = data.hits.hits[i]._source.search_result_data.csl.issued['date-parts'][0][0];
@@ -905,7 +920,16 @@ span.works {
 									// Display
 									//document.getElementById('results').innerHTML = JSON.stringify(decades);
 									document.getElementById('collapsible').innerHTML = html;
-									document.getElementById('results').innerHTML = '';
+									$('.collapsible').collapsible('open', 1);
+									
+									html = '<nav class="clean">';
+									html += '<div class="nav-wrapper">';
+									html += '<a href="./" class="breadcrumb">Home</a>';
+									html += '<a href="./issn/' + issn + '" class="breadcrumb">' + container + '</a>';
+									html += '</div>';
+									html += '</nav>';
+
+									document.getElementById('results').innerHTML = html;
 								}
 								else
 								{
@@ -961,10 +985,10 @@ span.works {
 						</a>
 					</div>
 				</div>
-				<div id="container">
-					<ul id="collapsible" class="collapsible"></ul>
-				</div>
 				<div id="results">
+				</div>
+				<div id="container">
+					<ul id="collapsible" class="collapsible collapsible-accordion"></ul>				
 				</div>
 			</div>
 		</main>
