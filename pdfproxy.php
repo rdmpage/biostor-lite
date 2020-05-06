@@ -39,7 +39,7 @@ function download_file($path,$fname){
 			header('HTTP/1.1 410 Gone');
 			header('X-Robots-Tag: none');
 			header('X-Gone-Reason: Hostname not in DNS or blocked by policy');
-			echo 'Error 410: Server could parse the ?url= that you were looking for "' . $path . '", because the hostname of the origin is unresolvable (DNS) or blocked by policy.';
+			echo 'Error 410: Server could not parse the ?url= that you were looking for "' . $path . '", because the hostname of the origin is unresolvable (DNS) or blocked by policy.';
 			echo 'Error: $error';
 			die;
 		}
@@ -70,7 +70,7 @@ if ($url != '')
 	$curl_result = download_file($path,$fname);
 	if($curl_result[0] === false){
 		header("HTTP/1.0 404 Not Found");
-		echo 'Error 404: Server could parse the ?url= that you were looking for, error it got: '.$curl_result[1];
+		echo 'Error 404: Server could not parse the ?url= that you were looking for, error it got: '.$curl_result[1];
 		die;
 	}
 	
