@@ -779,6 +779,11 @@ span.works {
 			      	
 					var text = document.getElementById('query').value;
 					
+					var m = text.match(/item:(\d+)/);
+					if (m) {
+						window.location.replace('item.php?item=' + m[1]);					
+					}
+					
 					// Add query to browser history
 					history.pushState(null, null, "?q=" + encodeURIComponent(text));
 

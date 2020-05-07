@@ -33,3 +33,6 @@ RewriteRule ^documentcloud/biostor-([0-9]+).json	api_documentcloud.php?id=biosto
 RewriteRule ^issn/([0-9]{4})-([0-9]{3})([0-9]|X)/year/([0-9]{4})   ?issn=$1-$2$3&year=$4 [NC,L]
 RewriteRule ^issn/([0-9]{4})-([0-9]{3})([0-9]|X)$   ?issn=$1-$2$3 [NC,L]
 
+#-----------------------------------------------------------------------------------------
+# Item
+RewriteRule ^item/([0-9]+)   item.php?item=$1 [NC,L]
