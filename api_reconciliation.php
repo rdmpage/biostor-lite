@@ -64,8 +64,6 @@ class BioStorService extends ReconciliationService
 		// BioStor search API
 		$url = $config['web_server'] . $config['web_root'] . 'api.php?q=' . urlencode($text);
 		
-		echo $url ;
-		
 		//file_put_contents('/tmp/q.txt', $url, FILE_APPEND);
 		
 		$json = api_get($url);

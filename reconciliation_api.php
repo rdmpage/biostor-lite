@@ -90,8 +90,7 @@ class ReconciliationService
 			$metadata->defaultTypes =  $this->defaultTypes;
 		}
 
-		echo json_encode($metadata, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
-		
+		echo json_encode($metadata, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);		
 		
 		if ($callback != '')
 		{
@@ -173,7 +172,8 @@ class ReconciliationService
 		{
 			echo $callback . '(';
 		}
-		echo json_format(json_encode($this->result));
+		echo json_encode($this->result, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+		
 		if ($callback != '')
 		{
 			echo ')';

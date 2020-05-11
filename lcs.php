@@ -24,14 +24,16 @@ class LongestCommonSequence
 	var $C = array();
 	var $X;
 	var $Y;
+	var $bars;
 	
 	//----------------------------------------------------------------------------------------------
-	function LongestCommonSequence ($X, $Y)
+	function __construct ($X, $Y)
 	{
 		$this->left = '';
 		$this->right = '';
 		$this->X = $X;
 		$this->Y = $Y;
+		$this->bars = '';
 	}
 	
 	//----------------------------------------------------------------------------------------------
@@ -123,6 +125,63 @@ class LongestCommonSequence
 			}
 		}
 	}
+	
+	//----------------------------------------------------------------------------------------------
+	function alignment($C, $X, $Y, $i, $j)
+	{
+		$this->left = '';
+		$this->bars = '';
+		$this->right = '';
+	
+		if (($i > 0) and ($j > 0) and ($X{$i-1} == $Y{$j-1}))
+		{
+			$this->alignment($C, $X, $Y, $i-1, $j-1);
+			
+			$this->left .= $X{$i-1};
+			$this->bars .= '|';
+			$this->right .= $Y{$j-1};
+		   }
+		else
+		{
+			if (($j > 0) and ($i == 0 or $C[$i][$j-1] >= $C[$i-1][$j]))
+			{
+				$this->alignment($C, $X, $Y, $i, $j-1);
+	
+				$this->left .= '-';
+				$this->bars .= ' ';
+				$this->right .= $Y{$j-1};
+			}
+			else 
+			{
+				if (($i > 0) and ($j == 0 or $C[$i][$j-1] < $C[$i-1][$j]))
+				{
+					$this->alignment($C, $X, $Y, $i-1, $j);
+					
+					$this->left .= $X{$i-1};
+					$this->bars .= ' ';
+					$this->right .= '-';
+				}
+			}
+		}
+
+	}	
+	
+	//----------------------------------------------------------------------------------------------
+	function get_alignment()
+	{
+		$this->alignment($this->C, $this->X, $this->Y, strlen($this->X), strlen($this->Y));
+	}	
+	
+	//----------------------------------------------------------------------------------------------
+	function show_alignment()
+	{
+		$this->get_alignment();
+
+		echo $this->left . "\n";
+		echo $this->bars . "\n";
+		echo $this->right . "\n";
+	}
+	
 }
 
 //--------------------------------------------------------------------------------------------------
