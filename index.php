@@ -1002,7 +1002,9 @@ span.works {
 			<div class="container">
             	<div class="row">
             	<div class="divider"></div>
-            		<a href=".">BioStor-Lite</a> is a project by <a href="https://twitter.com/rdmpage">Rod Page</a>. It's goal is to make discoverable articles in the <a href="https://www.biodiversitylibrary.org">Biodiversity Heritage Library</a> (BHL).
+            		<a href=".">BioStor-Lite</a> is a project by <a href="https://twitter.com/rdmpage">Rod Page</a>. 
+            		It's goal is to make discoverable articles in the <a href="https://www.biodiversitylibrary.org">Biodiversity Heritage Library</a> (BHL). 
+            		See also <a href="match.html">Match references</a> reconciliation service.
             	</div>
             </div>
 			
