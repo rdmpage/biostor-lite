@@ -1,57 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<title>Match references</title>
+<html>
+	<head>
 	
-	<style>
-	body {
-		font-family:sans-serif;
-		padding:20px;
-	}
-	td {
-		border:1px solid rgb(192,192,192);
-	}
+		<meta charset="utf-8" /> 
+		
+   		<!-- favicon -->
+		<link href="static/biostor-shadow32x32.png" rel="icon" type="image/png">    
+		
+		<title>
+			Match references 
+		</title>
+		<style>
 	
+	/* body and main styles to give us a fixed footer, see https://materializecss.com/footer.html */	
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }	
+
 	</style>
 	
-    <!-- jquery -->
-    <script src="js/jquery.js"></script> 
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+	
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+	
+	<!-- local --->
+	<script src="js/jquery.js"></script> 
+	<script src="js/ejs.js"></script> 
+	<script src="js/citation.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css"> 
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+		
 	
 	<script>
-		/*
-		// A single query
-		function reconcile_one() {
-			var string = $('#query').val();
-			
-			var query = {};
-			query['q0'] = {};
-			query['q0'].query = string;
-			query['q0'].limit = 3;
-			
-			$('#result').html('');
-			
-			
-			//alert(JSON.stringify(query));
-			
-			$.getJSON('http://localhost/~rpage/kg/reconciliation/reconciliation_crossref.php?queries=' 
-				+ encodeURIComponent(JSON.stringify(query)) + '&callback?',
-				function(data) {
-					if (data['q0']) {
-						var html = '';
-						if (!data['q0'].result) {
-							html += '<span style="background-color:orange;color:white;">Not found</span>';
-						} else {
-							for (var i in data['q0'].result) {
-								html += data['q0'].result[i].id + ' ' + data['q0'].result[i].score + '<br />';
-							}
-						}
-						$('#result').html(html);
-					}
-				}
-			);
-		}
-		*/
+
 		
 		function reconcile_many() {
 			var string = $('#multiple').val();
@@ -150,7 +135,12 @@
 	</script>
 </head>
 <body>
-	<h1>Match references using reconciliation service</h1>
+	<header></header>
+	<main>
+		<div class="container">
+			<div class="row">
+
+	<h3>Match references</h3>
 	<p>Tool to explore BioStor's <a href="reconcile">reconciliation service</a>. This service is based on the Freebase 
 	reconciliation service used by tool such as OpenRefine, see <a href="https://github.com/OpenRefine/OpenRefine/wiki/Reconciliation-Service-API">Reconciliation Service API</a>.
 	To use this tool, paste references, one per line into the box below, click "Reconcile" and 
@@ -167,14 +157,16 @@
 	-->
 	
 	<div>
-		<h2>Enter references, one per line</h2>
-		<textarea  id="multiple" rows="10" style="width:100%;font-size:1em;">
+		<div class="input-field col s12">
+		<textarea  class="materialize-textarea" id="multiple" rows="10" style="width:100%;font-size:1em;">
 Strand, E. 1912. Ein neueres Werk über afrikanische Bienen kritisch besprochen. Archiv für Naturgeschichte 78: 126-144
 Strand, E. 1913. Bestimmungstabelle nebst weiteren Beiträgen zur Kenntnis afrikanischer Nomia-Arten. Archiv für Naturgeschichte A79: 121-144
 Michener, C.D. 1978. The parasitic groups of Halictidae (Hymenoptera, Apoidea). The University of Kansas Science Bulletin 51: 291-339
 Michener, C.D. and T.L. Griswold. 1994. The classification of Old World Anthidiini (Hymenoptera, Megachilidae). The University of Kansas Science Bulletin 55: 299-327
 		</textarea>
-		<br />
+		   <label for="multiple">Enter references, one per line</label>
+        </div>
+		
 		<button style="font-size:1.5em;" onclick="reconcile_many();">Match</button>	
 		<hr />
 		<div>
@@ -186,6 +178,24 @@ Michener, C.D. and T.L. Griswold. 1994. The classification of Old World Anthidii
 		<div id="results"></div>
 	
 	</div>
+	
+		
+
+		</div>
+		</div>
+	</main>
+	
+	
+		<footer >
+			<div class="container">
+            	<div class="row">
+            	<div class="divider"></div>
+            		<a href=".">BioStor-Lite</a> is a project by <a href="https://twitter.com/rdmpage">Rod Page</a>. It's goal is to make discoverable articles in the <a href="https://www.biodiversitylibrary.org">Biodiversity Heritage Library</a> (BHL).
+            	</div>
+            </div>
+			
+		
+		</footer>
 	
 	
 </body>
