@@ -116,7 +116,7 @@ class BioStorService extends ReconciliationService
 						$hit->name 	= $obj->hits->hits[$i]->_source->search_result_data->name;
 				
 						$hit->score = $score;
-						$hit->match = ($score > 0.8);
+						$hit->match = ($score > 0.7);
 						$this->StoreHit($query_key, $hit);
 					}				
 				
