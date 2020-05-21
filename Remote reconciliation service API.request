@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>baseURL</key>
+	<string>https://biostor.org/reconcile</string>
+	<key>followRedirect</key>
+	<true/>
+	<key>handleJSONPCallbacks</key>
+	<false/>
+	<key>headers</key>
+	<array/>
+	<key>httpMethod</key>
+	<string>GET</string>
+	<key>jsonpScript</key>
+	<string></string>
+	<key>paramBodyUIChoice</key>
+	<integer>0</integer>
+	<key>parameters</key>
+	<array>
+		<dict>
+			<key>inUse</key>
+			<true/>
+			<key>parameter</key>
+			<string>queries</string>
+			<key>value</key>
+			<string>{"q0":{"query":"Strand, E. 1912. Ein neueres Werk über afrikanische Bienen kritisch besprochen. Archiv für Naturgeschichte 78 126-144","limit":3},"q1":{"query":"Strand, E. 1913. Bestimmungstabelle nebst weiteren Beiträgen zur Kenntnis afrikanischer Nomia-Arten. Archiv für Naturgeschichte A79 121-144","limit":3}}</string>
+		</dict>
+	</array>
+	<key>parametersType</key>
+	<integer>0</integer>
+	<key>presentBeforeChallenge</key>
+	<false/>
+	<key>stringEncoding</key>
+	<integer>4</integer>
+	<key>usingHTTPBody</key>
+	<false/>
+</dict>
+</plist>
