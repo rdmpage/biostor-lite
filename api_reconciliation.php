@@ -108,14 +108,14 @@ class BioStorService extends ReconciliationService
 					
 					$score = min($d / strlen($v1), $d / strlen($v2));
 					
-					if ($score > 0.80)
+					if ($score > 0.60)
 					{
 						$hit = new stdclass;
 						$hit->id 	= str_replace('biostor-', '', $obj->hits->hits[$i]->_id);
 				
 						$hit->name 	= $obj->hits->hits[$i]->_source->search_result_data->name;
 				
-						$hit->score = $score;
+						$hit->score = ($score > 0.8);
 						$hit->match = true;
 						$this->StoreHit($query_key, $hit);
 					}				
