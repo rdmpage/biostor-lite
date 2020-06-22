@@ -550,6 +550,26 @@ span.works {
 							</div>
 						</nav>
 					<% } %>
+					
+					<% if (data.csl['container-title'] && data.csl.ISBN) { %>
+						<nav class="clean">
+							<div class="nav-wrapper">
+								<a href="./" class="breadcrumb">Home</a>
+								
+								<% 
+								var container = data.csl['container-title'];
+								if (container.length > 30) {
+									container = container.substring(0,30) + '…';
+								}
+								%>
+								
+								<a href="./isbn/<%- data.csl.ISBN %>" class="breadcrumb">
+									<%- container %>
+								</a>
+							</div>
+						</nav>
+					<% } %>
+					
 								
 					<!-- headline is item name -->
 					<b style="font-size:1.5em;">				
@@ -815,7 +835,41 @@ span.works {
 					
 						}
 					);  			
-				}		
+				}	
+				
+			        //--------------------------------------------------------------------------------
+				function show_isbn(isbn) {      
+			      	document.getElementById('results').innerHTML = "Searching...";
+			      
+					$.getJSON('./api_journal.php?isbn=' + isbn 
+							+ '&callback=?',			
+						function(data){
+					
+							console.log(JSON.stringify(data, null, 2));
+								
+							if (data.hits) {
+								if (data.hits.total > 0) {
+									var hits = [];
+									for (var i in data.hits.hits) {
+										hits[data.hits.hits[i]._id] = data.hits.hits[i]._source.search_result_data;
+									}
+
+									// Render template 	
+									var html = ejs.render(template_results, { data : hits });
+			
+									// Display
+									document.getElementById('results').innerHTML = html;
+								}
+								else
+								{
+									document.getElementById('results').innerHTML = 'Nothing found!';
+								}
+							}		
+					
+						}
+					);  			
+				}	
+									
 				
 			        //--------------------------------------------------------------------------------
 				function show_issn_year(issn, year) {      
@@ -1061,7 +1115,19 @@ span.works {
 					// whole journal
 					echo 'show_issn("' . $issn . '");';							
 				}
+			}	
+			
+			if (isset($_GET['isbn']))
+			{
+				$has_parameters = true;
+				
+				$isbn = $_GET['isbn'];
+
+				// chapters in book
+				echo 'show_isbn("' . $isbn . '");';							
+
 			}			
+					
 			
 			if (!$has_parameters)
 			{

@@ -22,6 +22,22 @@ function display_articles_year ($namespace, $value, $year, $callback = '')
 	
 	$status = 404;
 	
+	$fields = '';
+	
+	switch ($namespace)
+	{
+		case 'isbn':
+			$fields = 'search_result_data.csl.ISBN';
+			break;
+			
+		case 'issn':
+		default:
+			$fields = 'search_result_data.csl.ISSN';
+			break;
+	
+	}
+	
+	
 	$query_json = '{
 	"size": 500,
 	"_source": ["id", "search_result_data.name", "search_result_data.description", "search_result_data.thumbnailUrl", "search_data.year", "search_result_data.csl"],
@@ -30,7 +46,7 @@ function display_articles_year ($namespace, $value, $year, $callback = '')
 			"must": [{
 				"multi_match": {
 					"query": "' . $value .'",
-					"fields": ["search_result_data.csl.ISSN"]
+					"fields": ["' . $fields . '"]
 				}
 			}],
 			"filter": [
@@ -70,6 +86,21 @@ function display_articles($namespace, $value, $callback = '')
 	
 	$status = 404;
 	
+	$fields = '';
+	
+	switch ($namespace)
+	{
+		case 'isbn':
+			$fields = 'search_result_data.csl.ISBN';
+			break;
+			
+		case 'issn':
+		default:
+			$fields = 'search_result_data.csl.ISSN';
+			break;
+	
+	}	
+	
 	$query_json = '{
 	"size": 5000,
 	"_source": ["id", "search_result_data.name", "search_result_data.description", "search_result_data.thumbnailUrl", "search_data.year", "search_result_data.csl"],
@@ -78,7 +109,7 @@ function display_articles($namespace, $value, $callback = '')
 			"must": [{
 				"multi_match": {
 					"query": "' . $value .'",
-					"fields": ["search_result_data.csl.ISSN"]
+					"fields": ["' . $fields . '"]
 				}
 			}]
 		}
@@ -156,6 +187,31 @@ function main()
 				$handled = true;			
 			}	
 		}
+		
+		if (isset($_GET['isbn']))
+		{	
+			$isbn = $_GET['isbn'];
+			
+			if (!$handled)
+			{
+				if (isset($_GET['year']))
+				{
+					$year = $_GET['year'];
+					
+					
+					display_articles_year('isbn', $isbn, $year, $callback);
+					
+					$handled = true;
+				}	
+			}	
+			
+			if (!$handled)
+			{
+				display_articles('isbn', $isbn, $callback);
+				
+				$handled = true;			
+			}	
+		}		
 	}					
 
 	

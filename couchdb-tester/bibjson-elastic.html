@@ -2475,6 +2475,16 @@ function message(doc) {
 		}
 	}		
 	
+	// book chapter
+	if (doc.book) {
+		if (doc.book.title) {
+			var container = doc.book.title;
+			edoc = add_values(edoc, 'container', container, true);
+			edoc.search_result_data.description_parts.push('in ' + container);	
+		}
+	}
+
+	
 	// author
 	if (doc.author) {
 		for (var i in doc.author) {
@@ -2506,33 +2516,40 @@ function message(doc) {
 		edoc.search_result_data.description_parts.push('in ' + doc.year);		
 	} 
 
-	// volume
-	if (doc.journal.volume) {
-		edoc = add_values(edoc, 'volume', doc.journal.volume);		
-		edoc.search_result_data.description_parts.push('in volume ' + doc.journal.volume);		
-	} 
+	if (doc.journal) {
+		// volume
+		if (doc.journal.volume) {
+			edoc = add_values(edoc, 'volume', doc.journal.volume);		
+			edoc.search_result_data.description_parts.push('in volume ' + doc.journal.volume);		
+		} 
 
-	// issue
-	if (doc.journal.issue) {
-		edoc = add_values(edoc, 'issue', doc.journal.issue);		
-		edoc.search_result_data.description_parts.push('issue ' + doc.journal.issue);		
-	} 
+		// issue
+		if (doc.journal.issue) {
+			edoc = add_values(edoc, 'issue', doc.journal.issue);		
+			edoc.search_result_data.description_parts.push('issue ' + doc.journal.issue);		
+		} 
 
-	// page
-	if (doc.journal.pages) {
-		edoc = add_values(edoc, 'page', doc.journal.pages);
-		var prefix = 'page';
-		if (doc.journal.pages.match(/-/)) {
-			prefix = 'pages';
-		}
-		edoc.search_result_data.description_parts.push(prefix + ' ' + doc.journal.pages.replace(/--/, '-'));		
-	} 
+		// page
+		if (doc.journal.pages) {
+			edoc = add_values(edoc, 'page', doc.journal.pages);
+			var prefix = 'page';
+			if (doc.journal.pages.match(/-/)) {
+				prefix = 'pages';
+			}
+			edoc.search_result_data.description_parts.push(prefix + ' ' + doc.journal.pages.replace(/--/, '-'));		
+		} 
+	}
 
 	// DOI
 	if (doc.DOI) {
 		edoc = add_values(edoc, 'doi', doc.message.DOI);		
 		edoc.search_result_data.doi = doc.message.DOI;
 	} 
+	
+	// ISBN
+	if (doc.ISBN) {
+		edoc = add_values(edoc, 'isbn', doc.message.ISBN);		
+	} 	
 	
 
 	//------------------------------------------------------------------------------------
