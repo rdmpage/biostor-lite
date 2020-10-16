@@ -393,7 +393,7 @@ span.works {
 										<div class="works">
 											<!-- <%= data[decade][year][i].name %> -->
 											<a class="works" href="reference/<%- i.replace(/biostor-/, '') %>">
-											<img class="works" src="http://exeg5le.cloudimg.io/s/height/200/<%= data[decade][year][i].thumbnailUrl %>">
+											<img class="works" src="https://aipbvczbup.cloudimg.io/s/height/200/<%= data[decade][year][i].thumbnailUrl %>">
 											
 											<span class="works"><%= data[decade][year][i].name %></span>
 											</a>
@@ -430,7 +430,7 @@ span.works {
 							<div class="col s12 m2 hide-on-small-only" style="text-align:center">
 								<% if (data[i].thumbnailUrl)  {%>
 									<a href="reference/<%- i.replace(/biostor-/, '') %>">
-										<img class="z-depth-1" style="background:white;" src="http://exeg5le.cloudimg.io/s/height/100/<%- data[i].thumbnailUrl %>" >
+										<img class="z-depth-1" style="background:white;" src="https://aipbvczbup.cloudimg.io/s/height/100/<%- data[i].thumbnailUrl %>" >
 									</a>
 								<% } %>
 							</div>
@@ -520,7 +520,7 @@ span.works {
 					<div class="col s12 m2 hide-on-small-only">
 										
 							<% if (data.thumbnailUrl)  {%>
-								<img  class="z-depth-2" style="background:white;" src="http://exeg5le.cloudimg.io/s/height/100/<%- data.thumbnailUrl %>" >
+								<img  class="z-depth-2" style="background:white;" src="https://aipbvczbup.cloudimg.io/s/height/100/<%- data.thumbnailUrl %>" >
 							<% } %>
 
 					</div>
@@ -1141,7 +1141,7 @@ span.works {
 						<% for (var i in data) {%>
 							<div class="covers">
 								<a href="reference/<%= data[i].referenceID %>">
-								<img class="covers" src="http://exeg5le.cloudimg.io/s/height/200/https://www.biodiversitylibrary.org/pagethumb/<%= data[i].pageID %>,200,200">
+								<img class="covers" src="https://aipbvczbup.cloudimg.io/s/height/200/https://www.biodiversitylibrary.org/pagethumb/<%= data[i].pageID %>,200,200">
 								</a>
 							</div>						
 						<%}%>
