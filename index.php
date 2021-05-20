@@ -815,7 +815,15 @@ span.works {
 							console.log(JSON.stringify(data, null, 2));
 								
 							if (data.hits) {
-								if (data.hits.total > 0) {
+								var hit_count = 0;
+								
+								if (typeof data.hits.total === 'object') {
+									hit_count = data.hits.total.value;
+								} else {
+									hit_count = data.hits.total;
+								}
+							
+								if (hit_count > 0) {
 									var hits = [];
 									for (var i in data.hits.hits) {
 										hits[data.hits.hits[i]._id] = data.hits.hits[i]._source.search_result_data;
