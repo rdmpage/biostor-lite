@@ -66,10 +66,8 @@
                                     }
                                 }
                             },
-                            "geometry": {
-					           "type": "geo_shape",
-					           "tree": "quadtree",
-					            "precision": "1000m"
+                            "geometry.coordinates": {
+					           "type": "geo_point"
 					        },
                             "type": {
                                 "type": "text",

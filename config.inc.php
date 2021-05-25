@@ -47,15 +47,26 @@ if (file_exists(dirname(__FILE__) . '/env.php'))
 	include 'env.php';
 }
 
-
-$config['elastic_options'] = array(
-		'index' 	=> 'elasticsearch/bslite',
-		'protocol' 	=> 'http',
-		'host' 		=> '35.204.73.93',
-		'port' 		=> 80,
-		'user' 		=> getenv('ELASTIC_USERNAME'),
-		'password' 	=> getenv('ELASTIC_PASSWORD'),
-		);
-
+//if ($local)
+if (0)
+{
+	$config['elastic_options'] = array(
+			'index' 	=> 'bslite',
+			'protocol' 	=> 'http',
+			'host' 		=> '127.0.0.1',
+			'port' 		=> 55001
+			);
+}
+else
+{
+	$config['elastic_options'] = array(
+			'index' 	=> 'elasticsearch/bslite',
+			'protocol' 	=> 'http',
+			'host' 		=> '35.204.73.93',
+			'port' 		=> 80,
+			'user' 		=> getenv('ELASTIC_USERNAME'),
+			'password' 	=> getenv('ELASTIC_PASSWORD'),
+			);
+}
 	
 ?>

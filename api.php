@@ -191,6 +191,46 @@ function display_elastic_search ($q, $filter=null, $from = 0, $size = 20, $callb
 	api_output($obj, $callback, 200);
 }
 
+//----------------------------------------------------------------------------------------
+// Geo search
+function display_geo ($geojson, $format = 'json', $callback = '')
+{
+	global $elastic;
+	
+	$obj = null;
+	$status = 404;
+
+	$geo = json_decode($geojson);
+	
+	$query = new stdclass;
+	$query->size = 100;
+	$query->query = new stdclass;
+	$query->query->bool = new stdclass;
+	$query->query->bool->must = new stdclass;
+	$query->query->bool->must->match_all = new stdclass;
+	
+	$query->query->bool->filter = new stdclass;
+	$query->query->bool->filter->geo_polygon = new stdclass;
+	$query->query->bool->filter->geo_polygon->{'search_data.geometry.coordinates'} = new stdclass;
+	$query->query->bool->filter->geo_polygon->{'search_data.geometry.coordinates'}->points = array();
+	
+	if (isset($geo->geometry->coordinates))
+	{
+		$query->query->bool->filter->geo_polygon->{'search_data.geometry.coordinates'}->points = $geo->geometry->coordinates[0];
+	}
+	
+	$response = $elastic->send('POST',  '_search?pretty', json_encode($query));					
+	$obj = json_decode($response);
+	
+	if ($obj)
+	{
+		$status = 200;
+	}
+		
+	api_output($obj, $callback, $format, $status);
+}	
+
+
 
 //--------------------------------------------------------------------------------------------------
 function main()
@@ -246,6 +286,28 @@ function main()
 			$handled = true;
 		}
 	}
+	
+	if (!$handled)
+	{
+		if (isset($_GET['geo']) && ($_GET['geo'] != ''))
+		{	
+			$geo = $_GET['geo'];
+			
+			$format = 'json';
+			
+			if (isset($_GET['format']))
+			{
+				$format = $_GET['format'];
+			}						
+			
+			if (!$handled)
+			{
+				display_geo($geo, $format, $callback);
+				$handled = true;
+			}
+			
+		}
+	}	
 	
 	
 	if (!$handled)
