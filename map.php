@@ -396,15 +396,28 @@ span.works {
 				var template_results = `
 					<% for(var i in data) {%>
 						<div class="card-panel small">
-							<div class="card-content">
-								<span class="card-title">
-									<a href="reference/<%- i.replace(/biostor-/, '') %>" target="_new">
-									<%- balance(data[i].name) %>
-									</a>								
-								</span>
-								<p>
-									<%- data[i].description %>
-								</p>
+						
+							<div class="row">
+								<div class="col s3">
+									<% if (data[i].thumbnailUrl)  {%>
+											<a href="reference/<%- i.replace(/biostor-/, '') %>">
+												<img class="z-depth-1" style="background:white;" src="https://aipbvczbup.cloudimg.io/s/height/100/<%- data[i].thumbnailUrl %>" >
+											</a>
+									<% } %>
+								</div>
+								
+								<div class="col s9">
+									<span class="black-text">
+										<a href="reference/<%- i.replace(/biostor-/, '') %>" target="_new">
+										<%- balance(data[i].name) %>
+										</a>								
+									</span>
+									<br />
+									<span style="grey-text">			
+										<%- data[i].description %>
+									</span>
+								</div>
+								
 							</div>
 						</div>
 					<% } %>
