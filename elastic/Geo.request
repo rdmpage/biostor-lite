@@ -5,7 +5,31 @@
 	<key>baseURL</key>
 	<string>http://35.204.73.93/elasticsearch/bslite/_search?pretty</string>
 	<key>bodyString</key>
-	<string>{"size":10000,"query":{"bool":{"must":{"match_all":{}},"filter":{"geo_bounding_box":{"geometry.coordinates":{"top_left":{"lat":85.05112877980659,"lon":-180},"bottom_right":{"lat":-85.05112877980659,"lon":180}}}}}},"aggs":{"zoom":{"geohash_grid":{"field":"search_data.geometry.coordinates","precision":8}}}}</string>
+	<string>{
+  "size": 100,
+  "query": {
+    "bool": {
+      "must": {
+        "match_all": {}
+      },
+      "filter": {
+        "geo_polygon": {
+          "search_data.geometry.coordinates": {
+            "points": 
+              [
+                [-4.658203125, 13.838079936422476],
+                [-4.658203125, 16.804541076383455],
+                [0.17578125, 16.804541076383455],
+                [0.17578125, 13.838079936422476],
+                [-4.658203125, 13.838079936422476]
+              ]
+            
+          }
+        }
+      }
+    }
+  }
+}</string>
 	<key>followRedirect</key>
 	<true/>
 	<key>handleJSONPCallbacks</key>
