@@ -31,34 +31,7 @@ require_once(dirname(__FILE__) . '/config.inc.php');
 			BioStor-Lite
 		</title>
 		<style>
-	
-	/* body and main styles to give us a fixed footer, see https://materializecss.com/footer.html */	
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-  
-/* https://codepen.io/furnace/pen/PGygEd */
-nav.clean {
-  background: none;
-  box-shadow: none;
-  height:2em;
-  line-height:2em;
-  
-}
-nav.clean .breadcrumb {
-  color: black;
-  font-size:1em;
-}
-nav.clean .breadcrumb:before {
-  color: rgba(0, 0, 0, 0.7);
-}
 
-
-  main {
-    flex: 1 0 auto;
-  }		
 			
 /* dot on map */
 .mydivicon{
@@ -198,7 +171,58 @@ span.works {
 		<script src="js/leaflet.draw/leaflet.draw.js" type="text/javascript"></script>
 		
 
-		
+	<style>
+		/* body and main styles to give us a fixed footer, see https://materializecss.com/footer.html */	
+		body {
+			display: flex;
+			min-height: 100vh;
+			flex-direction: column;
+		}
+
+		main {
+			flex: 1 0 auto;
+		}		
+
+		#map {
+			width:auto;
+			height:100vh;
+		}
+
+		#results {
+			height:70vh;
+			overflow-y:auto;
+		}
+
+		h1 {
+			font-size:2em;
+			visibility: visible;
+		}
+
+		#heading {
+			visibility: visible;
+		}
+
+		@media screen and (max-width: 600px) {
+			#map {
+				height:50vh;
+			}
+
+			#results {
+				height:40vh;
+			}
+
+			#heading {
+				visibility: hidden;
+				height:0px;
+			}	  
+
+			h1 {
+				visibility: hidden;
+				margin:0px;
+				padding:0px;
+			}
+		}		
+	</style>		
     
   <script>
     
@@ -437,19 +461,20 @@ span.works {
 			 <div class="col s12 m8">
 			   
 			   <div class="row">
-				  <div id="map" style="width:auto;min-height:100vh;"></div>
+				  <div id="map"></div>
 				</div>
 			  </div><!-- end main panel -->
 
 			  <!-- side panel -->
 			  <div id="sidepanel" class="col s12 m4" >
-			  	<a href="./">BioStor</a>
-				<h4>Map</h4>
+			  	<div id="heading">
+			  		<a href="./">BioStor</a>
+			  		<h1>Map</h1>
+			  	</div>
 				<p>Each dot represents (latitude, longitude) pair that is mentioned in an article in BioStor. 
 				Use the polygon or
-				square drawing tools on the map to select a region: articles that include localities
-				in that region will be listed below.
-				<div id="results" class="row" style="height:70vh;overflow-y:auto;">
+				square drawing tools on the map to search for articles by region.
+				<div id="results" class="row">
 				</div>
 			  </div>
 				
