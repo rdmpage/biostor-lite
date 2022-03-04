@@ -15,6 +15,38 @@ class ElasticSearch
              $this->$key = $value;
          }
      }
+     
+     //-----------------------------------------------------------------------------------
+	// Do HTTP HEAD to see if a document exists
+	function exists($id)
+	{
+		$ch = curl_init(); 
+		
+		$url = $this->protocol . '://' . $this->host . ':' . $this->port . '/' . $this->index;
+		
+		$url .= '/_doc/' . urlencode($id);
+		
+		curl_setopt ($ch, CURLOPT_URL, $url); 
+		curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1); 		
+		curl_setopt ($ch, CURLOPT_SSL_VERIFYPEER, false);
+		
+		if (isset($this->user))
+		{
+			curl_setopt($ch, CURLOPT_USERPWD, $this->user . ":" . $this->password); 
+		}
+		
+		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "HEAD");
+		
+		// http://stackoverflow.com/a/770200
+		curl_setopt($ch, CURLOPT_NOBODY, true);
+
+   		$response = curl_exec($ch);
+   		
+    	$http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    	
+   		return ($http_code == 200);
+	}
+     
 
 	//----------------------------------------------------------------------------------------------
      function send($method, $action_url = '', $post_data = NULL)
