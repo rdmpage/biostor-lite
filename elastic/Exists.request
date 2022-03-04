@@ -3,22 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>baseURL</key>
-	<string>http://35.204.73.93/elasticsearch/bslite/_search?pretty</string>
-	<key>bodyString</key>
-	<string>{
-"size":200,
-"_source": ["id", "search_result_data.name", "search_result_data.thumbnailUrl", "search_data.year" ],
-    "query": {
-"bool" : {
-"must" : [{
-       "multi_match" : {
-      "query": "1148-8425",
-      "fields":["search_result_data.csl.ISSN"] 
-    }}]
-}
-}
-}
-</string>
+	<string>http://35.204.73.93:80/elasticsearch/bslite/_doc/biostor-243842</string>
 	<key>followRedirect</key>
 	<true/>
 	<key>handleJSONPCallbacks</key>
@@ -29,13 +14,13 @@
 			<key>header</key>
 			<string>Content-Type</string>
 			<key>inUse</key>
-			<true/>
+			<false/>
 			<key>value</key>
 			<string>application/json</string>
 		</dict>
 	</array>
 	<key>httpMethod</key>
-	<string>POST</string>
+	<string>HEAD</string>
 	<key>jsonpScript</key>
 	<string></string>
 	<key>paramBodyUIChoice</key>
@@ -51,6 +36,6 @@
 	<key>username</key>
 	<string>user</string>
 	<key>usingHTTPBody</key>
-	<true/>
+	<false/>
 </dict>
 </plist>
