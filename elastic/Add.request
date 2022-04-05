@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>baseURL</key>
+	<string>http://65.108.58.109:9200/bslite/_update/biostor-273215</string>
+	<key>bodyString</key>
+	<string>{"doc":{"id":"biostor-273215","type":"article","search_result_data":{"name":"Mission Rohan-Chabot 1914 : Diagnoses de deux esp\u00e8ces nouvelles de Col\u00e9opt\u00e8res Scarab\u00e9ides du genre Pedaria","description":"Published in Bulletin du Mus\u00e9um national d'histoire naturelle, in 1922, in volume 28, issue 6, pages 411-412","thumbnailUrl":"https:\/\/www.biodiversitylibrary.org\/pagethumb\/34160042,60,60","url":"https:\/\/www.biodiversitylibrary.org\/page\/34160042","bhl_pages":[34160042,34160043],"csl":{"type":"article-journal","title":"Mission Rohan-Chabot 1914 : Diagnoses de deux esp\u00e8ces nouvelles de Col\u00e9opt\u00e8res Scarab\u00e9ides du genre Pedaria","issued":{"date-parts":[[1922]]},"author":[{"given":"A","family":"Boucomont"}],"container-title":"Bulletin du Mus\u00e9um national d'histoire naturelle","volume":"28","issue":"6","page":"411-412","ISSN":["1148-8425"],"URL":"https:\/\/biostor.org\/reference\/273215"}},"search_data":{"container":["Bulletin du Mus\u00e9um national d'histoire naturelle"],"author":["A Boucomont"],"year":1922,"classification":["Animalia","Arthropoda","Insecta","Coleoptera","Scarabaeidae","Pedaria"],"type":"article","fulltext":"Mission Rohan-Chabot 1914 : Diagnoses de deux esp\u00e8ces nouvelles de Col\u00e9opt\u00e8res Scarab\u00e9ides du genre Pedaria Bulletin du Mus\u00e9um national d'histoire naturelle A Boucomont 1922 28 6 411--412 Animalia Arthropoda Insecta Coleoptera Scarabaeidae Pedaria","fulltext_boosted":"Mission Rohan-Chabot 1914 : Diagnoses de deux esp\u00e8ces nouvelles de Col\u00e9opt\u00e8res Scarab\u00e9ides du genre Pedaria Bulletin du Mus\u00e9um national d'histoire naturelle A Boucomont"}},"doc_as_upsert":true}</string>
+	<key>followRedirect</key>
+	<true/>
+	<key>handleJSONPCallbacks</key>
+	<false/>
+	<key>headers</key>
+	<array>
+		<dict>
+			<key>header</key>
+			<string>Content-Type</string>
+			<key>inUse</key>
+			<true/>
+			<key>value</key>
+			<string>application/json</string>
+		</dict>
+	</array>
+	<key>httpMethod</key>
+	<string>POST</string>
+	<key>jsonpScript</key>
+	<string></string>
+	<key>paramBodyUIChoice</key>
+	<integer>0</integer>
+	<key>parameters</key>
+	<array/>
+	<key>parametersType</key>
+	<integer>0</integer>
+	<key>presentBeforeChallenge</key>
+	<true/>
+	<key>stringEncoding</key>
+	<integer>4</integer>
+	<key>username</key>
+	<string>user</string>
+	<key>usingHTTPBody</key>
+	<true/>
+</dict>
+</plist>

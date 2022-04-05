@@ -3,13 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>baseURL</key>
-	<string>http://35.204.73.93/elasticsearch/bslite</string>
+	<string>http://65.108.58.109:9200/bslite</string>
 	<key>bodyString</key>
 	<string>{
    
         "mappings": {
-            "_doc": {
-                "properties": {
+                 "properties": {
                     "id": {
                         "type": "text",
                         "fields": {
@@ -134,7 +133,7 @@
                     }
                 }
             }
-        }
+        
     }
 </string>
 	<key>followRedirect</key>
