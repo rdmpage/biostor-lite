@@ -3,6 +3,7 @@
 # Local environment variables
 env.php
 
+junk
 
 upload/*.json
 upload/*.jsonl

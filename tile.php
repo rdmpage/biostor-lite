@@ -6,6 +6,9 @@ require_once (dirname(__FILE__) . '/elastic.php');
 
 // tile request will supply x,y and z (zoom level)
 
+// need to inflate search recangle to get markers outside the bounding box which,
+// when drawn, will partially appear in tile.
+
 $x = 0;
 $y = 0;
 $zoom = 0;
@@ -120,6 +123,7 @@ $marker_shape = 'circle';
 
 $bounding_box = xyz_to_bounding_box($x, $y, $zoom);
 
+
 if ($debug)
 {
 	$xml .= '<text x="10" y="20" style="font-size:12px">' . json_encode($bounding_box) . '</text>';
@@ -166,7 +170,7 @@ $response_obj = json_decode($response);
 
 //print_r($response_obj);
 
-// bound to filter points
+// bounds to filter points
 $min_lon_lat = array(
 	min($bounding_box->top_left->lon, $bounding_box->bottom_right->lon),
 	min($bounding_box->top_left->lat, $bounding_box->bottom_right->lat),
