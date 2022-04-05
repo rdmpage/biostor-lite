@@ -67,6 +67,13 @@ else
 			'user' 		=> getenv('ELASTIC_USERNAME'),
 			'password' 	=> getenv('ELASTIC_PASSWORD'),
 			);
+			
+	$config['elastic_options'] = array(
+			'index' 	=> 'bslite',
+			'protocol' 	=> 'http',
+			'host' 		=> '65.108.58.109',
+			'port' 		=> 9200
+			);			
 }
 	
 ?>

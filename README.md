@@ -10,6 +10,10 @@ Type | Name | Content
 CNAME | biostor.org | DNS Target from Heroku
 CNAME | www | DNS Target from Heroku
 
+## Elastic search
+
+
+
 
 ## IIIF
 
