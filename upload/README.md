@@ -8,3 +8,7 @@ curl http://direct.biostor.org:5984/biostor/_design/elastic/_list/values/biostor
 
 ## Chunk and bulk upload to Elasticsearch
 
+```
+php chunk-elastic.php
+```
+

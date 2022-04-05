@@ -43,7 +43,7 @@ while (!feof($file_handle) && !$done)
 		$meta->index->_id = $doc->id;
 		
 		// v. 6		
-		$meta->index->_type = '_doc';
+		//$meta->index->_type = '_doc';
 		
 		// Earlier versions
 		//$meta->index->_type = 'thing';
@@ -75,6 +75,8 @@ while (!feof($file_handle) && !$done)
 		}
 		*/
 		
+		//$done = true;
+		
 	}
 	
 	
@@ -96,17 +98,25 @@ foreach ($chunk_files as $filename)
 {
 	$curl .= "echo '$filename'\n";
 	
-	$url = $config['elastic_options']['protocol']
-		. '://' . $config['elastic_options']['user']
+	$url = $config['elastic_options']['protocol'] . '://';
+	
+	if (isset($config['elastic_options']['user']))
+	{
+		$url .= $config['elastic_options']['user']
 		. ':' . $config['elastic_options']['password']
-		. '@' .	$config['elastic_options']['host']
-		. '/' .	$config['elastic_options']['index']
-		. '/_bulk';
+		. '@';
+	}
+	$url .=	$config['elastic_options']['host']
+		. ':' . $config['elastic_options']['port']
+     	. '/'
+		. $config['elastic_options']['index']
+		. '/_bulk';		
 	
 	// 6
 	$curl .= "curl $url -H 'Content-Type: application/x-ndjson' -XPOST --data-binary '@$filename'  --progress-bar | tee /dev/null\n";
 	$curl .= "sleep 60\n";
 	$curl .= "echo ''\n";
+
 }
 
 file_put_contents(dirname(__FILE__) . '/go.sh', $curl);
