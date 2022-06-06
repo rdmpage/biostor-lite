@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>baseURL</key>
-	<string>http://35.204.73.93/elasticsearch/bslite/_search?pretty</string>
+	<string>http://65.108.58.109:9200/bslite/_search?pretty</string>
 	<key>bodyString</key>
 	<string>{
 "size":20,

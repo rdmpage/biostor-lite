@@ -48,3 +48,16 @@ To install Universal Viewer clone the respository, make sure you have node.js, b
 Note that IA’s IIIF server seems a bit flaky, so your mileage may vary.
 
            
+## Managing items
+
+### Elasticsearch
+
+Use [scroll search](https://www.elastic.co/guide/en/elasticsearch/reference/current/paginate-search-results.html#scroll-search-results) to get list of all ids. Note that this search requires multiple Elasticsearch queries, only the first includes the specific index, all subsequent queries are to the server.
+
+
+### Internet Archive
+
+https://archive.org/advancedsearch.php?q=collection%3A%28biostor%29&fl%5B%5D=identifier&sort%5B%5D=&sort%5B%5D=&sort%5B%5D=&rows=300000&page=1&output=json&callback=callback&save=yes#raw will get JSON list of all BioStor items in IA.
+
+
+
