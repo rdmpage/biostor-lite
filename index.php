@@ -243,6 +243,65 @@ span.works {
 			  // Return the well-balanced XHTML string
 			  return(string);
 			}	
+			
+			
+//----------------------------------------------------------------------------------------
+// https://gomakethings.com/how-to-get-the-relative-time-between-two-dates-with-vanilla-js/
+var getHumanTime = function (timestamp) {
+
+	// Convert to a positive integer
+	var time = Math.abs(timestamp);
+
+	// Define humanTime and units
+	var humanTime, units;
+
+	// If there are years
+	if (time > (1000 * 60 * 60 * 24 * 365)) {
+		humanTime = parseInt(time / (1000 * 60 * 60 * 24 * 365), 10);
+		units = (humanTime > 1 ? 'years' : 'year');
+	}
+
+	// If there are months
+	else if (time > (1000 * 60 * 60 * 24 * 30)) {
+		humanTime = parseInt(time / (1000 * 60 * 60 * 24 * 30), 10);
+		units = (humanTime > 1 ? 'months' : 'month');
+	}
+
+	// If there are weeks
+	else if (time > (1000 * 60 * 60 * 24 * 7)) {
+		humanTime = parseInt(time / (1000 * 60 * 60 * 24 * 7), 10);
+		units = (humanTime > 1 ? 'weeks' : 'week');
+	}
+
+	// If there are days
+	else if (time > (1000 * 60 * 60 * 24)) {
+		humanTime = parseInt(time / (1000 * 60 * 60 * 24), 10);
+		units = (humanTime > 1 ? 'days' : 'day');
+	}
+
+	// If there are hours
+	else if (time > (1000 * 60 * 60)) {
+		humanTime = parseInt(time / (1000 * 60 * 60), 10);
+		units = (humanTime > 1 ? 'hours' : 'hour');
+	}
+
+	// If there are minutes
+	else if (time > (1000 * 60)) {
+		humanTime = parseInt(time / (1000 * 60), 10);
+		units = (humanTime > 1 ? 'minutes' : 'minute');
+	}
+
+	// Otherwise, use seconds
+	else {
+		humanTime = parseInt(time / (1000), 10);
+		units = (humanTime > 1 ? 'seconds' : 'second');
+	}
+
+	return humanTime + ' ' + units;
+
+};			
+			
+			
 		</script>
 		
 		
@@ -658,6 +717,25 @@ span.works {
 						<!-- PDF -->
 						<a id="pdf" style="display:none;" class="btn" href="" onClick="ga('send', 'event', { eventCategory: 'Outbound Link', eventAction: 'PDF', eventLabel: event.target.href} );">PDF</a>												
 						
+						
+					</div>
+					
+					<!-- data about record -->
+					<div>
+						<% 
+						  var now = new Date().getTime();
+						  
+						  if (data.created)  {							
+							created = getHumanTime(now - data.created * 1000);
+						%>
+							Record created about <%- created %> ago
+						<% } %>	
+						
+						<% if (data.modified)  {
+							modified = getHumanTime(now - data.modified * 1000);
+						%>
+							, last modified about <%- modified %> ago
+						<% } %>	
 						
 					</div>
 					
