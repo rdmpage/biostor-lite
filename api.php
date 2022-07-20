@@ -5,14 +5,190 @@ error_reporting(E_ALL);
 require_once (dirname(__FILE__) . '/api_utils.php');
 require_once (dirname(__FILE__) . '/elastic.php');
 
+//----------------------------------------------------------------------------------------
+function to_jats($obj)
+{
 
-//--------------------------------------------------------------------------------------------------
+	$csl = $obj->search_result_data->csl;
+	$csl->id = str_replace('biostor-', '', $obj->id);
+	
+	$impl = new DOMImplementation();
+
+	$doc = $impl->createDocument(null, '',
+		$impl->createDocumentType("article", 
+			"SYSTEM", 
+			"jats-archiving-dtd-1.0/JATS-archivearticle1.dtd"));
+	
+	// http://stackoverflow.com/questions/8615422/php-xml-how-to-output-nice-format
+	$doc->preserveWhiteSpace = false;
+	$doc->formatOutput = true;	
+	
+	// root element is <records>
+	$article = $doc->appendChild($doc->createElement('article'));
+	
+	$article->setAttribute('xmlns:xlink', 'http://www.w3.org/1999/xlink');
+	
+	$front = $article->appendChild($doc->createElement('front'));
+	
+	if (isset($csl->{"container-title"}))
+	{	
+		$journal_meta = $front->appendChild($doc->createElement('journal-meta'));
+		$journal_title_group = $journal_meta->appendChild($doc->createElement('journal-title-group'));
+		$journal_title = $journal_title_group->appendChild($doc->createElement('journal-title'));
+		$journal_title->appendChild($doc->createTextNode($csl->{"container-title"}));
+	}
+	
+	if (isset($csl->ISSN))
+	{
+		$issn = $journal_meta->appendChild($doc->createElement('issn'));
+		$issn->appendChild($doc->createTextNode($csl->ISSN[0]));
+	}
+	
+	$article_meta = $front->appendChild($doc->createElement('article-meta'));
+	
+	$article_id = $article_meta->appendChild($doc->createElement('article-id'));
+	$article_id->setAttribute('pub-id-type', 'biostor');
+	$article_id->appendChild($doc->createTextNode($csl->id));
+
+	if (isset($csl->DOI))
+	{
+		$article_id = $article_meta->appendChild($doc->createElement('article-id'));
+		$article_id->setAttribute('pub-id-type', 'doi');
+		$article_id->appendChild($doc->createTextNode($csl->DOI));
+	}
+	
+	$title_group = $article_meta->appendChild($doc->createElement('title-group'));
+	$article_title = $title_group->appendChild($doc->createElement('article-title'));
+	$article_title->appendChild($doc->createTextNode($csl->title));
+	
+	if (isset($csl->author) && count($csl->author) > 0)
+	{
+		$contrib_group = $article_meta->appendChild($doc->createElement('contrib-group'));
+		
+		foreach ($csl->author as $author)
+		{
+			$contrib = $contrib_group->appendChild($doc->createElement('contrib'));
+			$contrib->setAttribute('contrib-type', 'author');
+			
+			$name = $contrib->appendChild($doc->createElement('name'));
+			
+			if (isset($author->family))
+			{			
+				$surname = $name->appendChild($doc->createElement('surname'));
+				$surname->appendChild($doc->createTextNode($author->family));
+			}
+			if (isset($author->given))
+			{
+				$given_name = $name->appendChild($doc->createElement('given-names'));
+				$given_name->appendChild($doc->createTextNode($author->given));
+			}
+		}
+	}
+	
+	if (isset($csl->issued))
+	{
+		$pub_date = $article_meta->appendChild($doc->createElement('pub-date'));
+		$pub_date->setAttribute('pub-type', 'ppub');
+		
+		if (count($csl->issued->{'date-parts'}[0]) == 1)
+		{
+			$year = $pub_date->appendChild($doc->createElement('year'));
+			$year->appendChild($doc->createTextNode($csl->issued->{'date-parts'}[0][0]));		
+		}
+
+		if (count($csl->issued->{'date-parts'}[0]) == 2)
+		{
+			$month = $pub_date->appendChild($doc->createElement('month'));
+			$month->appendChild($doc->createTextNode($csl->issued->{'date-parts'}[0][1]));		
+		}
+		
+		if (count($csl->issued->{'date-parts'}[0]) == 3)
+		{
+			$month = $pub_date->appendChild($doc->createElement('day'));
+			$month->appendChild($doc->createTextNode($csl->issued->{'date-parts'}[0][2]));		
+		}
+	}
+	
+	if (isset($csl->volume))
+	{
+		$volume = $article_meta->appendChild($doc->createElement('volume'));
+		$volume->appendChild($doc->createTextNode($csl->volume));
+	}
+	if (isset($csl->issue))
+	{
+		$issue = $article_meta->appendChild($doc->createElement('issue'));
+		$issue->appendChild($doc->createTextNode($csl->issue));
+	}
+	
+	if (isset($csl->page))
+	{
+		if (preg_match('/(.*)-(.*)/', $csl->page, $m))
+		{
+			$fpage = $article_meta->appendChild($doc->createElement('fpage'));
+			$fpage->appendChild($doc->createTextNode($m[1]));		
+			
+			$lpage = $article_meta->appendChild($doc->createElement('lpage'));
+			$lpage->appendChild($doc->createTextNode($m[2]));		
+								
+		}
+		else
+		{
+			$fpage = $article_meta->appendChild($doc->createElement('fpage'));
+			$fpage->appendChild($doc->createTextNode($csl->page));		
+		}	
+	}
+	
+	// BHL pages
+	$body = $article->appendChild($doc->createElement('body'));
+	
+	/*
+	if (count($reference->text) > 0)
+	{
+		foreach ($reference->text as $text)
+		{
+			$preformat = $body->appendChild($doc->createElement('preformat'));
+			$preformat->appendChild($doc->createTextNode($text));
+		}
+	}
+	*/
+	
+	$supplementary_material = $body->appendChild($doc->createElement('supplementary-material'));
+	$supplementary_material->setAttribute('content-type', 'scanned-pages');
+	
+	foreach ($obj->search_result_data->bhl_pages as $page_count => $PageID)
+	{
+		$graphic = $supplementary_material->appendChild($doc->createElement('graphic'));
+		
+		$graphic->setAttribute('id', 'graphic-' . $page_count);
+		
+		$graphic->setAttribute('xlink:href', 'http://www.biodiversitylibrary.org/pagethumb/' . $PageID);
+		//$graphic->setAttribute('xlink:role', $PageID);
+		
+		$page_name = 'scanned-page';
+		if (isset($obj->search_result_data->page_numbers))
+		{
+			if (isset($obj->search_result_data->page_numbers[$page_count]))
+			{
+				$page_name = $obj->search_result_data->page_numbers[$page_count];
+			}
+		}
+		
+		$graphic->setAttribute('xlink:title', $page_name );
+	}
+
+	return $doc->saveXML();
+}
+
+
+
+
+//----------------------------------------------------------------------------------------
 function default_display()
 {
 	echo "hi";
 }
 
-//--------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
 // URL (e.g., PDF) exists
 function display_head ($url, $callback)
 {
@@ -31,7 +207,7 @@ function display_head ($url, $callback)
 	api_output($obj, $callback, $status);
 }	
 	
-//--------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
 // One record
 function display_one ($id, $format= '', $callback = '')
 {
@@ -54,13 +230,23 @@ function display_one ($id, $format= '', $callback = '')
 			}
 		}
 		
+		if ($format == 'xml')
+		{
+			$xml = to_jats($obj->_source);
+			
+			header("Content-type: application/xml");
+			echo $xml;
+			exit();
+		}
+		
+		
 		$status = 200;
 	}
 		
 	api_output($obj, $callback, $status);
 }	
 
-//--------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
 // Full text search using Elastic
 function display_elastic_search ($q, $filter=null, $from = 0, $size = 20, $callback = '')
 {
