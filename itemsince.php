@@ -42,7 +42,7 @@ $query_json =
 	"_source" :[ "search_data.item"],
 	"query": {
 		"range": {
-			"search_data.created": { 
+			"search_data.modified": { 
 				"gte": <TIMESTAMP> 
             }		
         }

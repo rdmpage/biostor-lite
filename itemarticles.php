@@ -30,7 +30,7 @@ $obj = new stdclass;
 $obj->ItemID = $ItemID;
 $obj->articles = array();
 
-// get records since timestamp
+// get records for this item
 $query_json = 		
 	'{
 	"size": 1000,
