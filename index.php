@@ -155,6 +155,39 @@ span.works {
 	z-index:10;
 	padding:4px;
 }
+
+	/* heavily based on https://css-tricks.com/adaptive-photo-layout-with-flexbox/ */
+	.gallery ul {
+	  display: flex;
+	  flex-wrap: wrap;
+	  
+	  list-style:none;
+	  padding-left:2px;
+	  /* background-color:rgb(224,224,224); */
+	}
+
+	.gallery li {
+	  height: 80px;
+	  padding:2px;
+	  /*flex-grow: 1;*/
+  
+	}
+
+/*
+	.gallery li:last-child {
+	  flex-grow: 10;
+	}
+	*/
+
+	.gallery img {
+	  max-height: 90%;
+	  min-width: 90%;
+	  object-fit: cover;
+	  vertical-align: bottom;
+	  
+	  border:1px solid rgb(192,192,192);
+	}	
+
 			
 		</style>
 		
@@ -738,6 +771,20 @@ var getHumanTime = function (timestamp) {
 						<% } %>	
 						
 					</div>
+					
+					<!-- thumbnails -->
+					<div class="gallery"">
+						<ul>
+						<% for (var i in data.bhl_pages) { %>
+						  <li>
+						  	<a href="https://www.biodiversitylibrary.org/page/<%- data.bhl_pages[i] %>" target="_new">
+						  	<img src="https://aipbvczbup.cloudimg.io/s/height/80/https://www.biodiversitylibrary.org/pagethumb/<%- data.bhl_pages[i] %>,80,80">
+						  	</a>
+						</li>
+						<% } %>						
+						</ul>
+					</div>
+					
 					
 					<!-- map -->
 					<div id="map" class="section" style="width:100%; height:300px;">
