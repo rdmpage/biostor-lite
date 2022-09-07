@@ -23,7 +23,7 @@ $local = false;
 if ($local)
 {
 	$config['web_server']	= 'http://localhost';
-	$config['web_root']		= '/~rpage/biostor-lite/';
+	$config['web_root']		= '/biostor-lite/';
 }
 else
 {

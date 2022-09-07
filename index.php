@@ -485,7 +485,7 @@ var getHumanTime = function (timestamp) {
 										<div class="works">
 											<!-- <%= data[decade][year][i].name %> -->
 											<a class="works" href="reference/<%- i.replace(/biostor-/, '') %>">
-											<img class="works" src="https://aipbvczbup.cloudimg.io/s/height/200/<%= data[decade][year][i].thumbnailUrl %>">
+											<img class="works" src="https://aezjkodskr.cloudimg.io/<%= data[decade][year][i].thumbnailUrl %>?height=200">
 											
 											<span class="works"><%= data[decade][year][i].name %></span>
 											</a>
@@ -522,7 +522,7 @@ var getHumanTime = function (timestamp) {
 							<div class="col s12 m2 hide-on-small-only" style="text-align:center">
 								<% if (data[i].thumbnailUrl)  {%>
 									<a href="reference/<%- i.replace(/biostor-/, '') %>">
-										<img class="z-depth-1" style="background:white;" src="https://aipbvczbup.cloudimg.io/s/height/100/<%- data[i].thumbnailUrl %>" >
+										<img class="z-depth-1" style="background:white;" src="https://aezjkodskr.cloudimg.io/<%- data[i].thumbnailUrl %>?height=100" >
 									</a>
 								<% } %>
 							</div>
@@ -612,7 +612,7 @@ var getHumanTime = function (timestamp) {
 					<div class="col s12 m2 hide-on-small-only">
 										
 							<% if (data.thumbnailUrl)  {%>
-								<img  class="z-depth-2" style="background:white;" src="https://aipbvczbup.cloudimg.io/s/height/100/<%- data.thumbnailUrl %>" >
+								<img  class="z-depth-2" style="background:white;" src="https://aezjkodskr.cloudimg.io/<%- data.thumbnailUrl %>?height=100" >
 							<% } %>
 
 					</div>
@@ -778,7 +778,7 @@ var getHumanTime = function (timestamp) {
 						<% for (var i in data.bhl_pages) { %>
 						  <li>
 						  	<a href="https://www.biodiversitylibrary.org/page/<%- data.bhl_pages[i] %>" target="_new">
-						  	<img src="https://aipbvczbup.cloudimg.io/s/height/80/https://www.biodiversitylibrary.org/pagethumb/<%- data.bhl_pages[i] %>,80,80">
+						  	<img src="https://aezjkodskr.cloudimg.io/https://www.biodiversitylibrary.org/pagethumb/<%- data.bhl_pages[i] %>,80,80?height=80">
 						  	</a>
 						</li>
 						<% } %>						
@@ -1298,7 +1298,7 @@ var getHumanTime = function (timestamp) {
 						<% for (var i in data) {%>
 							<div class="covers">
 								<a href="reference/<%= data[i].referenceID %>">
-								<img class="covers" src="https://aipbvczbup.cloudimg.io/s/height/200/https://www.biodiversitylibrary.org/pagethumb/<%= data[i].pageID %>,200,200">
+								<img class="covers" src="https://aezjkodskr.cloudimg.io/https://www.biodiversitylibrary.org/pagethumb/<%= data[i].pageID %>,200,200?height=200">
 								</a>
 							</div>						
 						<%}%>
