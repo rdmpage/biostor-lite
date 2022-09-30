@@ -425,7 +425,7 @@ span.works {
 								<div class="col s3">
 									<% if (data[i].thumbnailUrl)  {%>
 											<a href="reference/<%- i.replace(/biostor-/, '') %>">
-												<img class="z-depth-1" style="background:white;" src="https://aipbvczbup.cloudimg.io/s/height/100/<%- data[i].thumbnailUrl %>" >
+												<img class="z-depth-1" style="background:white;" src="https://aezjkodskr.cloudimg.io/<%- data[i].thumbnailUrl %>?height=100" >
 											</a>
 									<% } %>
 								</div>
