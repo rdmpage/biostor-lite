@@ -89,6 +89,11 @@ foreach ($response_obj->hits->hits as $hit)
 					$author->lastname = $a->family;
 					$author->forename = $a->given;
 					
+					if (isset($a->id))
+					{
+						$a->id;
+					}
+					
 					$article->authors[] = $author;
 				}
 				break;
