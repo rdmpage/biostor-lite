@@ -83,6 +83,8 @@ foreach ($response_obj->hits->hits as $hit)
 				
 			case 'author':
 				$article->authors = array();
+				
+				
 				foreach ($v as $a)
 				{
 					$author = new stdclass;
@@ -91,7 +93,7 @@ foreach ($response_obj->hits->hits as $hit)
 					
 					if (isset($a->id))
 					{
-						$a->id;
+						$author->id = $a->id;
 					}
 					
 					$article->authors[] = $author;
