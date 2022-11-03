@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>baseURL</key>
-	<string>http://35.204.73.93/elasticsearch/_nodes/_local/stats/fs</string>
+	<string>http://65.108.58.109:9200/_nodes/_local/stats/fs</string>
 	<key>followRedirect</key>
 	<true/>
 	<key>handleJSONPCallbacks</key>

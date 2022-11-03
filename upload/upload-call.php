@@ -27,12 +27,20 @@ function get($url)
 $start   = 252694;
 $end  	 = 252735;
 
-$ids=array(
+// Annals of Tropical Medicine & Parasitology
+$start   = 274656;
+$end  	 = 274682;
 
-);
 
+// Annals of Tropical Medicine & Parasitology
 $ids=array(
-260711
+73284,
+52150,
+59144,
+104499,
+128292,
+73246,
+141009,
 );
 
 $force = true;

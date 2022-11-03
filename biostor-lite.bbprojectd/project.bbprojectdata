@@ -22,6 +22,8 @@
 		<string>39F2CE00-46F7-4236-837C-496814185E14</string>
 		<string>DCDD1C2B-E75A-4179-BD04-58F209C854B7</string>
 		<string>615D7547-C0F9-4FA1-A089-2546DF8E598C</string>
+		<string>84693AEB-2686-456B-BE03-44AB725C2C57</string>
+		<string>3C3586A4-F4B0-47D2-BC91-5D82BE7C181B</string>
 		<string>EBCBA443-8AE8-4A9E-898D-77735F1168EE</string>
 		<string>BC952BB3-1A91-4B5C-A9B0-B0129C1A3548</string>
 		<string>74CF718E-5A8C-40E2-9454-AA437D12D581</string>
@@ -274,6 +276,56 @@
 			</dict>
 			<key>ItemName</key>
 			<string>fingerprint.php</string>
+			<key>ItemType</key>
+			<string>FileReference</string>
+			<key>UserOverrideItemName</key>
+			<true/>
+		</dict>
+		<key>3C3586A4-F4B0-47D2-BC91-5D82BE7C181B</key>
+		<dict>
+			<key>ItemData</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9vayQDAAAAAAQQMAAAAG8ns745Vi5yHRrffxS5lelX
+				/Eu9rfyY7cX0JpkP9ZQJFAIAAAQAAAADAwAAAAgAKAUA
+				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAABQAA
+				AAEBAABTaXRlcwAAAAwAAAABAQAAYmlvc3Rvci1saXRl
+				DQAAAAEBAABpdGVtc2luY2UucGhwAAAAFAAAAAEGAAAQ
+				AAAAIAAAADAAAABAAAAAVAAAAAgAAAAEAwAAhFwAAAAA
+				AAAIAAAABAMAAJbGAwAAAAAACAAAAAQDAABA6B4AAAAA
+				AAgAAAAEAwAAkdt4AAAAAAAIAAAABAMAAIt0eQAAAAAA
+				FAAAAAEGAACIAAAAmAAAAKgAAAC4AAAAyAAAAAgAAAAA
+				BAAAQcQ9bNBmYWgYAAAAAQIAAAEAAAAAAAAADwAAAAAA
+				AAAAAAAAAAAAAAgAAAAEAwAAAwAAAAAAAAAEAAAAAwMA
+				APUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNp
+				bnRvc2ggSEQIAAAABAMAAACQgpbnAAAACAAAAAAEAABB
+				xBTfxAAAACQAAAABAQAARUVEQkM0OTUtREY1Mi00NTZB
+				LUI0MzEtRkI2MDdCRjA0QUQxGAAAAAECAACBAAAAAQAA
+				AO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAAAAAAAA
+				AQUAABoAAAABAQAATlNVUkxEb2N1bWVudElkZW50aWZp
+				ZXJLZXkAAAQAAAADAwAAu2cAANgAAAD+////AQAAAAAA
+				AAARAAAABBAAAGwAAAAAAAAABRAAANgAAAAAAAAAEBAA
+				AAQBAAAAAAAAQBAAAPQAAAAAAAAAAiAAANABAAAAAAAA
+				BSAAAEABAAAAAAAAECAAAFABAAAAAAAAESAAAIQBAAAA
+				AAAAEiAAAGQBAAAAAAAAEyAAAHQBAAAAAAAAICAAALAB
+				AAAAAAAAMCAAANwBAAAAAAAAAcAAACQBAAAAAAAAEcAA
+				ACAAAAAAAAAAEsAAADQBAAAAAAAAENAAAAQAAAAAAAAA
+				5AEAgAgCAAAAAAAA
+				</data>
+				<key>FileURL</key>
+				<string>file:///Users/rpage/Sites/biostor-lite/itemsince.php</string>
+				<key>HasSecurityScope</key>
+				<true/>
+				<key>RelativePath</key>
+				<string>./itemsince.php</string>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+			<key>ItemName</key>
+			<string>itemsince.php</string>
 			<key>ItemType</key>
 			<string>FileReference</string>
 			<key>UserOverrideItemName</key>
@@ -812,6 +864,56 @@
 			</dict>
 			<key>ItemName</key>
 			<string>.htaccess</string>
+			<key>ItemType</key>
+			<string>FileReference</string>
+			<key>UserOverrideItemName</key>
+			<true/>
+		</dict>
+		<key>84693AEB-2686-456B-BE03-44AB725C2C57</key>
+		<dict>
+			<key>ItemData</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9vayQDAAAAAAQQMAAAAEhWgJ7oWCzOXEcA/rgSSDtG
+				eC7kJvBDx8zVh+UzvuZoFAIAAAQAAAADAwAAAAgAKAUA
+				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAABQAA
+				AAEBAABTaXRlcwAAAAwAAAABAQAAYmlvc3Rvci1saXRl
+				EAAAAAEBAABpdGVtYXJ0aWNsZXMucGhwFAAAAAEGAAAQ
+				AAAAIAAAADAAAABAAAAAVAAAAAgAAAAEAwAAhFwAAAAA
+				AAAIAAAABAMAAJbGAwAAAAAACAAAAAQDAABA6B4AAAAA
+				AAgAAAAEAwAAkdt4AAAAAAAIAAAABAMAANBHegAAAAAA
+				FAAAAAEGAACIAAAAmAAAAKgAAAC4AAAAyAAAAAgAAAAA
+				BAAAQcQ9bNBmYWgYAAAAAQIAAAEAAAAAAAAADwAAAAAA
+				AAAAAAAAAAAAAAgAAAAEAwAAAwAAAAAAAAAEAAAAAwMA
+				APUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNp
+				bnRvc2ggSEQIAAAABAMAAACQgpbnAAAACAAAAAAEAABB
+				xBTfxAAAACQAAAABAQAARUVEQkM0OTUtREY1Mi00NTZB
+				LUI0MzEtRkI2MDdCRjA0QUQxGAAAAAECAACBAAAAAQAA
+				AO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAAAAAAAA
+				AQUAABoAAAABAQAATlNVUkxEb2N1bWVudElkZW50aWZp
+				ZXJLZXkAAAQAAAADAwAAv2cAANgAAAD+////AQAAAAAA
+				AAARAAAABBAAAGwAAAAAAAAABRAAANgAAAAAAAAAEBAA
+				AAQBAAAAAAAAQBAAAPQAAAAAAAAAAiAAANABAAAAAAAA
+				BSAAAEABAAAAAAAAECAAAFABAAAAAAAAESAAAIQBAAAA
+				AAAAEiAAAGQBAAAAAAAAEyAAAHQBAAAAAAAAICAAALAB
+				AAAAAAAAMCAAANwBAAAAAAAAAcAAACQBAAAAAAAAEcAA
+				ACAAAAAAAAAAEsAAADQBAAAAAAAAENAAAAQAAAAAAAAA
+				5AEAgAgCAAAAAAAA
+				</data>
+				<key>FileURL</key>
+				<string>file:///Users/rpage/Sites/biostor-lite/itemarticles.php</string>
+				<key>HasSecurityScope</key>
+				<true/>
+				<key>RelativePath</key>
+				<string>./itemarticles.php</string>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+			<key>ItemName</key>
+			<string>itemarticles.php</string>
 			<key>ItemType</key>
 			<string>FileReference</string>
 			<key>UserOverrideItemName</key>

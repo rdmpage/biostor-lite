@@ -26,6 +26,8 @@ class ElasticSearch
 		
 		$url .= '/_doc/' . urlencode($id);
 		
+		//echo $url . "\n";
+		
 		curl_setopt ($ch, CURLOPT_URL, $url); 
 		curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1); 		
 		curl_setopt ($ch, CURLOPT_SSL_VERIFYPEER, false);
@@ -35,10 +37,10 @@ class ElasticSearch
 			curl_setopt($ch, CURLOPT_USERPWD, $this->user . ":" . $this->password); 
 		}
 		
-		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "HEAD");
+		//curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "HEAD");
 		
 		// http://stackoverflow.com/a/770200
-		curl_setopt($ch, CURLOPT_NOBODY, true);
+		//curl_setopt($ch, CURLOPT_NOBODY, true);
 
    		$response = curl_exec($ch);
    		

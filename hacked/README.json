@@ -1,0 +1,31 @@
+{
+    "took": 31,
+    "timed_out": false,
+    "_shards": {
+        "total": 1,
+        "successful": 1,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": {
+            "value": 1,
+            "relation": "eq"
+        },
+        "max_score": 1,
+        "hits": [
+            {
+                "_index": "read_me",
+                "_type": "_doc",
+                "_id": "1",
+                "_score": 1,
+                "_ignored": [
+                    "message.keyword"
+                ],
+                "_source": {
+                    "message": "All your data is a backed up. You must pay 0.05 BTC to 18FJ6C6TBpv6va7vLKDri9ibGDWgnYx8Me 48 hours for recover it. After 48 hours expiration we will leaked and exposed all your data. In case of refusal to pay, we will contact the General Data Protection Regulation, GDPR and notify them that you store user data in an open form and is not safe. Under the rules of the law, you face a heavy fine or arrest and your base dump will be dropped from our server! You can buy bitcoin here, does not take much time to buy https://localbitcoins.com or https://buy.moonpay.io/ After paying write to me in the mail with your DB IP: rambler+3bv7n@onionmail.org and/or eladb@mailnesia.com and you will receive a link to download your database dump."
+                }
+            }
+        ]
+    }
+}

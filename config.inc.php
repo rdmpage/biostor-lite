@@ -17,8 +17,9 @@ global $config;
 date_default_timezone_set('UTC');
 
 $local = false;
-//$local = true;
+$local = true;
 
+$config['site_name'] = "BioStor";
 
 if ($local)
 {
@@ -54,7 +55,7 @@ if (0)
 			'index' 	=> 'bslite',
 			'protocol' 	=> 'http',
 			'host' 		=> '127.0.0.1',
-			'port' 		=> 55001
+			'port' 		=> 9200
 			);
 }
 else

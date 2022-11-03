@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>baseURL</key>
-	<string>http://65.108.58.109:9200/bslite</string>
+	<string>http://65.108.58.109:9200</string>
 	<key>followRedirect</key>
 	<true/>
 	<key>handleJSONPCallbacks</key>
@@ -11,7 +11,7 @@
 	<key>headers</key>
 	<array/>
 	<key>httpMethod</key>
-	<string>DELETE</string>
+	<string>GET</string>
 	<key>jsonpScript</key>
 	<string></string>
 	<key>paramBodyUIChoice</key>
@@ -21,11 +21,9 @@
 	<key>parametersType</key>
 	<integer>0</integer>
 	<key>presentBeforeChallenge</key>
-	<true/>
+	<false/>
 	<key>stringEncoding</key>
 	<integer>4</integer>
-	<key>username</key>
-	<string>user</string>
 	<key>usingHTTPBody</key>
 	<false/>
 </dict>

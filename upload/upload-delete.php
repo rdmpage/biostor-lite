@@ -58,8 +58,11 @@ $ids=array(
 246254,
 );
 
+// to do
 $ids=array(
-235753
+69192,
+74728,
+20454,
 );
 
 foreach ($ids as $id)
