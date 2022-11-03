@@ -44,14 +44,14 @@ $ids=array(
 );
 
 $force = true;
-//$force = false;
+$force = false;
 
 $count = 1;
 
 $failed = array();
 
-//for ($id = $start; $id <= $end; $id++)
-foreach ($ids as $id)
+for ($id = $start; $id <= $end; $id++)
+//foreach ($ids as $id)
 {
 	echo $id . "\n";
 	
