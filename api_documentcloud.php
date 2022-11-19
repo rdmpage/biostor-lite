@@ -52,8 +52,7 @@ function display_documentcloud ($id, $callback = '')
 			//$dc->resources->search = "http://direct.biostor.org/dvs/100700/json?q={query}";			
 				
 			$dc->sections = array();
-			$dc->annotations = array();	
-			$dc = json_decode($j);		
+			$dc->annotations = array();		
 			
 			$status = 200;
 		}
