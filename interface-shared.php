@@ -204,7 +204,6 @@ function display_entity_details($entity)
 	}	
 	echo '</ul>';
 	
-
 	echo '<h1>';
 	
 	$title = 'Untitled';
@@ -322,14 +321,14 @@ function display_entity_details($entity)
 		$imageUrl = $entity->thumbnailUrl;
 		$imageUrl = preg_replace('/\d+,\d+$/', '500,500', $imageUrl);
 	
-		echo '<div style="text-align:center;margin:2em;">';
+		echo '<div class="bhlpage">';
 		
 		if ($bhl != '')
 		{
 			echo '<a href="https://www.biodiversitylibrary.org/page/' . $bhl . '" target="_new">';
 		}
 		
-		echo '<img style="border:1px solid rgb(222,222,222);" width="500" src="https://aezjkodskr.cloudimg.io/' . $imageUrl . 'height=500">';
+		echo '<img src="https://aezjkodskr.cloudimg.io/' . $imageUrl . 'height=500">';
 		
 		if ($bhl != '')
 		{
@@ -517,9 +516,14 @@ function display_html_start($title = '', $meta = '', $script = '', $jsonld = '',
 	
 	@media (max-width: 480px) {
 	  main {
-		width:100%;
+		width:90%;
 		
 	  }
+	  
+	  h1 {
+	  	font-size:1.5em;
+	  }
+	  
 	  article {
 	  	padding-left:0.5em;
 	  	padding-right:0.5em;
@@ -572,7 +576,33 @@ function display_html_start($title = '', $meta = '', $script = '', $jsonld = '',
 	  content: \">\";
 	}
 
-
+	/* BHL page */
+	
+	.bhlpage {
+		width: 100%;
+		padding-top:1em;
+		padding-bottom:1em;
+	}
+	
+	.bhlpage img {
+		width: 100%;
+		border:1px solid rgb(222,222,222);
+	}
+ 
+     .example {
+		float:left;
+		width:100px;
+		height:100px; 
+		padding:1em;       
+    }
+    
+    .example img {
+    	border:1px solid rgb(222,222,222);
+    	object-fit:contain;
+    	margin:auto;
+    	display:block;
+    	height:100px;   	
+    }
  
 	";
 

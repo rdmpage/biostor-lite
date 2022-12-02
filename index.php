@@ -778,7 +778,7 @@ function do_welcome()
 	
 	foreach ($obj as $example)
 	{
-		$html .= '<div class="thumbnail">';
+		$html .= '<div class="example">';
 		$html .= '<a href="reference/' . $example->referenceID . '">';
 		$html .= '<img src="https://aezjkodskr.cloudimg.io/https://www.biodiversitylibrary.org/pagethumb/' . $example->pageID . ',200,200?height=200">';
 		$html .= '</a>';
