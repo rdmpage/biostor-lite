@@ -6,12 +6,14 @@ require_once (dirname(__FILE__) . '/elastic.php');
 
 // tile request will supply x,y and z (zoom level)
 
-// need to inflate search recangle to get markers outside the bounding box which,
-// when drawn, will partially appear in tile.
+// Need to figure out how to include points from outside a tile that are
+// clipped, this is tricky
 
 $x = 0;
 $y = 0;
 $zoom = 0;
+
+define ('TILE_SIZE', 256);
 
 $debug = false;
 //$debug = true;
@@ -32,8 +34,8 @@ if (isset($_GET['z']))
 	$zoom = (Integer)$_GET['z'];
 }
 
-  
-//-----------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
+// Convert x,y,zoom tuple to latitude and longitude
 function xyz_to_lat_long($x, $y, $zoom)
 {
 	$lon_lat = array();
@@ -48,7 +50,8 @@ function xyz_to_lat_long($x, $y, $zoom)
 	return $lon_lat;
 }
 
-//-----------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
+// Convert tile to corresponding bounding box in lat,lon coordinates
 function xyz_to_bounding_box($x, $y, $zoom)
 {
 	$obj = new stdclass;
@@ -65,11 +68,34 @@ function xyz_to_bounding_box($x, $y, $zoom)
 	$obj->bottom_right->lat = $lon_lat[1];
 	$obj->bottom_right->lon = $lon_lat[0];
 	
+	// inflate
+	if (0)
+	{
+		//print_r($obj);
+		
+		$dx = (abs($obj->top_left->lon - $obj->bottom_right->lon))/ TILE_SIZE;
+		$dx *= 8;
+		
+		//echo $dx;
+	
+		$dy = (abs($obj->top_left->lat - $obj->bottom_right->lat))/ TILE_SIZE;
+		$dy *= 8;
+		
+		//echo $dy;
+	
+		$obj->top_left->lat = min(90, $obj->top_left->lat + $dy);
+		$obj->bottom_right->lat = max(-90, $obj->bottom_right->lat - $dy);
+	
+		$obj->top_left->lon = max(-180, $obj->top_left->lon - $dy);
+		$obj->bottom_right->lon = min(180, $obj->bottom_right->lon + $dy);
+		
+		//print_r($obj);
+	}
 	return $obj;
-
 }
 
-//-----------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
+// Convert (lat,lon) pair to x,y coordinates within a tile 
 function lat_lon_to_xy($lon_lat, $zoom)
 {
 	$xy = array();
@@ -79,12 +105,13 @@ function lat_lon_to_xy($lon_lat, $zoom)
 	$x_pos = ($lon_lat[0] + 180)/360 * $n;
 	$x = floor($x_pos);
 	
-	$relative_x = round(256 * ($x_pos - $x));
+	$relative_x = round(TILE_SIZE * ($x_pos - $x));
 	
 	$y_pos = (1 - log(tan($lon_lat[1] * M_PI / 180.0) + 1/cos($lon_lat[1] * M_PI / 180.0))/M_PI)/2 * $n;
 	$y = floor($y_pos);
 	
-	$relative_y = round(256 * ($y_pos - $y));
+	
+	$relative_y = round(TILE_SIZE * ($y_pos - $y));
 
 	$xy = array($relative_x , $relative_y);
 	
@@ -92,7 +119,7 @@ function lat_lon_to_xy($lon_lat, $zoom)
 }
 
 
-//-----------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
 // Query Elastic to get dots on map 
 
 
@@ -100,8 +127,7 @@ function lat_lon_to_xy($lon_lat, $zoom)
 $xml = '<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns:xlink="http://www.w3.org/1999/xlink" 
 xmlns="http://www.w3.org/2000/svg" 
-width="256" height="256"
-overflow="visible"
+width="' . TILE_SIZE . '" height="' . TILE_SIZE . '" overflow="visible"
 
  >
    <style type="text/css">
@@ -113,7 +139,7 @@ overflow="visible"
 // Border for debugging
 if ($debug)
 {
-	$xml .= '<rect id="border" x="0" y="0" width="256" height="256" style="stroke-width:1;fill:none;stroke:rgb(192,192,192);" />';	
+	$xml .= '<rect id="border" x="0" y="0" width="' . TILE_SIZE . '" height="' . TILE_SIZE . '" style="stroke-width:1;fill:none;stroke:rgb(192,192,192);" />';	
 	$xml .= '<text x="10" y="15">' . $x . ' ' . $y . ' ' . $zoom . '</text>';		
 }
 	 
@@ -187,7 +213,7 @@ foreach ($response_obj->hits->hits as $hit)
 	
 	foreach ($hit->_source->search_data->geometry->coordinates as $lon_lat)
 	{
-		// We only want to disply points in coordinates array that are within the bounds 
+		// We only want to display points in coordinates array that are within the bounds 
 		// of this tile. Because a BioStor JSON document has a set of points, not all need
 		// be within this tile.
 		
@@ -198,6 +224,8 @@ foreach ($response_obj->hits->hits as $hit)
 			if ($lon_lat[1] >= $min_lon_lat[1] && ($lon_lat[1]  <= $max_lon_lat[1]))
 			{
 				$show = true;
+				
+				//echo $lon_lat[0] . ' ' . $lon_lat[1] . "\n";
 			}	
 		}		
 		
@@ -207,6 +235,8 @@ foreach ($response_obj->hits->hits as $hit)
 	
 			$x_pos = $xy[0];
 			$y_pos = $xy[1];
+			
+			//echo $lon_lat[0] . '|' . $lon_lat[1] . '|' . $x_pos . '|' . $y_pos . "\n" ;
 	
 			switch ($marker_shape)
 			{
@@ -245,7 +275,11 @@ $xml .= '
 
 // Serve up tile	
 header("Content-type: image/svg+xml");
-header("Cache-control: max-age=3600");
+
+if (!$debug)
+{
+	header("Cache-control: max-age=3600");
+}
 
 echo $xml;
 
