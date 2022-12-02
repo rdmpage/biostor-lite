@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0368-3451",
+    "issn": [
+        "0368-3451"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0368-3451",
+        "http://www.wikidata.org/entity/Q51496795"
+    ],
+    "name": "Journal and proceedings of the Asiatic Society of Bengal"
+}

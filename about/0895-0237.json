@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0895-0237",
+    "issn": [
+        "0895-0237"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0895-0237",
+        "http://www.wikidata.org/entity/Q28025436"
+    ],
+    "name": "Chicago Field Mus Nat Hist Zool Pub"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0885-3487",
+    "issn": [
+        "0885-3487"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0885-3487",
+        "http://www.wikidata.org/entity/Q51395110"
+    ],
+    "name": "Journal of the Cincinnati Society of Natural History"
+}

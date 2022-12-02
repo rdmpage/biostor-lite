@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0035-9211",
+    "issn": [
+        "0035-9211"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0035-9211",
+        "http://www.wikidata.org/entity/Q6087112"
+    ],
+    "name": "P Soc Victoria"
+}

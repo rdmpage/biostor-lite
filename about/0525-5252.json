@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0525-5252",
+    "issn": [
+        "0525-5252"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0525-5252",
+        "http://www.wikidata.org/entity/Q51522254"
+    ],
+    "name": "Proceedings and transactions of the British Entomological and Natural History Society"
+}

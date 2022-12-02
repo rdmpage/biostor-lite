@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0006-8179",
+    "issn": [
+        "0006-8179"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0006-8179",
+        "http://www.wikidata.org/entity/Q6019745"
+    ],
+    "name": "Mitteilungen der Botanischen Staatssammlung München"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0474-3342",
+    "issn": [
+        "0474-3342"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0474-3342",
+        "http://www.wikidata.org/entity/Q6051987"
+    ],
+    "name": "The Orchadian"
+}

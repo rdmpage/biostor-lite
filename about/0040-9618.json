@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0040-9618",
+    "issn": [
+        "0040-9618"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0040-9618",
+        "http://www.wikidata.org/entity/Q13548538"
+    ],
+    "name": "Bull. Torrey Bot. Club"
+}

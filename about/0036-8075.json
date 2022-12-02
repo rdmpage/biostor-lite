@@ -1,0 +1,100 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0036-8075",
+    "issn": [
+        "0036-8075"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0036-8075",
+        "http://www.wikidata.org/entity/Q192864",
+        "https://en.wikipedia.org/wiki/Science_(journal)"
+    ],
+    "name": "Science (journal)",
+    "description": [
+        {
+            "@language": "uk",
+            "@value": "Science («Са́йенс», з англ. — «Наука») — науковий журнал, який вважається одним з найпрестижніших для публікації результатів досліджень з усіх галузей науки. Коефіцієнт впливовості журналу становив 31.477 в 2012 році (Thomson ISI). Існує велика конкуренція серед науковців щоб мати можливість опублікувати свої результати в Science. Статті спочатку проходять рецензування і лише менше ніж 10 % поданих статей з'являються в журналі. Адміністрація журналу базується у Вашингтоні (США) та в Кембриджі (Англія)."
+        },
+        {
+            "@language": "ja",
+            "@value": "『サイエンス』（英語: Science）は、1880年に創刊され、現在アメリカ科学振興協会 (AAAS) によって発行されている学術雑誌である。"
+        },
+        {
+            "@language": "sv",
+            "@value": "Science är en amerikansk fackvetenskaplig tidskrift som ges ut av American Association for the Advancement of Science (AAAS) sedan 1880 och idag är en av världens mest prestigefyllda vetenskapliga tidskrifter. Den tryckta tidskriften, som kommer ut en gång i veckan, har ungefär 130 000 prenumeranter. Eftersom många prenumerationer delas av forskningsinstitutioner, och artiklar också finns tillgängliga elektroniskt, beräknas det totala antalet läsare till en miljon. Huvudredaktionen finns i Washington DC, ett annat kontor i Cambridge i Storbritannien."
+        },
+        {
+            "@language": "pl",
+            "@value": "Science – recenzowane czasopismo naukowe wydawane przez American Association for the Advancement of Science. Ukazuje się jako tygodnik ilustrowany. „Science” zostało założone w 1880 roku przez wynalazcę Thomasa Edisona i w 1900 roku stało się organem American Association for the Advancement of Science (AAAS). Podstawowym zadaniem tygodnika jest publikowanie najnowszych, szczególnie doniosłych odkryć w dziedzinie nauk przyrodniczych i wszelkich materiałów wiążących się z rolą nauki we współczesnym świecie."
+        },
+        {
+            "@language": "in",
+            "@value": "Science, juga disebut sebagai Science Magazine, adalah jurnal akademik penelaahan sejawat (AAAS) dan salah satu jurnal akademik papan atas di dunia. Jurnal tersebut mula-mula diterbitkan pada 1880 dan kini diedarkan per minggu dan memiliki sekitar 130.000 pelanggan."
+        },
+        {
+            "@language": "eo",
+            "@value": "Science (angle por scienco) estas la reviziita fakgazeto de AAS (American Association for the Advancement of Science, usona asocio por antaŭenigo de scienco) kaj oni konsideras ĝin la plej gravan sciencan gazeton en la mondo. Ĝi estas publikigita ĉiusemajne kaj havas ĉirkaŭ 130.000 abonantojn. Ĉar multaj el tiuj abonantoj estas universitatoj kaj ekzistas ankaŭ interreta eldono, oni taksas la tutan nombron de legantoj je ĉirkaŭ 1 miliono. En 2007 Science (kun Nature) ricevis la Premion Princo de Asturio pri Komunikando kaj Humanj sciencoj."
+        },
+        {
+            "@language": "pt",
+            "@value": "Science (termo em ingl. usado para designar ciências naturais, sociais e formais em geral), também amplamente referida como Science Magazine, é uma revista científica publicada pela Associação Americana para o Avanço da Ciência (em inglês: American Association for the Advancement of Science — AAAS), considerada, ao lado da Nature, uma das revistas acadêmicas mais prestigiadas do mundo. Seus artigos são submetidos ao processo de revisão paritária e foi publicada pela primeira vez em 1880. A publicação tem uma base de assinantes da versão impressa de cerca de 130 mil pessoas, mas como as assinaturas institucionais e o acesso on-line alcançam um público maior, o seu número de leitores estimado é de 570 400 pessoas."
+        },
+        {
+            "@language": "de",
+            "@value": "Science (englisch für Natur-, Sozial- und Formalwissenschaft) ist die Fachzeitschrift der American Association for the Advancement of Science (AAAS, englisch für Amerikanische Gesellschaft zur Förderung der Naturwissenschaften) und gilt neben Nature als die weltweit wichtigste ihrer Art. Die wöchentlich veröffentlichte Zeitschrift arbeitet nach dem Prinzip des Peer-Review und hat ungefähr 130.000 Abonnenten. Da zum einen unter diesen viele Institutionen wie Universitäten sind und die Zeitschrift andererseits über eine Online-Ausgabe verfügt, wird die tatsächliche Zahl der Leser auf etwa 1 Million geschätzt."
+        },
+        {
+            "@language": "ru",
+            "@value": "Science (по-русски Сайенс, в переводе с англ. — «Наука») — журнал Американской ассоциации содействия развитию науки (англ. The American Association for the Advancement of Science — AAAS). Считается (наряду с журналом Nature) одним из самых авторитетных научных журналов. Журнал рецензируемый, выходит еженедельно, и имеет примерно 130 000 подписчиков бумажного издания. Так как подписка организаций и доступ через интернет образуют гораздо бо́льшую аудиторию, число его читателей оценивается в один миллион человек."
+        },
+        {
+            "@language": "en",
+            "@value": "Science, also widely referred to as Science Magazine, is the peer-reviewed academic journal of the American Association for the Advancement of Science (AAAS) and one of the world's top academic journals. It was first published in 1880, is currently circulated weekly and has a subscriber base of around 130,000. Because institutional subscriptions and online access serve a larger audience, its estimated readership is over 400,000 people. Science is based in Washington, D.C., United States, with a second office in Cambridge, UK."
+        },
+        {
+            "@language": "el",
+            "@value": "Το Science (Επιστήμη) (ISSN 0036-8075 (έντυπο), 1095-9203 (web)) είναι το ακαδημαϊκό περιοδικό της Αμερικανικής Ένωσης για την Πρόοδο της Επιστήμης (AAAS) και θεωρείται ένα από τα υψηλότερου κύρους επιστημονικά περιοδικά στον κόσμο. Το επιστημονικό περιοδικό, που πρωτοεκδόθηκε το 1880, κυκλοφορεί εβδομαδιαία και έχει περίπου 130.000 συνδρομητές για την έντυπη έκδοση. Επειδή οι συνδρομές ιδρυμάτων και η διαδικτυακή πρόσβαση εξυπηρετούν ένα ευρύτερο κοινό, εκτιμάται ότι το αναγνωστικό κοινό είναι ένα εκατομμύριο άνθρωποι."
+        },
+        {
+            "@language": "ar",
+            "@value": "ساينس (بالإنجليزية: Science)‏ هي دورية علمية تنشرها الجمعية الأمريكية لتقدم العلوم. وبصفة عامة تعتبر من أكثر الدوريات المرموقة في مجال العلوم. وقد أسست من قبل صحفي في نيويورك، جون مايكلز، منذ عام 1880، بدعم مالي من قبل توماس إديسون، ثم من ألكسندر غراهام بيل. إمكانية الوصول يمكن الوصول إلى المجلة مباشرة عن طريق الإنترنت, من خلال الموقع الرسمي لها على الشبكة العنكبوتية, فقط من خلال الاشتراك. (أعضاء AAAS) وللانتقال إلى العناوين (IP Addresses) الخاصة بالمراكز التي تشترك بهذه المجلة...و يمكن للطلاب, 12-K مدرسين, واّخرون ممن يمكنهم الاشتراك بأسعار مخفضة. ولكن منذ عام 1997 فإن الأوراق العلمية التي يتم نشرها فتكون بالمجان فقط بالتسجيل في الموقع وذلك فقظ بعد سنة من تاريخ النشر."
+        },
+        {
+            "@language": "zh",
+            "@value": "《科学》（英語：Science）是由美國科學促進會（AAAS）出版的一份英文学术期刊，創刊於1880年，是极具權威性和影响力的世界顶级学术刊物。目前《科學》期刊每周出版一次，订阅人数约为13萬，由于机构订阅和在线访问的形式涵蓋了更多受眾，估計實際读者數量超過40萬人。根据《期刊引证报告》，《科學》在2019年的影响因子为41.845。 《科學》主要刊載重大的原創性科學研究和科研綜述，也发表与科学相关的新闻、关于科技政策及科学家感兴趣的事务的观点。与大多数专注于特定领域的学术期刊不同，《科學》及其竞争对手《自然》（英文：Nature）涵盖了所有学科。雖然《科學》为美國科學促進會所持有，但世界各地的学者均可在其上發表論文，并不需要美国科学促进会的會員資格。然而，在《科學》期刊上发表論文的竞争非常激烈，因為在引用率如此之高的期刊上發表論文可為作者帶來關注并有助於其職業發展。提交至《科學》期刊的論文中，只有不到7%會被接受並發表，所有論文在正式刊登前都需經過同行評審。 《科學》的總編輯部位于美国华盛顿特区，在英国劍橋设有第二个办事处。"
+        },
+        {
+            "@language": "ko",
+            "@value": "( 다른 뜻에 대해서는 사이언스 (동음이의) 문서를 참고하십시오.) 《사이언스》(Science)는 (American Association for the Advancement of Science)에서 발간하는 과학 학술지이다. 약 13만명이 구독하고 있으며, 기관 가입과 온라인 구독을 고려하면 실제 독자는 백만 명 가량일 것으로 추측된다."
+        },
+        {
+            "@language": "nl",
+            "@value": "Science is een van de meest gerenommeerde wetenschappelijke tijdschriften ter wereld. Een publicatie in Science wordt in de wetenschappelijke wereld zeer hoog aangeslagen. Science legt zich vooral toe op de natuur- en levenswetenschappen, maar ook artikelen uit andere wetenschappelijke disciplines worden geaccepteerd. Daarnaast staan er artikelen in over wetenschapsbeleid en wetenschapsnieuws. Het tijdschrift wordt uitgegeven door de American Association for the Advancement of Science (AAAS)."
+        },
+        {
+            "@language": "ca",
+            "@value": "Science ('Ciència') és la revista de l'Associació Americana per a l'Avenç de la Ciència (American Association for the Advancement of Science, AAAS), la major societat científica del món. Aquesta revista va ser fundada a Nova York per John Michaels el 1880 amb suport financer de Thomas Edison i posteriorment d'Alexander Graham Bell. El seu primer número, amb data del 3 de juliol de 1880, tenia dotze pàgines d'articles sobre la possibilitat de ferrocarrils elèctrics, les últimes observacions de les Plèiades i el consell donat als professors de ciència sobre la importància d'estudiar el cervell dels animals."
+        },
+        {
+            "@language": "cs",
+            "@value": "Science (anglicky věda) je akademický časopis a je považován za jeden ze světově nejprestižnějších vědeckých časopisů. Odhadovaný počet čtenářů je jeden milion."
+        },
+        {
+            "@language": "eu",
+            "@value": "Science (euskaraz: «Zientzia»), Science Magazine izenarekin ezagunagoa, American Association for the Advancement of Science (AAAS) Zientziaren Aurrerapenerako Amerikar Elkartearen zientzia-aldizkaria da, parekoen ebaluazioa duena, eta munduko zientzia-aldizkarien artean onenetako bat. Lehendabizi 1880an argitaratu zen, eta gaur egun astero kaleratzen da, ingelesez, 130.000 harpidedunentzat. Kontuan hartuta harpidetza instituzionalak eta online edizioa, kalkulatzen da 570.000 irakurle dituela."
+        },
+        {
+            "@language": "it",
+            "@value": "Science è una rivista scientifica pubblicata dall'American Association for the Advancement of Science, ed è considerata una delle più prestigiose riviste in campo scientifico, insieme a Nature. La rivista riceve un'immensa quantità di articoli, dei quali solo una piccolissima parte, accuratamente scelta, viene pubblicata. Essa viene pubblicata settimanalmente, gli abbonati sono 130.000. Tuttavia, considerando l'accesso online, il pubblico di lettori stimato è intorno a 570.000. Nel 2014 il fattore d'impatto della rivista era di 33,611."
+        },
+        {
+            "@language": "fr",
+            "@value": "Science est une revue scientifique généraliste américaine hebdomadaire qui publie des articles dans tous les domaines scientifiques (biologie, chimie, physique, mathématiques, anthropologie, archéologie, etc.)."
+        },
+        {
+            "@language": "es",
+            "@value": "Science (en español: ‘Ciencia’) es una revista científica y órgano de expresión de la American Association for the Advancement of Science (AAAS), la Asociación Estadounidense para el Avance de la Ciencia.​"
+        }
+    ]
+}

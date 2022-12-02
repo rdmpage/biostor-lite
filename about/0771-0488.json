@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0771-0488",
+    "issn": [
+        "0771-0488"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0771-0488",
+        "http://www.wikidata.org/entity/Q21385002"
+    ],
+    "name": "Revue zoologique africaine"
+}

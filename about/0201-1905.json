@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0201-1905",
+    "issn": [
+        "0201-1905"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0201-1905",
+        "http://www.wikidata.org/entity/Q100286770"
+    ],
+    "name": "Archivum zoologicum"
+}

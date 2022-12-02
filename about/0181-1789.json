@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0181-1789",
+    "issn": [
+        "0181-1789"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0181-1789",
+        "http://www.wikidata.org/entity/Q55332370"
+    ],
+    "name": "Bull. Soc. Bot. France"
+}

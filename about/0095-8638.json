@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0095-8638",
+    "issn": [
+        "0095-8638"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0095-8638",
+        "http://www.wikidata.org/entity/Q51450919"
+    ],
+    "name": "Bulletin - State Geological and Natural History Survey of Connecticut."
+}

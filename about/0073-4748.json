@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0073-4748",
+    "issn": [
+        "0073-4748"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0073-4748",
+        "http://www.wikidata.org/entity/Q51423571"
+    ],
+    "name": "Illinois biological monographs"
+}

@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0082-5107",
+    "issn": [
+        "0082-5107"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0082-5107"
+    ],
+    "name": "Life Sciences Occasional Papers Royal Ontario Museum"
+}

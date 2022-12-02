@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0075-5028",
+    "issn": [
+        "0075-5028"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0075-5028",
+        "http://www.wikidata.org/entity/Q51505379"
+    ],
+    "name": "Misc. Pub. Univ. Kansas Mus. Nat. Hist"
+}

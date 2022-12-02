@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1059-8324",
+    "issn": [
+        "1059-8324"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1059-8324",
+        "http://www.wikidata.org/entity/Q27709673"
+    ],
+    "name": "Journal of Experimental Zoology"
+}

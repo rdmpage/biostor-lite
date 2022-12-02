@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/9942-3200",
+    "issn": [
+        "9942-3200"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/9942-3200"
+    ],
+    "name": "Bulletin of Bureau of Fisheries, Washington"
+}

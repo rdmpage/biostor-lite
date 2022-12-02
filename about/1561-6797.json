@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1561-6797",
+    "issn": [
+        "1561-6797"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1561-6797"
+    ],
+    "name": "Ann Mus Durban"
+}

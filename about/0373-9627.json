@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0373-9627",
+    "issn": [
+        "0373-9627"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0373-9627",
+        "http://www.wikidata.org/entity/Q21385539"
+    ],
+    "name": "Zitteliana"
+}

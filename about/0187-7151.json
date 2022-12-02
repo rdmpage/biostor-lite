@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0187-7151",
+    "issn": [
+        "0187-7151"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0187-7151",
+        "http://www.wikidata.org/entity/Q5656877"
+    ],
+    "name": "Acta Botánica Mexicana"
+}

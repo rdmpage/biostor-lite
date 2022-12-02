@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0428-0709",
+    "issn": [
+        "0428-0709"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0428-0709",
+        "http://www.wikidata.org/entity/Q21386035"
+    ],
+    "name": "Faune de Madagascar"
+}

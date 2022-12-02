@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0006-324X",
+    "issn": [
+        "0006-324X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0006-324X",
+        "http://www.wikidata.org/entity/Q2655417"
+    ],
+    "name": "Proc biol Soc Wash"
+}

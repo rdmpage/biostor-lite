@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0094-4580",
+    "issn": [
+        "0094-4580"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0094-4580",
+        "http://www.wikidata.org/entity/Q51510690"
+    ],
+    "name": "NOAA technical report NMFS SSRF"
+}

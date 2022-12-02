@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0001-804X",
+    "issn": [
+        "0001-804X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0001-804X",
+        "http://www.wikidata.org/entity/Q58814054"
+    ],
+    "name": "Adansonia"
+}

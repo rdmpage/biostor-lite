@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0284-8422",
+    "issn": [
+        "0284-8422"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0284-8422",
+        "http://www.wikidata.org/entity/Q5780106"
+    ],
+    "name": "Compositae Newsletter"
+}

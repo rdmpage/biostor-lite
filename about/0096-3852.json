@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0096-3852",
+    "issn": [
+        "0096-3852"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0096-3852",
+        "http://www.wikidata.org/entity/Q10987448"
+    ],
+    "name": "Transactions of the Academy of Science of Saint Louis"
+}

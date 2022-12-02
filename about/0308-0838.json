@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0308-0838",
+    "issn": [
+        "0308-0838"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0308-0838",
+        "http://www.wikidata.org/entity/Q15758475"
+    ],
+    "name": "Fern Gazette"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0368-1726",
+    "issn": [
+        "0368-1726"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0368-1726",
+        "http://www.wikidata.org/entity/Q47148913"
+    ],
+    "name": "Journal of the College of Agriculture, Tohoku Imperial University"
+}

@@ -1,0 +1,20 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0289-0003",
+    "issn": [
+        "0289-0003"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0289-0003",
+        "http://www.wikidata.org/entity/Q3666476",
+        "https://en.wikipedia.org/wiki/Zoological_Science"
+    ],
+    "name": "Zoological Science",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "Zoological Science is a peer-reviewed scientific journal published by the covering the broad field of zoology. The journal was established in 1984 as a result of the merger of the Zoological Magazine (1888-1983) and Annotationes Zoologicae Japonenses (1897-1983), the former official journals of the Zoological Society of Japan. Zoological Science has been a BioOne member since 2007."
+        }
+    ]
+}

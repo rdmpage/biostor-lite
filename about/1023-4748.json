@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1023-4748",
+    "issn": [
+        "1023-4748"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1023-4748",
+        "http://www.wikidata.org/entity/Q21385555"
+    ],
+    "name": "Anz Ak Wiss Wien"
+}

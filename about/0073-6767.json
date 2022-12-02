@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0073-6767",
+    "issn": [
+        "0073-6767"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0073-6767",
+        "http://www.wikidata.org/entity/Q27721049"
+    ],
+    "name": "Proc. Indiana Acad. Sci"
+}

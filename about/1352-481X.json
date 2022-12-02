@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1352-481X",
+    "issn": [
+        "1352-481X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1352-481X",
+        "http://www.wikidata.org/entity/Q51396852"
+    ],
+    "name": "Bulletin of the African Bird Club"
+}

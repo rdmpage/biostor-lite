@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0044-5223",
+    "issn": [
+        "0044-5223"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0044-5223",
+        "http://www.wikidata.org/entity/Q21385984"
+    ],
+    "name": "Entomologische Mitteilungen"
+}

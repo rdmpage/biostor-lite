@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0968-0454",
+    "issn": [
+        "0968-0454"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0968-0454",
+        "http://www.wikidata.org/entity/Q21385332"
+    ],
+    "name": "Bulletin of The Natural History Museum Entomology Series"
+}

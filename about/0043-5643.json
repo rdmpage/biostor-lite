@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0043-5643",
+    "issn": [
+        "0043-5643"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0043-5643",
+        "http://www.wikidata.org/entity/Q45099078"
+    ],
+    "name": "The Wilson Bulletin"
+}

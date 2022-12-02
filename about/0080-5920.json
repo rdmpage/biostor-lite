@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0080-5920",
+    "issn": [
+        "0080-5920"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0080-5920",
+        "http://www.wikidata.org/entity/Q21385180"
+    ],
+    "name": "Memoirs of the San Diego Society of Natural History"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0067-0456",
+    "issn": [
+        "0067-0456"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0067-0456",
+        "http://www.wikidata.org/entity/Q21386064"
+    ],
+    "name": "Bulletin of the Auckland Institute and Museum"
+}

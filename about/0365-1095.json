@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0365-1095",
+    "issn": [
+        "0365-1095"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0365-1095"
+    ],
+    "name": "Proc. Wash. Acad. Sci"
+}

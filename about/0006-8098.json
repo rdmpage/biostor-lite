@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0006-8098",
+    "issn": [
+        "0006-8098"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0006-8098",
+        "http://www.wikidata.org/entity/Q5732619"
+    ],
+    "name": "Botanical Museum Leaflets, Harvard University"
+}

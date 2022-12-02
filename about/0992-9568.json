@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0992-9568",
+    "issn": [
+        "0992-9568"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0992-9568",
+        "http://www.wikidata.org/entity/Q5735466"
+    ],
+    "name": "Bulletin de géographie botanique"
+}

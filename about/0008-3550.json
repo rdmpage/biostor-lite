@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0008-3550",
+    "issn": [
+        "0008-3550"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0008-3550",
+        "http://www.wikidata.org/entity/Q2935783",
+        "https://en.wikipedia.org/wiki/Canadian_Field-Naturalist"
+    ],
+    "name": "Canadian Field-Naturalist",
+    "description": [
+        {
+            "@language": "fr",
+            "@value": "Le Canadian Field-Naturalist est la revue officielle du Ottawa Field-Naturalists' Club. La revue, à comité de lecture, publie des notes et des articles d’études et d’observations sur l’histoire naturelle des espèces animale et végétale nord-américaines. Le Canadian Field-Naturalist fait suite au Ottawa Naturalist publié de 1887 à 1919 (ISSN 0316-4411)."
+        },
+        {
+            "@language": "en",
+            "@value": "The Canadian Field-Naturalist is a quarterly scientific journal publishing original scientific papers related to natural history in North America. It accepts submissions by both amateur and professional naturalists and field biologists. It is a delayed open access journal currently edited by Dwayne Lepitzki."
+        }
+    ]
+}

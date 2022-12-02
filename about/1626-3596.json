@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1626-3596",
+    "issn": [
+        "1626-3596"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1626-3596",
+        "http://www.wikidata.org/entity/Q15731308"
+    ],
+    "name": "Richardiana"
+}

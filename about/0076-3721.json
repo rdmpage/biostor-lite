@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0076-3721",
+    "issn": [
+        "0076-3721"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0076-3721",
+        "http://www.wikidata.org/entity/Q27723484"
+    ],
+    "name": "Memoirs and Proceedings of the Manchester Literary and Philosophical Society"
+}

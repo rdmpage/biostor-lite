@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0341-0153",
+    "issn": [
+        "0341-0153"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0341-0153",
+        "http://www.wikidata.org/entity/Q21385087"
+    ],
+    "name": "Stuttgarter Beitraege zur Naturkunde Serie B (Geologie und Palaeontologie)"
+}

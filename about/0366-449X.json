@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0366-449X",
+    "issn": [
+        "0366-449X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0366-449X",
+        "http://www.wikidata.org/entity/Q21385199"
+    ],
+    "name": "Bulletin du Musée royal d'histoire naturelle de Belgique"
+}

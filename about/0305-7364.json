@@ -1,0 +1,36 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0305-7364",
+    "issn": [
+        "0305-7364"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0305-7364",
+        "http://www.wikidata.org/entity/Q1821243",
+        "https://en.wikipedia.org/wiki/Annals_of_Botany"
+    ],
+    "name": "Annals of Botany",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "Annals of Botany is a monthly peer-reviewed scientific journal publishing experimental, theoretical and applied papers on all aspects of plant biology. The current (2022) Chief Editor is Rowan Sage, replacing John Seymour (Pat) Heslop-Harrison (University of Leicester, UK and the South China Botanical Garden appointed in 2008). The journal is owned and managed by the Annals of Botany Company, a non-profit educational charity registered with the Charity Commission for England and Wales. It is published monthly through Oxford University Press in paper form and online, and is paid for primarily by institutional annual subscriptions. Regular extra issues, published free-of-charge, focus on topical themes. The journal does not levy page charges but authors may choose to pay a standard fee to s"
+        },
+        {
+            "@language": "es",
+            "@value": "Annals of Botany. Oxford (abreviado Ann. Bot. (Oxford))​ es una revista ilustrada con descripciones botánicas que es editada por la Oxford University Press desde 1887. Se publicaron 59 números en los años 1887 - 1936 y desde 1937 hasta ahora."
+        },
+        {
+            "@language": "ru",
+            "@value": "Annals of Botany (ISSN 0305-7364) — старейший английский ботанический журнал для публикации научных исследований в различных областях науки о растениях."
+        },
+        {
+            "@language": "pl",
+            "@value": "Annals of Botany (w piśmiennictwie cytowane także w skrócie Ann. of. Bot.) – recenzowane, międzynarodowe czasopismo naukowe publikujące oryginalne artykuły na tematy związane z botaniką. Publikowane jest co miesiąc równocześnie w formie drukowanej i elektronicznej. Poza numerami ukazującymi się co miesięcznie, raz do roku ukazuje się numer tematyczny czasopisma, z artykułami poświęconymi określonemu zagadnieniu. ISSN: 0305-7364."
+        },
+        {
+            "@language": "nl",
+            "@value": "Annals of Botany is een internationaal botanisch tijdschrift. Het tijdschrift verschijnt sinds 1887. De Oxford University Press geeft het tijdschrift maandelijks uit in een online en een papieren versie namens de Annals of Botany Company, een non-profitorganisatie die zich richt op de promotie van de plantkunde. Anno 2009 is Pat Heslop-Harrison de hoofdredacteur. Onder meer Mike Fay maakt deel uit van de redactie. Maximaal twee jaar na publicatie zijn artikelen (verschenen vanaf 1993) online vrij in te zien."
+        }
+    ]
+}

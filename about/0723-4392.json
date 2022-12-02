@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0723-4392",
+    "issn": [
+        "0723-4392"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0723-4392"
+    ],
+    "name": "Forschungsberichte aus der Biologischen Station zu Plön"
+}

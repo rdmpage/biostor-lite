@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0368-2110",
+    "issn": [
+        "0368-2110"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0368-2110",
+        "http://www.wikidata.org/entity/Q5946727"
+    ],
+    "name": "Journal of the College of Science, Tokyo Imperial University"
+}

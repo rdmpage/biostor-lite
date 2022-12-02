@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0370-0461",
+    "issn": [
+        "0370-0461"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0370-0461",
+        "http://www.wikidata.org/entity/Q6087093"
+    ],
+    "name": "Proceedings of the Linnean Society of London"
+}

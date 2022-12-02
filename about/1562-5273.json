@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1562-5273",
+    "issn": [
+        "1562-5273"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1562-5273",
+        "http://www.wikidata.org/entity/Q51397918"
+    ],
+    "name": "Annals of the Eastern Cape museums"
+}

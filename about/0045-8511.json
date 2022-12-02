@@ -1,0 +1,32 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0045-8511",
+    "issn": [
+        "0045-8511"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0045-8511",
+        "http://www.wikidata.org/entity/Q205600",
+        "https://en.wikipedia.org/wiki/Copeia"
+    ],
+    "name": "Copeia",
+    "description": [
+        {
+            "@language": "fr",
+            "@value": "Copeia est une publication scientifique trimestrielle américaine consacrée à l’ichtyologie et à l’herpétologie. Elle a été nommée d'après Edward Drinker Cope (1840-1897), importante figure de la zoologie des États-Unis. Elle est la publication de la Société américaine des ichtyologistes et des herpétologistes."
+        },
+        {
+            "@language": "es",
+            "@value": "Copeia es una revista científica trimestral que trata temas relativos a ictiología y herpetología. Es la publicación oficial de la American Society of Ichthyologists and Herpetologists. El nombre de la revista es un homenaje al profesor Edward Drinker Cope, conocido paleontólogo, pero también notable ictiólogo y herpetólogo."
+        },
+        {
+            "@language": "pl",
+            "@value": "Copeia – recenzowane czasopismo naukowe publikujące prace dotyczące ryb, płazów i gadów – w szczególności poruszających tematy takie, jak ekologia, ochrona, taksonomia, ewolucja, biogeografia, filogeografia i fizjologia. W ciągu roku ukazują się cztery numery magazynu – w lutym, maju, sierpniu i grudniu. Impact factor czasopisma wynosi 1,101, co plasuje „Copeię” na 70. spośród 146 czasopism zoologicznych notowanych w 2011 roku na liście Institute for Scientific Information. „Copeia” ukazuje się od grudnia 1913 roku – jej nazwa honoruje amerykańskiego paleontologa i zoologa Edwarda Drinkera Cope'a."
+        },
+        {
+            "@language": "pt",
+            "@value": "Copeia é uma publicação periódica trimestral referente a ictiologia e herpetologia. É a publicação oficial da . Esta revista foi nomeada em homenagem ao professor Edward Drinker Cope, um proeminente americano em sistemática e fauna de ictiologia e herpetologia."
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0031-9430",
+    "issn": [
+        "0031-9430"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0031-9430",
+        "http://www.wikidata.org/entity/Q2230701",
+        "https://en.wikipedia.org/wiki/Phytologia"
+    ],
+    "name": "Phytologia",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "Phytologia is an open-access journal to expedite plant systematics, phytogeographical and ecological publication, focused on North America. Its mode of subscription is by sending e-mail to the editor. It has been available online since 2013. It is edited by Robert P. Adams and others."
+        },
+        {
+            "@language": "pl",
+            "@value": "Phytologia – ogólnie dostępne międzynarodowe czasopismo naukowe, w którym publikowane są artykuły z zakresu systematyki, geografii i ekologii roślin i grzybów, zwłaszcza z Ameryki Północnej. Wychodzi trzy razy w roku. Od 2013 roku jest dostępne online. Czasopismo wydawane jest od 1941 roku. Wydają je Robert P. Adams, Billie L. Turner i inni. Wszystkie numery czasopisma począwszy do vol.2 zostały zdigitalizowane i są dostępne w internecie w postaci skanów. Opracowano 5 istniejących w internecie skorowidzów umożliwiających odszukanie artykułu:"
+        },
+        {
+            "@language": "es",
+            "@value": "Phytologia, (abreviado Phytologia),​ fue una revista ilustrada con descripciones botánicas que fue editada en Nueva York. Comenzó su publicación el año 1933, con el nombre de Phytologia; Designed to Expedite Botanical Publication. New York."
+        },
+        {
+            "@language": "nl",
+            "@value": "Phytologia is een botanisch tijdschrift dat sinds 1933 verschijnt. De botanici Henry A. Gleason en Harold N. Moldenke zijn de oprichters van het tijdschrift. Jaarlijks verschijnen drie nummers van het tijdschrift. Naast het tijdschrift in gedrukte vorm, zijn artikelen vanaf 2006 via de website vrij beschikbaar in PDF. Nummers van 1933 tot 2009 zijn beschikbaar gemaakt via de Biodiversity Heritage Library. In het tijdschrift verschijnen artikelen met betrekking tot plantensystematiek, fytogeografie en ecologie."
+        }
+    ]
+}

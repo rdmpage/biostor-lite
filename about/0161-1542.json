@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0161-1542",
+    "issn": [
+        "0161-1542"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0161-1542",
+        "http://www.wikidata.org/entity/Q6021877",
+        "https://en.wikipedia.org/wiki/Monographs_in_Systematic_Botany"
+    ],
+    "name": "Monographs in Systematic Botany",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "Monographs in Systematic Botany also known as Monographs in Systematic Botany from the Missouri Botanical Garden is a series of monographs relating to the study of systematic botany. It is published by the Missouri Botanical Garden Press. Monographs in Systematic Botany was established in 1978. By 2010 a total of 120 issues had been published, approximately 15% of which, relating to the flora of Latin America, are published in Spanish."
+        },
+        {
+            "@language": "es",
+            "@value": "Monographs in Systematic Botany from the Missouri Botanical Garden, (abreviado Monogr. Syst. Bot. Missouri Bot. Gard.),​ es una revista ilustrada con descripciones botánicas que es editada por Missouri Botanical Garden. Comenzó su publicación en el año 1978. Monographs in Systematic Botany from the Missouri Botanical Garden se estableció en 1978. Para el año 2010 se había publicado un total de 120 números, aproximadamente el 15% de los cuales, en relación con la flora de América Latina, se publican en español.​"
+        }
+    ]
+}

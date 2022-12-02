@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0374-7387",
+    "issn": [
+        "0374-7387"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0374-7387"
+    ],
+    "name": "East Africa Natural History Society Bulletin"
+}

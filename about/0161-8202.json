@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0161-8202",
+    "issn": [
+        "0161-8202"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0161-8202",
+        "http://www.wikidata.org/entity/Q15766718"
+    ],
+    "name": "Journal of Arachnology"
+}

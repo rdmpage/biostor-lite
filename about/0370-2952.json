@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0370-2952",
+    "issn": [
+        "0370-2952"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0370-2952",
+        "http://www.wikidata.org/entity/Q25653954"
+    ],
+    "name": "Quarterly Journal of Microscopical Science"
+}

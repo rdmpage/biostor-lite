@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1872-9231",
+    "issn": [
+        "1872-9231"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1872-9231",
+        "http://www.wikidata.org/entity/Q21385877"
+    ],
+    "name": "Notes From Leyden Museum"
+}

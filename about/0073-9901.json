@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0073-9901",
+    "issn": [
+        "0073-9901"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0073-9901",
+        "http://www.wikidata.org/entity/Q27712071"
+    ],
+    "name": "Mem. Inst. Butantan"
+}

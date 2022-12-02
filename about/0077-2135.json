@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0077-2135",
+    "issn": [
+        "0077-2135"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0077-2135",
+        "http://www.wikidata.org/entity/Q25653922"
+    ],
+    "name": "Veroeffentlichungen Der Zoologischen Staatssammlung Muenchen"
+}

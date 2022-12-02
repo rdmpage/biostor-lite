@@ -1,0 +1,15 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0370-6583",
+    "issn": [
+        "0370-6583"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0370-6583",
+        "http://www.wikidata.org/entity/Q6110884",
+        "https://en.wikipedia.org/wiki/Rodrigu%C3%A9sia_(journal)"
+    ],
+    "name": "Rodrigu%C3%A9sia (journal)",
+    "description": []
+}

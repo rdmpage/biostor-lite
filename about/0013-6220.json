@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0013-6220",
+    "issn": [
+        "0013-6220"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0013-6220",
+        "http://www.wikidata.org/entity/Q51496969"
+    ],
+    "name": "Journal of the Elisha Mitchell Scientific Society"
+}

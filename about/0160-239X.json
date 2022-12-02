@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0160-239X",
+    "issn": [
+        "0160-239X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0160-239X",
+        "http://www.wikidata.org/entity/Q51484494"
+    ],
+    "name": "Great Basin Nat. Mem."
+}

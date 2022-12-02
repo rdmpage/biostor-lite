@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0084-5647",
+    "issn": [
+        "0084-5647"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0084-5647",
+        "http://www.wikidata.org/entity/Q15772734"
+    ],
+    "name": "Verh. Zool. Bot. Ges. Wien"
+}

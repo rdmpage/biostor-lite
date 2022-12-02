@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0077-2070",
+    "issn": [
+        "0077-2070"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0077-2070",
+        "http://www.wikidata.org/entity/Q51505476"
+    ],
+    "name": "Mitteilungen der Bayerischen Staatssammlung fuer Palaeontologie und Historische Geologie"
+}

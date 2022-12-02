@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0065-8170",
+    "issn": [
+        "0065-8170"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0065-8170",
+        "http://www.wikidata.org/entity/Q21386049"
+    ],
+    "name": "Memoirs Am. ent. Soc."
+}

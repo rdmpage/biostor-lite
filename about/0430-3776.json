@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0430-3776",
+    "issn": [
+        "0430-3776"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0430-3776",
+        "http://www.wikidata.org/entity/Q96701298"
+    ],
+    "name": "Fieldiana Zoology Memoir"
+}

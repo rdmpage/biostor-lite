@@ -1,0 +1,36 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0022-2372",
+    "issn": [
+        "0022-2372"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0022-2372",
+        "http://www.wikidata.org/entity/Q1709857",
+        "https://en.wikipedia.org/wiki/Journal_of_Mammalogy"
+    ],
+    "name": "Journal of Mammalogy",
+    "description": [
+        {
+            "@language": "fr",
+            "@value": "The Journal of Mammalogy est une revue évaluée par les pairs dédiée aux mammifères. Elle possède un facteur d'impact de 2,225. Elle est la principale publication de l'American Society of Mammalogists (ASM). Les deux ont été fondées en 1919. Les articles traitent de tous les aspects biologiques des mammifères, incluant l'écologie, la génétique, la biologie de la conservation, le comportement, la systématique, la morphologie et la physiologie. La revue publie également des nouvelles concernant l'ASM ainsi que des offres de bourses pour les étudiants."
+        },
+        {
+            "@language": "en",
+            "@value": "The Journal of Mammalogy is a bimonthly peer-reviewed scientific journal published by Oxford University Press on behalf of the American Society of Mammalogists. Both the society and the journal were established in 1919. The journal covers research on mammals throughout the world, including their ecology, genetics, conservation, behavior, systematics, morphology, and physiology. The journal also publishes news about the society and advertises student scholarship opportunities."
+        },
+        {
+            "@language": "pl",
+            "@value": "Journal of Mammalogy – recenzowane czasopismo naukowe wydawane przez od 1919 roku, sztandarowe czasopismo tego wydawnictwa. Co roku ukazuje się 6 numerów. W czasopiśmie liczącym do 1200 stron publikowane są artykuły na temat ekologii, genetyki, taksonomii, morfologii oraz ochrony ssaków lądowych i morskich. Każdy numer zawiera kilka dłuższych artykułów jak również wiele krótszych, ogólnych zagadnień. Czasopismo uznawane przez DBIO 100 za jedno ze 100 najlepszych i najbardziej wpływowych czasopism z dziedziny biologii i medycyny. Wskaźnik cytowań w roku 2015 wynosił 1.840."
+        },
+        {
+            "@language": "uk",
+            "@value": "«Journal of Mammalogy» — це щодвамісячний рецензований науковий журнал, що видається Oxford University Press від імені Американської спілки маммалогів. І спілка, і журнал були засновані в 1919 році. Журнал охоплює дослідження ссавців по всьому світу, включаючи їх екологію, генетику, збереження, поведінку, систематику, морфологію та фізіологію."
+        },
+        {
+            "@language": "de",
+            "@value": "Das Journal of Mammalogy (J. Mammal.) ist eine zoologische Fachzeitschrift, die von der amerikanischen Gesellschaft für Säugetierkunde, der American Society of Mammalogists herausgegeben wird. Das Magazin erscheint seit 1919 mit der 90. Nummer im Jahr 2009, aktuell wird es sechsmal im Jahr in den Monaten Februar, April, Juni, August, Oktober und Dezember publiziert. Vertrieben wird die Zeitschrift seit 2000 und der Nummer 81 zusätzlich über ."
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0145-9031",
+    "issn": [
+        "0145-9031"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0145-9031"
+    ],
+    "name": "Special Publications of Carnegie Museum"
+}

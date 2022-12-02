@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0885-3479",
+    "issn": [
+        "0885-3479"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0885-3479",
+        "http://www.wikidata.org/entity/Q5946716"
+    ],
+    "name": "Journal of the Academy of Natural Sciences of Philadelphia"
+}

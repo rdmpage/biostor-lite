@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0367-5734",
+    "issn": [
+        "0367-5734"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0367-5734",
+        "http://www.wikidata.org/entity/Q25804168"
+    ],
+    "name": "Hedwigia"
+}

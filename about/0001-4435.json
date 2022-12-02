@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0001-4435",
+    "issn": [
+        "0001-4435"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0001-4435",
+        "http://www.wikidata.org/entity/Q110253999"
+    ],
+    "name": "Rendiconti Atti della Reale Accademia dei Lincei"
+}

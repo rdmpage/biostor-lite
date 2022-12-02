@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0094-680X",
+    "issn": [
+        "0094-680X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0094-680X"
+    ],
+    "name": "NOAA (National Oceanic and Atmospheric Administration) Technical Report NMFS (National Marine Fisheries Service) Circular"
+}

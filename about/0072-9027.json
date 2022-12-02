@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0072-9027",
+    "issn": [
+        "0072-9027"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0072-9027",
+        "http://www.wikidata.org/entity/Q51400441"
+    ],
+    "name": "Gulf Research Reports"
+}

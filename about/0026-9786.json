@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0026-9786",
+    "issn": [
+        "0026-9786"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0026-9786",
+        "http://www.wikidata.org/entity/Q21385574"
+    ],
+    "name": "Monitore Zoologico Italiano"
+}

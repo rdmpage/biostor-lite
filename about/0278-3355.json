@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0278-3355",
+    "issn": [
+        "0278-3355"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0278-3355"
+    ],
+    "name": "Bulletin New York State Museum"
+}

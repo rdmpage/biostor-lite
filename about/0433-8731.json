@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0433-8731",
+    "issn": [
+        "0433-8731"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0433-8731",
+        "http://www.wikidata.org/entity/Q107019031"
+    ],
+    "name": "Sitzungs-Berichte der Gesellschaft Naturforschender Freunde, Berlin"
+}

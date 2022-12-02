@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0862-660X",
+    "issn": [
+        "0862-660X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0862-660X",
+        "http://www.wikidata.org/entity/Q51395331"
+    ],
+    "name": "Acta Societatis Entomologicae Cechoslovenicae"
+}

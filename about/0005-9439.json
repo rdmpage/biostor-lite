@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0005-9439",
+    "issn": [
+        "0005-9439"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0005-9439",
+        "http://www.wikidata.org/entity/Q5727044"
+    ],
+    "name": "Bernice P. Bishop Museum Bulletin"
+}

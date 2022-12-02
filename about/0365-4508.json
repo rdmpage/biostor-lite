@@ -1,0 +1,32 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0365-4508",
+    "issn": [
+        "0365-4508"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0365-4508",
+        "http://www.wikidata.org/entity/Q21385151",
+        "https://en.wikipedia.org/wiki/Archivos_do_Museu_Nacional"
+    ],
+    "name": "Archivos do Museu Nacional",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "Arquivos do Museu Nacional (previously Archivos do Museu Nacional; ISSN: 0365–4508) is the oldest scientific journal of Brazil. Its first issue was published in 1876, founded by Ladislau de Souza Mello Netto. The journal is edited and published quarterly (March, June, September and December) by the National Museum of Brazil and the Federal University of Rio de Janeiro. The journal areas cover anthropology, archaeology, botany, geology, paleontology and zoology."
+        },
+        {
+            "@language": "ca",
+            "@value": "Arquivos do Museu Nacional (fins al 1943 anomenada Archivos do Museu Nacional; ISSN: 0365-4508) és la revista científica més antiga del Brasil. El primer número es va publicar el 1876. La revista s'edita i publica quatrimestralment, els mesos de març, juny, setembre i desembre, per part del Museu Nacional del Brasil i la Universitat Federal de Rio de Janeiro. La revista té articles d'àrees com l'antropologia, arqueoligia, botànica, geologia, paleontologia i zoologia. El Museu Nacional té una altra publicació, el Boletim do Museu Nacional que es publica amb fascicles sobre antropologia, botànica, geologia o zoologia."
+        },
+        {
+            "@language": "es",
+            "@value": "Arquivos do Museu Nacional (anteriormente Archivos do Museu Nacional;​ ISSN: 0365-4508) es la revista científica más antigua de Brasil.​ Su primera edición fue publicada en 1876, fundada por Ladislau de Mello Souza Netto. La revista se edita trimestralmente (marzo, junio, septiembre y diciembre), por el Museo Nacional de Brasil y la Universidad Federal de Río de Janeiro. La publicación cubre las áreas de antropología, arqueología, botánica, geología, paleontología y zoología.​​"
+        },
+        {
+            "@language": "pt",
+            "@value": "Arquivos do Museu Nacional (anteriormente Archivos do Museu Nacional; ISSN: 0365-4508) é a mais antiga revista científica do Brasil. Seu primeiro número foi publicado em 1876. O jornal é editado e publicado trimestralmente (Março, junho, setembro e dezembro) pelo Museu Nacional do Brasil e pela Universidade Federal do Rio de Janeiro. O periódico cobre antropologia, arqueologia, botânica, geologia, paleontologia e zoologia."
+        }
+    ]
+}

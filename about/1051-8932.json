@@ -1,0 +1,15 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1051-8932",
+    "issn": [
+        "1051-8932"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1051-8932",
+        "http://www.wikidata.org/entity/Q21385657",
+        "https://en.wikipedia.org/wiki/Bulletin_of_the_Brooklyn_Entomological_Society"
+    ],
+    "name": "Bulletin of the Brooklyn Entomological Society",
+    "description": []
+}

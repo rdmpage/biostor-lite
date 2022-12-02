@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1138-6444",
+    "issn": [
+        "1138-6444"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1138-6444"
+    ],
+    "name": "Boletín de la Sociedad Aragonesa de Ciencias Naturales"
+}

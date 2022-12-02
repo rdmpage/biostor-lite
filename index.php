@@ -2,15 +2,995 @@
 
 error_reporting(E_ALL);
 
-require_once(dirname(__FILE__) . '/config.inc.php');
+require_once (dirname(__FILE__) . '/config.inc.php');
+require_once (dirname(__FILE__) . '/elastic.php');
 
-?>
+require_once (dirname(__FILE__) . '/interface-shared.php');
 
-<!DOCTYPE html>
-<html>
-	<head>
+
+
+
+//----------------------------------------------------------------------------------------
+// CSL to JSON-LD
+function csl_to_jsonld($csl)
+{
+	// crude hack to get JSON-LD
 	
-		<!-- Google Analytics -->
+	$obj = new stdclass;
+	$obj->{'@context'}	= 'http://schema.org/';
+	
+	if (isset($csl->type))
+	{
+		switch ($csl->type)
+		{
+			case 'book':
+				$type = 'schema:Book';
+				break;
+			
+			case 'chapter':
+				$type = 'schema:Chapter';
+				break;
+			
+			case 'article-journal':
+			default:
+				$type = 'schema:ScholarlyArticle';
+				break;	
+		}
+	}
+	
+	$obj->{'@type'}	= $type;
+	
+	//------------------------------------------------------------------------------------
+	// name
+	$name_done = false;
+	
+	if (isset($csl->multi))
+	{
+		if (isset($csl->multi->_key->title))
+		{			
+			$obj->name = array();
+			
+			foreach ($csl->multi->_key->title as $language => $value)
+			{
+				$str = new stdclass;
+				$str->{'@language'} = $language;
+				$str->{'@value'} = strip_tags($value);
+			}		
+			$name_done = true;			
+		}
+	}
+	
+	if (!$name_done)
+	{
+		if (isset($csl->title))
+		{
+			$obj->name = strip_tags($csl->title);
+		}
+	}
+	
+	//------------------------------------------------------------------------------------
+	// parts of	
+	
+	if (isset($csl->{'container-title'}))
+	{
+		if (!isset($obj->isPartOf))
+		{
+			$obj->isPartOf = array();
+		}
+		
+		$container = new stdclass;
+		
+		// What type of container is it?
+		switch ($obj->{'@type'})
+		{
+			case 'Chapter':
+				$container->{'@type'} = 'Book';
+				break;		
+				
+			case 'ScholarlyArticle':
+			default:
+				$container->{'@type'} = 'Periodical';
+				break;		
+		}
+		
+		// name
+		$name_done = false;
+	
+		if (isset($csl->multi))
+		{
+			if (isset($csl->multi->_key->{'container-title'}))
+			{			
+				$container->name = array();
+			
+				foreach ($csl->multi->_key->{'container-title'} as $language => $value)
+				{
+					$str = new stdclass;
+					$str->{'@language'} = $language;
+					$str->{'@value'} = strip_tags($value);
+				}		
+				$name_done = true;			
+			}
+		}
+	
+		if (!$name_done)
+		{			
+			$container->name = strip_tags($csl->{'container-title'});
+		}		
+				
+		// ISSN?
+		if (isset($csl->ISSN))
+		{
+			$container->issn = array();
+			foreach ($csl->ISSN as $issn)
+			{
+				$container->issn[] = $issn;
+
+				if (!isset($container->sameAs))
+				{
+					$container->sameAs = array();
+				}
+				$container->sameAs[] = 'http://issn.org/resource/ISSN/' . $issn;							
+			}
+		}		
+
+		$obj->isPartOf[] = $container;
+	}
+	
+
+	if (isset($csl->volume))
+	{
+		if (!isset($obj->isPartOf))
+		{
+			$obj->isPartOf = array();
+		}
+		$volume = new stdclass;
+		$volume->{'@type'} = 'PublicationVolume';
+		$volume->volumeNumber = $csl->volume;
+		
+		$obj->isPartOf[] = $volume;
+	}
+	
+	if (isset($csl->issue))
+	{
+		if (!isset($obj->isPartOf))
+		{
+			$obj->isPartOf = array();
+		}
+		$issue = new stdclass;
+		$issue->{'@type'} = 'PublicationIssue';
+		$issue->issueNumber = $csl->issue;
+		
+		$obj->isPartOf[] = $issue;
+	}	
+		
+	//------------------------------------------------------------------------------------
+	if (isset($csl->page))
+	{
+		$obj->pagination = $csl->page;
+	}
+	
+	//------------------------------------------------------------------------------------
+	// date 
+	if (isset($csl->issued))
+	{
+		$date = '';
+		$d = $csl->issued->{'date-parts'}[0];
+
+		// sanity check
+		if (is_numeric($d[0]))
+		{
+			if ( count($d) > 0 ) $year = $d[0] ;
+			if ( count($d) > 1 ) $month = preg_replace ( '/^0+(..)$/' , '$1' , '00'.$d[1] ) ;
+			if ( count($d) > 2 ) $day = preg_replace ( '/^0+(..)$/' , '$1' , '00'.$d[2] ) ;
+			if ( isset($month) and isset($day) ) $date = "$year-$month-$day";
+			else if ( isset($month) ) $date = "$year-$month";
+			else if ( isset($year) ) $date = "$year";
+
+			$obj->datePublished = $date;
+		}				
+	}
+	
+	//------------------------------------------------------------------------------------
+	// identifiers 
+
+	// DOI is sameAs and also an identifier
+	if (isset($csl->DOI))
+	{		
+		$obj->sameAs[] = 'https://doi.org/' . strtolower($csl->DOI);
+		
+		add_property_value($obj, 'identifier', 'doi', strtolower($csl->DOI));
+	}
+	
+	//------------------------------------------------------------------------------------
+	// authors
+	if (isset($csl->author))
+	{
+		$obj->author = array();
+	
+		foreach ($csl->author as $one_author)
+		{
+			$author = new stdclass;
+			$author->{'@type'} = 'Person';
+			
+			if (isset($one_author->literal))
+			{
+				$author->name = $one_author->literal;
+			}
+			if (isset($one_author->family))
+			{
+				$author->familyName = $one_author->family;
+			}
+			if (isset($one_author->given))
+			{
+				$author->givenName = $one_author->given;
+			}
+			
+			$obj->author[] = $author;		
+		}	
+	}		
+		
+	return $obj;
+}
+
+
+//----------------------------------------------------------------------------------------
+function do_entity_custom_tags($entity)
+{
+	$tag_names = array(
+		'citation_title',
+		'citation_author',
+		'citation_doi',
+		'citation_journal_title',
+		'citation_issn',
+		'citation_volume',
+		'citation_issue',
+		'citation_volume',
+		'citation_firstpage',
+		'citation_lastpage',
+		'citation_abstract_html_url',
+		'citation_pdf_url',
+		'citation_fulltext_html_url',
+		'citation_abstract',
+		'citation_date'
+	);
+
+	$tags = array();
+	
+	foreach ($tag_names as $tag_name)
+	{
+		switch ($tag_name)
+		{
+			case 'citation_title':
+				if (!isset($tags[$tag_name]))
+				{
+					$tags[$tag_name] = array();
+				}
+				
+				if (isset($entity->name))
+				{
+					$tags[$tag_name][] = get_literal($entity->name);
+				}
+				break;
+				
+			case 'citation_doi':
+				$doi = get_property_value($entity, 'identifier', 'doi');
+				if ($doi != '')
+				{
+					if (!isset($tags[$tag_name]))
+					{
+						$tags[$tag_name] = array();
+					}
+				
+					$tags[$tag_name][] = $doi;
+				}
+				break;
+				
+			case 'citation_date':				
+				if (isset($entity->datePublished))
+				{
+					if (!isset($tags[$tag_name]))
+					{
+						$tags[$tag_name] = array();
+					}				
+					$tags[$tag_name][] = get_literal($entity->datePublished);
+				}			
+				break;	
+				
+			case 'citation_firstpage':
+				if (isset($entity->pagination))
+				{
+					$parts = explode('-', $entity->pagination);
+					if (!isset($tags[$tag_name]))
+					{
+						$tags[$tag_name] = array();
+					}				
+					$tags[$tag_name][] = $parts[0];
+				}
+				break;
+				
+			case 'citation_lastpage':
+				if (isset($entity->pagination))
+				{
+					$parts = explode('-', $entity->pagination);
+					if (count($parts) == 2)
+					{
+						if (!isset($tags[$tag_name]))
+						{
+							$tags[$tag_name] = array();
+						}				
+						$tags[$tag_name][] = $parts[1];
+					}
+				}
+				break;
+							
+			case 'citation_author':	
+				if (isset($entity->author))
+				{
+					foreach ($entity->author as $author)
+					{
+						if (!isset($tags[$tag_name]))
+						{
+							$tags[$tag_name] = array();
+						}	
+						
+						$name = array();
+						
+						if (isset($author->name))
+						{
+							$name[] = $author->name;
+						}
+						else
+						{
+							if (isset($author->givenName))
+							{
+								$name[] = $author->givenName;
+							}
+							if (isset($author->familyName))
+							{
+								$name[] = $author->familyName;
+							}
+						}
+						
+						if (count($name) > 1)
+						{
+							$tags[$tag_name][] = join(' ', $name);
+						}
+					}
+				}							
+				break;
+				
+			case 'citation_pdf_url':
+				if (isset($entity->encoding))
+				{
+					$pdf = '';
+					foreach ($entity->encoding as $encoding)
+					{
+						if ($encoding->encodingFormat == "application/pdf")
+						{
+							$pdf = $encoding->contentUrl;
+						}
+					}
+		
+					if ($pdf != '')
+					{
+						if (!isset($tags[$tag_name]))
+						{
+							$tags[$tag_name] = array();
+						}				
+						$tags[$tag_name][] = $pdf;
+					}
+				}
+				break;
+				
+				
+
+		
+			default:
+				break;
+		}
+	
+	}
+	
+	if (isset($entity->isPartOf))
+	{
+		foreach ($entity->isPartOf as $part)
+		{
+			switch ($part->{'@type'})
+			{
+				case 'PublicationVolume':
+					$tag_name = 'citation_volume';
+					if (!isset($tags[$tag_name]))
+					{
+						$tags[$tag_name] = array();
+					}				
+					$tags[$tag_name][] = $part->volumeNumber;
+					break;	
+
+				case 'PublicationIssue':
+					$tag_name = 'citation_issue';
+					if (!isset($tags[$tag_name]))
+					{
+						$tags[$tag_name] = array();
+					}				
+					$tags[$tag_name][] = $part->issueNumber;
+					break;	
+
+				case 'Periodical':
+					if (isset($part->name))
+					{
+						$tag_name = 'citation_journal_title';
+						if (!isset($tags[$tag_name]))
+						{
+							$tags[$tag_name] = array();
+						}				
+						$tags[$tag_name][] = get_literal($part->name);
+					}
+					
+					if (isset($part->issn))
+					{
+						$tag_name = 'citation_issn';
+						if (!isset($tags[$tag_name]))
+						{
+							$tags[$tag_name] = array();
+						}		
+					
+					}
+					break;	
+					
+				default:
+					break;			
+				
+			
+			
+			}
+		}
+	
+	}
+
+	return $tags;
+}
+
+			
+
+
+//----------------------------------------------------------------------------------------
+// Get one record in JSON-LD
+function do_one($id)
+{
+	global $config;
+	global $elastic;
+	
+	$record = null;
+	
+	if (preg_match('/^\d+$/', $id))
+	{
+		$id = 'biostor-' . $id;
+	}
+	
+	$data = $elastic->send('GET', '_doc/' . urlencode($id));
+	
+	//echo $data;
+	
+	if ($data != '')
+	{
+		$obj = json_decode($data);
+		
+		// convert CSL to RDF
+		$csl = $obj->_source->search_result_data->csl;		
+
+		$record = csl_to_jsonld($csl);
+				
+		$record->{'@id'} = $config['web_server'] . $config['web_root'] . 'reference/' . str_replace('biostor-', '', $id);
+		
+		if (isset($obj->_source->search_result_data->thumbnailUrl))
+		{
+			$record->thumbnailUrl = $obj->_source->search_result_data->thumbnailUrl;
+		}
+				
+		if (isset($obj->_source->search_result_data->description))
+		{
+			$record->description = $obj->_source->search_result_data->description;
+		}
+		
+		// PDF
+		$record->encoding = array();
+	
+		$encoding = new stdclass;
+		$encoding->{'@type'} = 'MediaObject';
+	
+		$encoding->encodingFormat = "application/pdf";
+		$encoding->contentUrl = 'https://archive.org/download/' . $id . '/' . $id . '.pdf';
+	
+		$record->encoding[] = $encoding;
+	}
+	
+	return $record;
+}
+
+//----------------------------------------------------------------------------------------
+function search_result_to_rdf($obj, $query_string = "")
+{
+	// process and convert to RDF
+
+	// schema.org DataFeed
+	$output = new stdclass;
+
+	$output->{'@context'} = (object)array
+		(
+			'@vocab'	 			=> 'http://schema.org/',
+			'goog' 					=> 'http://schema.googleapis.com/',
+			'resultScore'		 	=> 'goog:resultScore',
+			
+			'biostor'				=> 'https://biostor.org/reference/'
+		);
+
+	$output->{'@graph'} = array();
+	$output->{'@graph'}[0] = new stdclass;
+	$output->{'@graph'}[0]->{'@id'} = "http://example.rss";
+	$output->{'@graph'}[0]->{'@type'} = "DataFeed";
+	$output->{'@graph'}[0]->dataFeedElement = array();
+	
+	if (isset($obj->hits))
+	{
+		$num_hits = 0;
+		
+		// Elastic 7.6.2
+		if (isset($obj->hits->total->value))
+		{
+			$num_hits = $obj->hits->total->value;
+		}
+		else
+		{
+			$num_hits = $obj->hits->total;			
+		}
+		
+		$time = '';
+		if (isset($obj->took))
+		{
+			if ($obj->took > 1000)
+			{
+				$time = '(' . floor($obj->took/ 1000) . ' seconds)';
+			}
+			else
+			{
+				$time = '(' . round($obj->took/ 1000, 2) . ' seconds)';
+			}
+		}
+		
+		if ($num_hits == 0)
+		{
+			// Describe search
+			$output->{'@graph'}[0]->description = "No results " . $time;
+		}
+		else
+		{
+			// Describe search
+			if ($obj->hits->total->value == 1)
+			{
+				$output->{'@graph'}[0]->description = "One hit ";
+			}
+			else
+			{
+				$output->{'@graph'}[0]->description = $obj->hits->total->value . " hits ";
+			}
+			
+			$output->{'@graph'}[0]->description .=  $time;
+			
+			if ($query_string != '')
+			{
+				$output->{'@graph'}[0]->query = $query_string;
+			}
+
+			foreach ($obj->hits->hits as $hit)
+			{
+				$dataFeedItem = new stdclass;
+				
+				$dataFeedItem = new stdclass;
+				$dataFeedItem->{'@type'} = "DataFeedItem";
+				
+				$dataFeedItem->resultScore = $hit->_score;
+				
+				//echo '<pre>';
+				//print_r($hit->_source->search_result_data);
+				//echo '</pre>';
+				
+				if (isset($hit->_source->search_result_data->created))
+				{
+					$dataFeedItem->dateCreated = gmdate("Y-m-d", $hit->_source->search_result_data->created);					
+				}
+
+				if (isset($hit->_source->search_result_data->modified))
+				{
+					$dataFeedItem->dateModified = gmdate("Y-m-d", $hit->_source->search_result_data->modified);				
+				}				
+				
+				$dataFeedItem->item = new stdclass;
+				
+				$dataFeedItem->item->{'@id'} = 'biostor:' . str_replace('biostor-', '', $hit->_id);
+				
+				$dataFeedItem->item->name = "";
+				
+				if (isset($hit->_source->search_result_data->name))
+				{
+					$dataFeedItem->item->name = $hit->_source->search_result_data->name;				
+				}
+
+				if (isset($hit->_source->search_result_data->thumbnailUrl))
+				{
+					$dataFeedItem->item->thumbnailUrl = $hit->_source->search_result_data->thumbnailUrl;				
+				}
+				
+				if (isset($hit->_source->search_result_data->description))
+				{
+					$dataFeedItem->item->description = $hit->_source->search_result_data->description;				
+				}
+				
+				if (isset($hit->_source->search_result_data->csl))
+				{
+					$csl = $hit->_source->search_result_data->csl;
+					
+					$type = 'Thing';
+				
+					if (isset($csl->type))
+					{
+						switch ($csl->type)
+						{
+							case 'book':
+								$type = 'Book';
+								break;
+			
+							case 'chapter':
+								$type = 'Chapter';
+								break;
+			
+							case 'article-journal':
+							default:
+								$type = 'ScholarlyArticle';
+								break;	
+						}
+					}
+	
+					$dataFeedItem->item->{'@type'}	= $type;
+				}
+				
+
+				$output->{'@graph'}[0]->dataFeedElement[] = $dataFeedItem;
+			}			
+		}
+	}
+	
+	return $output;
+}
+
+//----------------------------------------------------------------------------------------
+// Search
+function do_search($q)
+{
+	global $elastic;
+				
+	// empty query (just in case we get to this point)
+	if ($q == '')
+	{
+		$obj = new stdclass;
+		$obj->hits = new stdclass;
+		$obj->hits->total = 0;
+		$obj->hits->hits = array();
+	}
+	else
+	{		
+		$matched = false;
+	
+		if (!$matched)
+		{
+			if (preg_match('/^issn:(?<issn>[0-9]{4}-[0-9]{3}[0-9X])$/u', trim($q), $m))
+			{
+				$query_json = '{
+					"size": 5000,
+					"_source": ["id", "search_result_data.name", "search_result_data.description", "search_result_data.thumbnailUrl", "search_data.year", "search_result_data.csl"],
+					"query": {
+						"bool": {
+							"must": {
+								"term": { "search_result_data.csl.ISSN.keyword" : "' . $m['issn'] .'" }
+							}
+						}
+					}
+				}';		
+				$matched = true;
+			}	
+		}	
+	
+		if (!$matched)
+		{
+			$query_json = '{
+			"size":50,
+				"query": {
+					"bool" : {
+						"must" : [ {
+				   "multi_match" : {
+				  "query": "<QUERY>",
+				  "fields":["search_data.fulltext", "search_data.fulltext_boosted^4"] 
+				}
+				}]
+				}
+			},
+			"aggs": {
+			"type" :{
+				"terms": { "field" : "search_data.type.keyword" }
+			  },
+			  "year" :{
+				"terms": { "field" : "search_data.year" }
+			  },
+			  "container" :{
+				"terms": { "field" : "search_data.container.keyword" }
+			  },
+			  "author" :{
+				"terms": { "field" : "search_data.author.keyword" }
+			  },
+			  "classification" :{
+				"terms": { "field" : "search_data.classification.keyword" }
+			  }  
+			}
+			}';
+			
+			$query_json = str_replace('<QUERY>', $q, $query_json);
+			
+			$matched = true;
+		}
+		
+		$resp = $elastic->send('POST', '_search?pretty', $post_data = $query_json);
+		
+		$obj = json_decode($resp);
+		
+		//print_r($obj);
+	}
+	
+	$output = search_result_to_rdf($obj, $q);
+
+	return $output;
+}
+
+//----------------------------------------------------------------------------------------
+function do_welcome()
+{
+	$html = '<div style="font-size:5em;">BioStor</div>';
+	
+	$html .= '<p>BioStor is an interface to articles in the 
+	<a href="https://www.biodiversitylibrary.org">Biodiversity Heritage Library</a> (BHL). 
+	It is experimental, and things are likely to change. The articles here are regularly harvested by
+	BHL and so you can always view them there.</a></p>';
+	
+	$html .= '<h2>Examples</h2>';
+	
+	$json =  '[
+				{ "pageID": 43605918, "referenceID": 248475},
+				{ "pageID": 35669296, "referenceID": 114607},
+				{ "pageID": 43276884, "referenceID": 201883},
+				{ "pageID": 48184882, "referenceID": 149688},
+				{ "pageID": 49942215, "referenceID": 192990},
+				{ "pageID": 48951678, "referenceID": 167448},
+				{ "pageID": 52110073, "referenceID": 232256},
+				{ "pageID": 41229695, "referenceID": 115363}
+				]';
+				
+	$html .= '<div>';
+	
+	$obj = json_decode($json);
+	
+	foreach ($obj as $example)
+	{
+		$html .= '<div class="thumbnail">';
+		$html .= '<a href="reference/' . $example->referenceID . '">';
+		$html .= '<img src="https://aezjkodskr.cloudimg.io/https://www.biodiversitylibrary.org/pagethumb/' . $example->pageID . ',200,200?height=200">';
+		$html .= '</a>';
+		$html .= '</div>';
+	}
+	$html .= '</div>';					
+	
+	return $html;
+}
+
+//----------------------------------------------------------------------------------------
+function do_footer()
+{
+	$html =  '<a href=".">BioStor-Lite</a> is a project by <a href="https://twitter.com/rdmpage">Rod Page</a>. 
+It\'s goal is to make discoverable articles in the <a href="https://www.biodiversitylibrary.org">Biodiversity Heritage Library</a> (BHL).';
+
+	return $html;
+}
+
+//----------------------------------------------------------------------------------------
+function do_issn($issn)
+{
+
+	return do_search('issn:' . $issn);
+	
+	/*
+	global $elastic;
+	
+	$fields = 'search_result_data.csl.ISSN.keyword';
+	
+	$query_json = '{
+	"size": 5000,
+	"_source": ["id", "search_result_data.name", "search_result_data.description", "search_result_data.thumbnailUrl", "search_data.year", "search_result_data.csl"],
+	"query": {
+		"bool": {
+			"must": {
+				"term": { "' . $fields . '" : "' . $issn .'" }
+			}
+		}
+	}
+}';
+	
+	$resp = $elastic->send('POST', '_search?pretty', $post_data = $query_json);
+	
+	$obj = json_decode($resp);
+	
+	$output = search_result_to_rdf($obj, $issn);
+
+	return $output;
+	*/
+}
+
+//----------------------------------------------------------------------------------------
+function do_issn_year($issn, $year)
+{
+	global $elastic;
+	
+	$fields = 'search_result_data.csl.ISSN.keyword';
+	
+	$query_json = '{
+	"size": 500,
+	"_source": ["id", "search_result_data.name", "search_result_data.description", "search_result_data.thumbnailUrl", "search_data.year", "search_result_data.csl"],
+	"query": {
+		"bool": {
+			"must": {
+				"term": { "' . $fields . '" : "' . $issn .'" }
+			},
+			"filter": [
+				{
+					"term": { "search_data.year": ' . $year .'}
+				}
+			]			
+		}
+	}
+}';
+	
+	$resp = $elastic->send('POST', '_search?pretty', $post_data = $query_json);
+	
+	$obj = json_decode($resp);
+	
+	$output = search_result_to_rdf($obj, "issn=$issn, year=$year");
+
+	return $output;
+}
+
+
+//----------------------------------------------------------------------------------------
+function display_issn($issn)
+{
+	global $config;
+	
+	$title = '';	
+	$meta = '';
+	$script = '';
+	
+	// Can we get details about the journal and treat that as the entity for the page?	
+	$filename = 'about/' . $issn . '.json';
+	
+	if (file_exists($filename))
+	{
+		$json = file_get_contents($filename);
+		$entity = json_decode($json);
+	}
+	else
+	{
+		$entity = new stdclass;
+		$entity->name = "Unknown";
+	}
+	
+	$jsonld = json_encode($entity, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+			
+	$obj = do_issn($issn);
+		
+	display_html_start($title, $meta, $script, $jsonld);	
+	
+	// set search bar to ISSN query
+	display_header('issn:' . $issn);	
+				
+	display_main_start();	
+		
+	//print_r($obj);
+	
+	// 
+	echo '<h1>' . get_literal($entity->name) . '</h1>';
+	
+	if (isset($entity->description))
+	{
+		echo '<p class="description">' . get_literal($entity->description, 'en') . '</p>';
+	}
+	
+	// articles in journal
+	display_list($obj);
+		
+	display_main_end();	
+	display_footer();
+	display_html_end();	
+}
+
+//----------------------------------------------------------------------------------------
+function display_issn_year($issn, $year)
+{
+	global $config;
+	
+	$title = '';	
+	$meta = '';
+	$script = '';
+	
+	// Can we get details about the journal	
+	$filename = 'about/' . $issn . '.json';
+	
+	if (file_exists($filename))
+	{
+		$json = file_get_contents($filename);
+		$entity = json_decode($json);
+	}
+	else
+	{
+		$entity = new stdclass;
+		$entity->name = "Unknown";
+		$entity->issn[] = "0000-0000";
+	}
+	
+	
+	// Do search	
+	$obj = do_issn_year($issn, $year);
+	
+	$jsonld = json_encode($obj, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+	
+	display_html_start($title, $meta, $script, $jsonld);	
+	
+	display_header();	
+				
+	display_main_start();	
+	
+	// Breadcrumbs
+	$path = array();
+	
+	$path["."] = "Home";	
+	$path["issn/" . $entity->issn[0]] = get_literal($entity->name);
+	$path[""] = $year;
+
+	echo '<ul class="breadcrumb">';
+	foreach ($path as $k => $v)
+	{
+		echo '<li>';		
+		if ($k != "")
+		{
+			echo '<a href="' . $k . '">';
+		}
+		echo $v;
+		if ($k != "")
+		{
+			echo '</a>';
+		}
+		echo '</li>';	
+	}	
+	echo '</ul>';
+	
+	//print_r($obj);
+	
+	display_list($obj);
+		
+	display_main_end();	
+	display_footer();
+	display_html_end();	
+}
+
+
+//----------------------------------------------------------------------------------------
+function display_google_analytics()
+{
+	echo "<!-- Google Analytics -->
 		<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -21,1357 +1001,67 @@ require_once(dirname(__FILE__) . '/config.inc.php');
 		ga('send', 'pageview');
 		</script>
 		<!-- End Google Analytics -->	
-	
-		<meta charset="utf-8" /> 
-		
-   		<!-- favicon -->
-		<link href="static/biostor-shadow32x32.png" rel="icon" type="image/png">    
-		
-		<title>
-			BioStor-Lite
-		</title>
-		<style>
-	
-	/* body and main styles to give us a fixed footer, see https://materializecss.com/footer.html */	
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-  
-/* https://codepen.io/furnace/pen/PGygEd */
-nav.clean {
-  background: none;
-  box-shadow: none;
-  height:2em;
-  line-height:2em;
-  
-}
-nav.clean .breadcrumb {
-  color: black;
-  font-size:1em;
-}
-nav.clean .breadcrumb:before {
-  color: rgba(0, 0, 0, 0.7);
+";
+
 }
 
 
-  main {
-    flex: 1 0 auto;
-  }		
-			
-/* dot on map */
-.mydivicon{
-    width: 12px
-    height: 12px;
-    border-radius: 10px;
-    background: rgb(208,104,85);
-    border: 1px solid rgb(38,38,38);
-    opacity: 0.85
-}			
-
-
-section.covers{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-section.covers::after{
-  content: \'\';
-  flex-grow: 999999999;
-}
-
-div.covers{
-  flex-grow: 1;
-  margin: 4px;
-  height: 160px;
-}
-
-img.covers{
-  height: 160px;
-  object-fit: contain;
-  max-width: 100%;
-  min-width: 100%;
-  vertical-align: bottom;
-}	
-
-section.works{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-section.works::after{
-  content: \'\';
-  flex-grow: 999999999;
-}
-
-div.works{
-  /*flex-grow: 1;*/
-  margin: 2px;
-  height: 120px;
-  width:80px;
-  border:1px solid #b2dfdb;
-  overflow-wrap:break-word;
-  overflow:hidden;
-  font-size:1em;
-  line-height:1.0em;
-  padding:0px;
-  position:relative;
-}
-
-div.works.year {
-	text-align:center;
-	line-height:120px;
-	font-size:2em;
-	padding:0px;
-	color:#004d40 ;
-}
-
-a.works {
-	text-decoration:none;
-	color:#004d40;
-	
-}
-
-img.works{
-  object-fit: cover;
-  max-width: 100%;
-  min-width: 100%;
-  vertical-align: bottom;
-}	
-
-span.works {
-	font-size:0.7em;
-	line-height:1em;
-	position:absolute;
-	overflow-wrap:break-word;
-	overflow:hidden;
-	left:0px;
-	top:60px;
-	height:60px;
-	width:100%;
-	background-color:rgba(13, 77, 64, 0.3);
-	/*color:white;&*/
-	z-index:10;
-	padding:4px;
-}
-
-	/* heavily based on https://css-tricks.com/adaptive-photo-layout-with-flexbox/ */
-	.gallery ul {
-	  display: flex;
-	  flex-wrap: wrap;
-	  
-	  list-style:none;
-	  padding-left:2px;
-	  /* background-color:rgb(224,224,224); */
-	}
-
-	.gallery li {
-	  height: 80px;
-	  padding:2px;
-	  /*flex-grow: 1;*/
-  
-	}
-
-/*
-	.gallery li:last-child {
-	  flex-grow: 10;
-	}
-	*/
-
-	.gallery img {
-	  max-height: 90%;
-	  min-width: 90%;
-	  object-fit: cover;
-	  vertical-align: bottom;
-	  
-	  border:1px solid rgb(192,192,192);
-	}	
-
-			
-		</style>
-		
-		
-		<!-- base -->
-    	<base href="<?php echo $config['web_root']; ?>" /><!--[if IE]></base><![endif]-->
-
-		
-		<!--Let browser know website is optimized for mobile-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-		
-		<!--Import Google Icon Font-->
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
-		
-
-		
-		<!-- cloud -->
-		<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script> -->
-		<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">  -->
-		<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script> -->		
-		<!-- <script src="https://cdn.jsdelivr.net/npm/citation-js@0.4.0-7/build/citation.js" type="text/javascript"></script> -->
-		<!-- <script src="https://cdn.jsdelivr.net/npm/ejs@2.6.1/ejs.min.js" integrity="sha256-ZS2YSpipWLkQ1/no+uTJmGexwpda/op53QxO/UBJw4I=" crossorigin="anonymous"> -->
-  		 <!-- leaflet -->
-		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" /> -->
-		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js" type="text/javascript"></script> -->
-		
-		
-		
-		<!-- local --->
-		<script src="js/jquery.js"></script> 
-		<script src="js/ejs.js"></script> 
-		<script src="js/citation.js" type="text/javascript"></script>
-		<link rel="stylesheet" type="text/css" href="css/materialize.min.css"> 
-		<script type="text/javascript" src="js/materialize.min.js"></script>
-		
-		
-		<link rel="stylesheet" type="text/css" href="js/leaflet-0.7.3/leaflet.css" />
-		<script src="js/leaflet-0.7.3/leaflet.js" type="text/javascript"></script>
-		
-		<script>
-			const Cite = require('citation-js')
-		</script>
-
-		<script>
-			//------------------------------------------------------------------------------------
-			// https://osric.com/chris/accidental-developer/2012/11/balancing-tags-in-html-and-xhtml-excerpts/
-			
-			// balance:
-			// - takes an excerpted or truncated XHTML string
-			// - returns a well-balanced XHTML string
-			function balance(string) {
-			  // Check for broken tags, e.g. <stro
-			  // Check for a < after the last >, indicating a broken tag
-			  if (string.lastIndexOf("<") > string.lastIndexOf(">")) {
-				// Truncate broken tag
-				string = string.substring(0,string.lastIndexOf("<"));
-			  }
-			
-			  // Check for broken elements, e.g. &lt;strong&gt;Hello, w
-			  // Get an array of all tags (start, end, and self-closing)
-			  var tags = string.match(/<[^>]+>/g);
-			  var stack = new Array();
-			  for (tag in tags) {
-				if (tags[tag].search("/") <= 0) {
-				  // start tag -- push onto the stack
-				  stack.push(tags[tag]);
-				} else if (tags[tag].search("/") == 1) {
-				  // end tag -- pop off of the stack
-				  stack.pop();
-				} else {
-				  // self-closing tag -- do nothing
-				}
-			  }
-			
-			  // stack should now contain only the start tags of the broken elements,
-			  // the most deeply-nested start tag at the top
-			  while (stack.length > 0) {
-				// pop the unmatched tag off the stack
-				var endTag = stack.pop();
-				// get just the tag name
-				endTag = endTag.substring(1,endTag.search(/[ >]/));
-				// append the end tag
-				string += "</" + endTag + ">";
-			  }
-			
-			  // Return the well-balanced XHTML string
-			  return(string);
-			}	
-			
-			
 //----------------------------------------------------------------------------------------
-// https://gomakethings.com/how-to-get-the-relative-time-between-two-dates-with-vanilla-js/
-var getHumanTime = function (timestamp) {
-
-	// Convert to a positive integer
-	var time = Math.abs(timestamp);
-
-	// Define humanTime and units
-	var humanTime, units;
-
-	// If there are years
-	if (time > (1000 * 60 * 60 * 24 * 365)) {
-		humanTime = parseInt(time / (1000 * 60 * 60 * 24 * 365), 10);
-		units = (humanTime > 1 ? 'years' : 'year');
-	}
-
-	// If there are months
-	else if (time > (1000 * 60 * 60 * 24 * 30)) {
-		humanTime = parseInt(time / (1000 * 60 * 60 * 24 * 30), 10);
-		units = (humanTime > 1 ? 'months' : 'month');
-	}
-
-	// If there are weeks
-	else if (time > (1000 * 60 * 60 * 24 * 7)) {
-		humanTime = parseInt(time / (1000 * 60 * 60 * 24 * 7), 10);
-		units = (humanTime > 1 ? 'weeks' : 'week');
-	}
-
-	// If there are days
-	else if (time > (1000 * 60 * 60 * 24)) {
-		humanTime = parseInt(time / (1000 * 60 * 60 * 24), 10);
-		units = (humanTime > 1 ? 'days' : 'day');
-	}
-
-	// If there are hours
-	else if (time > (1000 * 60 * 60)) {
-		humanTime = parseInt(time / (1000 * 60 * 60), 10);
-		units = (humanTime > 1 ? 'hours' : 'hour');
-	}
-
-	// If there are minutes
-	else if (time > (1000 * 60)) {
-		humanTime = parseInt(time / (1000 * 60), 10);
-		units = (humanTime > 1 ? 'minutes' : 'minute');
-	}
-
-	// Otherwise, use seconds
-	else {
-		humanTime = parseInt(time / (1000), 10);
-		units = (humanTime > 1 ? 'seconds' : 'second');
-	}
-
-	return humanTime + ' ' + units;
-
-};			
-			
-			
-		</script>
+function main()
+{
+	$query = '';
 		
+	// If no query parameters 
+	if (count($_GET) == 0)
+	{
+		default_display();
+		exit(0);
+	}
 		
-    
-  <script>
-    
-		var map;
-		var geojson = null;
-
-    		
-		// http://gis.stackexchange.com/a/116193
-		// http://jsfiddle.net/GFarkas/qzdr2w73/4/
-    	// The most important part is the border-radius property. 
-    	// It will round your shape at the corners. To create a regular circle with it, 
-    	// you have to calculate the radius with the border. 
-    	// The formula is width / 2 + border * 4 if width = height.
-		var icon = new L.divIcon({className: 'mydivicon'});		
-
-		//--------------------------------------------------------------------------------
-		function onEachFeature(feature, layer) {
-			// does this feature have a property named popupContent?
-			if (feature.properties && feature.properties.popupContent) {
-				//console.log(feature.properties.popupContent);
-				// content must be a string, see http://stackoverflow.com/a/22476287
-				layer.bindPopup(String(feature.properties.popupContent));
-			}
-		}	
-			
-		//--------------------------------------------------------------------------------
-		function create_map() {
-			map = new L.Map('map');
-
-			// create the tile layer with correct attribution
-			var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-			var osmAttrib='Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
-			var osm = new L.TileLayer(osmUrl, {minZoom: 1, maxZoom: 12, attribution: osmAttrib});		
-
-			map.setView(new L.LatLng(0, 0),4);
-			map.addLayer(osm);		
-		}
-		
-		//--------------------------------------------------------------------------------
-		function clear_map() {
-			if (geojson) {
-				map.removeLayer(geojson);
-			}
-		}	
+	// Error message
+	if (isset($_GET['error']))
+	{	
+		$error_msg = $_GET['error'];		
+		default_display($error_msg);
+		exit(0);			
+	}
 	
-		//--------------------------------------------------------------------------------
-		function add_data(data) {
-			clear_map();
+	// Show entity
+	if (isset($_GET['id']))
+	{	
+		$id = $_GET['id'];						
+		display_entity($id);
+		exit(0);
+	}
 		
-			geojson = L.geoJson(data, { 
-
-			pointToLayer: function (feature, latlng) {
-                return L.marker(latlng, {
-                    icon: icon});
-            },			
-			style: function (feature) {
-				return feature.properties && feature.properties.style;
-			},
-			onEachFeature: onEachFeature,
-			}).addTo(map);
-			
-			// Open popups on hover
-  			geojson.on('mouseover', function (e) {
-    			e.layer.openPopup();
-  			});
+	// Show search
+	if (isset($_GET['q']))
+	{	
+		$query = $_GET['q'];
+		display_search($query);
+		exit(0);
+	}	
+	
+	// Custom searches
+	if (isset($_GET['issn']))
+	{	
+		$issn = $_GET['issn'];
 		
-			if (data.type) {
-				if (data.type == 'Polygon') {
-					for (var i in data.coordinates) {
-					  minx = 180;
-					  miny = 90;
-					  maxx = -180;
-					  maxy = -90;
-				  
-					  for (var j in data.coordinates[i]) {
-						minx = Math.min(minx, data.coordinates[i][j][0]);
-						miny = Math.min(miny, data.coordinates[i][j][1]);
-						maxx = Math.max(maxx, data.coordinates[i][j][0]);
-						maxy = Math.max(maxy, data.coordinates[i][j][1]);
-					  }
-					}
-					
-					bounds = L.latLngBounds(L.latLng(miny,minx), L.latLng(maxy,maxx));
-					map.fitBounds(bounds);
-				}
-				if (data.type == 'MultiPoint') {
-					minx = 180;
-					miny = 90;
-					maxx = -180;
-					maxy = -90;				
-					for (var i in data.coordinates) {
-						minx = Math.min(minx, data.coordinates[i][0]);
-						miny = Math.min(miny, data.coordinates[i][1]);
-						maxx = Math.max(maxx, data.coordinates[i][0]);
-						maxy = Math.max(maxy, data.coordinates[i][1]);
-					}
-					
-					bounds = L.latLngBounds(L.latLng(miny,minx), L.latLng(maxy,maxx));
-					map.fitBounds(bounds);
-				}
-				if (data.type == 'FeatureCollection') {
-					minx = 180;
-					miny = 90;
-					maxx = -180;
-					maxy = -90;				
-					for (var i in data.features) {
-						//console.log(JSON.stringify(data.features[i]));
-					
-						minx = Math.min(minx, data.features[i].geometry.coordinates[0]);
-						miny = Math.min(miny, data.features[i].geometry.coordinates[1]);
-						maxx = Math.max(maxx, data.features[i].geometry.coordinates[0]);
-						maxy = Math.max(maxy, data.features[i].geometry.coordinates[1]);
-						
-					}
-					
-					bounds = L.latLngBounds(L.latLng(miny,minx), L.latLng(maxy,maxx));
-					map.fitBounds(bounds);
-				}
-			}		    					
+		if (isset($_GET['year']))
+		{	
+			$year = $_GET['year'];
+			display_issn_year($issn, $year);
+			exit(0);			
 		}
-    	</script>
 		
-		
-		<script>
-		
-			        //--------------------------------------------------------------------------------
-				var template_decades = `
-					<% for(var decade in data) {%>
-						<li>
-							<div class="collapsible-header"><%= (decade * 10) %></div>
-							<div class="collapsible-body">
-					
-								<div class="row">
-								
-								<section class="works">
-							
-						
-								<% for (var year in data[decade]) { %>
-						
-									<div class="works year teal lighten-2 ">
-										<%= year %>
-									</div>
-							
-									<% for (var i in data[decade][year]) { %>
-										<div class="works">
-											<!-- <%= data[decade][year][i].name %> -->
-											<a class="works" href="reference/<%- i.replace(/biostor-/, '') %>">
-											<img class="works" src="https://aezjkodskr.cloudimg.io/<%= data[decade][year][i].thumbnailUrl %>?height=200">
-											
-											<span class="works"><%= data[decade][year][i].name %></span>
-											</a>
-										</div>
-									<% } %>
+		display_issn($issn);		
+		exit(0);
+	}	
+	
+}
 
-								<% } %>
-								
-								</section>
-							
-								</div>
-							
-							
-							
-						</div>
-						</li>
-						
-			
-					<% } %>
-			
-				`;				
-				
+//----------------------------------------------------------------------------------------
 
-						
-			
-			
-			        //--------------------------------------------------------------------------------
-				var template_results = `
-					<div>
-			
-					<% for(var i in data) {%>
-						<div class="row">
-						
-							<div class="col s12 m2 hide-on-small-only" style="text-align:center">
-								<% if (data[i].thumbnailUrl)  {%>
-									<a href="reference/<%- i.replace(/biostor-/, '') %>">
-										<img class="z-depth-1" style="background:white;" src="https://aezjkodskr.cloudimg.io/<%- data[i].thumbnailUrl %>?height=100" >
-									</a>
-								<% } %>
-							</div>
-					
-							<div class="col s12 m10">
-								<div style="font-size:1.5em;line-height:1.2em;">
-									<a href="reference/<%- i.replace(/biostor-/, '') %>">
-									<%- balance(data[i].name) %>
-									</a>
-								</div>
-							
-								<div>
-								<span style="color:rgb(64,64,64);">			
-									<%- data[i].description %>
-								</span>
-								</div>
-							</div>
+main();
 
-						</div>
-						
-			
-					<% } %>
-					</div>
-			
-				`;				
-				
-			        //--------------------------------------------------------------------------------
-				var template_record = `
-				<%
-				
-			//----------------------------------------------------------------------------------------
-			// Convert ISO data to a human-readable string (PubMed-style)
-			// My databases use -00 to indicate no month or no day, and this confuses Javascript
-			// Date so we need to set the options appropriately
-			isodate_to_string = function (datestring) {
-			
-			// By default assume datestring is a year only
-			var options = {};
-			options.year = 'numeric';
-			
-			// Test for valid month, then day (because we use -00 to indicate no data)
-			var m = null;
-			
-			if (!m) {	
-				m = datestring.match(/^([0-9]{4})$/);
-				if (m) {
-					// year only
-					datestring = m[1]; 
-				}
-			}
-			
-			if (!m) {		
-				m = datestring.match(/^([0-9]{4})-([0-9]{2})-00/);
-				if (m) {
-					
-					if (m[2] == '00') {
-						// Javascript can't handle -00-00 date string so set to January 1st 
-						// which won't be output as we're only outputting the year
-						datestring = m[1] + '-01-01';
-					} else {
-						// We have a month but no day
-						datestring = m[1] + '-' + m[2] + '-01';
-						options.month = 'short';
-					}		
-				}
-			}
-			
-			if (!m) {	
-				m = datestring.match(/^([0-9]{4})-([0-9]{2})-([0-9]{2})/);
-				if (m) {
-					// we have yea, month, and day
-					options.month = 'short';
-					options.day = 'numeric';
-				}
-			}
-			
-			var d = new Date(datestring);
-			datestring = d.toLocaleString('en-gb', options);
-			
-			return datestring;		
-			}		
-			
-			%>
-			
-					<div class="row">
-					
-					<div class="col s12 m2 hide-on-small-only">
-										
-							<% if (data.thumbnailUrl)  {%>
-								<img  class="z-depth-2" style="background:white;" src="https://aezjkodskr.cloudimg.io/<%- data.thumbnailUrl %>?height=100" >
-							<% } %>
-
-					</div>
-					
-					<div class="col s12 m10">
-					
-					<!-- bread crumbs -->
-					<% if (data.csl['container-title'] && data.csl.ISSN) { %>
-						<nav class="clean">
-							<div class="nav-wrapper">
-								<a href="./" class="breadcrumb">Home</a>
-								
-								<% 
-								var container = data.csl['container-title'];
-								if (container.length > 30) {
-									container = container.substring(0,30) + '…';
-								}
-								%>
-								
-								<a href="./issn/<%- data.csl.ISSN %>" class="breadcrumb">
-									<%- container %>
-								</a>
-								
-								<% if (data.csl.issued) { %>
-									<a href="issn/<%- data.csl.ISSN[0] %>/year/<%- data.csl.issued['date-parts'][0][0] %>" class="breadcrumb"><%- data.csl.issued['date-parts'][0][0] %></a>
-								<% } %>
-							</div>
-						</nav>
-					<% } %>
-					
-					<% if (data.csl['container-title'] && data.csl.ISBN) { %>
-						<nav class="clean">
-							<div class="nav-wrapper">
-								<a href="./" class="breadcrumb">Home</a>
-								
-								<% 
-								var container = data.csl['container-title'];
-								if (container.length > 30) {
-									container = container.substring(0,30) + '…';
-								}
-								%>
-								
-								<a href="./isbn/<%- data.csl.ISBN %>" class="breadcrumb">
-									<%- container %>
-								</a>
-							</div>
-						</nav>
-					<% } %>
-					
-								
-					<!-- headline is item name -->
-					<b style="font-size:1.5em;">				
-						<%- data.name %>				
-					</b>
-					
-					<!-- authors -->
-					<% if (data.csl.author) { %>
-						<div class="section">					
-						<% for(var i in data.csl.author) {
-							var parts = [];
-							if (data.csl.author[i].literal) {
-								parts.push(data.csl.author[i].literal);
-							} else {
-								if (data.csl.author[i].given) {
-									parts.push(data.csl.author[i].given);
-								}
-								if (data.csl.author[i].family) {
-									parts.push(data.csl.author[i].family);
-								}
-							} %>
-							<div class="chip">
-								<a href="?q=<%- encodeURIComponent(parts.join(' ')) %>">
-								<%- parts.join(' ') %>
-								</a>
-							</div>
-						<% } %>
-						</div>
-					<% } %>
-					
-					<!-- publication outlet -->
-					<div>
-						<% if (data.csl['container-title']) { %>
-							Published in
-							<em>
-							<%- data.csl['container-title'] %>
-							</em>
-						<% } %>
-						
-						<% if (data.csl.volume) { %>
-							<%- data.csl.volume %>
-						<% } %>
-			
-						<% if (data.csl.page) { %>
-							pages
-							<%- data.csl.page %>
-						<% } %>
-						
-						<% if (data.csl.issued) {
-							var date_parts = [];
-							date_parts.push(data.csl.issued['date-parts'][0][0]);
-							if (data.csl.issued['date-parts'][0][1]) {
-								date_parts.push(String("00" + data.csl.issued['date-parts'][0][1]).slice(-2));
-							}
-							if (data.csl.issued['date-parts'][0][2]) {
-								date_parts.push(String("00" + data.csl.issued['date-parts'][0][2]).slice(-2));
-							}
-						    var datestring = date_parts.join('-'); %>
-						    (
-							<%- isodate_to_string(datestring) %>
-							)
-						<% } %>
-					</div>
-													
-					<!-- actions -->
-					<div class="section" >
-						<a class="btn" onclick="show_cite('<%- encodeURIComponent(JSON.stringify(data.csl)).replace(/\'/g, "\\\\'") %>')";><i class="material-icons">format_quote</i></a>					
-						<% if (data.url)  {%>
-							<a class="btn" href="<%- data.url %>" onClick="ga('send', 'event', { eventCategory: 'Outbound Link', eventAction: 'BHL', eventLabel: event.target.href} );">View at BHL</a>
-						<% } %>	
-
-						<% if (data.csl.URL)  {
-						    var biostor_id = data.csl.URL;
-						    biostor_id = biostor_id.replace('https://biostor.org/reference/', '');
-							var manifest = 'https://iiif.archivelab.org/iiif/biostor-' + biostor_id + '/manifest.json';
-						%>
-							<a id="iiif" style="display:none;" class="btn" href="viewer/viewer.php?manifest_uri=<%- manifest %>" onClick="ga('send', 'event', { eventCategory: 'Outbound Link', eventAction: 'IIIF', eventLabel: event.target.href} );">View IIIF</a>
-						<% } %>	
-						
-						
-						<% if (data.csl.DOI)  {%>
-							<a class="btn" href="https://doi.org/<%- data.csl.DOI %>" onClick="ga('send', 'event', { eventCategory: 'Outbound Link', eventAction: 'DOI', eventLabel: event.target.href} );">DOI:<%- data.csl.DOI %></a>
-						<% } %>	
-
-
-						<!-- PDF -->
-						<a id="pdf" style="display:none;" class="btn" href="" onClick="ga('send', 'event', { eventCategory: 'Outbound Link', eventAction: 'PDF', eventLabel: event.target.href} );">PDF</a>												
-						
-						
-					</div>
-					
-					<!-- data about record -->
-					<div>
-						<% 
-						  var now = new Date().getTime();
-						  
-						  if (data.created)  {							
-							created = getHumanTime(now - data.created * 1000);
-						%>
-							Record created about <%- created %> ago
-						<% } %>	
-						
-						<% if (data.modified)  {
-							modified = getHumanTime(now - data.modified * 1000);
-						%>
-							, last modified about <%- modified %> ago
-						<% } %>	
-						
-					</div>
-					
-					<!-- thumbnails -->
-					<div class="gallery"">
-						<ul>
-						<% for (var i in data.bhl_pages) { %>
-						  <li>
-						  	<a href="https://www.biodiversitylibrary.org/page/<%- data.bhl_pages[i] %>" target="_new">
-						  	<img src="https://aezjkodskr.cloudimg.io/https://www.biodiversitylibrary.org/pagethumb/<%- data.bhl_pages[i] %>,80,80?height=80">
-						  	</a>
-						</li>
-						<% } %>						
-						</ul>
-					</div>
-					
-					
-					<!-- map -->
-					<div id="map" class="section" style="width:100%; height:300px;">
-					</div>
-				`;		
-				
-			        //--------------------------------------------------------------------------------
-				function show_record(id) {
-					document.getElementById('results').innerHTML = "Retrieving...";
-
-					$.getJSON('./api.php?id=' + encodeURIComponent(id)
-							+ '&callback=?',
-						function(data){ 
-							if (data._source) {
-			
-								//console.log(JSON.stringify(data._source.search_result_data.csl));
-								
-								//history.pushState(null, data._source.search_result_data.name, id.replace(/biostor-/, 'reference/'));
-			
-								// Render template 	
-								html = ejs.render(template_record, { data: data._source.search_result_data });
-			
-								// Display
-								document.getElementById('results').innerHTML = html;
-								
-								// Map
-								if (data._source.search_data.geometry) {
-									create_map();
-    	        					add_data(data._source.search_data.geometry);
-    	        				}
-    	        				
-    	        				// Do we have a PDF?
-    	        				have_pdf(id);
-    	        				
-    	        				
-							}
-						}
-					);
-				}
-				
-			        //--------------------------------------------------------------------------------
-				function have_pdf(id) {
-				
-					var pdf_url = 'https://archive.org/download/' + id + '/' + id + '.pdf';
-					
-					$.getJSON('./api.php?pdf=' + encodeURIComponent(pdf_url)
-							+ '&callback=?',
-						function(data){ 
-							if (data.found) {
-								// show PDF button
-								var e = document.getElementById('pdf');
-								if (e) {
-									e.style.display = 'inline-block';
-									//e.href = pdf_url;
-									e.href = 'pdfproxy.php?url=' + encodeURIComponent(pdf_url);
-								}
-								// if we have PDF we have IIIF
-								e = document.getElementById('iiif');
-								if (e) {
-									e.style.display = 'inline-block';
-								}
-							}
-						}
-					);
-				}
-				
-				
-				
-			        //--------------------------------------------------------------------------------
-				function show_cite(csl) {
-				
-					csl = decodeURIComponent(csl);
-					
-					var data = new Cite(csl);
-											
-					var template_cite = `
-					<h5>Cite</h5>
-					<table>
-						<tr>
-							<td style="vertical-align:top;font-weight:bold;">APA</td>
-							<td>
-								<%- data.format('bibliography', {format: 'html', template: 'apa', lang: 'en' }); %>
-							</td>
-						</tr>
-						<tr>
-							<td style="vertical-align:top;font-weight:bold;">BibTeX</td>
-							<td>
-								<div style="font-family:monospace;white-space:pre;">
-<%=	data.format('bibtex'); %>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td style="vertical-align:top;font-weight:bold;">RIS</td>
-							<td>
-								<div style="font-family:monospace;white-space:pre;">
-<%=	data.format('ris'); %>
-								</div>
-							</td>
-						</tr>
-					</table>										
-					`;
-					
-					var html = ejs.render(template_cite, { data: data });
-			
-					// Display
-					document.getElementById('modal-content').innerHTML = html;
-					$('#modal').modal('open');
-				}		
-				
-			        //--------------------------------------------------------------------------------
-				// http://stackoverflow.com/a/11407464
-				$(document).keypress(function(event){		
-					var keycode = (event.keyCode ? event.keyCode : event.which);			
-					if(keycode == '13'){
-						search();   
-					}
-				});    
-			    
-			        //--------------------------------------------------------------------------------
-				//http://stackoverflow.com/a/25359264
-				$.urlParam = function(name){
-					var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-					if (results==null){
-					   return null;
-					}
-					else{
-					   return results[1] || 0;
-					}
-				}        
-				
-			        //--------------------------------------------------------------------------------
-				function search() {      
-			      	document.activeElement.blur();
-			      	document.getElementById('collapsible').innerHTML = "";
-			      	document.getElementById('results').innerHTML = "Searching...";
-			      	
-					var text = document.getElementById('query').value;
-					
-					var m = text.match(/item:(\d+)/);
-					if (m) {
-						window.location.replace('item.php?item=' + m[1]);					
-					}
-					
-					// Add query to browser history
-					history.pushState(null, null, "?q=" + encodeURIComponent(text));
-
-				
-					$.getJSON('./api.php?q=' + encodeURIComponent(text)
-							+ '&callback=?',			
-						function(data){
-					
-							console.log(JSON.stringify(data, null, 2));
-								
-							if (data.hits) {
-								var hit_count = 0;
-								
-								if (typeof data.hits.total === 'object') {
-									hit_count = data.hits.total.value;
-								} else {
-									hit_count = data.hits.total;
-								}
-							
-								if (hit_count > 0) {
-									var hits = [];
-									for (var i in data.hits.hits) {
-										hits[data.hits.hits[i]._id] = data.hits.hits[i]._source.search_result_data;
-									}
-
-									// Render template 	
-									var html = ejs.render(template_results, { data : hits });
-			
-									// Display
-									document.getElementById('results').innerHTML = html;
-								}
-								else
-								{
-									document.getElementById('results').innerHTML = 'Nothing found!';
-								}
-							}		
-					
-						}
-					);  			
-				}	
-				
-			        //--------------------------------------------------------------------------------
-				function show_isbn(isbn) {      
-			      	document.getElementById('results').innerHTML = "Searching...";
-			      
-					$.getJSON('./api_journal.php?isbn=' + isbn 
-							+ '&callback=?',			
-						function(data){
-					
-							console.log(JSON.stringify(data, null, 2));
-								
-							if (data.hits) {
-								var hit_count = 0;
-								
-								if (typeof data.hits.total === 'object') {
-									hit_count = data.hits.total.value;
-								} else {
-									hit_count = data.hits.total;
-								}
-							
-								if (hit_count > 0) {
-									var hits = [];
-									for (var i in data.hits.hits) {
-										hits[data.hits.hits[i]._id] = data.hits.hits[i]._source.search_result_data;
-									}
-
-									// Render template 	
-									var html = ejs.render(template_results, { data : hits });
-			
-									// Display
-									document.getElementById('results').innerHTML = html;
-								}
-								else
-								{
-									document.getElementById('results').innerHTML = 'Nothing found!';
-								}
-							}		
-					
-						}
-					);  			
-				}	
-									
-				
-			        //--------------------------------------------------------------------------------
-				function show_issn_year(issn, year) {      
-			      	document.getElementById('results').innerHTML = "Searching...";
-			      
-					var text = document.getElementById('query').value;
-									
-					$.getJSON('./api_journal.php?issn=' + issn + '&year=' + year
-							+ '&callback=?',			
-						function(data){
-					
-							console.log(JSON.stringify(data, null, 2));
-								
-							if (data.hits) {
-								var hit_count = 0;
-								
-								if (typeof data.hits.total === 'object') {
-									hit_count = data.hits.total.value;
-								} else {
-									hit_count = data.hits.total;
-								}
-							
-								if (hit_count > 0) {
-									var hits = [];
-									for (var i in data.hits.hits) {
-										// filter out approximate ISSN matches (horrible kludge)
-										var ok = true;
-											
-										if (data.hits.hits[i]._source.search_result_data.csl.ISSN) {
-											ok = (data.hits.hits[i]._source.search_result_data.csl.ISSN[0] == issn);
-										} else {
-											ok = false;
-										}
-										
-										if (ok) {
-											hits[data.hits.hits[i]._id] = data.hits.hits[i]._source.search_result_data;
-										}
-											
-									}
-
-									// Render template 	
-									var html = ejs.render(template_results, { data : hits });
-			
-									// Display
-									document.getElementById('results').innerHTML = html;
-								}
-								else
-								{
-									document.getElementById('results').innerHTML = 'Nothing found!';
-								}
-							}		
-					
-						}
-					);  			
-				}	
-				
-			        //--------------------------------------------------------------------------------
-				function show_issn(issn) {      
-			      	document.getElementById('results').innerHTML = "Searching...";
-			      
-					var text = document.getElementById('query').value;
-									
-					$.getJSON('./api_journal.php?issn=' + issn 
-							+ '&callback=?',			
-						function(data){
-					
-							console.log(JSON.stringify(data, null, 2));
-								
-							if (data.hits) {
-								var hit_count = 0;
-								
-								if (typeof data.hits.total === 'object') {
-									hit_count = data.hits.total.value;
-								} else {
-									hit_count = data.hits.total;
-								}
-								if (hit_count > 0) {
-								
-									var container = '';
-								
-									var hits = [];
-									var decades = {};
-									for (var i in data.hits.hits) {
-										// filter out approximate ISSN matches (horrible kludge)
-										var ok = true;
-											
-										if (data.hits.hits[i]._source.search_result_data.csl.ISSN) {
-											ok = (data.hits.hits[i]._source.search_result_data.csl.ISSN[0] == issn);
-										} else {
-											ok = false;
-										}
-										
-										if (ok) {
-											hits[data.hits.hits[i]._id] = data.hits.hits[i]._source.search_result_data;
-											
-											if (container == '') {
-												container = data.hits.hits[i]._source.search_result_data.csl['container-title'];
-											}
-											
-											if (data.hits.hits[i]._source.search_result_data.csl.issued) {
-												var year = data.hits.hits[i]._source.search_result_data.csl.issued['date-parts'][0][0];
-												var decade = Math.floor(year / 10);
-			
-												if (!decades[decade]) {
-													decades[decade] = {};
-												}
-												if (!decades[decade][year]) {
-													decades[decade][year] = {};
-												}
-												decades[decade][year][data.hits.hits[i]._id] = data.hits.hits[i]._source.search_result_data;												
-											
-											}
-											
-											
-										}
-											
-									}
-
-									// Render template 	
-									var html = ejs.render(template_decades, { data : decades });
-			
-									// Display
-									//document.getElementById('results').innerHTML = JSON.stringify(decades);
-									document.getElementById('collapsible').innerHTML = html;
-									$('.collapsible').collapsible('open', 1);
-									
-									html = '<nav class="clean">';
-									html += '<div class="nav-wrapper">';
-									html += '<a href="./" class="breadcrumb">Home</a>';
-									html += '<a href="./issn/' + issn + '" class="breadcrumb">' + container + '</a>';
-									html += '</div>';
-									html += '</nav>';
-
-									document.getElementById('results').innerHTML = html;
-								}
-								else
-								{
-									document.getElementById('results').innerHTML = 'Nothing found!';
-								}
-							}		
-					
-						}
-					);  			
-				}										
-			
-			
-		</script>
-		<script type="text/javascript">
-			window.onload=function(){
-			  
-					$(document).ready(function() {
-					  $('#modal').modal(); 	
-					  $('.collapsible').collapsible();				 
-					});
-					
-					
-			   }
-		</script>
-	</head>
-	<body>
-		<header></header>
-		<main>
-			<div class="container">
-	<!-- search box -->
-				<div class="row">
-					<div class="input-field col s12">
-						<i class="material-icons prefix">
-							search
-						</i>
-						<input style="font-size:2em;" type="text" id="query" placeholder="Search"> 
-					</div>
-	<!-- <button class="btn-large type="submit" style="font-size:2em;" id="search" onclick="search();">Find</button> -->
-				</div>
-	<!-- Modal popup -->
-				<div id="modal" class="modal" style="z-index: 1003; display: none; opacity: 0; transform: scaleX(0.7); top: 4%;">
-					<div class="modal-content">
-						<div id="modal-content">
-							Content
-						</div>
-					</div>
-					<div class="modal-footer">
-						<a class=" modal-action modal-close btn-flat">
-							<i class="material-icons left">
-								clear
-							</i>
-							Close
-						</a>
-					</div>
-				</div>
-				<div id="results">
-				</div>
-				<div id="container">
-					<ul id="collapsible" class="collapsible collapsible-accordion"></ul>				
-				</div>
-			</div>
-		</main>
-		
-		<footer >
-			<div class="container">
-            	<div class="row">
-            	<div class="divider"></div>
-            		<a href=".">BioStor-Lite</a> is a project by <a href="https://twitter.com/rdmpage">Rod Page</a>. 
-            		It's goal is to make discoverable articles in the <a href="https://www.biodiversitylibrary.org">Biodiversity Heritage Library</a> (BHL). 
-            		See also the <a href="map.php">map</a> and the 
- <a href="match.html">Match references</a> reconciliation service.
-            	</div>
-            </div>
-			
-		
-		</footer>
-
-
-		<script>
-			<?php
-			
-			$has_parameters = false;
-			
-			$q = '';			
-			
-			if (isset($_GET['q']))
-			{
-				$q = $_GET['q'];
-				
-				$has_parameters = true;
-				
-				echo '
-				var query = decodeURIComponent("' . addcslashes($q, '"') . '");
-			   	$("#query").val(query); 
-			   	search();				
-				';
-			}
-				
-			$id = '';
-		
-			if (isset($_GET['id']))
-			{
-				$id = $_GET['id'];
-				
-				$has_parameters = true;
-				
-				echo 'show_record("' . $id . '");';			
-			}
-			
-			if (isset($_GET['issn']))
-			{
-				$has_parameters = true;
-				
-				$issn = $_GET['issn'];
-				
-				if (isset($_GET['year']))
-				{
-					$year = $_GET['year'];
-					
-					// works for a year
-					echo 'show_issn_year("' . $issn . '", "' . $year . '");';							
-				}
-				else
-				{
-					// whole journal
-					echo 'show_issn("' . $issn . '");';							
-				}
-			}	
-			
-			if (isset($_GET['isbn']))
-			{
-				$has_parameters = true;
-				
-				$isbn = $_GET['isbn'];
-
-				// chapters in book
-				echo 'show_isbn("' . $isbn . '");';							
-
-			}			
-					
-			
-			if (!$has_parameters)
-			{
-			?>
-			
-				// Home page
-				
-				var template_home = `					
-					<div class="row">
-					<section class="covers">
-						<% for (var i in data) {%>
-							<div class="covers">
-								<a href="reference/<%= data[i].referenceID %>">
-								<img class="covers" src="https://aezjkodskr.cloudimg.io/https://www.biodiversitylibrary.org/pagethumb/<%= data[i].pageID %>,200,200?height=200">
-								</a>
-							</div>						
-						<%}%>
-					</section>
-					</div>
-				
-				`;		
-				
-				var examples_1 = [
-				{ pageID: 43605918, referenceID: 248475},
-				{ pageID: 35669296, referenceID: 114607},
-				{ pageID: 43276884, referenceID: 201883},
-				{ pageID: 48184882, referenceID: 149688}
-				];
-				
-				var examples_2 = [
-				,
-				{ pageID: 49942215, referenceID: 192990},
-				{ pageID: 48951678, referenceID: 167448},
-				{ pageID: 52110073, referenceID: 232256},
-				{ pageID: 41229695, referenceID: 115363},
-				];
-				
-				/*
-				var examples_3 = [
-				,
-				{ pageID: 59075507, referenceID: 252946},
-				{ pageID: 59107876, referenceID: 252963 }, // Death comes on two wings: a review of dipteran natural enemies of arachnids
-				{ pageID: , referenceID: },
-				{ pageID: , referenceID: },
-				];
-				*/
-				
-				// { pageID: 0, referenceID: 0},
-				// { pageID: 0, referenceID: 0},
-				// { pageID: 0, referenceID: 0},
-				// { pageID: 0, referenceID: 0},
-				
-			
-				var html = '<h2>BioStor-Lite: find articles in BHL</h2>';
-				
-				html += ejs.render(template_home, { data : examples_1 });
-				
-				html += ejs.render(template_home, { data : examples_2 });
-				
-				document.getElementById('results').innerHTML = html;
-
-			<?php
-			}
-			
-			?>
-			
-			/*
-			// do we have a URL parameter?
-			var query = $.urlParam('q');
-			if (query) {
-			   query = decodeURIComponent(query);
-			   $('#query').val(query); 
-			   search();
-			}
-			
-			// view one record?
-			var id = $.urlParam('id');
-			
-			if (id) {
-			   id = decodeURIComponent(id);
-			   show_record(id);
-			}
-					
-			*/
-					
-		</script>
-
-	</body>
-</html>
-
+?>

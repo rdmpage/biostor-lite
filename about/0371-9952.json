@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0371-9952",
+    "issn": [
+        "0371-9952"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0371-9952",
+        "http://www.wikidata.org/entity/Q29869919"
+    ],
+    "name": "Tijdschr. Nederl. Dierk. Ver."
+}

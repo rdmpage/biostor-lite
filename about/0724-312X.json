@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0724-312X",
+    "issn": [
+        "0724-312X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0724-312X"
+    ],
+    "name": "Verhandlungen des Botanischen Vereins für die Provinz Brandenburg"
+}

@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0080-469X",
+    "issn": [
+        "0080-469X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0080-469X",
+        "http://www.wikidata.org/entity/Q2836626",
+        "https://en.wikipedia.org/wiki/Proceedings_of_the_Royal_Society_of_Queensland"
+    ],
+    "name": "Proceedings of the Royal Society of Queensland",
+    "description": [
+        {
+            "@language": "es",
+            "@value": "Proceedings of the Royal Society of Queensland, (abreviado Proc. Roy. Soc. Queensland),​ es una revista ilustrada con descripciones botánicas que es editada por la . Comenzó su publicación en el año 1884."
+        },
+        {
+            "@language": "en",
+            "@value": "Proceedings of The Royal Society of Queensland is a multidisciplinary scientific journal published by The Royal Society of Queensland. It was established in 1884. Volumes of the journal are typically published annually, although this schedule has varied over time as the resources of The Royal Society of Queensland have allowed. Volume 131 is currently in preparation and is scheduled for print-publication in December 2022. All papers are single-blind peer-reviewed. Value of local and regional journals Special Issues 1976 The Border Ranges: A Land Use Conflict in Regional Perspective Digitisation"
+        }
+    ]
+}

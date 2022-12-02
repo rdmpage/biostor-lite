@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0022-0019",
+    "issn": [
+        "0022-0019"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0022-0019",
+        "http://www.wikidata.org/entity/Q15716639",
+        "https://en.wikipedia.org/wiki/Journal_of_Conchology"
+    ],
+    "name": "Journal of Conchology",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "The Journal of Conchology is a peer-reviewed scientific journal published by The Conchological Society of Great Britain and Ireland, covering research in conchology and malacology. It claims to be the world's oldest continuing publication on the subject. The journal publishes original research and short communications on molluscs, with emphasis on conservation, biogeography and taxonomy. The contents include descriptions of new species from anywhere in the world, and reports concerning the ecology, distribution, and status of molluscs, both living and fossil."
+        },
+        {
+            "@language": "uk",
+            "@value": "«Journal of Conchology» — науковий журнал з малакології, видається з 1879 року. Є найстарішим малакологічним журналом у світі, що безперервно видається під однією назвою. Друкує переважно статті з таксономії, охорони, екології та біогеографії молюсків будь-яких груп з будь-яких регіонів."
+        }
+    ]
+}

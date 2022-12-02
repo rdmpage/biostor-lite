@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0373-6660",
+    "issn": [
+        "0373-6660"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0373-6660",
+        "http://www.wikidata.org/entity/Q41521962"
+    ],
+    "name": "Acta Societatis pro Fauna et Flora Fennica"
+}

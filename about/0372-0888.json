@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0372-0888",
+    "issn": [
+        "0372-0888"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0372-0888",
+        "http://www.wikidata.org/entity/Q6151607"
+    ],
+    "name": "Transactions and Proceedings of the Royal Society of South Australia"
+}

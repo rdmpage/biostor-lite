@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1945-9459",
+    "issn": [
+        "1945-9459"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1945-9459",
+        "http://www.wikidata.org/entity/Q21385239"
+    ],
+    "name": "Transactions of the Linnaean Society of London"
+}

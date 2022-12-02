@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0004-2625",
+    "issn": [
+        "0004-2625"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0004-2625",
+        "http://www.wikidata.org/entity/Q1709876"
+    ],
+    "name": "J. Arnold Arbor"
+}

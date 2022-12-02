@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0863-1867",
+    "issn": [
+        "0863-1867"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0863-1867",
+        "http://www.wikidata.org/entity/Q51400304"
+    ],
+    "name": "Z. Syst. Hymenopt. Dipterol."
+}

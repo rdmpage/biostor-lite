@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0176-7364",
+    "issn": [
+        "0176-7364"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0176-7364",
+        "http://www.wikidata.org/entity/Q47058473"
+    ],
+    "name": "Archiv für mikroskopische Anatomie"
+}

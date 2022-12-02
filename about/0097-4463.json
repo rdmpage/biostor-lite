@@ -1,0 +1,20 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0097-4463",
+    "issn": [
+        "0097-4463"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0097-4463",
+        "http://www.wikidata.org/entity/Q15756901",
+        "https://en.wikipedia.org/wiki/Annals_of_Carnegie_Museum"
+    ],
+    "name": "Annals of Carnegie Museum",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "Annals of Carnegie Museum is a peer-reviewed academic journal published by the Carnegie Museum of Natural History. It was established in 1901 by the Board of Trustees of the Carnegie Institute. The journal is distributed both in print and online. The museum's Office of Scientific Publications also publishes the Bulletin of Carnegie Museum of Natural History and Special Publications of Carnegie Museum. The journal is abstracted and indexed in the Science Citation Index, Scopus, Biosis, and Geobase."
+        }
+    ]
+}

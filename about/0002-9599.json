@@ -1,0 +1,32 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0002-9599",
+    "issn": [
+        "0002-9599"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0002-9599",
+        "http://www.wikidata.org/entity/Q465355",
+        "https://en.wikipedia.org/wiki/American_Journal_of_Science"
+    ],
+    "name": "American Journal of Science",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "The American Journal of Science (AJS) is the United States of America's longest-running scientific journal, having been published continuously since its conception in 1818 by Professor Benjamin Silliman, who edited and financed it himself. Until 1880, it was also known as the American Journal of Science and Arts, but its focus was always on natural sciences and especially on geology and related subjects. The current editors are C. Page Chamberlain, a professor at Stanford University, and Mark T. Brandon and Noah J. Planavsky, professors at Yale University."
+        },
+        {
+            "@language": "de",
+            "@value": "Das US-amerikanische Wissenschaftsmagazin American Journal of Science (kurz AJS) ist das älteste seiner Art in den Vereinigten Staaten. Es wurde 1818 von Benjamin Silliman ins Leben gerufen und ist seitdem kontinuierlich erschienen. Ursprünglich wurde es von Silliman selbst finanziert und redigiert. Bis 1880 erschien es zwar unter dem Namen American Journal of Science and Arts, aber sein Schwerpunkt waren immer die Naturwissenschaften, insbesondere die Geologie und verwandte Wissenschaftszweige."
+        },
+        {
+            "@language": "uk",
+            "@value": "American Journal of Science (AJS, укр. Американський науковий журнал) — найстаріший науковий журнал у Сполучених штатах Америки, що виходить без перерв з моменту заснування у 1818 році професором Бенджаміном Силліманом, який на початку особисто редагував і фінансував його. До 1880 року, журнал був відомий під назвою American Journal of Science and Arts, але завжди у центрі його уваги були природничі науки і, зокрема, геологія та дотичні до неї дисципліни."
+        },
+        {
+            "@language": "fr",
+            "@value": "American Journal of Science (abrégé en Am. J. Sci. ou AJS) est une revue scientifique à comité de lecture, créée en 1818 par Benjamin Silliman, qui publie des articles de recherches dans le domaine des sciences de la Terre."
+        }
+    ]
+}

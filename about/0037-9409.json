@@ -1,0 +1,15 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0037-9409",
+    "issn": [
+        "0037-9409"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0037-9409",
+        "http://www.wikidata.org/entity/Q4035500",
+        "https://en.wikipedia.org/wiki/Bulletin_de_la_Soci%C3%A9t%C3%A9_G%C3%A9ologique_de_France"
+    ],
+    "name": "Bulletin de la Soci%C3%A9t%C3%A9 G%C3%A9ologique de France",
+    "description": []
+}

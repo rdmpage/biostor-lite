@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0181-0626",
+    "issn": [
+        "0181-0626"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0181-0626",
+        "http://www.wikidata.org/entity/Q21385899"
+    ],
+    "name": "Bull Mus Hist Nat"
+}

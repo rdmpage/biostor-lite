@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0374-7859",
+    "issn": [
+        "0374-7859"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0374-7859",
+        "http://www.wikidata.org/entity/Q6144504"
+    ],
+    "name": "Gardens' Bulletin"
+}

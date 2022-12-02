@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0016-531X",
+    "issn": [
+        "0016-531X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0016-531X",
+        "http://www.wikidata.org/entity/Q51481939"
+    ],
+    "name": "Gayana"
+}

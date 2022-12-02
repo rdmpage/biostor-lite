@@ -1,0 +1,20 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1447-2546",
+    "issn": [
+        "1447-2546"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1447-2546",
+        "http://www.wikidata.org/entity/Q15754774",
+        "https://en.wikipedia.org/wiki/Memoirs_of_Museum_Victoria"
+    ],
+    "name": "Memoirs of Museum Victoria",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "Memoirs of Museum Victoria is a peer-reviewed annual scientific journal covering natural sciences pertinent to Victoria and/or the museum's collections. It is published by Museum Victoria and the editor-in-chief is Richard Marchant. The journal was established in 1906 as Memoirs of the National Museum of Victoria, obtaining its current name in 1984. The journal is abstracted and indexed in Scopus."
+        }
+    ]
+}

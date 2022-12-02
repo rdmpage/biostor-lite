@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0065-9746",
+    "issn": [
+        "0065-9746"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0065-9746",
+        "http://www.wikidata.org/entity/Q28807280"
+    ],
+    "name": "Transactions of the American Philosophical Society"
+}

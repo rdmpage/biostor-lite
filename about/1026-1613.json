@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1026-1613",
+    "issn": [
+        "1026-1613"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1026-1613",
+        "http://www.wikidata.org/entity/Q20664557"
+    ],
+    "name": "Journal of East African Natural History"
+}

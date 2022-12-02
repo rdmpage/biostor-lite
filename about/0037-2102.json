@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0037-2102",
+    "issn": [
+        "0037-2102"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0037-2102",
+        "http://www.wikidata.org/entity/Q15775509"
+    ],
+    "name": "Frankfurt a Main Senckenbergiana"
+}

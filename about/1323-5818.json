@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1323-5818",
+    "issn": [
+        "1323-5818"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1323-5818",
+        "http://www.wikidata.org/entity/Q15765166"
+    ],
+    "name": "Molluscan Research"
+}

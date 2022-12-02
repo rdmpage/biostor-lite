@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0071-0768",
+    "issn": [
+        "0071-0768"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0071-0768",
+        "http://www.wikidata.org/entity/Q51522364"
+    ],
+    "name": "Proceedings of The Entomological Society of Ontario"
+}

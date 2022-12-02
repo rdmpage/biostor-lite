@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0077-5630",
+    "issn": [
+        "0077-5630"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0077-5630",
+        "http://www.wikidata.org/entity/Q15749909"
+    ],
+    "name": "Atoll Res Bull"
+}

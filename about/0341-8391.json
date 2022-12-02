@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0341-8391",
+    "issn": [
+        "0341-8391"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0341-8391",
+        "http://www.wikidata.org/entity/Q15716642",
+        "https://en.wikipedia.org/wiki/Spixiana"
+    ],
+    "name": "Spixiana",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "Spixiana is a biannual peer-reviewed scientific journal published by Verlag Dr. Friedrich Pfeil on behalf of the Bavarian State Collection of Zoology, covering research in zoology. Spixiana publishes original works in the fields of taxonomy, morphology, phylogeny, and zoogeography. It also publishes monographs in supplements."
+        },
+        {
+            "@language": "zh",
+            "@value": "《Spixiana》是一本一年出版兩次、透過同行評審來審閱的动物学科学期刊，名義上由巴伐利亚州动物标本收集研究所出版，實際負責人是Verlag Dr. Friedrich Pfeil。《Spixiana》發表以生物分类学、生物形態學、系統發生學及动物地理学為主題範疇的原創研究，偶爾亦會發表單行本作補充。"
+        }
+    ]
+}

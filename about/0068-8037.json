@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0068-8037",
+    "issn": [
+        "0068-8037"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0068-8037",
+        "http://www.wikidata.org/entity/Q51523572"
+    ],
+    "name": "National Museum of Natural Sciences (Ottawa) Publications in Zoology"
+}

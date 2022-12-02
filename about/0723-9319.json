@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0723-9319",
+    "issn": [
+        "0723-9319"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0723-9319",
+        "http://www.wikidata.org/entity/Q51433350"
+    ],
+    "name": "Sitzungsberichte der Akademie der Wissenschaften mathematisch-naturwissenschaftliche Klasse"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0065-535X",
+    "issn": [
+        "0065-535X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0065-535X",
+        "http://www.wikidata.org/entity/Q16483695"
+    ],
+    "name": "Anzeiger Akademie der Wissenschaften in Wien, Mathematisch-Naturwissenschaftliche Klasse"
+}

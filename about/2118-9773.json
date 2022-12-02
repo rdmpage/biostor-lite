@@ -1,0 +1,28 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/2118-9773",
+    "issn": [
+        "2118-9773"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/2118-9773",
+        "http://www.wikidata.org/entity/Q21386186",
+        "https://en.wikipedia.org/wiki/European_Journal_of_Taxonomy"
+    ],
+    "name": "European Journal of Taxonomy",
+    "description": [
+        {
+            "@language": "it",
+            "@value": "European Journal of Taxonomy è una rivista scientifica peer-reviewed ad accesso aperto di tassonomia descrittiva relativa agli eucarioti viventi e fossili. Pubblica articoli riguardanti zoologia, botanica, micologia e paleontologia. È supportata dal Consorzio EJT, un gruppo di istituti europei di storia naturale, che finanzia interamente la pubblicazione. Pertanto, la rivista è gratuita sia per gli autori che per i lettori (diamond open access)."
+        },
+        {
+            "@language": "de",
+            "@value": "Das European Journal of Taxonomy ist eine wissenschaftliche Fachzeitschrift für deskriptive Taxonomie lebender und fossiler Eukaryoten. Unterstützt wird sie vom EJT Consortium, einer Gruppe europäischer naturwissenschaftlicher Institute, die die Publikation vollständig finanziert. Daher ist die Zeitschrift sowohl für Autoren als auch für Leser kostenlos (diamond open access)."
+        },
+        {
+            "@language": "en",
+            "@value": "The European Journal of Taxonomy is a peer-reviewed open access scientific journal for descriptive taxonomy of living and fossil eukaryotes, covering subjects in zoology, botany, and palaeontology. It is supported by the EJT Consortium, a group of European natural history institutes, which fully funds the publication. Therefore, the journal is free for both authors and readers (diamond open access)."
+        }
+    ]
+}

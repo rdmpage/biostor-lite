@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0044-5118",
+    "issn": [
+        "0044-5118"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0044-5118",
+        "http://www.wikidata.org/entity/Q21385964"
+    ],
+    "name": "Dobutsugaku zasshi"
+}

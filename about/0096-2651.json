@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0096-2651",
+    "issn": [
+        "0096-2651"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0096-2651",
+        "http://www.wikidata.org/entity/Q51473382"
+    ],
+    "name": "Fieldiana (Geol.)"
+}

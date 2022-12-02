@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0006-8071",
+    "issn": [
+        "0006-8071"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0006-8071",
+        "http://www.wikidata.org/entity/Q894627"
+    ],
+    "name": "Botanical Gazette"
+}

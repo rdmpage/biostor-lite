@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0025-2794",
+    "issn": [
+        "0025-2794"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0025-2794",
+        "http://www.wikidata.org/entity/Q51408649"
+    ],
+    "name": "Marcellia"
+}

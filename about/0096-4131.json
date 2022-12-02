@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0096-4131",
+    "issn": [
+        "0096-4131"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0096-4131",
+        "http://www.wikidata.org/entity/Q21385334"
+    ],
+    "name": "Bulletin of the Buffalo Society of Natural Sciences"
+}

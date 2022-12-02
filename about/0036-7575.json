@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0036-7575",
+    "issn": [
+        "0036-7575"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0036-7575",
+        "http://www.wikidata.org/entity/Q21385818"
+    ],
+    "name": "Mitt. schweiz. ent. Ges"
+}

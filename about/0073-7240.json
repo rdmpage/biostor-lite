@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0073-7240",
+    "issn": [
+        "0073-7240"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0073-7240",
+        "http://www.wikidata.org/entity/Q51494449"
+    ],
+    "name": "Indo-Pacific mollusca"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0883-8372",
+    "issn": [
+        "0883-8372"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0883-8372",
+        "http://www.wikidata.org/entity/Q29651171"
+    ],
+    "name": "American journal of conchology"
+}

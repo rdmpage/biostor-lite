@@ -1,0 +1,28 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0892-1016",
+    "issn": [
+        "0892-1016"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0892-1016",
+        "http://www.wikidata.org/entity/Q3186941",
+        "https://en.wikipedia.org/wiki/Journal_of_Raptor_Research"
+    ],
+    "name": "Journal of Raptor Research",
+    "description": [
+        {
+            "@language": "uk",
+            "@value": "Journal of Raptor Research — міжнародний оглядовий науковий журнал, заснований у 1967 р., присвячений хижим птахам, зокрема дослідженням з екології, поведінки, біології, охорони і використання хижих птахів. Щоквартальник товариства . За даними Journal Citation Reports, у 2014 р. impact factor журналу становив 0,631, що відповідає 14-му місцю серед 22 журналів у категорії «орнітологія»."
+        },
+        {
+            "@language": "fr",
+            "@value": "Journal of Raptor Research est une publication arbitrée de la société Raptor Research Foundation. La revue publie des articles sur tous les aspects de la biologie des rapaces diurnes et nocturnes. Journal of Raptor Research fait suite à Raptor Research News, publié de 1967 à 1971 et à Raptor Research (ISSN 0099-9059), publié de 1972 à 1986."
+        },
+        {
+            "@language": "en",
+            "@value": "The Journal of Raptor Research is a peer-reviewed scientific journal established in 1967 covering birds of prey and research on raptor ecology, behavior, life history, conservation, and techniques. It is published quarterly by the Raptor Research Foundation. According to the Journal Citation Reports, the journal had an impact factor of 0.631 in 2014, ranking it 14th out of 22 journals in the category \"Ornithology\"."
+        }
+    ]
+}

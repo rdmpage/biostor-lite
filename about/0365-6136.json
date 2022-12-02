@@ -1,0 +1,15 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0365-6136",
+    "issn": [
+        "0365-6136"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0365-6136",
+        "http://www.wikidata.org/entity/Q5702854",
+        "https://en.wikipedia.org/wiki/Archiv_f%C3%BCr_Naturgeschichte"
+    ],
+    "name": "Archiv f%C3%BCr Naturgeschichte",
+    "description": []
+}

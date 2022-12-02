@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0379-1416",
+    "issn": [
+        "0379-1416"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0379-1416",
+        "http://www.wikidata.org/entity/Q21385847"
+    ],
+    "name": "Berichte des Naturwissenschaftlich-medizinischen Vereins in Innsbruck"
+}

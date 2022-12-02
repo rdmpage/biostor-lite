@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0968-0470",
+    "issn": [
+        "0968-0470"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0968-0470",
+        "http://www.wikidata.org/entity/Q51451424"
+    ],
+    "name": "Bulletin of the Natural History Museum (Zool.),"
+}

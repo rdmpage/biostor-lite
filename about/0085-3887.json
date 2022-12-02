@@ -1,0 +1,20 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0085-3887",
+    "issn": [
+        "0085-3887"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0085-3887",
+        "http://www.wikidata.org/entity/Q18584731",
+        "https://en.wikipedia.org/wiki/Nemouria"
+    ],
+    "name": "Nemouria",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "Nemouria: Occasional Papers of the Delaware Museum of Natural History is a peer-reviewed scientific journal covering natural history that is published by the Delaware Museum of Natural History. It was established in 1970 and is abstracted and indexed in BIOSIS Previews and The Zoological Record. The journal mainly focuses on molluscs and birds, but occasionally publishes papers on other topics, relating to North America or a region well represented in the museum's collection, such as the Indo-West Pacific or Philippines."
+        }
+    ]
+}

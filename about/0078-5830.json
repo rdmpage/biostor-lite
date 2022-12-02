@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0078-5830",
+    "issn": [
+        "0078-5830"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0078-5830",
+        "http://www.wikidata.org/entity/Q73105018"
+    ],
+    "name": "Oregon State Monographs Zool"
+}

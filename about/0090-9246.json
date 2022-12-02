@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0090-9246",
+    "issn": [
+        "0090-9246"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0090-9246",
+        "http://www.wikidata.org/entity/Q54423467"
+    ],
+    "name": "Tulane Stud. Zool."
+}

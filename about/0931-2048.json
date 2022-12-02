@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0931-2048",
+    "issn": [
+        "0931-2048"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0931-2048",
+        "http://www.wikidata.org/entity/Q15766710"
+    ],
+    "name": "Journal of Entomology"
+}

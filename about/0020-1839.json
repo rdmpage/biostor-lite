@@ -1,0 +1,15 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0020-1839",
+    "issn": [
+        "0020-1839"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0020-1839",
+        "http://www.wikidata.org/entity/Q6037303",
+        "https://en.wikipedia.org/wiki/Insektenb%C3%B6rse"
+    ],
+    "name": "Insektenb%C3%B6rse",
+    "description": []
+}

@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0950-1746",
+    "issn": [
+        "0950-1746"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0950-1746",
+        "http://www.wikidata.org/entity/Q5469848",
+        "https://en.wikipedia.org/wiki/Forktail_(journal)"
+    ],
+    "name": "Forktail (journal)",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "Forktail is the annual peer-reviewed journal of the . It is the principal ornithological journal dedicated to the Oriental region, and publishes manuscripts in English, treating any aspect of its ornithology (e.g. distribution, biology, conservation, ecology, taxonomy and evolution). Forktail's geographic scope is bounded by the Indus River to the west, the Russian Far East, Korean Peninsula, Japan, and Lydekker’s Line (i.e. the eastern boundary of Wallacea) to the east, and the Chagos Archipelago, Lesser Sundas, Christmas Island and Cocos (Keeling) Islands to the south. As of 2020, Professor is its Managing Editor, assisted by Dr Yong Ding Li."
+        },
+        {
+            "@language": "ru",
+            "@value": "Forktail — рецензируемый британский орнитологический журнал Клуба птиц Востока (Oriental Bird Club). Выходит ежегодно. Публикует работы на английском языке. Каждый выпуск формата A4 с изумрудно-зелёной обложкой. Посвящен исследованию области, ограниченной рекой Инд на западе, российским Дальним Востоком, Корейским полуостровом, Японией, Линией Лидеккера на востоке и архипелагами Чагос, Малые Зондские острова, Остров Рождества и Кокос на юге. По состоянию на 2020 год управляющим редактором является профессор Франк Э. Райндт, которому помогает доктор Йонг Дин Ли."
+        }
+    ]
+}

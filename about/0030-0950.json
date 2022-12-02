@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0030-0950",
+    "issn": [
+        "0030-0950"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0030-0950",
+        "http://www.wikidata.org/entity/Q15767108"
+    ],
+    "name": "Ohio J. Sci"
+}

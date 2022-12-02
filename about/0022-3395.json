@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0022-3395",
+    "issn": [
+        "0022-3395"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0022-3395",
+        "http://www.wikidata.org/entity/Q6295713",
+        "https://en.wikipedia.org/wiki/Journal_of_Parasitology"
+    ],
+    "name": "Journal of Parasitology",
+    "description": [
+        {
+            "@language": "de",
+            "@value": "The Journal of Parasitology ist eine von der herausgegebene und von der Allen Press in Lawrence, Kansas verlegte parasitologische Fachzeitschrift. Sie wurde von dem US-amerikanischen Parasitologen gegründet und erscheint seit 1914."
+        },
+        {
+            "@language": "en",
+            "@value": "The Journal of Parasitology is a peer-reviewed medical journal covering research on parasites published bimonthly by Allen Press on behalf of the American Society of Parasitologists. Content includes research articles, brief research notes, announcements of the society, and book reviews. It was founded and edited by Henry Baldwin Ward in 1914."
+        }
+    ]
+}

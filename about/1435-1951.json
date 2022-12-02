@@ -1,0 +1,36 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1435-1951",
+    "issn": [
+        "1435-1951"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1435-1951",
+        "http://www.wikidata.org/entity/Q4037265",
+        "https://en.wikipedia.org/wiki/Deutsche_Entomologische_Zeitschrift"
+    ],
+    "name": "Deutsche Entomologische Zeitschrift",
+    "description": [
+        {
+            "@language": "pl",
+            "@value": "Deutsche Entomologische Zeitschrift – niemieckie, anglojęzyczne, recenzowane czasopismo naukowe otwartego dostępu publikujące w dziedzinie entomologii. Czasopismo to wydawane jest przez i Muzeum Historii Naturalnej w Berlinie. Ukazuje się od 1857 roku (do 1914 jako Berliner Entomologische Zeitschrift). Publikuje oryginalne prace badawcze dotyczące systematyki, taksonomii, filogenezy, morfologii porównawczej i zoogeografii owadów. Przez pierwsze 150 lat opublikowano w nim opisy ponad 22 tysiące nowych gatunków."
+        },
+        {
+            "@language": "pt",
+            "@value": "Deutsche Entomologische Zeitschrift é um periódico científico de acesso aberto revisado por pares que cobre entomologia sistemática e taxonômica. Foi estabelecido em 1857 como Berliner Entomologische Zeitschrift e obteve seu título atual em 1875 ."
+        },
+        {
+            "@language": "en",
+            "@value": "Deutsche Entomologische Zeitschrift is a peer-reviewed open access scientific journal covering systematic and taxonomic entomology. It was established in 1857 as Berliner Entomologische Zeitschrift and obtained its current title in 1875."
+        },
+        {
+            "@language": "ru",
+            "@value": "Deutsche Entomologische Zeitschrift (ISSN 1435—1951) — немецкий энтомологический журнал для публикации научных исследований в различных областях науки о насекомых и некоторых других членистоногих (главным образом, по систематике, палеонтологии, эволюции и фаунистике). Один из старейших в мире энтомологических журналов."
+        },
+        {
+            "@language": "de",
+            "@value": "Die Deutsche Entomologische Zeitschrift ist eine naturwissenschaftliche Fachzeitschrift. Herausgebende Organe sind die Deutsche Entomologische Gesellschaft, das Zoologische Museum (Berlin) und das Museum für Naturkunde Berlin. Seit 2014 erscheint die Zeitschrift im Open Access."
+        }
+    ]
+}

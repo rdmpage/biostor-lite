@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0150-9314",
+    "issn": [
+        "0150-9314"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0150-9314",
+        "http://www.wikidata.org/entity/Q17621119"
+    ],
+    "name": "Annales des sciences naturelles. Botanique"
+}

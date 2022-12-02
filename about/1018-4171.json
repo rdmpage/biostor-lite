@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1018-4171",
+    "issn": [
+        "1018-4171"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1018-4171",
+        "http://www.wikidata.org/entity/Q21385515"
+    ],
+    "name": "Arachnologische Mitteilungen"
+}

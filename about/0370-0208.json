@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0370-0208",
+    "issn": [
+        "0370-0208"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0370-0208"
+    ],
+    "name": "Philippine journal of science"
+}

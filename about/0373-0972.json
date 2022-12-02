@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0373-0972",
+    "issn": [
+        "0373-0972"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0373-0972",
+        "http://www.wikidata.org/entity/Q51516250"
+    ],
+    "name": "Palaeontographia Italica"
+}

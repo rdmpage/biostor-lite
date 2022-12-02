@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0370-9760",
+    "issn": [
+        "0370-9760"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0370-9760"
+    ],
+    "name": "Transactions of the Royal Scottish Arboricultural Society"
+}

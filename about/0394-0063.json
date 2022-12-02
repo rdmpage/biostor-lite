@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0394-0063",
+    "issn": [
+        "0394-0063"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0394-0063",
+        "http://www.wikidata.org/entity/Q21385985"
+    ],
+    "name": "Il Naturalista siciliano: organo della Società siciliana di scienze naturali"
+}

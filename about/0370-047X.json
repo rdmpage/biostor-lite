@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0370-047X",
+    "issn": [
+        "0370-047X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0370-047X",
+        "http://www.wikidata.org/entity/Q6087096"
+    ],
+    "name": "Proc Linn Soc N S W"
+}

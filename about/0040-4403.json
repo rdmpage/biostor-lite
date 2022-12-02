@@ -1,0 +1,20 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0040-4403",
+    "issn": [
+        "0040-4403"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0040-4403",
+        "http://www.wikidata.org/entity/Q15767112",
+        "https://en.wikipedia.org/wiki/Texas_Journal_of_Science"
+    ],
+    "name": "Texas Journal of Science",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "The Texas Journal of Science is a peer reviewed academic journal covering all areas of basic and applied sciences, as well as science education. It is published by the . The journal is abstracted and indexed in BIOSIS Previews and The Zoological Record and was in previous years also covered by Scopus. It obtained its last impact factor of 0.113 in 2010, but its listing in the Journal Citation Reports has since been discontinued."
+        }
+    ]
+}

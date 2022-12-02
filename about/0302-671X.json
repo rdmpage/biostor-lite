@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0302-671X",
+    "issn": [
+        "0302-671X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0302-671X",
+        "http://www.wikidata.org/entity/Q27723997"
+    ],
+    "name": "Bonner Zoologische Monographien"
+}

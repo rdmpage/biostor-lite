@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0918-6158",
+    "issn": [
+        "0918-6158"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0918-6158",
+        "http://www.wikidata.org/entity/Q15754240",
+        "https://en.wikipedia.org/wiki/Biological_and_Pharmaceutical_Bulletin"
+    ],
+    "name": "Biological and Pharmaceutical Bulletin",
+    "description": [
+        {
+            "@language": "de",
+            "@value": "Das Biological and Pharmaceutical Bulletin, abgekürzt Biol. Pharm. Bull., ist eine wissenschaftliche Fachzeitschrift, die von der (社団法人日本薬学会, Shadan Hōjin Nihon Yakugakkai) veröffentlicht wird. Die Zeitschrift wurde 1978 unter dem Namen Journal of Pharmacobio-Dynamics gegründet und änderte ihn 1993 in Biological and Pharmaceutical Bulletin. Sie erscheint mit zwölf Ausgaben im Jahr. Es werden Arbeiten veröffentlicht, die sich mit allen Aspekten der Pharmazie bzw. der pharmazeutischen Biologie beschäftigen."
+        },
+        {
+            "@language": "en",
+            "@value": "Biological and Pharmaceutical Bulletin is a monthly peer reviewed medical journal published by the . The journal was established in 1993 as the successor to The Journal of Pharmacobio-Dynamics (established in 1978). In 2012, the society re-organized its journals, and most material published in the Journal of Health Science now started to be published in Biological and Pharmaceutical Bulletin and with some being published in its sister publication Chemical and Pharmaceutical Bulletin. The editor in chief is Naoto Oku (University of Shizuoka)."
+        }
+    ]
+}

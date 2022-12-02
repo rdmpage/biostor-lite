@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0366-4457",
+    "issn": [
+        "0366-4457"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0366-4457",
+        "http://www.wikidata.org/entity/Q5735532"
+    ],
+    "name": "Bulletin of miscellaneous information. Additional Series. Royal Gardens, Kew"
+}

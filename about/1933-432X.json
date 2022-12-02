@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1933-432X",
+    "issn": [
+        "1933-432X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1933-432X"
+    ],
+    "name": "Yearbook of the Department of Agriculture"
+}

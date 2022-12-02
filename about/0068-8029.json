@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0068-8029",
+    "issn": [
+        "0068-8029"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0068-8029",
+        "http://www.wikidata.org/entity/Q51523569"
+    ],
+    "name": "National Museum of Natural Sciences Publications in palaentology"
+}

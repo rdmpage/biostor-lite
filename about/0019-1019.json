@@ -1,0 +1,64 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0019-1019",
+    "issn": [
+        "0019-1019"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0019-1019",
+        "http://www.wikidata.org/entity/Q1666662",
+        "https://en.wikipedia.org/wiki/Ibis_(journal)"
+    ],
+    "name": "Ibis (journal)",
+    "description": [
+        {
+            "@language": "de",
+            "@value": "Ibis – Untertitel The International Journal of Avian Science – ist ein Journal, das seit 1859 kontinuierlich durch die British Ornithologists’ Union (BOU) herausgegeben wird. Es erscheint einmal im Quartal und beschäftigt sich mit zahlreichen Themen wie Ornithologie, Ökologie, Naturschutz, Umweltschutz, Umweltgerechtes Verhalten, Paläontologie, Taxonomie sowie neuen Spezies. Ibis publiziert Originalwerke, Berichte und Kurznachrichten im Vorfeld von ornithologischen Forschungen. Der Schwerpunkte liegt im Erhalt, der Ökologie, der Ethologie sowie der Klassifizierung von Vögeln. Erster Herausgeber war der britische Jurist und Zoologe Philip Lutley Sclater."
+        },
+        {
+            "@language": "fr",
+            "@value": "Ibis (sous-titré the international journal of avian science, « la revue internationale de science aviaire ») est la revue de la société ornithologique British Ornithologists' Union. Elle est publiée depuis 1859. Ibis publie des articles sur l'écologie, la conservation, le comportement, la paléontologie, la taxinomie et les nouvelles espèces d'oiseaux. Les articles de cette revue scientifique à comité de lecture sont publiés en anglais. Cette revue est traditionnellement trimestrielle, hormis certaines années comme 2007 avec six périodiques publiés."
+        },
+        {
+            "@language": "eo",
+            "@value": "Ibis, subtitole the International Journal of Avian Science, estas reviziata scienca gazeto de la British Ornithologists' Union. Temoj traktitaj estas ekzemple ekologio, konservado, kutimaro (etologio), paleontologio, kaj taksonomio de birdoj. La ĉefredaktoro estas Paul F. Donald. La gazeto estas publikigita de Wiley-Blackwell kaj presite kaj rete. Ĝi disponeblas senpage en la reto por institucioj de la disvolviĝanta mondo tra la programo OARE (Online Access to Research in the Environment, reta aliro al priserĉado pri medio)."
+        },
+        {
+            "@language": "en",
+            "@value": "Ibis (formerly The Ibis), subtitled the International Journal of Avian Science, is the peer-reviewed scientific journal of the British Ornithologists' Union. It was established in 1859. Topics covered include ecology, conservation, behaviour, palaeontology, and taxonomy of birds. The editor-in-chief is Dominic J. McCafferty (University of Glasgow). The journal is published by Wiley-Blackwell in print and online. It is available free on the internet for institutions in the developing world through the OARE scheme (Online Access to Research in the Environment)."
+        },
+        {
+            "@language": "pl",
+            "@value": "Ibis (podtytuł: International Journal of Avian Science) – recenzowane czasopismo naukowe (BOU). Do tematów poruszanych w artykułach należy ekologia, ochrona, zachowanie, paleontologia i taksonomia ptaków. Redaktorem naczelnym pisma jest Dominic J. McCafferty (University of Glasgow)."
+        },
+        {
+            "@language": "it",
+            "@value": "Ibis, dell'International Journal of Avian Science, è la rivista scientifica della British Ornithologists' Union. Gli argomenti trattati comprendono l'ecologia, conservazione, comportamento, paleontologia e tassonomia degli uccelli. Il capo redattore è Paul F. Donald (Royal Society for the Protection of Birds). Il giornale è pubblicato dalla casa editrice Wiley-Blackwell in versione cartacea e online."
+        },
+        {
+            "@language": "ru",
+            "@value": "«Ибис» (англ. Ibis, подзаголовок The International Journal of Avian Science) — рецензируемый научный журнал, издаётся Британским союзом орнитологов (BOU) с 1859 года. Первым редактором журнала был британский адвокат и зоолог Филип Латли Склейтер. Среди тем, которые освещаются в статьях — экология, охрана природы, охрана окружающей среды, экосоциология, палеонтология, таксономия, в том числе новых видов птиц."
+        },
+        {
+            "@language": "es",
+            "@value": "Ibis, subtitulada the International Journal of Avian Science (literalmente, La revista internacional de ciencia aviar), es la revista científica revisada por pares de la British Ornithologists' Union (Unión de ornitólogos británicos). Los temas que trata son la ecología, la conservación, el comportamiento, la paleontología y la taxonomía de las aves. Su redactor jefe es Paul F. Donald.​ La revista es publicada por Wiley-Blackwell impresa y en línea. Está disponible gratis por internet para las instituciones a través del esquema OARE (Online Access to Research in the Environment, acceso en línea para la investigación del medio ambiente).​"
+        },
+        {
+            "@language": "uk",
+            "@value": "Ibis (підтитул: International Journal of Avian Science) — рецензований науковий журнал, видається Британським Орнітологічним Союзом з 1859 р. Серед тем, що висвітлюються у статтях — екологія, охорона, поведінка, палеонтологія і таксономія птахів. Відповідальний редактор журналу Paul F. Donald. Як у друкованому, так і у цифровому форматі журнал видається . Окремі томи доступні в Інтернеті безкоштовно для інституцій, що використовують систему OARE (Online Access to Research in the Environment)."
+        },
+        {
+            "@language": "sv",
+            "@value": "Ibis var en svensk jazzgrupp. Ibis utgjorde en ombildning av det tidigare bandet Vildkaktus bestod ursprungligen av Olle Nilsson (gitarr), Gösta Nilsson (keyboards), Tommy Johnsson (bas) och Pétur \"Island\" Östlund (trummor), men nu handlade det om instrumental jazzrock och 1974 utgavs det självbetitlade albumet Ibis (Grammofonverket EFG-5015108)."
+        },
+        {
+            "@language": "pt",
+            "@value": "Ibis, com o subtítulo \"the International Journal of Avian Science\", é uma revista científica revisada por pares da British Ornithologists' Union. Os tópicos abordados incluem ecologia, conservação, comportamento, paleontologia, e taxonomia de aves. O editor-chefe é Paul F. Donald (da Royal Society for the Protection of Birds). O jornal é publicado pela Wiley-Blackwell em versão impressa e online. Ele está disponível gratuitamente na internet para instituições no mundo em desenvolvimento através do regime OARE."
+        },
+        {
+            "@language": "nl",
+            "@value": "Ibis, met ondertitel the International Journal of Avian Science, is het peer-reviewed wetenschappelijk tijdschrift van de British Ornithologists' Union. Het tijdschrift behandelt onderwerpen als de ecologie, het gedrag, de bescherming, de paleontologie en de taxonomie van vogels . De hoofdredacteur is Paul F. Donald van de Royal Society for the Protection of Birds. Het tijdschrift wordt door Wiley-Blackwell uitgegeven, zowel in print als online. De online versie is voor ontwikkelingslanden gratis toegankelijk via het Online Access to Research in the Environment-systeem."
+        }
+    ]
+}

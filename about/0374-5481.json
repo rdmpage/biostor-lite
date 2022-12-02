@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0374-5481",
+    "issn": [
+        "0374-5481"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0374-5481",
+        "http://www.wikidata.org/entity/Q19798858"
+    ],
+    "name": "Ann Mag Nat Hist"
+}

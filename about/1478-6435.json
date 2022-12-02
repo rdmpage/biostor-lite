@@ -1,0 +1,68 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1478-6435",
+    "issn": [
+        "1478-6435"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1478-6435",
+        "http://www.wikidata.org/entity/Q1973202",
+        "https://en.wikipedia.org/wiki/Philosophical_Magazine"
+    ],
+    "name": "Philosophical Magazine",
+    "description": [
+        {
+            "@language": "pt",
+            "@value": "A Philosophical Magazine é uma das mais antigas revistas científicas publicadas em inglês, que ainda está sendo publicada. Fundado por Alexander Tilloch (1759-1825), apareceu pela primeira vez em junho de 1798 em Londres. É publicado pela Taylor & Francis desde 1852. Os autores incluem Michael Faraday, James Prescott Joule, James Clerk Maxwell, Joseph John Thomson, Ernest Rutherford e Otto Hahn."
+        },
+        {
+            "@language": "en",
+            "@value": "The Philosophical Magazine is one of the oldest scientific journals published in English. It was established by Alexander Tilloch in 1798; in 1822 Richard Taylor became joint editor and it has been published continuously by Taylor & Francis ever since."
+        },
+        {
+            "@language": "de",
+            "@value": "Das Philosophical Magazine ist die älteste kommerzielle wissenschaftliche Zeitschrift der Welt, die noch immer publiziert wird. Von (1759–1825) begründet, erschien sie erstmals im Juni 1798 in London. Seit 1852 wird sie vom Verlag Taylor & Francis herausgegeben. Zu den Autoren zählen Michael Faraday, James Prescott Joule, James Clerk Maxwell, Joseph John Thomson, Baron Rayleigh, Ernest Rutherford und Otto Hahn."
+        },
+        {
+            "@language": "cs",
+            "@value": "Philosophical Magazine je nejstarší komerčně vydávaný vědecký časopis. Založil ho roku 1798 Richard Taylor. Je nepřetržitě vydáván společností Taylor & Francis. Publikovala v něm své články řada předních vědců 19. a 20. století. Od svých počátků se věnoval fyzice, chemii, astronomii, lékařství, botanice, biologii a geologii. Od poloviny 20. století je zaměřen na fyziku kondenzovaného stavu."
+        },
+        {
+            "@language": "fr",
+            "@value": "Philosophical Magazine est l'une des plus anciennes publications scientifiques commerciales du monde. Créé en 1798 par Richard Taylor, et depuis publié de façon continue par Taylor and Francis, il fut le journal de prédilection de scientifiques tels Faraday, Joule, Maxwell, J.J. Thomson, Rayleigh, Rutherford et Otto Hahn. La majeure partie du développement scientifique de ces deux cents dernières années se retrouve dans les pages de cette publication."
+        },
+        {
+            "@language": "ca",
+            "@value": "Philosophical Magazine és una de les revistes científiques més antigues publicades en anglès. Iniciada el 1798 per , el 1822 Richard Taylor es va convertir en redactor comú i s'ha publicat contínuament per Taylor & Francis des de llavors, era la revista d'elecció per a intel·lectuals com Faraday, Joule, Maxwell, J.J. Thomson, Rutherford i John Strutt, tercer baró de Rayleigh. En efecte, el desenvolupament de la ciència des de fa més de 200 anys es pot rastrejar exhaustivament en les seves pàgines."
+        },
+        {
+            "@language": "uk",
+            "@value": "Philosophical Magazine — науковий журнал, заснований в 1798 році . Вважається найстарішим у світі науковим періодичним виданням. Видається в Англії видавництвом Tailor & Fransis. Друкує статті з усіх галузей природознавства. В Philosophical Magazine друкувалися Фарадей, Джоуль, Томсон, Релей, Резерфорд і багато інших всесвітньо відомих учених. На сторінках цього журналу Резерфорд запропонував планетарну модель атома, а Бор постулював квантування орбіт електронів. З другої половини 20 століття основною тематикою журналу стала фізика твердого тіла, зокрема пружні властивості матеріалів."
+        },
+        {
+            "@language": "es",
+            "@value": "Philosophical Magazine es una de las más antiguas revistas científicas publicadas en inglés. Iniciado en 1798 por Alexander Tilloch, en 1822 Richard Taylor​ se convirtió en redactor común y se ha publicado continuamente por Taylor & Francis desde entonces, era la revista de elección para intelectuales como Faraday, Joule, Maxwell, J.J. Thomson, Rutherford y John Strutt, tercer barón Rayleigh. En efecto, el desarrollo de la ciencia desde hace más de 200 años se puede rastrear exhaustivamente en sus páginas."
+        },
+        {
+            "@language": "pl",
+            "@value": "Philosophical Magazine – czasopismo naukowe, jedno z najstarszych na świecie. Zostało założone w 1798 r. w Londynie przez Richarda Taylora i od tego czasu w sposób nieprzerwany wydawane przez Taylor & Francis. Publikowali w nim swoje artykuły tak wybitni uczeni, jak M. Faraday, J.P. Joule, J.C. Maxwell, J.J. Thomson, J.S. Rayleigh, E. Rutherford, O. Hahn, N. Bohr czy L. de Broglie. Rozwój nauki w ciągu ostatnich 200 lat może być w dużym stopniu śledzony przez studiowanie artykułów tam zamieszczonych. Jest to czasopismo recenzowane."
+        },
+        {
+            "@language": "ja",
+            "@value": "フィロソフィカル・マガジン(The Philosophical Magazine)は18世紀末からイギリスで刊行されている自然科学の学術誌である。"
+        },
+        {
+            "@language": "ru",
+            "@value": "Philosophical Magazine (в переводе с англ. «Философский журнал») — один из старейших научных журналов, издаваемых в Великобритании. В настоящее время журнал публикует в основном статьи в области физики конденсированного состояния, импакт-фактор — 1.855 (за 2018 год)."
+        },
+        {
+            "@language": "nl",
+            "@value": "Het Philosophical Magazine is 's werelds oudste commercieel gepubliceerd wetenschappelijk tijdschrift. Het werd in 1798 opgericht door Richard Taylor en uitgegeven door Taylor & Francis. Het tijdschrift handelt niet (meer) over wat we tegenwoordig onder \"filosofie\" verstaan, maar over specifieke onderdelen van de natuurkunde."
+        },
+        {
+            "@language": "it",
+            "@value": "Il Philosophical Magazine è una delle più antiche riviste scientifiche pubblicate in lingua inglese. È stata fondata da Alexander Tilloch nel 1798; nel 1822 Richard Taylor divenne redattore aggiunto e da allora è stata pubblicata continuamente dall'editore Taylor & Francis."
+        }
+    ]
+}

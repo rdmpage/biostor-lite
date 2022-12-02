@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0085-2998",
+    "issn": [
+        "0085-2998"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0085-2998"
+    ],
+    "name": "Journal of the Malacological Society of Australia"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0031-7683",
+    "issn": [
+        "0031-7683"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0031-7683",
+        "http://www.wikidata.org/entity/Q6074313"
+    ],
+    "name": "Manila Phillipine J Sci D"
+}

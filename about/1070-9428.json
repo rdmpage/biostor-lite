@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1070-9428",
+    "issn": [
+        "1070-9428"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1070-9428",
+        "http://www.wikidata.org/entity/Q19830024",
+        "https://en.wikipedia.org/wiki/Journal_of_Hymenoptera_Research"
+    ],
+    "name": "Journal of Hymenoptera Research",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "The Journal of Hymenoptera Research is a peer-reviewed scientific journal covering systematics, taxonomy, and ecology of Hymenoptera. It was established in 1992, and transferred to publishing with Pensoft Publishers in 2011, under an open access system. According to the Journal Citation Reports, the journal has a 2020 impact factor of 1.733."
+        },
+        {
+            "@language": "pl",
+            "@value": "Journal of Hymenoptera Research – międzynarodowe, recenzowane czasopismo naukowe otwartego dostępu, publikujące w dziedzinie entomologii. Pismo wydawane jest przez . Tematyką obejmuje różne dziedziny hymenopterologii, jak biologię, zachowanie, ekologię, morfologię, genetykę, systematykę i taksonomię błonkówek. W 2015 wskaźnik cytowań pisma wyniósł 0,966."
+        }
+    ]
+}

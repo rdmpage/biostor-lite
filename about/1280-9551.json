@@ -1,0 +1,20 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1280-9551",
+    "issn": [
+        "1280-9551"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1280-9551",
+        "http://www.wikidata.org/entity/Q15751589",
+        "https://en.wikipedia.org/wiki/Zoosystema"
+    ],
+    "name": "Zoosystema",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "Zoosystema is a peer-reviewed scientific journal published by the National Museum of Natural History, France (Muséum national d'histoire naturelle), covering research in animal biodiversity. Specific subjects within the journal's scope include comparative, functional and evolutionary morphology, phylogeny, biogeography, taxonomy and nomenclature, among others. Zoosystema publishes articles in English and French."
+        }
+    ]
+}

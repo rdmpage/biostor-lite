@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0078-8546",
+    "issn": [
+        "0078-8546"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0078-8546",
+        "http://www.wikidata.org/entity/Q15767189"
+    ],
+    "name": "Palaeontographica Americana"
+}

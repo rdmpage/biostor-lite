@@ -1,0 +1,15 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0034-740X",
+    "issn": [
+        "0034-740X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0034-740X",
+        "http://www.wikidata.org/entity/Q21385761",
+        "https://en.wikipedia.org/wiki/Revista_Chilena_de_Entomolog%C3%ADa"
+    ],
+    "name": "Revista Chilena de Entomolog%C3%ADa",
+    "description": []
+}

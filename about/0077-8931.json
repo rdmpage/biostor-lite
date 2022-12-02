@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0077-8931",
+    "issn": [
+        "0077-8931"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0077-8931",
+        "http://www.wikidata.org/entity/Q2843475"
+    ],
+    "name": "Memoirs of the New York Botanical Garden"
+}

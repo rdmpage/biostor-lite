@@ -1,0 +1,28 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0077-1813",
+    "issn": [
+        "0077-1813"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0077-1813",
+        "http://www.wikidata.org/entity/Q11693922",
+        "https://en.wikipedia.org/wiki/Muelleria_(journal)"
+    ],
+    "name": "Muelleria (journal)",
+    "description": [
+        {
+            "@language": "es",
+            "@value": "Muelleria es una revista científica de botánica publicada por el Real Jardín Botánico de Melbourne.​ Se centra en temas relacionados con las plantas, algas y hongos en el hemisferio sur y Australia, en particular.​ La revista fue nombrada en honor del botánico Ferdinand von Mueller.​ Muelleria comenzó la publicación en 1955 con fondos del Fideicomiso Maud Gibson. El fideicomiso se inició en 1945 después de la donación de 20.000 libras por Maud Gibson, la hija de William Gibson, fundador de la cadena de tiendas por departamentos .​"
+        },
+        {
+            "@language": "pt",
+            "@value": "Muelleria é uma revista científica de botânica publicada pelo . Centra-se em temas relacionados com as plantas, algas e fungos no Hemisfério Sul e Austrália em particular. A revista foi nomeada em honra do botânico Ferdinand von Mueller. Muelleria começou a publicação em 1955 com fundos do Maud Gibson Trust. Muelleria foi uma da série de revistas de botânica iniciada pelos herbários australianos depois da Segunda Guerra Mundial, o que reflete o aumento do nível da investigação botânica realizada nessa altura. foi o editor dos três temas iniciais."
+        },
+        {
+            "@language": "en",
+            "@value": "Muelleria is a peer-reviewed scientific journal on botany published by the Royal Botanic Gardens Melbourne. It focuses on topics relating to plants, algae, and fungi in the southern hemisphere and Australia in particular. The journal was named in honour of Victorian Government botanist Ferdinand von Mueller. Muelleria commenced publication in 1955 with funding from the Maud Gibson Trust. The trust was initiated in 1945 following the donation of £20,000 by Maud Gibson, a daughter of William Gibson, founder of the Foy & Gibson department store chain."
+        }
+    ]
+}

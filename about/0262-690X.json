@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0262-690X",
+    "issn": [
+        "0262-690X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0262-690X",
+        "http://www.wikidata.org/entity/Q21386174"
+    ],
+    "name": "Report of the British Association for the Advancement of Science"
+}

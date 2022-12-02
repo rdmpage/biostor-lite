@@ -1,0 +1,32 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0085-4417",
+    "issn": [
+        "0085-4417"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0085-4417",
+        "http://www.wikidata.org/entity/Q2005798",
+        "https://en.wikipedia.org/wiki/Nuytsia_(journal)"
+    ],
+    "name": "Nuytsia (journal)",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "Nuytsia is a peer-reviewed scientific journal published by the Western Australian Herbarium. It publishes papers on systematic botany, giving preference to papers related to the flora of Western Australia. Nearly twenty percent of Western Australia's plant taxa have been published in Nuytsia. The journal was established in 1970 and has appeared irregularly since. The editor-in-chief is Kevin Thiele. Nuytsia is named after the monospecific genus Nuytsia, whose only species is Nuytsia floribunda, the Western Australian Christmas tree."
+        },
+        {
+            "@language": "de",
+            "@value": "Nuytsia ist eine botanische Zeitschrift, die vom herausgegeben wird. In Nuytsia werden Artikel über systematische Botanik veröffentlicht, wobei Beiträge mit Bezug zur westaustralischen Flora bevorzugt werden. Laut eigenen Angaben wurde fast jede fünfte Erstbeschreibung einer westaustralischen Pflanzenart in Nuytsia veröffentlicht. Die Zeitschrift erschien erstmals 1970. Seitdem wurden jährlich bis zu zwei Ausgaben veröffentlicht, wobei bisweilen in einem Jahr auch gar keine Ausgabe erschien. Herausgeber ist , ein forschender Wissenschaftler am Herbarium."
+        },
+        {
+            "@language": "fr",
+            "@value": "Nuytsia est une revue scientifique dite peer-reviewed publiée par l'herbier de Perth (Australie-Occidentale). Elle publie des articles de Systématique Botanique, préférentiellement consacrés à la flore d'Australie Occidentale. Près de 40 % des taxons de cette partie de l'Australie ont été publiés dans Nuytsia. Le journal a été fondé en 1970 et est édité périodiquement depuis. Le rédacteur en chef est Kevin Thiele. Le nom Nuytsia a été donné d'après le genre monospécifique Nuytsia, dont la seule espèce est Nuytsia floribunda, l'arbre de Noël bien connu de l'Australie occidentale."
+        },
+        {
+            "@language": "es",
+            "@value": "Nuytsia es una revista institucional publicada por el herbario Western Australian Herbarium. Publica los informes en botánica sistemática, dando preferencia a los informes relacionados con la flora de \"Australia occidental\". Casi el veinte por ciento de los taxones de la Flora de Australia occidental se han publicado en Nuytsia. El primer número fue publicado en 1970, y desde entonces han publicado cada año entre cero y dos ediciones. El editor es Kevin Thiele, un científico investigador del herbario."
+        }
+    ]
+}

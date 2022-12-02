@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0149-175X",
+    "issn": [
+        "0149-175X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0149-175X",
+        "http://www.wikidata.org/entity/Q21385773"
+    ],
+    "name": "Occasional Pap. Mus. Tess tech. Univ"
+}

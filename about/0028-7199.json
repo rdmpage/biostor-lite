@@ -1,0 +1,15 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0028-7199",
+    "issn": [
+        "0028-7199"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0028-7199",
+        "http://www.wikidata.org/entity/Q21385624",
+        "https://en.wikipedia.org/wiki/Journal_of_the_New_York_Entomological_Society"
+    ],
+    "name": "Journal of the New York Entomological Society",
+    "description": []
+}

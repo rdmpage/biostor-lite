@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0044-5088",
+    "issn": [
+        "0044-5088"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0044-5088",
+        "http://www.wikidata.org/entity/Q21385959"
+    ],
+    "name": "Zoologica"
+}

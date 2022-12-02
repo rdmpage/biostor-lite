@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0021-8634",
+    "issn": [
+        "0021-8634"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0021-8634",
+        "http://www.wikidata.org/entity/Q1895843"
+    ],
+    "name": "J. Agric. Research"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0373-6709",
+    "issn": [
+        "0373-6709"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0373-6709",
+        "http://www.wikidata.org/entity/Q21385513"
+    ],
+    "name": "Physis Buenos Aires"
+}

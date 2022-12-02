@@ -1,0 +1,28 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0374-5708",
+    "issn": [
+        "0374-5708"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0374-5708",
+        "http://www.wikidata.org/entity/Q508861",
+        "https://en.wikipedia.org/wiki/Aquila_(journal)"
+    ],
+    "name": "Aquila (journal)",
+    "description": [
+        {
+            "@language": "ru",
+            "@value": "Aquila (рус. Орёл) — научный орнитологический журнал Венгрии. Основан зоологом Отто Германом в Будапеште (Австро-Венгрия) в 1894 году. Изначально журнал выходил нерегулярно, однако позже сменил формат на ежегодник. С 2011 года стал периодическим изданием с двумя и более выпусков ежегодно. «Aquila» — восьмой по объёму орнитологический журнал в мире."
+        },
+        {
+            "@language": "en",
+            "@value": "Aquila is an ornithological journal established by Ottó Herman, Budapest, Hungary, in 1894. It publishes peer reviewed articles and research notes focusing on birds, mostly − though not exclusively − on the avifauna of the Carpathian Basin. Recent issues are bilingual, published in both English and in Hungarian. Aquila is referred in Zoological Record, and in ."
+        },
+        {
+            "@language": "uk",
+            "@value": "Aquila — орнітологічний науковий журнал, заснований Отто Германом у Будапешті (Угорщина) в 1894 році. Публікуються оглядові статті, а також наукові праці, що стосуються птахів, головним чином − але не виключно − авіфауни Карпатського регіону. Журнал двомовний — друкуються статті як англійською, так і угорською мовами. «Aquila» реферується в Zoological Record та у ."
+        }
+    ]
+}

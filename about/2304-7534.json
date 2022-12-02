@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/2304-7534",
+    "issn": [
+        "2304-7534"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/2304-7534",
+        "http://www.wikidata.org/entity/Q5946741"
+    ],
+    "name": "Journal of the Straits Branch of the Royal Asiatic Society"
+}

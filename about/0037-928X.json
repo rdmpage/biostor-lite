@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0037-928X",
+    "issn": [
+        "0037-928X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0037-928X",
+        "http://www.wikidata.org/entity/Q21385878"
+    ],
+    "name": "Bull Soc ent France"
+}

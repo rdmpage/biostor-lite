@@ -1,0 +1,15 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0013-8916",
+    "issn": [
+        "0013-8916"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0013-8916",
+        "http://www.wikidata.org/entity/Q4038115",
+        "https://en.wikipedia.org/wiki/The_Entomologist%27s_Record_and_Journal_of_Variation"
+    ],
+    "name": "The Entomologist%27s Record and Journal of Variation",
+    "description": []
+}

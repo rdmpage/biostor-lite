@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0071-4739",
+    "issn": [
+        "0071-4739"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0071-4739",
+        "http://www.wikidata.org/entity/Q23930026"
+    ],
+    "name": "Fieldiana"
+}

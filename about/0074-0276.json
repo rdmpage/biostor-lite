@@ -1,0 +1,15 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0074-0276",
+    "issn": [
+        "0074-0276"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0074-0276",
+        "http://www.wikidata.org/entity/Q15760238",
+        "https://en.wikipedia.org/wiki/Mem%C3%B3rias_do_Instituto_Oswaldo_Cruz"
+    ],
+    "name": "Mem%C3%B3rias do Instituto Oswaldo Cruz",
+    "description": []
+}

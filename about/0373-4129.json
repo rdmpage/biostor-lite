@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0373-4129",
+    "issn": [
+        "0373-4129"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0373-4129"
+    ],
+    "name": "Proceedings of the Royal Society of New South Wales"
+}

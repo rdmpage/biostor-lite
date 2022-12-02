@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0082-6340",
+    "issn": [
+        "0082-6340"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0082-6340",
+        "http://www.wikidata.org/entity/Q21385236"
+    ],
+    "name": "Treubia"
+}

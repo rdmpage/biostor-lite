@@ -1,0 +1,28 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1320-6133",
+    "issn": [
+        "1320-6133"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1320-6133",
+        "http://www.wikidata.org/entity/Q4034594",
+        "https://en.wikipedia.org/wiki/Australian_Entomologist"
+    ],
+    "name": "Australian Entomologist",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "The Australian Entomologist is a peer-reviewed scientific journal published quarterly by the . The editor in chief is David Hancock. It was established in 1974 as The Australian Entomological Magazine and obtained its current title in 1993."
+        },
+        {
+            "@language": "ru",
+            "@value": "Australian Entomologist (ISSN 1320-6133) — австралийский энтомологический журнал для публикации научных исследований в различных областях науки о насекомых Австралии, Новой Зеландии, Новой Гвинеи и островов Океании."
+        },
+        {
+            "@language": "uk",
+            "@value": "Australian Entomologist — австралійський рецензований ентомологічний науковий журнал для публікації результатів наукових досліджень в різних галузях науки про комах Австралії, Нової Зеландії, Нової Гвінеї і островів Океанії."
+        }
+    ]
+}

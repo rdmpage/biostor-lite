@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1055-3177",
+    "issn": [
+        "1055-3177"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1055-3177",
+        "http://www.wikidata.org/entity/Q2243682"
+    ],
+    "name": "Novon"
+}

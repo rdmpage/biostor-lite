@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0091-7958",
+    "issn": [
+        "0091-7958"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0091-7958",
+        "http://www.wikidata.org/entity/Q21385313"
+    ],
+    "name": "Occ Pap. Mus. Nat. Hist. Univ. Kansas"
+}

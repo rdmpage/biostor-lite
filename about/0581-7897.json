@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0581-7897",
+    "issn": [
+        "0581-7897"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0581-7897",
+        "http://www.wikidata.org/entity/Q9074574"
+    ],
+    "name": "Sarawak Mus. J."
+}

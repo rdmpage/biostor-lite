@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1762-2557",
+    "issn": [
+        "1762-2557"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1762-2557",
+        "http://www.wikidata.org/entity/Q43617251"
+    ],
+    "name": "Revue Mycologique Toulouse"
+}

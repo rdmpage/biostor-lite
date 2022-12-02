@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0375-0434",
+    "issn": [
+        "0375-0434"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0375-0434",
+        "http://www.wikidata.org/entity/Q21385767"
+    ],
+    "name": "Proceedings of The Royal Society of London"
+}

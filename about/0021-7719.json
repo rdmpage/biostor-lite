@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0021-7719",
+    "issn": [
+        "0021-7719"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0021-7719",
+        "http://www.wikidata.org/entity/Q51420587"
+    ],
+    "name": "Jour. Conchyliologie"
+}

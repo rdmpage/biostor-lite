@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0270-2444",
+    "issn": [
+        "0270-2444"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0270-2444",
+        "http://www.wikidata.org/entity/Q18418406"
+    ],
+    "name": "Boston Society of Natural History Proceedings"
+}

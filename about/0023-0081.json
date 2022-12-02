@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0023-0081",
+    "issn": [
+        "0023-0081"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0023-0081"
+    ],
+    "name": "Transactions of the Kentucky Academy of Science"
+}

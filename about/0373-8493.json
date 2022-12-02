@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0373-8493",
+    "issn": [
+        "0373-8493"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0373-8493",
+        "http://www.wikidata.org/entity/Q28469658"
+    ],
+    "name": "Mitt Zool Mus Berlin"
+}

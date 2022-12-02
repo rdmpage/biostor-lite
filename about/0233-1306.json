@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0233-1306",
+    "issn": [
+        "0233-1306"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0233-1306",
+        "http://www.wikidata.org/entity/Q51505495"
+    ],
+    "name": "Mittheilungen aus dem K. Zoologischen Museum zu Dresden"
+}

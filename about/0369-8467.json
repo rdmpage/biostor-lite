@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0369-8467",
+    "issn": [
+        "0369-8467"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0369-8467"
+    ],
+    "name": "Papéis avulsos do Departamento de Zoologia"
+}

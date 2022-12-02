@@ -1,0 +1,48 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0003-0147",
+    "issn": [
+        "0003-0147"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0003-0147",
+        "http://www.wikidata.org/entity/Q3085258",
+        "https://en.wikipedia.org/wiki/The_American_Naturalist"
+    ],
+    "name": "The American Naturalist",
+    "description": [
+        {
+            "@language": "fr",
+            "@value": "The American Naturalist (abrégé en Am. Nat.) une revue scientifique mensuelle à comité de lecture, fondée en 1867, associée avec l'université de Chicago. Cette revue traite de l'écologie, la biologie évolutive et de diverses questions de biologie. D'après le Journal Citation Reports, le facteur d'impact de ce journal était de 4,796 en 2009. Actuellement, le directeur de publication est Mark A. McPeek (Dartmouth College, États-Unis)."
+        },
+        {
+            "@language": "en",
+            "@value": "The American Naturalist is the monthly peer-reviewed scientific journal of the American Society of Naturalists, whose purpose is \"to advance and to diffuse knowledge of organic evolution and other broad biological principles so as to enhance the conceptual unification of the biological sciences.\" It was established in 1867 and is published by the University of Chicago Press. The journal covers research in ecology, evolutionary biology, population, and integrative biology. As of 2018, the editor-in-chief is Daniel I. Bolnick. According to the Journal Citation Reports, the journal had a 2020 impact factor of 3.926."
+        },
+        {
+            "@language": "uk",
+            "@value": "The American Naturalist — американський науковий журнал, видається з 1867 року . Видавцем є . На сторінках журналу порушуються теми, пов'язані з екологією, еволюційною біологією, дослідженнями, що стосуються тзв. інтегральної біології. Редагують журнал Майкл К. Вітлок з Університету Британської Колумбії і Патрісія Л. Морс (2007)."
+        },
+        {
+            "@language": "ca",
+            "@value": "The American Naturalist, (abreujat Amer. Naturalist), és una revista científica publicada mensualment, revisada per parells, que es va fundar el 1867. És publicada per la University of Chicago Press en nom de la Societat Americana de Naturalistes. La revista inclou recerca en ecologia, biologia evolutiva, població i integració de la biologia. Des de 2009, l'editor en cap és Mark McPeek. Segons el Journal Citation Reports, el 2010 la revista tenia un factor d'impacte de 4,736, ocupant el número 17 entre les 130 revistes en la categoria \"Ecologia\" i el 10 d'un total de 45 revistes en la categoria de \"Biologia Evolutiva\"."
+        },
+        {
+            "@language": "es",
+            "@value": "The American Naturalist, (abreviado Amer. Naturalist), es una revista científica publicada mensualmente, revisada por pares, que se fundó en 1867. Es publicado por la University of Chicago Press en nombre de la Sociedad Americana de Naturalistas. La revista incluye la investigación en ecología, biología evolutiva, la población, y la integración de la biología. A partir de 2009, el redactor jefe es Mark McPeek. De acuerdo con el Journal Citation Reports , la revista tiene un 2010 factor de impacto de 4,736, ocupando el número 17 entre las 130 revistas en la categoría \"Ecología\"​ y el 10 de un total de 45 revistas en la categoría de \"Biología Evolutiva\".​"
+        },
+        {
+            "@language": "zh",
+            "@value": "《美国博物学家》（英語：The American Naturalist）是每月发行的科学期刊，创刊於1867年，与（American Society of Naturalists）有关，是由芝加哥大学出版社发行。杂志涵盖了生态学、演化生物学、种群以及综合生物学的研究领域。 到2009年为止，杂志主编为Mark McPeek。"
+        },
+        {
+            "@language": "pl",
+            "@value": "The American Naturalist – amerykańskie czasopismo naukowe wydawane od roku 1867 przez . Ukazuje się jako miesięcznik. Wydawcą jest University of Chicago Press. Na łamach czasopisma poruszane są tematy związane z ekologią, biologią ewolucyjną, badaniami dotyczącymi tzw. biologii zintegrowanej. Redaktorami czasopisma są Michael C. Whitlock z Uniwersytetu Kolumbii Brytyjskiej oraz Patricia L. Morse (2007)."
+        },
+        {
+            "@language": "pt",
+            "@value": "The American Naturalist é a revista científica mensal revisada por pares da Sociedade Americana de Naturalistas, cujo objetivo é \"avançar e difundir o conhecimento da evolução orgânica e outros princípios biológicos amplos, de modo a aprimorar a unificação conceitual das ciências biológicas\". Foi estabelecido em 1867 e é publicado pela University of Chicago Press. A revista abrange pesquisas em ecologia, biologia evolutiva, população e biologia integrativa. De acordo com o Journal Citation Reports, a revista teve um fator de impacto de 4 265 em 2017, classificando-a em 26º de 158 periódicos na categoria \"Ecologia\" e 11º de 49 periódicos na categoria \"Biologia Evolutiva\"."
+        }
+    ]
+}

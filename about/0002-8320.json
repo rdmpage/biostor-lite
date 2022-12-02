@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0002-8320",
+    "issn": [
+        "0002-8320"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0002-8320",
+        "http://www.wikidata.org/entity/Q15759271"
+    ],
+    "name": "Trans. Am. Ent. Soc. (Phila.)"
+}

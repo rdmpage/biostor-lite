@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0077-6122",
+    "issn": [
+        "0077-6122"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0077-6122",
+        "http://www.wikidata.org/entity/Q11067705"
+    ],
+    "name": "Verhandlungen der Naturforschenden Gesellschaft Basel"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0003-4339",
+    "issn": [
+        "0003-4339"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0003-4339",
+        "http://www.wikidata.org/entity/Q25653891"
+    ],
+    "name": "Ann. Sci. nat. (zool)."
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1321-9995",
+    "issn": [
+        "1321-9995"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1321-9995",
+        "http://www.wikidata.org/entity/Q59305517"
+    ],
+    "name": "Annals of the Queensland Museum"
+}

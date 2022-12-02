@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1375-7474",
+    "issn": [
+        "1375-7474"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1375-7474",
+        "http://www.wikidata.org/entity/Q21385273"
+    ],
+    "name": "Novapex"
+}

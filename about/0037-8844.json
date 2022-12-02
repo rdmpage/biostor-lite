@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0037-8844",
+    "issn": [
+        "0037-8844"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0037-8844",
+        "http://www.wikidata.org/entity/Q15635398"
+    ],
+    "name": "Atti della Società Italiana di Scienze Naturali"
+}

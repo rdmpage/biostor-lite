@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0027-4070",
+    "issn": [
+        "0027-4070"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0027-4070",
+        "http://www.wikidata.org/entity/Q5735526"
+    ],
+    "name": "Bulletin du Musée D'histoire Naturelle"
+}

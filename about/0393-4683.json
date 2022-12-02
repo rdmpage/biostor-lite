@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0393-4683",
+    "issn": [
+        "0393-4683"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0393-4683",
+        "http://www.wikidata.org/entity/Q21385975"
+    ],
+    "name": "Boll. Mus. Zool. Comp. Anat. Univ. Torino"
+}

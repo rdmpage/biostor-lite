@@ -1,0 +1,32 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0026-6493",
+    "issn": [
+        "0026-6493"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0026-6493",
+        "http://www.wikidata.org/entity/Q2530335",
+        "https://en.wikipedia.org/wiki/Annals_of_the_Missouri_Botanical_Garden"
+    ],
+    "name": "Annals of the Missouri Botanical Garden",
+    "description": [
+        {
+            "@language": "es",
+            "@value": "Annals of the Missouri Botanical Garden es una revista científica de Botánica con revisión por pares, establecida en 1914 por el Missouri Botanical Garden y aún publicada cuatrimestralmente por la . Su apelativo se abrevia en citas como Ann. Missouri Bot. Gard. o como Ann. Mo. Bot. Gard."
+        },
+        {
+            "@language": "en",
+            "@value": "The Annals of the Missouri Botanical Garden is a long-established major peer-reviewed journal of botany, established in 1914 by the Missouri Botanical Garden, under the directorship of botanist and phycologist, George Thomas Moore, and still published quarterly as of 2017 by the Missouri Botanical Garden Press. The journal is often abbreviated Ann. Missouri Bot. Gard."
+        },
+        {
+            "@language": "ru",
+            "@value": "Annals of the Missouri Botanical Garden — рецензируемый ботанический журнал, основанный в 1914 году Ботаническим садом Миссури, под руководством ботаника и альголога Джорджа Томаса Мура, который с 1912 по 1953 годы был директором ботанического сада Миссури. С 2010 года журнал выпускается четыре раза в год издательством Missouri Botanical Garden Press. Стандартное сокращение по ISO 4, используемое при цитировании журнала: Ann. Missouri Bot. Gard., иногда встречается сокращение Ann. Mo. Bot. Gard."
+        },
+        {
+            "@language": "nl",
+            "@value": "Annals of the Missouri Botanical Garden is een botanisch tijdschrift dat wordt uitgegeven door Missouri Botanical Garden Press, de uitgeverij van de Missouri Botanical Garden. Het tijdschrift verschijnt vier keer per jaar. De hoofdredacteur is Victoria Hollowell. In botanische literatuurverwijzingen wordt vaak de standaardaanduiding 'Ann. Missouri Bot. Gard.' gebruikt."
+        }
+    ]
+}

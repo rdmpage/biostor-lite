@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0040-7496",
+    "issn": [
+        "0040-7496"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0040-7496",
+        "http://www.wikidata.org/entity/Q4051483"
+    ],
+    "name": "Tijdschr. Ent Amsterdam"
+}

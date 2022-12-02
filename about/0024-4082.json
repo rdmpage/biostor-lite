@@ -1,0 +1,36 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0024-4082",
+    "issn": [
+        "0024-4082"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0024-4082",
+        "http://www.wikidata.org/entity/Q1990750",
+        "https://en.wikipedia.org/wiki/Zoological_Journal_of_the_Linnean_Society"
+    ],
+    "name": "Zoological Journal of the Linnean Society",
+    "description": [
+        {
+            "@language": "ca",
+            "@value": "El Zoological Journal of the Linnean Society és una revista científica amb revisió per experts publicada per Oxford University Press en nom de la Linnean Society. Surt amb una periodicitat mensual. El redactor en cap és , de la Linnean Society. Fou fundat el 1856 com a Journal of the Proceedings of the Linnean Society of London. Zoology i reanomenat Journal of the Linnean Society of London, Zoology el 1866. Porta el seu títol actual des del 1969. Les següents bases de dades reprenen els de la revista i l'inclouen en els seus índexs:"
+        },
+        {
+            "@language": "uk",
+            "@value": "«Зоологічний журнал Ліннеєвського товариства» (англ. Zoological Journal of the Linnean Society) — щомісячний науковий зоологічний журнал, що друкується у видавництві Oxford University Press від імені Лондонського Ліннеєвського товариства. Журнал заснований у 1856 році під назвою «Журнал праць Лондонського Ліннеєвського товариства. Зоологія» (англ. Journal of the Proceedings of the Linnean Society of London. Zoology). У 1866 році видання перейменовано у «Журнал праць Лондонського Ліннеєвського товариства. Зоологія» (англ. Journal of the Linnean Society of London, Zoology), а у 1969 році він отримав теперешню назву."
+        },
+        {
+            "@language": "fr",
+            "@value": "Le Zoological Journal of the Linnean Society est le journal scientifique de la Linnean Society of London, publié par Blackwell Publishing. Selon , il rassemble des « articles de zoologie mettant l'accent sur la diversité, la systématique, les relations et les mœurs des animaux actuels comme éteints »."
+        },
+        {
+            "@language": "nl",
+            "@value": "Zoological Journal of the Linnean Society is het zoölogische tijdschrift van de Linnean Society of London. Sinds 1969 verschijnt het tijdschrift onder deze naam, daarvoor verscheen het als Journal of the Linnean Society (Zoology). De redacteur is Peter Hayward. De uitgever van het tijdschrift is Wiley-Blackwell. Auteurs van artikelen in het tijdschrift kunnen ervoor kiezen om hun artikelen open access te maken, waardoor deze toegankelijk zijn voor alle lezers. De auteurs betalen hiervoor een bedrag."
+        },
+        {
+            "@language": "en",
+            "@value": "The Zoological Journal of the Linnean Society is a monthly peer-reviewed scientific journal covering zoology published by Oxford University Press on behalf of the Linnean Society. The editor-in-chief is Maarten Christenhusz (Linnean Society). It was established in 1856 as the Journal of the Proceedings of the Linnean Society of London. Zoology and renamed Journal of the Linnean Society of London, Zoology in 1866. It obtained its current title in 1969."
+        }
+    ]
+}

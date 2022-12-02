@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0029-8182",
+    "issn": [
+        "0029-8182"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0029-8182",
+        "http://www.wikidata.org/entity/Q51513261"
+    ],
+    "name": "Oceanus"
+}

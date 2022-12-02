@@ -1,0 +1,20 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0013-886X",
+    "issn": [
+        "0013-886X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0013-886X",
+        "http://www.wikidata.org/entity/Q5380616",
+        "https://en.wikipedia.org/wiki/Entomologisk_Tidskrift"
+    ],
+    "name": "Entomologisk Tidskrift",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "The Entomologisk Tidskrift (English: Entomological Journal) is a peer-reviewed scientific journal published by the (Swedish: Sveriges Entomologiska Förening) covering research on entomology, with an emphasis on Sweden and the other Nordic countries. It was established 1880 and is currently published triannually. The editor-in-chief is Emma Wahlberg (Swedish Museum of Natural History). The Entomologisk Tidskrift is abstracted and indexed in The Zoological Record and ."
+        }
+    ]
+}

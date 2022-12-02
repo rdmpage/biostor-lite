@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1713-7845",
+    "issn": [
+        "1713-7845"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1713-7845",
+        "http://www.wikidata.org/entity/Q21385686"
+    ],
+    "name": "Journal of the Entomological Society of Ontario"
+}

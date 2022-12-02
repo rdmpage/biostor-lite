@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0368-2935",
+    "issn": [
+        "0368-2935"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0368-2935",
+        "http://www.wikidata.org/entity/Q21385244"
+    ],
+    "name": "J. linn. Soc. Lond., Zool"
+}

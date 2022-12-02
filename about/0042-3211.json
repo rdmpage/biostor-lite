@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0042-3211",
+    "issn": [
+        "0042-3211"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0042-3211",
+        "http://www.wikidata.org/entity/Q3668336",
+        "https://en.wikipedia.org/wiki/The_Veliger"
+    ],
+    "name": "The Veliger",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "The Veliger was a peer-reviewed scientific journal covering malacology. The journal was established in 1958 and published its last issue in September, 2014. It was published by the and ."
+        },
+        {
+            "@language": "es",
+            "@value": "The Veliger era una revista de malacología arbitrada. La revista se estableció en 1958 y publicó su último número en septiembre de 2014. Incluía en sus páginas artículos de biología, ecología, sistemática de los moluscos así como cualquier tema relacionado con los moluscos por lo común de la región de océano Pacífico​​"
+        }
+    ]
+}

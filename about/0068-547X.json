@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0068-547X",
+    "issn": [
+        "0068-547X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0068-547X",
+        "http://www.wikidata.org/entity/Q6087086"
+    ],
+    "name": "Proc Calif. Acad. Sci. (4)"
+}

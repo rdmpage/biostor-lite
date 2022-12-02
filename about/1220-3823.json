@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1220-3823",
+    "issn": [
+        "1220-3823"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1220-3823"
+    ],
+    "name": "Buletinul Societății de Științe din București-România / Bulletin de la Société des Sciences de Bucarest-Roumanie"
+}

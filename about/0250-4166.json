@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0250-4166",
+    "issn": [
+        "0250-4166"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0250-4166"
+    ],
+    "name": "Scopus"
+}

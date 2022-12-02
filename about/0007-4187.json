@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0007-4187",
+    "issn": [
+        "0007-4187"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0007-4187",
+        "http://www.wikidata.org/entity/Q27709868"
+    ],
+    "name": "Bulletin Biologique De La France Et De La Belgique"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0196-5832",
+    "issn": [
+        "0196-5832"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0196-5832",
+        "http://www.wikidata.org/entity/Q21385972"
+    ],
+    "name": "Papilio"
+}

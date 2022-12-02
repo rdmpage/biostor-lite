@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0016-7568",
+    "issn": [
+        "0016-7568"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0016-7568",
+        "http://www.wikidata.org/entity/Q5535309",
+        "https://en.wikipedia.org/wiki/Geological_Magazine"
+    ],
+    "name": "Geological Magazine",
+    "description": [
+        {
+            "@language": "sv",
+            "@value": "Geological Magazine tillhör de längst utgivna tidskrifterna inom ämnet geovetenskap. Den kom ut första gången 1864. Denna geologiartikel saknar väsentlig information. Du kan hjälpa till genom att lägga till den."
+        },
+        {
+            "@language": "en",
+            "@value": "The Geological Magazine is a peer-reviewed scientific journal established in 1864, covering the earth sciences. It publishes original scientific research papers on geological topics. The journal is published bimonthly by Cambridge University Press."
+        }
+    ]
+}

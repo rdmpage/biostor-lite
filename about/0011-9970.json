@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0011-9970",
+    "issn": [
+        "0011-9970"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0011-9970"
+    ],
+    "name": "Berichte der Deutschen Botanischen Gesellschaft"
+}

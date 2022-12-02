@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0246-0254",
+    "issn": [
+        "0246-0254"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0246-0254",
+        "http://www.wikidata.org/entity/Q104972066"
+    ],
+    "name": "Mémoires du Muséum national d'histoire naturelle"
+}

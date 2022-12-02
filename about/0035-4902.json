@@ -1,0 +1,28 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0035-4902",
+    "issn": [
+        "0035-4902"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0035-4902",
+        "http://www.wikidata.org/entity/Q3429657",
+        "https://en.wikipedia.org/wiki/Rhodora_(journal)"
+    ],
+    "name": "Rhodora (journal)",
+    "description": [
+        {
+            "@language": "fr",
+            "@value": "Rhodora est une revue scientifique à comité de lecture publiée par le New England Botanical Club, depuis 1899. Elle est principalement consacrée à la flore d'Amérique du Nord. D'après le Journal Citation Reports, le facteur d'impact de ce journal était de 0,200 en 2009. La directrice de publication est Nishanta Rajakaruna et la responsable de la publication est Kathleen McCauley."
+        },
+        {
+            "@language": "en",
+            "@value": "Rhodora is a peer-reviewed scientific journal published by the . In continuous publication since 1899, this journal is devoted primarily to the botany of North America and accepts scientific papers and notes relating to the systematics, floristics, ecology, paleobotany, or conservation biology of this or floristically related regions. Rhodora is issued four times a year, typically totaling 450 printed pages annually. As of October 2021, Melanie Schori is the appointed Editor-in-Chief of Rhodora and Kathleen McCauley is Managing Editor. Lisa Standley is editor for \"The Botanists' Corner.\""
+        },
+        {
+            "@language": "es",
+            "@value": "Rhodora. Journal of the New England Botanical Club, (abreviado Rhodora),​ es una revista con descripciones botánicas que es editada por desde el año 1899. En su publicación continua desde 1899, esta revista se dedica principalmente a la botánica de América del Norte y acepta artículos científicos y notas relacionadas con la sistemática, florística, la ecología, la paleobotánica, o biología de la conservación de esta o regiones florística relacionadas. Rhodora se emite cuatro veces al año, por lo general por un total de 450 páginas impresas al año."
+        }
+    ]
+}

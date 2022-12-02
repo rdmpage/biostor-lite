@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0068-7995",
+    "issn": [
+        "0068-7995"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0068-7995",
+        "http://www.wikidata.org/entity/Q51523559"
+    ],
+    "name": "Publications in Biological Oceanography"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0952-7583",
+    "issn": [
+        "0952-7583"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0952-7583",
+        "http://www.wikidata.org/entity/Q21385302"
+    ],
+    "name": "British Journal of Entomology And Natural History"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0096-2759",
+    "issn": [
+        "0096-2759"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0096-2759",
+        "http://www.wikidata.org/entity/Q6090665"
+    ],
+    "name": "Field Museum Publications in Botany"
+}

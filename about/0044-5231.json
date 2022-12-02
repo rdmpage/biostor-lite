@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0044-5231",
+    "issn": [
+        "0044-5231"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0044-5231",
+        "http://www.wikidata.org/entity/Q3666497",
+        "https://en.wikipedia.org/wiki/Zoologischer_Anzeiger"
+    ],
+    "name": "Zoologischer Anzeiger",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "Zoologischer Anzeiger – A Journal of Comparative Zoology is a peer-reviewed scientific journal specialising in the field of comparative zoology. It is included in a number of bibliographic databases: \n* Animal Breeding Abstracts \n* \n* Biological Abstracts \n* BIOSIS \n* CAB Abstracts \n* Cambridge Scientific Abstracts \n* Chemical Abstracts \n* \n* \n* \n* Elsevier BIOBASE / Current Awareness in Biological Sciences \n* Elsevier \n* \n* \n* GEOBASE \n* \n* \n* NISC - \n* \n* Referativnyi Zhurnal \n* \n* Science Citation Index \n* \n* SciSearch \n* Scopus \n* \n* \n* Zoological Record"
+        },
+        {
+            "@language": "pt",
+            "@value": "Zoologischer Anzeiger – A Journal of Comparative Zoology é uma revista científica especializada no campo da zoologia comparada. Está incluída em várias bases de dados bibliográficas."
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0068-2292",
+    "issn": [
+        "0068-2292"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0068-2292",
+        "http://www.wikidata.org/entity/Q16539307"
+    ],
+    "name": "Bulletin of the British Museum (Natural History) Botany"
+}

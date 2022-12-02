@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0036-1488",
+    "issn": [
+        "0036-1488"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0036-1488",
+        "http://www.wikidata.org/entity/Q6127425"
+    ],
+    "name": "Sida, contributions to botany"
+}

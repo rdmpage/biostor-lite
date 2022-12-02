@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0069-8970",
+    "issn": [
+        "0069-8970"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0069-8970",
+        "http://www.wikidata.org/entity/Q51503411"
+    ],
+    "name": "Memoirs of the Connecticut Academy of Arts and Sciences"
+}

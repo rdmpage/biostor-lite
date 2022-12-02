@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0368-8283",
+    "issn": [
+        "0368-8283"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0368-8283"
+    ],
+    "name": "Memorias de la Real Academia de Ciencias y Artes de Barcelona"
+}

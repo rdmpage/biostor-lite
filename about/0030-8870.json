@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0030-8870",
+    "issn": [
+        "0030-8870"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0030-8870",
+        "http://www.wikidata.org/entity/Q6056825",
+        "https://en.wikipedia.org/wiki/Pacific_Science"
+    ],
+    "name": "Pacific Science",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "Pacific Science is a quarterly multidisciplinary peer-reviewed scientific journal covering the biological and physical sciences of the Pacific basin, focusing especially on biogeography, ecology, evolution, geology and volcanology, oceanography, palaeontology, and systematics. It is published by the University of Hawaiʻi Press and was established in 1947. It is the official journal of the Pacific Science Association. Back issues of Pacific Science are archived online in the University of Hawaii at Mānoa's ScholarSpace institutional repository."
+        },
+        {
+            "@language": "es",
+            "@value": "Pacific Science, (abreviado Pacific Sci.),​ es una revista ilustrada con descripciones botánicas que es editada en Honolulu (Estados Unidos) desde el año 1947, con el nombre de Pacific Science; a Quarterly Devoted to the Biological and Physical Sciences of the Pacific Region. Honolulu. HI."
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1037-3047",
+    "issn": [
+        "1037-3047"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1037-3047",
+        "http://www.wikidata.org/entity/Q105966412"
+    ],
+    "name": "Australian Institute of Marine Science Monograph Series"
+}

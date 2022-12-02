@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0073-134X",
+    "issn": [
+        "0073-134X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0073-134X",
+        "http://www.wikidata.org/entity/Q16859933"
+    ],
+    "name": "Proc. Hawaiian Ent. Soc."
+}

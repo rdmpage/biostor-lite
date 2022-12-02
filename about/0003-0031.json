@@ -1,0 +1,32 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0003-0031",
+    "issn": [
+        "0003-0031"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0003-0031",
+        "http://www.wikidata.org/entity/Q5672453",
+        "https://en.wikipedia.org/wiki/The_American_Midland_Naturalist"
+    ],
+    "name": "The American Midland Naturalist",
+    "description": [
+        {
+            "@language": "ca",
+            "@value": "American Midland Naturalist, (abreujat Amer. Midl. Naturalist), és una revista científica trimestral avaluada per experts sobre la història natural i que és editada als Estats Units. Va ser establert el 1909 per amb el nom d'American Midland Naturalist; devoted to natural history, primarily that of the prairie states i està publicat per la Universitat de Notre Dame. Va ser precedida per Segons Journal Citation Reports, el 2013, la revista té un factor d'impacte de 0,621."
+        },
+        {
+            "@language": "pt",
+            "@value": "American Midland Naturalist é uma revista científica trimestral revisada por pares que publica artigos da área de história natural. Foi fundada em 1909 por Júlio Nieuwland e é publicada pela Universidade de Notre Dame. De acordo com o Journal Citation Reports, a revista tinha um fator de impacto de 0.621 em 2013."
+        },
+        {
+            "@language": "en",
+            "@value": "The American Midland Naturalist is a quarterly peer-reviewed scientific journal covering natural history. It was established in 1909 by Julius Nieuwland and is published by the University of Notre Dame. According to the Journal Citation Reports, the journal has a 2013 impact factor of 0.621."
+        },
+        {
+            "@language": "es",
+            "@value": "American Midland Naturalist, (abreviado Amer. Midl. Naturalist),​ es una revista ilustrada con descripciones botánicas que es editada en Estados Unidos desde el año 1909-10 con el nombre de American Midland Naturalist; devoted to natural history, primarily that of the prairie states. Fue precedida por"
+        }
+    ]
+}

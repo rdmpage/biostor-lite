@@ -1,0 +1,36 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0077-8923",
+    "issn": [
+        "0077-8923"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0077-8923",
+        "http://www.wikidata.org/entity/Q2431664",
+        "https://en.wikipedia.org/wiki/Annals_of_the_New_York_Academy_of_Sciences"
+    ],
+    "name": "Annals of the New York Academy of Sciences",
+    "description": [
+        {
+            "@language": "de",
+            "@value": "Annals of the New York Academy of Sciences ist eine seit 1823 erscheinende, begutachtete wissenschaftliche Fachzeitschrift, die von Wiley für die New York Academy of Sciences herausgegeben wird. Chefredakteur ist Douglas Braaten. Der Impact Factor lag im Jahr 2016 bei 4,706, der fünfjährige Impact Factor bei 4,473. Damit lag das Journal bei dem Impact Factor auf Rang 8 von insgesamt 64 Zeitschriften in der Kategorie „Multidisziplinäre Wissenschaft“."
+        },
+        {
+            "@language": "en",
+            "@value": "The Annals of the New York Academy of Sciences is an academic journal published by Wiley-Blackwell on behalf of the New York Academy of Sciences. It is one of the oldest science journals still being published, having been founded in 1823. The editor-in-chief is . Each issue is of substantial length and explores a single topic with a multidisciplinary approach. A review published on Ulrichsweb states the scope is enormous and describes the journal as highly respected and the articles as penetrating."
+        },
+        {
+            "@language": "fr",
+            "@value": "Les Annales de l'Académie des sciences de New York (titre anglais: Annals of the New York Academy of Sciences) sont une revue académique publiée par Wiley-Blackwell au nom de l'Académie des sciences de New York. Créée en 1823, c'est une des plus anciennes revues scientifiques encore publiées. son rédacteur en chef est (en). Chaque numéro a un volume considérable, et explore un seul sujet avec une approche interdisciplinaire. Une description publiée sur le site (en) affirme que la portée est énorme et décrit la revue comme très respectée et les articles comme pénétrants. La revu publie 24 volumes par an ; pour 2019, ce sont les volumes 1435-1458"
+        },
+        {
+            "@language": "es",
+            "@value": "Annals of the New York Academy of Sciences, (abreviado Ann. New York Acad. Sci.),​ es una revista ilustrada con descripciones botánicas que es editada por la Academia de Ciencias de Nueva York en los Estados Unidos. Se publica desde 1823."
+        },
+        {
+            "@language": "nl",
+            "@value": "Annals of the New York Academy of Sciences is een internationaal, aan collegiale toetsing onderworpen wetenschappelijk tijdschrift op het gebied van de multidisciplinaire wetenschap.De naam wordt in literatuurverwijzingen meestal afgekort tot Ann. N. Y. Acad. Sci.Het wordt uitgegeven door John Wiley and Sons en verschijnt 32 keer per jaar.Het eerste nummer verscheen in 1823."
+        }
+    ]
+}

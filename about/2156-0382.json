@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/2156-0382",
+    "issn": [
+        "2156-0382"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/2156-0382",
+        "http://www.wikidata.org/entity/Q47049344"
+    ],
+    "name": "Cape Town Transactions of the South African Philosophical Society"
+}

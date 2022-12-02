@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0022-0752",
+    "issn": [
+        "0022-0752"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0022-0752",
+        "http://www.wikidata.org/entity/Q26829031"
+    ],
+    "name": "Journal of Morphology"
+}

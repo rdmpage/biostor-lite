@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1343-4152",
+    "issn": [
+        "1343-4152"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1343-4152",
+        "http://www.wikidata.org/entity/Q27719510"
+    ],
+    "name": "Mammal Study"
+}

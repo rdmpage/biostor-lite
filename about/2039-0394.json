@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/2039-0394",
+    "issn": [
+        "2039-0394"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/2039-0394",
+        "http://www.wikidata.org/entity/Q21386038"
+    ],
+    "name": "Biodiversity journal"
+}

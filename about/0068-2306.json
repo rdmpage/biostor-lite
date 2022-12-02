@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0068-2306",
+    "issn": [
+        "0068-2306"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0068-2306",
+        "http://www.wikidata.org/entity/Q27715611"
+    ],
+    "name": "Bull. Br. Mus. nat. Hist. (hist. Ser.)"
+}

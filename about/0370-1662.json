@@ -1,0 +1,64 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0370-1662",
+    "issn": [
+        "0370-1662"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0370-1662",
+        "http://www.wikidata.org/entity/Q1193201",
+        "https://en.wikipedia.org/wiki/Proceedings_of_the_Royal_Society"
+    ],
+    "name": "Proceedings of the Royal Society",
+    "description": [
+        {
+            "@language": "es",
+            "@value": "Proceedings of the Royal Society of London, más conocida como Proceedings of the Royal Society (Proc. R. Soc.), fue el título de una revista científica publicada por la Royal Society entre 1854 (volumen 7) y 1905 (volumen 76). A partir del volume 76 se publica como dos revistas separadas: Entre los nombres destacados que han publicado sus investigaciones en alguna de las publicaciones se encuentran James Clerk Maxwell (1863),​ Paul Dirac (1928),​ Francis Crick y J. D. Watson (1954)​ y Stephen Hawking y Roger Penrose (1970).​"
+        },
+        {
+            "@language": "ar",
+            "@value": "وقائع الجمعية الملكية هو العنوان الأساسي لدوريتين علميتين تنشران بواسطة الجمعية الملكية ( بالإنجليزية : Royal Society). كانت الدوريتان في الأصل دورية واحدة، لكنهما انقسمتا في عام 1905 إلى: \n* السلسلة A، التي تنشر الأبحاث المرتبطة بالعلوم الرياضية والفيزيائية والهندسية. \n* السلسلة B، والتي تنشر الأبحاث المرتبطة بعلم الأحياء. الدوريتان الآن هما الدوريتان العلميتان الرئيسيتان للجمعية الملكية. الكثير من العلماء المحتفى بهم في مجال العلم نشروا بحوثهم في هاتين الدوريتين، ومنهم بول ديراك، وفيرنر هايزنبيرغ، وإرنست رذرفورد وإرفين شرودنغر."
+        },
+        {
+            "@language": "pt",
+            "@value": "Proceedings of the Royal Society (Proc. R. Soc.) é o título de duas revistas científicas publicadas pela Royal Society. A revista inicial, Philosophical Transactions, é agora dedicada a temáticas especiais. Originalmente uma única revista, foi depois dividida em duas séries no ano de 1905: \n* Series A, que publica pesquisas relacionadas com matemática, física e engenharias. \n* Series B, que publica pesquisas relacionadas com biologia."
+        },
+        {
+            "@language": "de",
+            "@value": "Die Proceedings of the Royal Society of London ist eine monatlich erscheinende wissenschaftliche Zeitschrift der Royal Society mit Peer-Review. Viele deutsche Naturwissenschaftler nutzen ab 1800 diese Zeitschrift für Publikationen, da vergleichbare Zeitschriften in Deutschland erst ungefähr 70 Jahre später erschienen. Sie enthielt anfangs nur Zusammenfassungen von andernorts erschienenen Abhandlungen (englisch „abstracts“), ab 1854 aber vollwertige Publikationen („proceedings“). Da der Umfang der Jahresbände enorm angestiegen war, erfolgte 1905 eine Aufspaltung in zwei Reihen:"
+        },
+        {
+            "@language": "ca",
+            "@value": "Proceedings of the Royal Society és el títol parental de dues revistes científiques publicades per la Royal Society, mentre que la seva revista inicial, Philosophical Transactions, actualment es dedica a assumptes de temàtica especial. Originàriament una sola revista, es va separar en dues de separades l'any 1905: \n* Proceedings of the Royal Society, Series A, la qual publica recerca científica sobre matemàtica, física i enginyeria \n* Proceedings of the Royal Society, Series B, que publica recerca sobre biologia"
+        },
+        {
+            "@language": "zh",
+            "@value": "皇家學會報告（英语：Proceedings of the Royal Society），又称《英國皇家學會報告》，是英國皇家學會發表的科學期刊，原本是一份期刊，在1905年被拆分为兩份獨立的期刊： \n* A系列，出版數學、物理、工程科學相關的研究； \n* B系列，出版生物學相關的研究。 目前，這兩種期刊是英國皇家學會的主要研究期刊。許多著名的科學家都曾在《皇家學會報告》發表了他們的研究 ，包括馬克士威、海森堡、狄拉克、歐內斯特·盧瑟福及薛定諤等等。"
+        },
+        {
+            "@language": "uk",
+            "@value": "Proceedings of the Royal Society (укр. Праці королівського товариства) — назва двох наукових журналів, що видаються Королівським товариством. Спочатку це був єдиний журнал, але в 1905 році він був розділений на два окремих: \n* Частина A: у якій публікуються дослідження, пов'язані з математичними, фізичними та інженерними науками (включно з інформатикою) \n* Частина B: публікує дослідження, пов'язані з біологією"
+        },
+        {
+            "@language": "en",
+            "@value": "Proceedings of the Royal Society is the parent title of two scientific journals published by the Royal Society of the United Kingdom. Originally a single journal, it was split into two separate journals in 1905: \n* Part A: which publishes research related to mathematical, physical, and engineering sciences (including computer science) \n* Part B: which publishes research related to biology"
+        },
+        {
+            "@language": "fr",
+            "@value": "Proceedings of the Royal Society (abrégé Proc. R. Soc. A et B) est le nom de deux journaux scientifiques publiés par la Royal Society. Ces deux journaux ne formaient à l'origine qu'un seul journal, lequel fut divisé en deux en 1905 : \n* la série A (ISSN 1471-2954) publie les articles scientifiques de mathématiques, physique et sciences de l'ingénieur ; \n* la série B (ISSN 0962-8452) concerne la recherche en biologie."
+        },
+        {
+            "@language": "eo",
+            "@value": "Proceedings of the Royal Society (Esperante: Protokoloj de la Reĝa Societo) estas patra titolo de du sciencaj gazetoj publikigitaj de la Reĝa Societo de Londono. Origine ĝi estis unika gazeto, sed estis disigita en du separataj gazetoj en 1905: \n* Serio A, kiu publikigas esploradon rilate al matematikaj, fizikaj, kaj inĝenieraj sciencoj \n* Serio B, kiu publikigas esploradon rilate al biologio"
+        },
+        {
+            "@language": "nl",
+            "@value": "Proceedings of the Royal Society is de verzamelnaam van twee wetenschappelijke tijdschriften die worden uitgegeven door de Royal Society: \n* Proceedings of the Royal Society A — Mathematical, Physical & Engineering Sciences en \n* Proceedings of the Royal Society B — Biological Sciences."
+        },
+        {
+            "@language": "ru",
+            "@value": "«Proceedings of the Royal Society» (рус. «Труды Королевского Общества») — одно из главных печатных изданий Лондонского Королевского общества, которое является в Великобритании аналогом Академии наук. Существует, под разными названиями, с 1800 года. Первоначально труды публиковались в одном журнале, но в 1905 году было решено разделить издание на две отдельные тематические серии: \n* Серия A: математика, физические и инженерные науки. \n* Серия B: биологические науки."
+        }
+    ]
+}

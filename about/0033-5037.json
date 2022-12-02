@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0033-5037",
+    "issn": [
+        "0033-5037"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0033-5037",
+        "http://www.wikidata.org/entity/Q21385751"
+    ],
+    "name": "Quaestiones Ent"
+}

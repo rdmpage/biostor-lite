@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0007-148X",
+    "issn": [
+        "0007-148X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0007-148X",
+        "http://www.wikidata.org/entity/Q51451346"
+    ],
+    "name": "Bulletin of the British Museum (Natural History). Mineralogy."
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0044-3468",
+    "issn": [
+        "0044-3468"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0044-3468",
+        "http://www.wikidata.org/entity/Q24199498"
+    ],
+    "name": "Zeitschrift Fuer Saeugetierkunde"
+}

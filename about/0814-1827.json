@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0814-1827",
+    "issn": [
+        "0814-1827"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0814-1827",
+        "http://www.wikidata.org/entity/Q91338722"
+    ],
+    "name": "Memoirs of Museum of Victoria"
+}

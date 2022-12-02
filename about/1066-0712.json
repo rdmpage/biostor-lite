@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1066-0712",
+    "issn": [
+        "1066-0712"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1066-0712",
+        "http://www.wikidata.org/entity/Q15750911"
+    ],
+    "name": "Banisteria"
+}

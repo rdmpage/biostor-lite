@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0024-9637",
+    "issn": [
+        "0024-9637"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0024-9637",
+        "http://www.wikidata.org/entity/Q5989477"
+    ],
+    "name": "Madroño"
+}

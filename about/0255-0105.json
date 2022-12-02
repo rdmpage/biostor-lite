@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0255-0105",
+    "issn": [
+        "0255-0105"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0255-0105",
+        "http://www.wikidata.org/entity/Q15759777"
+    ],
+    "name": "Ann Naturhist Mus Wien"
+}

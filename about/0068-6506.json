@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0068-6506",
+    "issn": [
+        "0068-6506"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0068-6506",
+        "http://www.wikidata.org/entity/Q21386276"
+    ],
+    "name": "Univ. Calif Publ. Zool."
+}

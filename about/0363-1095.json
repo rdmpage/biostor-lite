@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0363-1095",
+    "issn": [
+        "0363-1095"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0363-1095",
+        "http://www.wikidata.org/entity/Q15972550"
+    ],
+    "name": "Proc Washington Academy of Sciences"
+}

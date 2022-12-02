@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0366-3388",
+    "issn": [
+        "0366-3388"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0366-3388",
+        "http://www.wikidata.org/entity/Q5735491"
+    ],
+    "name": "Bulletin de la Société Linnéenne de Normandie"
+}

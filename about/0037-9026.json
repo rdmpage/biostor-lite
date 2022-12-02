@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0037-9026",
+    "issn": [
+        "0037-9026"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0037-9026",
+        "http://www.wikidata.org/entity/Q51458562"
+    ],
+    "name": "Compt. Rend. Soc. Biol. Paris"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0044-3778",
+    "issn": [
+        "0044-3778"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0044-3778",
+        "http://www.wikidata.org/entity/Q27719304"
+    ],
+    "name": "Zeitschrift fuer Wissenschaftliche Zoologie"
+}

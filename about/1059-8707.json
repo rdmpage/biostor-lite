@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1059-8707",
+    "issn": [
+        "1059-8707"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1059-8707",
+        "http://www.wikidata.org/entity/Q21385702"
+    ],
+    "name": "Proceedings of the San Diego Society of Natural History"
+}

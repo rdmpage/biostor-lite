@@ -1,0 +1,28 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1559-4491",
+    "issn": [
+        "1559-4491"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1559-4491",
+        "http://www.wikidata.org/entity/Q768598",
+        "https://en.wikipedia.org/wiki/The_Wilson_Journal_of_Ornithology"
+    ],
+    "name": "The Wilson Journal of Ornithology",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "The Wilson Journal of Ornithology (until 2006 The Wilson Bulletin) is a quarterly scientific journal published by the Wilson Ornithological Society. Both the society and its journal were named after American ornithologist Alexander Wilson."
+        },
+        {
+            "@language": "pl",
+            "@value": "The Wilson Journal of Ornithology (do 2006 pod nazwą The Wilson Bulletin) – czasopismo naukowe (kwartalnik), publikowane przez . Nazwa czasopisma pochodzi od nazwiska amerykańskiego ornitologa ."
+        },
+        {
+            "@language": "fr",
+            "@value": "The Wilson Journal of Ornithology est la publication officielle de la Wilson Ornithological Society. La revue publie des articles sur le comportement, l'écologie, les adaptations physiologiques et la conservation des oiseaux dans leur habitat naturel. Sans exclure les études d'autres régions du monde, ce sont principalement les espèces du nouveau monde, notamment des néotropiques, qui sont ciblées. The Wilson Journal of Ornithology fait suite à The Wilson Bulletin (ISSN 0043-5643, 1894-2005)."
+        }
+    ]
+}

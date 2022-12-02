@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0007-1536",
+    "issn": [
+        "0007-1536"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0007-1536",
+        "http://www.wikidata.org/entity/Q29043669"
+    ],
+    "name": "Trans. Brit. Mycol. Soc"
+}

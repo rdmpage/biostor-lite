@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0373-3033",
+    "issn": [
+        "0373-3033"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0373-3033"
+    ],
+    "name": "Memorie della Reale Academia delle Scienze di Torino"
+}

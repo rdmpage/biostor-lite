@@ -1,0 +1,20 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0015-4040",
+    "issn": [
+        "0015-4040"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0015-4040",
+        "http://www.wikidata.org/entity/Q15749995",
+        "https://en.wikipedia.org/wiki/The_Florida_Entomologist"
+    ],
+    "name": "The Florida Entomologist",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "The Florida Entomologist is an quarterly open access scientific journal published by the Florida Entomological Society. Founded in 1917 as “The Florida Buggist” and in 1920 was renamed, into “The Florida Entomologist.” Manuscripts from all disciplines of entomology are accepted for consideration. The chief editor is James Nation of the University of Florida. According to the 2013 Journal Citation Reports, the impact factor of The Florida Entomologist is 0.975 which ranks it 50/94 in \"Entomology\". It is notable as the first journal to experiment with a hybrid open access business model."
+        }
+    ]
+}

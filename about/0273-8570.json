@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0273-8570",
+    "issn": [
+        "0273-8570"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0273-8570",
+        "http://www.wikidata.org/entity/Q3521439"
+    ],
+    "name": "Journal of Ornithology"
+}

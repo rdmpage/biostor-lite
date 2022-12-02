@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0714-0983",
+    "issn": [
+        "0714-0983"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0714-0983",
+        "http://www.wikidata.org/entity/Q51523568"
+    ],
+    "name": "Canada National Museum of Natural Sciences Publications in Natural Sciences"
+}

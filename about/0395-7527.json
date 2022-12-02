@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0395-7527",
+    "issn": [
+        "0395-7527"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0395-7527",
+        "http://www.wikidata.org/entity/Q27720934"
+    ],
+    "name": "Bulletin de la Société mycologique de France"
+}

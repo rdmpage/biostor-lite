@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1138-638X",
+    "issn": [
+        "1138-638X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1138-638X"
+    ],
+    "name": "Iberus Suplemento"
+}

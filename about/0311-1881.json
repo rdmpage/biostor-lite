@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0311-1881",
+    "issn": [
+        "0311-1881"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0311-1881",
+        "http://www.wikidata.org/entity/Q21384956"
+    ],
+    "name": "Australian entomological magazine"
+}

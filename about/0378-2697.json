@@ -1,0 +1,36 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0378-2697",
+    "issn": [
+        "0378-2697"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0378-2697",
+        "http://www.wikidata.org/entity/Q2891391",
+        "https://en.wikipedia.org/wiki/Plant_Systematics_and_Evolution"
+    ],
+    "name": "Plant Systematics and Evolution",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "Plant Systematics and Evolution is a biannual peer-reviewed scientific journal covering systematic botany and evolutionary biology. The editors-in-chief are (Heidelberg University), , (Masaryk University), and (Slovak Academy of Sciences)."
+        },
+        {
+            "@language": "ca",
+            "@value": "Plant Systematics and Evolution és una revista científica bianual revisada per experts que cobreix la botànica sistemàtica i biologia evolutiva. Els redactors en cap són (Universitat de Heidelberg), i."
+        },
+        {
+            "@language": "pl",
+            "@value": "Plant Systematics and Evolution (w publikacjach cytowane także w skrócie jako Pl. Syst. Evol.) – austriackie czasopismo naukowe publikujące artykuły z zakresu botaniki i mykologii. Założone zostało w 1851 r. przez A. Skofitza. Publikowane w nim są oryginalne prace i przeglądy dotyczących systematyki roślin i grzybów w najszerszym znaczeniu, obejmujących ewolucyjne badania filogenetyczne i biogeograficzne na wyższych poziomach taksonomicznych specyficznych dla populacji. Nacisk taksonomiczny kładzie się na rośliny zielone. Czasopismo wychodziło pod kilkoma tytułami: OCLC: 2243542"
+        },
+        {
+            "@language": "fr",
+            "@value": "Plant Systematics and Evolution est une revue scientifique à comité de lecture bisannuel sur la botanique systématique et la biologie de l'évolution."
+        },
+        {
+            "@language": "es",
+            "@value": "Plant Systematics and Evolution (abreviado Pl. Syst. Evol.),​ es una revista ilustrada con descripciones botánicas que es editada en Viena. Se publica desde el año 1974 hasta ahora. Fue precedida por Oesterreichische Botanische Zeitschrift."
+        }
+    ]
+}

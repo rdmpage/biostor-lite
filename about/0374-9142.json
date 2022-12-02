@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0374-9142",
+    "issn": [
+        "0374-9142"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0374-9142",
+        "http://www.wikidata.org/entity/Q21385742"
+    ],
+    "name": "Memoirs of The Indian Museum"
+}

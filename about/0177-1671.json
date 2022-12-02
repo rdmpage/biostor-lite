@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0177-1671",
+    "issn": [
+        "0177-1671"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0177-1671",
+        "http://www.wikidata.org/entity/Q107121829"
+    ],
+    "name": "Verhandlungen der Ornithologischen Gesellschaft in Bayern"
+}

@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0368-7198",
+    "issn": [
+        "0368-7198"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0368-7198"
+    ],
+    "name": "Det Kongelige Danske videnskabernes selskabs skrifter. Naturvidenskabelig og mathematisk afdeling"
+}

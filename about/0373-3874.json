@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0373-3874",
+    "issn": [
+        "0373-3874"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0373-3874",
+        "http://www.wikidata.org/entity/Q21385465"
+    ],
+    "name": "Kjobenhavn Nath Medd"
+}

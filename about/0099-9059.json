@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0099-9059",
+    "issn": [
+        "0099-9059"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0099-9059",
+        "http://www.wikidata.org/entity/Q51395750"
+    ],
+    "name": "Raptor Research"
+}

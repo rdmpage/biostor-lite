@@ -1,0 +1,15 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0096-3712",
+    "issn": [
+        "0096-3712"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0096-3712",
+        "http://www.wikidata.org/entity/Q24103872",
+        "https://en.wikipedia.org/wiki/Entomologica_Americana_(Brooklyn_Entomological_Society)"
+    ],
+    "name": "Entomologica Americana (Brooklyn Entomological Society)",
+    "description": []
+}

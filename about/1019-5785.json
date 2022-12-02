@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1019-5785",
+    "issn": [
+        "1019-5785"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1019-5785",
+        "http://www.wikidata.org/entity/Q51398017"
+    ],
+    "name": "Southern African field archaeology"
+}

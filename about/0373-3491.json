@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0373-3491",
+    "issn": [
+        "0373-3491"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0373-3491",
+        "http://www.wikidata.org/entity/Q21385460"
+    ],
+    "name": "A. Kalchberg. Bollettino della Società Entomologica Italiana."
+}

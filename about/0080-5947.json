@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0080-5947",
+    "issn": [
+        "0080-5947"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0080-5947",
+        "http://www.wikidata.org/entity/Q21385192"
+    ],
+    "name": "Transactions of the San Diego Society for Natural History"
+}

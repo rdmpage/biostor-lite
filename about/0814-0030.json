@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0814-0030",
+    "issn": [
+        "0814-0030"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0814-0030"
+    ],
+    "name": "Northern Territory Museum of Arts and Sciences. Monograph series"
+}

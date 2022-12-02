@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0255-9676",
+    "issn": [
+        "0255-9676"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0255-9676",
+        "http://www.wikidata.org/entity/Q5696510"
+    ],
+    "name": "Annuaire du Conservatoire et du jardin botaniques de Genève"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0885-4645",
+    "issn": [
+        "0885-4645"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0885-4645",
+        "http://www.wikidata.org/entity/Q21385120"
+    ],
+    "name": "Memoirs Carnegie Museum"
+}

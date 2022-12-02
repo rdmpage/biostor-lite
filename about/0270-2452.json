@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0270-2452",
+    "issn": [
+        "0270-2452"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0270-2452",
+        "http://www.wikidata.org/entity/Q51513076"
+    ],
+    "name": "Occasional Papers of the Boston Society of Natural History"
+}

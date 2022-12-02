@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0035-418X",
+    "issn": [
+        "0035-418X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0035-418X",
+        "http://www.wikidata.org/entity/Q15765167",
+        "https://en.wikipedia.org/wiki/Revue_suisse_de_Zoologie"
+    ],
+    "name": "Revue suisse de Zoologie",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "The Revue suisse de Zoologie (English: Swiss Journal of Zoology) is a biannual peer-reviewed scientific journal for zoological systematics. It is published by the Natural History Museum of Geneva (Switzerland). It is financed by the Swiss Academy of Natural Sciences (SCNAT) and the City of Geneva, and mainly publishes the research results of Swiss researchers or work based on the collections of Swiss institutions."
+        },
+        {
+            "@language": "fr",
+            "@value": "La Revue suisse de Zoologie est une revue scientifique semestrielle, publiée par le muséum d'histoire naturelle de Genève et la . Elle est fondée en 1893 par Maurice Bedot, alors directeur du muséum. Elle est financée par l'Académie suisse des sciences naturelles (SCNAT) et la Ville de Genève, et publie principalement les résultats de recherche de chercheurs suisses ou les travaux fondés sur les collections d'institutions suisses."
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1933-0545",
+    "issn": [
+        "1933-0545"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1933-0545",
+        "http://www.wikidata.org/entity/Q60182944"
+    ],
+    "name": "Transactions of the Kansas Academy of Science"
+}

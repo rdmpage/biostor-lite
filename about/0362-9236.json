@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0362-9236",
+    "issn": [
+        "0362-9236"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0362-9236",
+        "http://www.wikidata.org/entity/Q21385133"
+    ],
+    "name": "Bull US Mus"
+}

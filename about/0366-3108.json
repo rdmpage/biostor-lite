@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0366-3108",
+    "issn": [
+        "0366-3108"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0366-3108",
+        "http://www.wikidata.org/entity/Q5735486"
+    ],
+    "name": "Bulletin de la Société Botanique de Geneve"
+}

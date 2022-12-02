@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0006-8152",
+    "issn": [
+        "0006-8152"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0006-8152",
+        "http://www.wikidata.org/entity/Q5732642"
+    ],
+    "name": "Botanische Jahrbücher für Systematik Pflanzengeschichte und Pflanzengeographie"
+}

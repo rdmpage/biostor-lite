@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0074-7211",
+    "issn": [
+        "0074-7211"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0074-7211",
+        "http://www.wikidata.org/entity/Q3406324"
+    ],
+    "name": "Compte rendu des Séances IIIe Congres Ornithologique International Paris. — 26-30 Juin 1900"
+}

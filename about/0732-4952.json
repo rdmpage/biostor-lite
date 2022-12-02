@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0732-4952",
+    "issn": [
+        "0732-4952"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0732-4952",
+        "http://www.wikidata.org/entity/Q51405479"
+    ],
+    "name": "Bull. Essex Inst"
+}

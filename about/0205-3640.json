@@ -1,0 +1,20 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0205-3640",
+    "issn": [
+        "0205-3640"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0205-3640",
+        "http://www.wikidata.org/entity/Q21385976",
+        "https://en.wikipedia.org/wiki/Historia_naturalis_bulgarica"
+    ],
+    "name": "Historia naturalis bulgarica",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "Historia naturalis bulgarica is a peer-reviewed international scientific journal, published by the National Museum of Natural History, Sofia, Bulgaria. The journal is being published as of 1989, and as of 2018 is published only electronically. The journal published scientific contributions on paleontology, zoology, botany, geology and mineralogy, as well as original articles on history of natural sciences and natural history institutions. The papers are published in English language only under the free license CC BY 4.0."
+        }
+    ]
+}

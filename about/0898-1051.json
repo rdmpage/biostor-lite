@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0898-1051",
+    "issn": [
+        "0898-1051"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0898-1051",
+        "http://www.wikidata.org/entity/Q51425194"
+    ],
+    "name": "Zool Bull"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0035-9173",
+    "issn": [
+        "0035-9173"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0035-9173",
+        "http://www.wikidata.org/entity/Q15761516"
+    ],
+    "name": "Journal And Proceedings of The Linnean Society of New South Wales"
+}

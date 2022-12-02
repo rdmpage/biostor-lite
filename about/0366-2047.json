@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0366-2047",
+    "issn": [
+        "0366-2047"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0366-2047",
+        "http://www.wikidata.org/entity/Q51449107"
+    ],
+    "name": "Bollettino della Societa dei Naturalisti in Napoli"
+}

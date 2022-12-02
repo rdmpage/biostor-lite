@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/2018-5626",
+    "issn": [
+        "2018-5626"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/2018-5626",
+        "http://www.wikidata.org/entity/Q51396437"
+    ],
+    "name": "Annales de l'Association des Naturalistes de Levallois-Perret"
+}

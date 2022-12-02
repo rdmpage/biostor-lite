@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0012-0073",
+    "issn": [
+        "0012-0073"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0012-0073",
+        "http://www.wikidata.org/entity/Q105261820"
+    ],
+    "name": "Berliner entomologischer Zeitschrift"
+}

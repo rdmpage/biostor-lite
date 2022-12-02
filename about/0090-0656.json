@@ -1,0 +1,20 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0090-0656",
+    "issn": [
+        "0090-0656"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0090-0656",
+        "http://www.wikidata.org/entity/Q5454961",
+        "https://en.wikipedia.org/wiki/Fishery_Bulletin"
+    ],
+    "name": "Fishery Bulletin",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "The Fishery Bulletin is a quarterly peer-reviewed scientific journal published by the National Oceanic and Atmospheric Administration. It was established in 1881 and was until 1903 published as the Bulletin of the United States Fish Commission by the United States Fish Commission. The journal then went through a number of changes in its name: Bulletin of the Bureau of Fisheries (1904–1911), Bulletin of the United States Fish Commission (1912–1940), Fishery Bulletin of the Fish and Wildlife Service (1941–1970), and finally from 1971, Fishery Bulletin. All content has been scanned and is available through the journal's page or the site maintained by the NOAA Central library."
+        }
+    ]
+}

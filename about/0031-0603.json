@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0031-0603",
+    "issn": [
+        "0031-0603"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0031-0603",
+        "http://www.wikidata.org/entity/Q15754241"
+    ],
+    "name": "Pan-Pacific Entomologist"
+}

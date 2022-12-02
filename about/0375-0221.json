@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0375-0221",
+    "issn": [
+        "0375-0221"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0375-0221",
+        "http://www.wikidata.org/entity/Q51515338"
+    ],
+    "name": "Ornithologische Monatsberichte"
+}

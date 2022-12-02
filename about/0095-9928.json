@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0095-9928",
+    "issn": [
+        "0095-9928"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0095-9928",
+        "http://www.wikidata.org/entity/Q51496852"
+    ],
+    "name": "Journal of Animal Behavior"
+}

@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0007-1501",
+    "issn": [
+        "0007-1501"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0007-1501"
+    ],
+    "name": "Bulletin Br Mus nat Hist (Ent) Suppl"
+}

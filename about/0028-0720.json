@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0028-0720",
+    "issn": [
+        "0028-0720"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0028-0720",
+        "http://www.wikidata.org/entity/Q51374670"
+    ],
+    "name": "Transactions of the Natural History Society Newcastle N S"
+}

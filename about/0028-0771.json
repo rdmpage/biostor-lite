@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0028-0771",
+    "issn": [
+        "0028-0771"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0028-0771",
+        "http://www.wikidata.org/entity/Q21385605"
+    ],
+    "name": "The Naturalist"
+}

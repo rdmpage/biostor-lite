@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0524-5826",
+    "issn": [
+        "0524-5826"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0524-5826",
+        "http://www.wikidata.org/entity/Q51450331"
+    ],
+    "name": "British fern gazette"
+}

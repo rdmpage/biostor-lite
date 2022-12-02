@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0006-3304",
+    "issn": [
+        "0006-3304"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0006-3304",
+        "http://www.wikidata.org/entity/Q9171878"
+    ],
+    "name": "Biol. Zentralbl"
+}

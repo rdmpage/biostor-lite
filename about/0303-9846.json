@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0303-9846",
+    "issn": [
+        "0303-9846"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0303-9846",
+        "http://www.wikidata.org/entity/Q28801554"
+    ],
+    "name": "Revista do Museu Paulista"
+}

@@ -1,0 +1,20 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0013-8827",
+    "issn": [
+        "0013-8827"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0013-8827",
+        "http://www.wikidata.org/entity/Q5380615",
+        "https://en.wikipedia.org/wiki/Entomologische_Berichten"
+    ],
+    "name": "Entomologische Berichten",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "Entomologische Berichten is a Dutch journal with articles about insects, most of the texts are in Dutch language. It was first published in 1918. Today it is published six times a year."
+        }
+    ]
+}

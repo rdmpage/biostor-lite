@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0148-2076",
+    "issn": [
+        "0148-2076"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0148-2076",
+        "http://www.wikidata.org/entity/Q4595719",
+        "https://en.wikipedia.org/wiki/19th-Century_Music"
+    ],
+    "name": "19th-Century Music",
+    "description": [
+        {
+            "@language": "sv",
+            "@value": "19th-Century Music är en akademisk tidskrift som behandlar musik under perioden mellan 1780 och 1920."
+        },
+        {
+            "@language": "en",
+            "@value": "19th-Century Music is a triennial academic journal that \"covers all aspects of Western art music composed in, leading to, or pointing beyond the \"long century\" extending roughly from the 1780s to the 1930s.\" The Journal is \"interested equally in the music that belongs to the era and in the impact of the era's music on later times, media, and technologies.\" It is published by University of California Press and was established in 1977. The editor-in-chief is Lawrence Kramer."
+        }
+    ]
+}

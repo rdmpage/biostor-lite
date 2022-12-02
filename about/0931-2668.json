@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0931-2668",
+    "issn": [
+        "0931-2668"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0931-2668",
+        "http://www.wikidata.org/entity/Q5493137"
+    ],
+    "name": "Journal of Genetics"
+}

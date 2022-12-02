@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0037-850X",
+    "issn": [
+        "0037-850X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0037-850X",
+        "http://www.wikidata.org/entity/Q27723146"
+    ],
+    "name": "Bol. Soc. Biol. Concepción, Chile"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0562-4452",
+    "issn": [
+        "0562-4452"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0562-4452",
+        "http://www.wikidata.org/entity/Q72209302"
+    ],
+    "name": "Stuttg Beitr Naturk"
+}

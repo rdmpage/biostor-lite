@@ -1,0 +1,32 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0008-347X",
+    "issn": [
+        "0008-347X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0008-347X",
+        "http://www.wikidata.org/entity/Q4035802",
+        "https://en.wikipedia.org/wiki/The_Canadian_Entomologist"
+    ],
+    "name": "The Canadian Entomologist",
+    "description": [
+        {
+            "@language": "ru",
+            "@value": "The Canadian Entomologist (ISSN 0008-347X) — канадский энтомологический реферируемый журнал для публикации научных исследований в различных областях науки о насекомых. Выходит 1 раз в 2 месяца."
+        },
+        {
+            "@language": "de",
+            "@value": "The Canadian Entomologist ist das seit 1868 existierende, auf Insekten fokussierte Fachblatt der Entomological Society of Canada. Dabei befasst es sich mit allen Feldern der Insektenforschung, wie Systematik und Morphologie, molekulare und Entwicklungsbiologie, Ökologie und Verhalten, Biodiversität und Evolution, Insektenmanagement, entemologische Technologie und weiteren Feldern dieser Wissenschaft."
+        },
+        {
+            "@language": "en",
+            "@value": "The Canadian Entomologist is a bimonthly peer-reviewed scientific journal covering all aspects of entomology. It is published by Cambridge University Press on behalf of the Entomological Society of Canada and was established in 1868. Volumes 1 to 54 are freely accessible in the Biodiversity Heritage Library. According to the Journal Citation Reports, the journal has a 2020 impact factor of 0.878."
+        },
+        {
+            "@language": "pl",
+            "@value": "The Canadian Entomologist – kanadyjskie recenzowane czasopismo naukowe, publikujące w dziedzinie entomologii. Wydawane jest nieprzerwanie od 1868 roku przez, najpierw , a później Entomological Society of Canada. Obecnym redaktorem naczelnym jest dr. , a asystentem ."
+        }
+    ]
+}

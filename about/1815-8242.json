@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1815-8242",
+    "issn": [
+        "1815-8242"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1815-8242",
+        "http://www.wikidata.org/entity/Q16532654"
+    ],
+    "name": "Arnaldoa"
+}

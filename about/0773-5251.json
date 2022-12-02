@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0773-5251",
+    "issn": [
+        "0773-5251"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0773-5251",
+        "http://www.wikidata.org/entity/Q21385016"
+    ],
+    "name": "Apex (Brussels)"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0427-0533",
+    "issn": [
+        "0427-0533"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0427-0533",
+        "http://www.wikidata.org/entity/Q21386030"
+    ],
+    "name": "Fossil Mammals of Africa"
+}

@@ -1,0 +1,72 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0004-8038",
+    "issn": [
+        "0004-8038"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0004-8038",
+        "http://www.wikidata.org/entity/Q2300649",
+        "https://en.wikipedia.org/wiki/Ornithology_(journal)"
+    ],
+    "name": "Ornithology (journal)",
+    "description": [
+        {
+            "@language": "uk",
+            "@value": "The Auk — науковий журнал (щоквартальник), є офіційною публікацією Aмериканського орнітологічного союзу (American Ornithologists' Union, AOU), публікується в незмінному форматі безперервно з 1884 р. У журналі друкуються наукові статті з анатомії, поведінки і поширення птахів. Назва журналу походить від англійської назви гагарки (Great Auk), яка є символом AOU. Нині науковим редактором журналу є Spencer G. Sealy з Відділу зоології Університету Манітоби (Канада)."
+        },
+        {
+            "@language": "eo",
+            "@value": "The Auk (la aŭko) estas trimonata akademia gazeto kaj oficiala publikaĵo de American Ornithologists' Union (AOU). Ĝi ekaperis en 1884. La gazeto inkludas artikolojn rilataj al sciencaj studoj pri anatomio, kutimaro, kaj distribuado de birdoj. La gazeto ricevas sian nomon el la Granda aŭko, la simbolo de AOU."
+        },
+        {
+            "@language": "pl",
+            "@value": "Ornithology – czasopismo naukowe (kwartalnik), publikowane przez American Ornithological Society. Ukazuje się bez przerwy od 1884. Do 2020 nosiło nazwę „The Auk”; jednocześnie zmieniono też nazwę siostrzanego czasopisma „The Condor” na „Ornithological Applications”. Wcześniej „The Auk” wydawany był przez Amerykańską Unię Ornitologiczną (American Ornithologists’ Union, AOU), która w 2016 połączyła się z (wydającym „The Condor”), tworząc American Ornithological Society."
+        },
+        {
+            "@language": "ru",
+            "@value": "The Auk — авторитетный орнитологический журнал, издаваемый Американским орнитологическим союзом (AOS) с 1884 года. Назван в честь вымершей бескрылой гагарки, символа упомянутой организации. Журнал рецензируемый, посвящен анатомии, поведению и распространению птиц. В 2018 году было объявлено о совместных планах AOS и Oxford University Press опубликовать The Auk: Ornithological Advances и The Condor: Ornithological Applications."
+        },
+        {
+            "@language": "sv",
+            "@value": "The Auk: Ornithological Advances, tidigare The Auk: a quarterly journal of ornithology, oftast enbart kallad The Auk, är en referentgranskad vetenskaplig tidskrift om ornitologi. Det är American Ornithological Society (AOS) officiella organ. Den fysika tidskriften ges ut kvartalsvis medan den digitala upplagan kommer ut veckovis. Tidskriften grundades 1884 och fokuserar på fåglars anatomi, ekologi och utbredning. Tidskriften har fått sitt namn efter garfågeln, vilken är AOS:s symbol."
+        },
+        {
+            "@language": "zh",
+            "@value": "《海雀：鸟类学研究进展》（英語：The Auk: Ornithological Advances）是一份同行評審科学期刊，也是(AOS)的官方出版物之一。其内容涵盖鸟类解剖学、行为学和遗传学等诸多方面，是鸟类学最重要的期刊之一。期刊的名称来源于美国鸟类学会的标志——现已灭绝的大海雀。"
+        },
+        {
+            "@language": "pt",
+            "@value": "The Auk é uma revista científica e a publicação oficial da American Ornithologists' Union (AOU), tendo sido continuamente publicado por tal instituição desde 1884. A revista contém artigos relacionados com estudos científicos de anatomia, comportamento e distribuição de aves. A revista foi nomeada devido ao arau-gigante (Pinguinus impennis), Great Auk em inglês, símbolo da AOU. É actualmente liderado por Spencer G. Sealy, do Departamento de Zoologia da Universidade de Manitoba."
+        },
+        {
+            "@language": "en",
+            "@value": "Ornithology, formerly The Auk and The Auk: Ornithological Advances, is a peer-reviewed scientific journal and the official publication of the American Ornithological Society (AOS). It was established in 1884 and is published quarterly. The journal covers the anatomy, behavior, and distribution of birds. It was named for the great auk, the symbol of the AOS. In 2018, the American Ornithology Society announced a partnership with Oxford University Press to publish The Auk: Ornithological Advances and The Condor: Ornithological Applications ."
+        },
+        {
+            "@language": "ca",
+            "@value": "Ornithology, antigament The Auk, és una revista científica trimestral i la publicació oficial de la American Ornithologists' Union, que l'ha publicat sense interrupció des del 1884. La revista conté articles relacionats amb estudis científics de l'anatomia, el comportament, i la distribució de les aus. La publicació deu el seu antic nom al Gran gavot (en anglès, Great Auk), el símbol de la AOU. Hi ha hagut 16 editors. L'actual publicació està encapçalada per Michael Murphy des del 2010."
+        },
+        {
+            "@language": "es",
+            "@value": "The Auk es una revista científica arbitrada y la publicación oficial de la American Ornithologists' Union (AOU). La revista contiene artículos relacionados con los estudios científicos de la anatomía, comportamiento y distribución de las aves. Publicada desde 1884 sin interrupción.​ La revista fue nombrada en honor al alca gigante (Pinguinus impennis), Gran Auk en inglés, símbolo de la AOU. En la actualidad está dirigida por Michael Murphy."
+        },
+        {
+            "@language": "nl",
+            "@value": "The Auk is een elk kwartaal verschijnend ornithologisch tijdschrift dat sinds 1884 bestaat. Het is het officiële tijdschrift van de American Ornithologists' Union en het wordt uitgegeven door de University of California Press. The Auk bevat artikelen over wetenschappelijke studies gedaan naar de anatomie, het gedrag en de verspreiding van vogels. Het blad is genoemd naar de reuzenalk, het symbool van de AUO. Het blad heeft in totaal 16 hoofdredacteurs gehad. Sinds 2010 is Michael Murphy van de hoofdredacteur."
+        },
+        {
+            "@language": "fr",
+            "@value": "Ornithology est une revue scientifique trimestrielle et la publication officielle de l'American Ornithological Society (AOS). Elle paraît de façon ininterrompue depuis 1876. Cette revue offre des articles sur l'anatomie, le comportement et la distribution des oiseaux."
+        },
+        {
+            "@language": "de",
+            "@value": "The Auk ist eine vierteljährlich erscheinende ornithologische Fachzeitschrift und gleichzeitig das offizielle Organ der American Ornithologists’ Union (AOU). Sie wurde unter diesem Namen 1884 ins Leben gerufen, nachdem es schon seit 1883 acht Ausgaben eines Journals gegeben hatte, das Bulletin of the Nutall Ornithological Club hieß und als dessen Nachfolger The Auk sich verstand. Maßgeblich zur Gründung beigetragen hat Joel Asaph Allen, der auch bis 1912 ihr Herausgeber war. The Auk veröffentlicht wissenschaftliche Aufsätze zu allen Teilbereichen der Ornithologie, etwas fokussiert auf nearktische und neotropische Arten."
+        },
+        {
+            "@language": "it",
+            "@value": "The Auk è una rivista scientifica trimestrale statunitense. Pubblicazione ufficiale dell'Unione Americana di Ornitologia (AOU), è stata fondata nel 1884. Contiene articoli riguardanti studi scientifici di anatomia, comportamento e distribuzione degli uccelli. Deve il nome ad un uccello estinto, l'alca impenne (in inglese Great Auk), simbolo della AOU."
+        }
+    ]
+}

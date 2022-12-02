@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1083-446X",
+    "issn": [
+        "1083-446X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1083-446X",
+        "http://www.wikidata.org/entity/Q21385775"
+    ],
+    "name": "Amphibian & Reptile Conservation"
+}

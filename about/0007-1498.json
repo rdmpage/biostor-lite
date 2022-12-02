@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0007-1498",
+    "issn": [
+        "0007-1498"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0007-1498",
+        "http://www.wikidata.org/entity/Q21385105"
+    ],
+    "name": "Bull Br Mus nat Hist (Zool)"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0811-3653",
+    "issn": [
+        "0811-3653"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0811-3653",
+        "http://www.wikidata.org/entity/Q15756084"
+    ],
+    "name": "The Beagle"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0233-1772",
+    "issn": [
+        "0233-1772"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0233-1772",
+        "http://www.wikidata.org/entity/Q6105814"
+    ],
+    "name": "Repertorium novarum specierum regni vegetabilis"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0043-0439",
+    "issn": [
+        "0043-0439"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0043-0439",
+        "http://www.wikidata.org/entity/Q5405702"
+    ],
+    "name": "J Wash Acad Sci"
+}

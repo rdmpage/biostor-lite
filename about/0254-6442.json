@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0254-6442",
+    "issn": [
+        "0254-6442"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0254-6442",
+        "http://www.wikidata.org/entity/Q16609158"
+    ],
+    "name": "Moscosoa"
+}

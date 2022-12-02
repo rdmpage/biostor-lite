@@ -1,0 +1,20 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0950-7655",
+    "issn": [
+        "0950-7655"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0950-7655",
+        "http://www.wikidata.org/entity/Q7064924",
+        "https://en.wikipedia.org/wiki/Novitates_Zoologicae"
+    ],
+    "name": "Novitates Zoologicae",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "Novitates Zoologicae: A Journal of Zoology in Connection With the Tring Museum was a British scientific journal devoted to systematic zoology. It was edited by Lionel Walter Rothschild and published between 1894 and 1948 by the Tring Museum. Articles were mainly in English, but some were in German. It was succeeded by the Bulletin of the British Museum (Natural History), Zoology Series."
+        }
+    ]
+}

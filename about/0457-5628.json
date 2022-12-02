@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0457-5628",
+    "issn": [
+        "0457-5628"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0457-5628",
+        "http://www.wikidata.org/entity/Q51498983"
+    ],
+    "name": "Lepidopterist's News"
+}

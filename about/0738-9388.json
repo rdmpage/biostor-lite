@@ -1,0 +1,20 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0738-9388",
+    "issn": [
+        "0738-9388"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0738-9388",
+        "http://www.wikidata.org/entity/Q7733699",
+        "https://en.wikipedia.org/wiki/The_Festivus"
+    ],
+    "name": "The Festivus",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "The Festivus is a publication about malacology and conchology published by the San Diego Shell Club in San Diego, California. The Festivus started in 1970 as a shell club newsletter edited by Blanche Brewer. In 1976 Carole Hertz became the editor, and gradually The Festivus became more scientifically respectable, and was transformed into a peer-reviewed scientific journal. From 1985 up until 2014, issues of The Festivus contained scientific papers on mollusks, and each paper was peer-reviewed by a professional malacologist. Eleven issues were published annually: one issue per month, except for the month of December. Carole Hertz was editor for 37 years."
+        }
+    ]
+}

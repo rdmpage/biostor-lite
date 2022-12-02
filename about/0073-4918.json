@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0073-4918",
+    "issn": [
+        "0073-4918"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0073-4918",
+        "http://www.wikidata.org/entity/Q21384946"
+    ],
+    "name": "Bulletin Illinois Natural History Survey"
+}

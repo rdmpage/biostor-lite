@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0524-644X",
+    "issn": [
+        "0524-644X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0524-644X",
+        "http://www.wikidata.org/entity/Q51451350"
+    ],
+    "name": "Bulletin of the British Museum (Natural History). Geology. Supplement."
+}

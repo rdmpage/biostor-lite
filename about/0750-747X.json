@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0750-747X",
+    "issn": [
+        "0750-747X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0750-747X",
+        "http://www.wikidata.org/entity/Q15756259"
+    ],
+    "name": "Memoires de la Societe Zoologique de France"
+}

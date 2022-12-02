@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0076-8413",
+    "issn": [
+        "0076-8413"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0076-8413",
+        "http://www.wikidata.org/entity/Q21384990"
+    ],
+    "name": "Michigan Occ Pap Zool Mus"
+}

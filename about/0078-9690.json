@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0078-9690",
+    "issn": [
+        "0078-9690"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0078-9690"
+    ],
+    "name": "Bulletin du Musée océanographique de Monaco"
+}

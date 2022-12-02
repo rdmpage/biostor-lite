@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0079-4295",
+    "issn": [
+        "0079-4295"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0079-4295",
+        "http://www.wikidata.org/entity/Q21385121"
+    ],
+    "name": "Postilla"
+}

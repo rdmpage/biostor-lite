@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0006-8187",
+    "issn": [
+        "0006-8187"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0006-8187",
+        "http://www.wikidata.org/entity/Q4948496",
+        "https://en.wikipedia.org/wiki/Botanisk_Tidsskrift"
+    ],
+    "name": "Botanisk Tidsskrift",
+    "description": [
+        {
+            "@language": "es",
+            "@value": "Botanisk Tidsskrift, (abreviado Bot. Tidsskr.),​ es una revista ilustrada con descripciones botánicas editada en Copenhague por la desde el año 1866 hasta 1981, cuando se fusionó con Botaniska Notiser, Friesia y Norwegian Journal of Botany para formar Nordic Journal of Botany. Monografías fueron publicadas en series paralelas en Dansk Botanisk Arkiv."
+        },
+        {
+            "@language": "en",
+            "@value": "Botanisk Tidsskrift (standard abbreviation Bot. Tidsskr.) was a Danish mixed scientific and amateur journal concerning botany, issued in Copenhagen by the Danish Botanical Society. It was published from 1866 to 1980, when it fused with Botaniska Notiser, Friesia and Norwegian Journal of Botany to form the Nordic Journal of Botany. Monographs were published in a parallel series, Dansk Botanisk Arkiv. Full digital text of Botanisk Tidsskrift is available at Biodiversity Heritage Library"
+        }
+    ]
+}

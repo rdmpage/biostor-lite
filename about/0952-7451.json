@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0952-7451",
+    "issn": [
+        "0952-7451"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0952-7451",
+        "http://www.wikidata.org/entity/Q21385295"
+    ],
+    "name": "A stereo-atlas of ostracod shells"
+}

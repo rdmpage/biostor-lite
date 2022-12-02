@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0193-7766",
+    "issn": [
+        "0193-7766"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0193-7766"
+    ],
+    "name": "University of Kansas Museum of Natural History Special Publication"
+}

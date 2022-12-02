@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0006-7172",
+    "issn": [
+        "0006-7172"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0006-7172",
+        "http://www.wikidata.org/entity/Q15750918"
+    ],
+    "name": "Bonn Zool. Beitr."
+}

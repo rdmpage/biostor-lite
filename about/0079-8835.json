@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0079-8835",
+    "issn": [
+        "0079-8835"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0079-8835",
+        "http://www.wikidata.org/entity/Q15754783"
+    ],
+    "name": "Brisbane Memoirs of The Queensland Museum"
+}

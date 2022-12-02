@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0886-1145",
+    "issn": [
+        "0886-1145"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0886-1145",
+        "http://www.wikidata.org/entity/Q23006217"
+    ],
+    "name": "Transactions of the American Entomological Society (Trans.Amer.Ent.Soc.)"
+}

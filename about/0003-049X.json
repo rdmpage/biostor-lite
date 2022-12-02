@@ -1,0 +1,28 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0003-049X",
+    "issn": [
+        "0003-049X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0003-049X",
+        "http://www.wikidata.org/entity/Q6087079",
+        "https://en.wikipedia.org/wiki/Proceedings_of_the_American_Philosophical_Society"
+    ],
+    "name": "Proceedings of the American Philosophical Society",
+    "description": [
+        {
+            "@language": "es",
+            "@value": "Proceedings of the American Philosophical Society, (abreviado Proc. Amer. Philos. Soc.),​ es una revista editada por la Sociedad Filosófica Estadounidense que ha publicado Transactions of the American Philosophical Society desde 1771. Actualmente, cinco periódicos aparecen cada año. Los números de Proceedings of the American Philosophical Society se han publicado desde 1838: y es donde se publican los documentos presentados en las reuniones bianuales de la Sociedad."
+        },
+        {
+            "@language": "en",
+            "@value": "Proceedings of the American Philosophical Society is a quarterly journal published by the American Philosophical Society since 1838. The journal contains papers which have been read at meetings of the American Philosophical Society each April and November, independent essays sent to the APS by outside scholars, and biographical memoirs of APS Members."
+        },
+        {
+            "@language": "ca",
+            "@value": "Proceedings of the American Philosophical Society, (abreujat Proc. Amer. Philos. Soc.), és una revista editada per l'American Philosophical Society que ha publicat des de 1771. Actualment, cinco periòdics apareixen cada any. Els números de Proceedings of the American Philosophical Society s'han publicat des de 1838: i és on es publiquen els documents presentats en les reunions bianuals de la Societat."
+        }
+    ]
+}

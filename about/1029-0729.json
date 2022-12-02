@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1029-0729",
+    "issn": [
+        "1029-0729"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1029-0729",
+        "http://www.wikidata.org/entity/Q6049147"
+    ],
+    "name": "Oesterreichisches botanisches Wochenblatt"
+}

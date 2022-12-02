@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0323-7087",
+    "issn": [
+        "0323-7087"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0323-7087",
+        "http://www.wikidata.org/entity/Q96734479"
+    ],
+    "name": "Zool Jahrb Jenn Abt f Syst"
+}

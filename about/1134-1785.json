@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1134-1785",
+    "issn": [
+        "1134-1785"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1134-1785",
+        "http://www.wikidata.org/entity/Q21385845"
+    ],
+    "name": "Avicennia"
+}

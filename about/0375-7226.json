@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0375-7226",
+    "issn": [
+        "0375-7226"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0375-7226",
+        "http://www.wikidata.org/entity/Q51386190"
+    ],
+    "name": "Transactions of the Norfolk and Norwich Naturalists Society"
+}

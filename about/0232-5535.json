@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0232-5535",
+    "issn": [
+        "0232-5535"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0232-5535",
+        "http://www.wikidata.org/entity/Q21386041"
+    ],
+    "name": "Ent. Nachr"
+}

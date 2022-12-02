@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0068-6417",
+    "issn": [
+        "0068-6417"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0068-6417",
+        "http://www.wikidata.org/entity/Q21386267"
+    ],
+    "name": "University of California Publications in Entomology"
+}

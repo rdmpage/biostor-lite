@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0075-5036",
+    "issn": [
+        "0075-5036"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0075-5036",
+        "http://www.wikidata.org/entity/Q54423526"
+    ],
+    "name": "Publications of the Museum of Natural History University of Kansas"
+}

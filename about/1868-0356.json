@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1868-0356",
+    "issn": [
+        "1868-0356"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1868-0356",
+        "http://www.wikidata.org/entity/Q96324383"
+    ],
+    "name": "Abhandlungen der Senckenbergischen Naturforschenden Gesellschaft"
+}

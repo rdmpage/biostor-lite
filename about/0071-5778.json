@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0071-5778",
+    "issn": [
+        "0071-5778"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0071-5778",
+        "http://www.wikidata.org/entity/Q5460332",
+        "https://en.wikipedia.org/wiki/Flora_Malesiana"
+    ],
+    "name": "Flora Malesiana",
+    "description": [
+        {
+            "@language": "es",
+            "@value": "Flora Malesiana, (abreviado Fl. Males. Bull.),​ es una revista con ilustraciones y descripciones botánicas que es publicada en Leiden desde el año 1947, con el nombre de Flora Malesiana Bulletin."
+        },
+        {
+            "@language": "en",
+            "@value": "Flora Malesiana is a multi-volume flora describing the vascular plants of Malesia (the biogeographical region consisting of Indonesia, Malaysia, Singapore, Brunei, the Philippines, and Papua New Guinea), published by the National Herbarium of the Netherlands since 1950. It currently consists of 204 full treatments, covering about 20% of a total of approximately 40,000 species."
+        }
+    ]
+}

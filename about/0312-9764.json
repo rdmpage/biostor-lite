@@ -1,0 +1,28 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0312-9764",
+    "issn": [
+        "0312-9764"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0312-9764",
+        "http://www.wikidata.org/entity/Q7697818",
+        "https://en.wikipedia.org/wiki/Telopea_(journal)"
+    ],
+    "name": "Telopea (journal)",
+    "description": [
+        {
+            "@language": "es",
+            "@value": "Telopea, (abreviado Telopea),​ es una revista científica de revisión por pares que publica artículos de investigación originales sobre la sistemática de las plantas, se centra en la flora de Nueva Gales del Sur pero con un contenido amplio que abarca Australia y la región Asia-Pacífico. La revista fue fundada en 1975 y se publica semestralmente por el Herbario Nacional de Nueva Gales del Sur, Real Jardín Botánico. Se llama así por el género Telopea, comúnmente conocida como la Waratahs.​"
+        },
+        {
+            "@language": "ca",
+            "@value": "Telopea, (abreujat Telopea), és una revista científica de revisió per experts que publica articles d'investigació originals sobre la sistemàtica de les plantes, se centra en la flora de Nova Gal·les del Sud però amb un contingut ampli que abasta Austràlia i la regió Àsia-Pacífic. La revista va ser fundada el 1975 i es publica semestralment per l'Herbari Nacional de Nova Gal·les del Sud, Reial Jardí Botànic. Es diu així pel gènere , comunament coneguda com la Waratahs."
+        },
+        {
+            "@language": "en",
+            "@value": "Telopea is a fully open-access, online, peer-reviewed scientific journal that rapidly publishes original research on plant systematics, with broad content that covers Australia and the Asia-Pacific region. The journal was established in 1975 and is published by the National Herbarium of New South Wales, Royal Botanic Gardens & Domain Trust. As from Volume 9, part 1, 2000, full text of papers is available electronically in pdf format. It is named for the genus Telopea, commonly known as waratahs."
+        }
+    ]
+}

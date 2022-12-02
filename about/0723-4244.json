@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0723-4244",
+    "issn": [
+        "0723-4244"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0723-4244",
+        "http://www.wikidata.org/entity/Q19221060"
+    ],
+    "name": "Nachrichtenblatt der Deutschen Malakozoologischen Gesellschaft"
+}

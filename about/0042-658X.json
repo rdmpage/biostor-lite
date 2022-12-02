@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0042-658X",
+    "issn": [
+        "0042-658X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0042-658X",
+        "http://www.wikidata.org/entity/Q15761919"
+    ],
+    "name": "Virginia Journal of Science"
+}

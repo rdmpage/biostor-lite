@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1945-9432",
+    "issn": [
+        "1945-9432"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1945-9432",
+        "http://www.wikidata.org/entity/Q6151611"
+    ],
+    "name": "Transactions of the Linnean Society"
+}

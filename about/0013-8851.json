@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0013-8851",
+    "issn": [
+        "0013-8851"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0013-8851",
+        "http://www.wikidata.org/entity/Q21385275"
+    ],
+    "name": "Entomologiske Meddelelser"
+}

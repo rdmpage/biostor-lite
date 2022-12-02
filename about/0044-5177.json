@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0044-5177",
+    "issn": [
+        "0044-5177"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0044-5177",
+        "http://www.wikidata.org/entity/Q21385974"
+    ],
+    "name": "Zoologische Jahrbücher, Abteilung für Anatomie und Ontogenie der Tiere"
+}

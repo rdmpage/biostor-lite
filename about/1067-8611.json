@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1067-8611",
+    "issn": [
+        "1067-8611"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1067-8611",
+        "http://www.wikidata.org/entity/Q47059445"
+    ],
+    "name": "Cambridge Mass Mem Mus Comp Zool Harvard"
+}

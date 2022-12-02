@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0368-1254",
+    "issn": [
+        "0368-1254"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0368-1254",
+        "http://www.wikidata.org/entity/Q29890351"
+    ],
+    "name": "Jahrb. nassua. Ver. Naturk."
+}

@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0177-0349",
+    "issn": [
+        "0177-0349"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0177-0349"
+    ],
+    "name": "Gartenflora"
+}

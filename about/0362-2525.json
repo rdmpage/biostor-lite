@@ -1,0 +1,36 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0362-2525",
+    "issn": [
+        "0362-2525"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0362-2525",
+        "http://www.wikidata.org/entity/Q59900",
+        "https://en.wikipedia.org/wiki/Journal_of_Morphology"
+    ],
+    "name": "Journal of Morphology",
+    "description": [
+        {
+            "@language": "de",
+            "@value": "Das Journal of Morphology , abgekürzt J. Morphol., ist eine wissenschaftliche Fachzeitschrift, die vom Wiley-Blackwell-Verlag veröffentlicht wird. Die Zeitschrift wurde 1887 gegründet und erscheint monatlich. Es werden Arbeiten aus verschiedenen Bereichen der Morphologie veröffentlicht. Der Impact Factor lag im Jahr 2014 bei 1,735. Nach der Statistik des ISI Web of Knowledge wird das Journal mit diesem Impact Factor in der Kategorie Anatomie und Morphologie an achter Stelle von 20 Zeitschriften geführt."
+        },
+        {
+            "@language": "nl",
+            "@value": "Journal of Morphology is een internationaal, aan collegiale toetsing onderworpen wetenschappelijk tijdschrift op het gebied van de anatomie en morfologie. De naam wordt in literatuurverwijzingen meestal afgekort tot J. Morphol. Het wordt uitgegeven door John Wiley & Sons namens de en verschijnt maandelijks. Het eerste nummer verscheen in 1887."
+        },
+        {
+            "@language": "ca",
+            "@value": "El Journal of Morphology (J. Morphol.) és una revista científica publicada per . Fou fundat el 1887 i surt amb una periodicitat mensual. S'hi presenten obres de diversos àmbits de la morfologia. El 2014 tenia un índex d'impacte d'1,735. Segons l', això el situava en vuitè lloc entre vint revistes de la categoria «Anatomia i Morfologia»."
+        },
+        {
+            "@language": "ru",
+            "@value": "Journal of Morphology (ISSN 1097-4687) — международный рецензируемый научный журнал, печатающий статьи по общей морфологии, цитологии, анатомии, протозоологии и эмбриологии животных. Основан в 1887 году. В настоящее время выпускается американским издательством John Wiley & Sons."
+        },
+        {
+            "@language": "en",
+            "@value": "The Journal of Morphology is a peer-reviewed scientific journal of anatomy and morphology featuring primary research articles, review articles, and meeting abstracts. The journal was established in 1887 by zoologists and morphologists Edward Phelps Allis and C. O. Whitman. The journal appeared regularly from 1887 onwards and made a financial loss. Allis provided the support necessary for the journal to continue appearing until, after a short gap, the journal underwent reorganization in 1907 when it was taken over by Wistar Institute in Philadelphia, as a more permanent solution to its financial problems. As of 2022, it is edited by J. Matthias Starck."
+        }
+    ]
+}

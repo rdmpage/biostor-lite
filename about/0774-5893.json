@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0774-5893",
+    "issn": [
+        "0774-5893"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0774-5893",
+        "http://www.wikidata.org/entity/Q51395388"
+    ],
+    "name": "Annales de la Société Entomologique de Belge"
+}

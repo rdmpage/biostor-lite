@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0375-1147",
+    "issn": [
+        "0375-1147"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0375-1147",
+        "http://www.wikidata.org/entity/Q6107126"
+    ],
+    "name": "Revista del Museo de La Plata"
+}

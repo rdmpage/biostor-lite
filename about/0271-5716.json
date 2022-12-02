@@ -1,0 +1,32 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0271-5716",
+    "issn": [
+        "0271-5716"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0271-5716",
+        "http://www.wikidata.org/entity/Q3669010",
+        "https://en.wikipedia.org/wiki/Boston_Journal_of_Natural_History"
+    ],
+    "name": "Boston Journal of Natural History",
+    "description": [
+        {
+            "@language": "pl",
+            "@value": "Boston Journal of Natural History (1834–1863) – czasopismo naukowe wydawane przez w połowie XIX wieku w Massachusetts. Wśród publikujących tam autorów znajdowali się i . Każdy numer zawierał litografie, niektóre kolorowe, których autorami byli m.in. , i . Kontynuacją czasopisma były Memoirs Read Before the Boston Society of Natural History z 1863."
+        },
+        {
+            "@language": "es",
+            "@value": "Boston Journal of Natural History (1834-1863) fue una revista científica publicada por la a mediados de siglo XIX en Massachusetts. Contribuyentes incluidos Charles T. Jackson, Augustus A. Gould, entre otros. En cada volumen aparecen ilustraciones litográficas, algunas en color, dibujado / grabado por , B.F. Nutting, , et. al. e impresa por y otras empresas.​ La revista fue continuada por Memoirs Read Before the Boston Society of Natural History en 1863.​​ \n* Placas \n* Placa del v.1, 1837 \n* Placa del v.2, 1839 \n* Placa del v.4, 1844 \n* Placa del v.5, 1847"
+        },
+        {
+            "@language": "en",
+            "@value": "The Boston Journal of Natural History (1834-1863) was a scholarly journal published by the Boston Society of Natural History in mid-19th century Massachusetts. Contributors included Charles T. Jackson, Augustus A. Gould, and others. Each volume featured lithographic illustrations, some in color, drawn/engraved by E.W. Bouvé, B.F. Nutting, A. Sonrel, et al. and printed by Pendleton's Lithography and other firms. The journal was continued by Memoirs Read Before the Boston Society of Natural History in 1863."
+        },
+        {
+            "@language": "fr",
+            "@value": "Le Boston Journal of Natural History (1834-1863) est une revue savante publiée par la Boston Society of Natural History au milieu du XIXe siècle au Massachusetts. Les contributeurs comprenaient Charles T. Jackson, Augustus A. Gould et d'autres. Chaque volume contenait des illustrations lithographiques, certaines en couleur, dessinées ou gravées par EW Bouvé, BF Nutting, A. Sonrel, et al. et imprimées par Pendleton's Lithography et d'autres sociétés."
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0097-3157",
+    "issn": [
+        "0097-3157"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0097-3157",
+        "http://www.wikidata.org/entity/Q11134281",
+        "https://en.wikipedia.org/wiki/Proceedings_of_the_Academy_of_Natural_Sciences_of_Philadelphia"
+    ],
+    "name": "Proceedings of the Academy of Natural Sciences of Philadelphia",
+    "description": [
+        {
+            "@language": "ca",
+            "@value": "Proceedings of the Academy of Natural Sciences of Philadelphia, (abreujat Proc. Acad. Nat. Sci. Philadelphia), és una revista amb descripcions botàniques que és editada per l'Acadèmia de Ciències Naturals de Filadèlfia als Estats Units. Es publica des de 1841."
+        },
+        {
+            "@language": "en",
+            "@value": "The Proceedings of the Academy of Natural Sciences of Philadelphia is a peer-reviewed scientific journal]] published by Academy of Natural Sciences of Drexel University since 1841."
+        },
+        {
+            "@language": "es",
+            "@value": "Proceedings of the Academy of Natural Sciences of Philadelphia, (abreviado Proc. Acad. Nat. Sci. Philadelphia),​ es una revista con descripciones botánicas que es editada por la Academia de Ciencias Naturales de Filadelfia en Estados Unidos. Se publica desde 1841."
+        }
+    ]
+}

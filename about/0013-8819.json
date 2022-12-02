@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0013-8819",
+    "issn": [
+        "0013-8819"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0013-8819",
+        "http://www.wikidata.org/entity/Q15981946"
+    ],
+    "name": "Ent Arb Munich"
+}

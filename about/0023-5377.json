@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0023-5377",
+    "issn": [
+        "0023-5377"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0023-5377",
+        "http://www.wikidata.org/entity/Q16587055"
+    ],
+    "name": "Bihang till Kongl. Svenska vetenskaps-akademiens handlingar."
+}

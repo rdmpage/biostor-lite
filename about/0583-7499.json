@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0583-7499",
+    "issn": [
+        "0583-7499"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0583-7499",
+        "http://www.wikidata.org/entity/Q51448828"
+    ],
+    "name": "Boletin de la Real Sociedad Espanola de Historia Natural"
+}

@@ -1,0 +1,15 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0004-2110",
+    "issn": [
+        "0004-2110"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0004-2110",
+        "http://www.wikidata.org/entity/Q10418043",
+        "https://en.wikipedia.org/wiki/Arkiv_f%C3%B6r_zoologi"
+    ],
+    "name": "Arkiv f%C3%B6r zoologi",
+    "description": []
+}

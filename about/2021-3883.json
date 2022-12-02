@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/2021-3883",
+    "issn": [
+        "2021-3883"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/2021-3883",
+        "http://www.wikidata.org/entity/Q21386028"
+    ],
+    "name": "Archives de Parasitologie"
+}

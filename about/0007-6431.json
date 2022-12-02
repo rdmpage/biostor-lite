@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0007-6431",
+    "issn": [
+        "0007-6431"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0007-6431"
+    ],
+    "name": "Bulletin of the British Museum (Natural History) Entomology"
+}

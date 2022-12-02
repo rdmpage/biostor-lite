@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0007-4853",
+    "issn": [
+        "0007-4853"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0007-4853",
+        "http://www.wikidata.org/entity/Q15763806"
+    ],
+    "name": "Bull. ent. Res"
+}

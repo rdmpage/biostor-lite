@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/2255-9728",
+    "issn": [
+        "2255-9728"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/2255-9728",
+        "http://www.wikidata.org/entity/Q76912135"
+    ],
+    "name": "Biodiversity, biogeography and nature conservation in Wallacea and New Guinea"
+}

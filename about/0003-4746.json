@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0003-4746",
+    "issn": [
+        "0003-4746"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0003-4746",
+        "http://www.wikidata.org/entity/Q2234742"
+    ],
+    "name": "Annals of Applied Biology"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0099-4936",
+    "issn": [
+        "0099-4936"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0099-4936",
+        "http://www.wikidata.org/entity/Q13548594"
+    ],
+    "name": "Carnegie Institution of Washington Publication"
+}

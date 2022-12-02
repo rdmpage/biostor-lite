@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0210-6183",
+    "issn": [
+        "0210-6183"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0210-6183",
+        "http://www.wikidata.org/entity/Q17300784"
+    ],
+    "name": "Butlletí de la Institució Catalana d'Història Natural"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0266-836X",
+    "issn": [
+        "0266-836X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0266-836X",
+        "http://www.wikidata.org/entity/Q51451331"
+    ],
+    "name": "Bulletin of the Amateur Entomologists' Society"
+}

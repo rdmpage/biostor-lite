@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0097-3300",
+    "issn": [
+        "0097-3300"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0097-3300"
+    ],
+    "name": "Agriculture Monographs U S Department of Agriculture"
+}

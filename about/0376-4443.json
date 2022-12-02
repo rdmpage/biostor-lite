@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0376-4443",
+    "issn": [
+        "0376-4443"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0376-4443",
+        "http://www.wikidata.org/entity/Q37927441"
+    ],
+    "name": "Bulletin du Muséum National d'Histoire Naturelle Sér. 3, Botanique"
+}

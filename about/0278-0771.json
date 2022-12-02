@@ -1,0 +1,20 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0278-0771",
+    "issn": [
+        "0278-0771"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0278-0771",
+        "http://www.wikidata.org/entity/Q25049135",
+        "https://en.wikipedia.org/wiki/Journal_of_Ethnobiology"
+    ],
+    "name": "Journal of Ethnobiology",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "The Journal of Ethnobiology is a quarterly peer-reviewed academic journal covering ethnobiology. It was established in 1981 as the biannual official journal of the ; publication frequency increased to triannually in 2014 and to quarterly in 2016. The editor-in-chief is Robert Quinlan. According to the Journal Citation Reports, the journal has a 2020 impact factor of 1.391."
+        }
+    ]
+}

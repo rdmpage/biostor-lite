@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0028-1344",
+    "issn": [
+        "0028-1344"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0028-1344",
+        "http://www.wikidata.org/entity/Q3668263",
+        "https://en.wikipedia.org/wiki/The_Nautilus_(journal)"
+    ],
+    "name": "The Nautilus (journal)",
+    "description": [
+        {
+            "@language": "es",
+            "@value": "The Nautilus es una revista de malacología arbitrada fundada en 1886 y publicada actualmente por el Bailey-Matthews Shell Museum Florida – Estados Unidos. Incluye en sus páginas artículos de biología, ecología y sistemática de los moluscos​ Los dos primeros volúmenes fueron publicados por el comerciante de conchas William D. Averell (1853-1928) bajo el nombre de The Conchologists’ Exchange​ De 1958 a 1972, se le agregaba al título de El Nautilus el subtítulo de \"El Pilsbry de aparición trimestral y dedicada a los intereses de conquiliólogos​"
+        },
+        {
+            "@language": "en",
+            "@value": "The Nautilus is a peer-reviewed scientific journal covering research in malacology. Hence its scope includes all aspects of the biology, ecology, and systematics of mollusks. The first two volumes were published by shell trader (1853-1928) under the name The Conchologists’ Exchange. From 1958 to 1972, the subtitle of The Nautilus was \"The Pilsbry Quarterly devoted to the Interests of Conchologists\". Since 1999, its publication is partly sponsored by Florida's and the National Endowment for the Arts since 2002."
+        }
+    ]
+}

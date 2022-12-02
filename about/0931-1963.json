@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0931-1963",
+    "issn": [
+        "0931-1963"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0931-1963",
+        "http://www.wikidata.org/entity/Q31831929"
+    ],
+    "name": "Abhandlungen der Gesellschaft der Wissenschaften zu Goettingen Mathematisch-Physikalische Klasse N F"
+}

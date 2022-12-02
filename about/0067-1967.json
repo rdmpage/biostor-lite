@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0067-1967",
+    "issn": [
+        "0067-1967"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0067-1967",
+        "http://www.wikidata.org/entity/Q21386214"
+    ],
+    "name": "Memoirs Australia Museum"
+}

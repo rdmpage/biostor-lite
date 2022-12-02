@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0252-7960",
+    "issn": [
+        "0252-7960"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0252-7960",
+        "http://www.wikidata.org/entity/Q6035799"
+    ],
+    "name": "Mém. Soc. Phys. Hist. Nat. Genève"
+}

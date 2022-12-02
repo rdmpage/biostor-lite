@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0098-6860",
+    "issn": [
+        "0098-6860"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0098-6860"
+    ],
+    "name": "Bureau of Land Management Technical Note"
+}

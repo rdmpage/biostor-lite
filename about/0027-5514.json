@@ -1,0 +1,44 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0027-5514",
+    "issn": [
+        "0027-5514"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0027-5514",
+        "http://www.wikidata.org/entity/Q1962302",
+        "https://en.wikipedia.org/wiki/Mycologia"
+    ],
+    "name": "Mycologia",
+    "description": [
+        {
+            "@language": "ru",
+            "@value": "Mycologia (ISSN 0027-5514) — американский микологический журнал для публикации научных исследований в различных областях науки о грибах. Каждый месяц издаются два выпуска."
+        },
+        {
+            "@language": "it",
+            "@value": "Mycologia è una rivista scientifica a revisione paritaria che pubblica lavori in campo micologico. Fu pubblicata la prima volta, a tiratura bimestrale, nel gennaio del 1909 dal New York Botanical Garden sotto la direzione di William Murrill, come fusione tra il Journal of Mycology (14 volumi; 1885–1908) e il Mycological Bulletin (7 volumi; 1903–1908). A partire dal 1932 è diventata la rivista ufficiale della ."
+        },
+        {
+            "@language": "pl",
+            "@value": "Mycologia – recenzowane czasopismo naukowe, w którym publikowane są artykuły na wszystkie tematy w zakresie grzybów, w tym także porostów. Po raz pierwszy ukazało się jako dwumiesięcznik w styczniu 1909 r., wydawany przez (New York Botanical Garden). Założycielem czasopisma i pierwszym naczelnym redaktorem był William Alphonso Murrill. Czasopismo stało się oficjalnym czasopismem Mycological Society of America, które nadal go publikuje. Powstało z połączenia Journal of Mycology (14 tomów; 1885–1908) i Biuletynu Mycological (7 tomów; 1903–1908)."
+        },
+        {
+            "@language": "en",
+            "@value": "Mycologia is a peer-reviewed scientific journal that publishes papers on all aspects of the fungi, including lichens. It first appeared as a bimonthly journal in January 1909, published by the New York Botanical Garden under the editorship of William Murrill. It became the official journal of the Mycological Society of America, which still publishes it today. It was formed as a merger of the Journal of Mycology (14 volumes; 1885–1908) and the Mycological Bulletin (7 volumes; 1903–1908). The Mycological Bulletin was known as the Ohio Mycological Bulletin in its first volume."
+        },
+        {
+            "@language": "zh",
+            "@value": "Mycologia是一個同行評審的科學期刊，收錄真菌學的論文，也包括卵菌、黏菌等已不屬於真菌界的類群之研究。於1909年創刊，由Journal of Mycology（1885年-1908年）與Mycological Bulletin（1903年-1908年，共發行了7期，其中第一期時稱為Ohio Mycological Bulletin）兩期刊合併而成，由紐約植物園發行，首任主編為美國真菌學家。1933年，Mycologia成為的官方期刊。"
+        },
+        {
+            "@language": "es",
+            "@value": "Mycologia es una revista científica que publica artículos revisados por pares cuya temática versa sobre todos los aspectos relacionados con los hongos y los líquenes. Apareció por primera vez en forma de revista bimestral, en enero de 1909, siendo su director William Murrill, publicada por el Jardín Botánico de Nueva York. Más tarde se convirtió en la publicación oficial de la , que aún la publica en la actualidad. Fue ideada como una continuación del (volumen 1 publicado en 1885, volumen 14 publicado en 1908) y el (volúmenes del 1 al 6, números del 1 al 87, publicados desde el 7 de marzo de 1903 a marzo de 1908). La versión en línea de Mycologia, que también cuenta con revisión por pares, apareció el 1 de enero de 2004."
+        },
+        {
+            "@language": "nl",
+            "@value": "Mycologia is het wetenschappelijke tijdschrift van de Mycological Society of America. Het tijdschrift verschijnt sinds 1909 als voortzetting van Journal of Mycology, dat in 1885 voor het eerst verscheen. Sinds de oprichting in 1932 van de Mycological Society of America, dient het als de officiële publicatie van deze vereniging. Tussen 1909 en 1924 was William Alphonso Murrill redacteur van het tijdschrift. Tussen 2009 en 2014 dient Jeffrey Stone als hoofdredacteur."
+        }
+    ]
+}

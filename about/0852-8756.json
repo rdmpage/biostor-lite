@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0852-8756",
+    "issn": [
+        "0852-8756"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0852-8756",
+        "http://www.wikidata.org/entity/Q51451277"
+    ],
+    "name": "Bull. Jard. Bot. Buitenzorg"
+}

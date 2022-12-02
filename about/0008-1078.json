@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0008-1078",
+    "issn": [
+        "0008-1078"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0008-1078",
+        "http://www.wikidata.org/entity/Q21385129"
+    ],
+    "name": "California Fish and Game"
+}

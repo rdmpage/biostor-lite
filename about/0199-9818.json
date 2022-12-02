@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0199-9818",
+    "issn": [
+        "0199-9818"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0199-9818",
+        "http://www.wikidata.org/entity/Q6087076"
+    ],
+    "name": "Proc. Amer. Acad. Arts"
+}

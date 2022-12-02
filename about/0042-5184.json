@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0042-5184",
+    "issn": [
+        "0042-5184"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0042-5184",
+        "http://www.wikidata.org/entity/Q15708634",
+        "https://en.wikipedia.org/wiki/The_Victorian_Naturalist"
+    ],
+    "name": "The Victorian Naturalist",
+    "description": [
+        {
+            "@language": "es",
+            "@value": "Victorian Naturalist, (abreviado Vict. Naturalist),​ es una revista ilustrada con descripciones botánicas que fue editada por de Melbourne. Comenzó su publicación en el año 1884, con el nombre de Victorian Naturalist; Journal and Magazine of the Field naturalist's Club of Victoria."
+        },
+        {
+            "@language": "en",
+            "@value": "The Victorian Naturalist is a bimonthly scientific journal covering natural history, especially of Australia. It is published by the Field Naturalists Club of Victoria and is received as part of the membership subscription of that club. From 1881, club proceedings and papers had been published in the Southern Science Record and Magazine of Natural History before the first issue of The Victorian Naturalist appeared in January 1884. The journal publishes peer-reviewed research articles, research reports, \"Naturalist Notes\", and book reviews. The journal was published monthly until 1976, since then it has been published bimonthly. In that period several special issues have been published. These covered particular natural history topics or significant centenaries: of the club (1980), the death"
+        }
+    ]
+}

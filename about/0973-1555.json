@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0973-1555",
+    "issn": [
+        "0973-1555"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0973-1555",
+        "http://www.wikidata.org/entity/Q51374777"
+    ],
+    "name": "Halteres"
+}

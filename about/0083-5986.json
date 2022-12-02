@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0083-5986",
+    "issn": [
+        "0083-5986"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0083-5986",
+        "http://www.wikidata.org/entity/Q21385241"
+    ],
+    "name": "Mem natn Mus Vict"
+}

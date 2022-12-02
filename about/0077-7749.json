@@ -1,0 +1,15 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0077-7749",
+    "issn": [
+        "0077-7749"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0077-7749",
+        "http://www.wikidata.org/entity/Q13894968",
+        "https://en.wikipedia.org/wiki/Neues_Jahrbuch_f%C3%BCr_Geologie_und_Pal%C3%A4ontologie"
+    ],
+    "name": "Neues Jahrbuch f%C3%BCr Geologie und Pal%C3%A4ontologie",
+    "description": []
+}

@@ -1,0 +1,15 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0013-8908",
+    "issn": [
+        "0013-8908"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0013-8908",
+        "http://www.wikidata.org/entity/Q4038114",
+        "https://en.wikipedia.org/wiki/Entomologist%27s_Monthly_Magazine"
+    ],
+    "name": "Entomologist%27s Monthly Magazine",
+    "description": []
+}

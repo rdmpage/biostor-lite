@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0323-6145",
+    "issn": [
+        "0323-6145"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0323-6145",
+        "http://www.wikidata.org/entity/Q21385045"
+    ],
+    "name": "Berl. ent. Zeit."
+}

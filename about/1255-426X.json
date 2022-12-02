@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1255-426X",
+    "issn": [
+        "1255-426X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1255-426X"
+    ],
+    "name": "Bulletins de la Société Malacologique de France"
+}

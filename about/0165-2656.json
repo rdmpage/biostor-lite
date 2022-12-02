@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0165-2656",
+    "issn": [
+        "0165-2656"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0165-2656"
+    ],
+    "name": "Siboga expeditie"
+}

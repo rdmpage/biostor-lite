@@ -1,0 +1,20 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0035-922X",
+    "issn": [
+        "0035-922X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0035-922X",
+        "http://www.wikidata.org/entity/Q6296200",
+        "https://en.wikipedia.org/wiki/Journal_of_the_Royal_Society_of_Western_Australia"
+    ],
+    "name": "Journal of the Royal Society of Western Australia",
+    "description": [
+        {
+            "@language": "es",
+            "@value": "Journal of the Royal Society of Western Australia, (abreviado J. Roy. Soc. Western Australia),​ es una revista ilustrada con descripciones botánicas que es editada por la Royal Society of Western Australia. Comenzó su publicación en el año 1924, reemplazando a Journal and Proceedings of the Royal Society of Western Australia"
+        }
+    ]
+}

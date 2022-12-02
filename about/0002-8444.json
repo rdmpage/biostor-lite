@@ -1,0 +1,28 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0002-8444",
+    "issn": [
+        "0002-8444"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0002-8444",
+        "http://www.wikidata.org/entity/Q5672427",
+        "https://en.wikipedia.org/wiki/American_Fern_Journal"
+    ],
+    "name": "American Fern Journal",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "The American Fern Journal is a quarterly peer-reviewed academic journal published by the American Fern Society. It is a specialized botany journal that covers all aspects of ferns and vascular plants."
+        },
+        {
+            "@language": "es",
+            "@value": "American Fern Journal, (abreviado Amer. Fern J.),​ es una revista ilustrada con descripciones botánicas que ha sido editada por American Fern Society desde 1911."
+        },
+        {
+            "@language": "uk",
+            "@value": "American Fern Journal (англ.) («Американський папоротевий журнал») — щоквартальний рецензований науковий журнал, який видається Американським папоротевим товариством. Це ботанічний журнал, який спеціалізується на птеридології та висвітлює всі аспекти папоротей і судинних рослин."
+        }
+    ]
+}

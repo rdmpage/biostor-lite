@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0770-7509",
+    "issn": [
+        "0770-7509"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0770-7509",
+        "http://www.wikidata.org/entity/Q90888425"
+    ],
+    "name": "Bulletin de l'Académie Royale des Sciences, des Lettres et des Beaux-Arts de Belgique"
+}

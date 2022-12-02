@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0716-7100",
+    "issn": [
+        "0716-7100"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0716-7100",
+        "http://www.wikidata.org/entity/Q5655060"
+    ],
+    "name": "Abhandlungen der Bayerischen Akademie der Wissenschaften"
+}

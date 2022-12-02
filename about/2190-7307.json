@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/2190-7307",
+    "issn": [
+        "2190-7307"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/2190-7307",
+        "http://www.wikidata.org/entity/Q3619442",
+        "https://en.wikipedia.org/wiki/Bonn_Zoological_Bulletin"
+    ],
+    "name": "Bonn Zoological Bulletin",
+    "description": [
+        {
+            "@language": "pl",
+            "@value": "Bonn zoological Bulletin – niemieckie, anglojęzyczne, recenzowane czasopismo naukowe otwartego dostępu publikujące w dziedzinie zoologii. Czasopismo to wydawane jest przez w Bonn. Dawniej ukazywało się pod tytułem Bonner zoologische Beiträge. Wychodzi dwa razy do roku. Ponadto regularnie ukazuje się seria suplementów (Supplement Series, w latach 1971–2011 pod nazwą Bonner zoologische Monographien). Publikuje oryginalne prace badawcze, prace przeglądowe i doniesienia naukowe dotyczące zoologii organizmalnej zwierząt lądowych i słodkowodnych. Tematyka skoncentrowana jest na taksopnomii, systematyce, biologii ewolucyjnej, bioróżnorodności i zoogeografii, ale publikowane są też prace dotyczące ekologii, etologii, morfologii, anatomii i fizjologii."
+        },
+        {
+            "@language": "en",
+            "@value": "The Bonn Zoological Bulletin (BzB), formerly Bonner zoologische Beiträge, is a peer reviewed open access journal dealing with zoology."
+        }
+    ]
+}

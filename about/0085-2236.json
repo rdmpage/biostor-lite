@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0085-2236",
+    "issn": [
+        "0085-2236"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0085-2236",
+        "http://www.wikidata.org/entity/Q51522402"
+    ],
+    "name": "Proceedings of the Iowa Academy of Science"
+}

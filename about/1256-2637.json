@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1256-2637",
+    "issn": [
+        "1256-2637"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1256-2637"
+    ],
+    "name": "Bulletin des Nouvelles archives du Muséum"
+}

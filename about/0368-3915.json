@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0368-3915",
+    "issn": [
+        "0368-3915"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0368-3915",
+        "http://www.wikidata.org/entity/Q51497017"
+    ],
+    "name": "Journal of the Quekett Microscopical Club"
+}

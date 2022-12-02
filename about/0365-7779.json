@@ -1,0 +1,28 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0365-7779",
+    "issn": [
+        "0365-7779"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0365-7779",
+        "http://www.wikidata.org/entity/Q5674332",
+        "https://en.wikipedia.org/wiki/Anales_de_la_Universidad_de_Chile"
+    ],
+    "name": "Anales de la Universidad de Chile",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "Anales de la Universidad de Chile is a biannual peer-reviewed academic journal containing research and critical reflections on arts, humanities, and science. It was established in 1843 and is published by the University of Chile. The editor-in-chief is Jennifer Abate Cruces (University of Chile)."
+        },
+        {
+            "@language": "it",
+            "@value": "La rivista Anales de la Universidad de Chile (AUCH, o abbreviato Anales Univ. Chile) è stata fondata il 23 aprile 1844 con lo scopo di diffondere la gestione governativa e universitaria, oltre al lavoro scientifico sviluppato dalla . È la pubblicazione periodica più antica in idioma spagnolo delle Americhe e ha contribuito a far conoscere autori come , Andrés Bello, Ignacio Domeyko, Gabriela Mistral, Pablo Neruda, , , , Amato Alonso, e . La sua lettura è stata raccomandata da Alexander von Humboldt nella sua opera Cosmos."
+        },
+        {
+            "@language": "es",
+            "@value": "Anales de la Universidad de Chile (AUCH), (abreviado Anales Univ. Chile), es una revista fundada el 23 de abril de 1844​ con el fin de difundir la gestión gubernativa y universitaria y el trabajo científico que se desarrolla en esa Casa de Estudios.​ Es la publicación periódica más antigua en idioma español de América y en ésta se han difundido escritos de autores como Claudio Gay, Andrés Bello, Ignacio Domeyko, Gabriela Mistral, Pablo Neruda, Juvenal Hernández Jaque, Manuel Manquilef, Eloísa Díaz, Amado Alonso, Bernardo Subercaseaux y Humberto Giannini, entre otros. Su lectura fue recomendada por Alexander Humboldt en su obra Cosmos.​"
+        }
+    ]
+}

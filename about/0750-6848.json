@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0750-6848",
+    "issn": [
+        "0750-6848"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0750-6848",
+        "http://www.wikidata.org/entity/Q51375585"
+    ],
+    "name": "Bulletin de la Société linnéenne de Bordeaux"
+}

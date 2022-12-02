@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0097-0271",
+    "issn": [
+        "0097-0271"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0097-0271",
+        "http://www.wikidata.org/entity/Q51510468"
+    ],
+    "name": "Bulletin of the New York State Museum"
+}

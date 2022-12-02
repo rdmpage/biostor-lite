@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0022-0493",
+    "issn": [
+        "0022-0493"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0022-0493",
+        "http://www.wikidata.org/entity/Q4041881"
+    ],
+    "name": "J. Econ. Ent"
+}

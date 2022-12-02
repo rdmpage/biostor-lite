@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0570-1880",
+    "issn": [
+        "0570-1880"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0570-1880",
+        "http://www.wikidata.org/entity/Q39599305"
+    ],
+    "name": "Annals of the Cape Provincial Museum"
+}

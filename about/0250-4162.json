@@ -1,0 +1,20 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0250-4162",
+    "issn": [
+        "0250-4162"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0250-4162",
+        "http://www.wikidata.org/entity/Q7435275",
+        "https://en.wikipedia.org/wiki/Scopus_(journal)"
+    ],
+    "name": "Scopus (journal)",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "Scopus: Journal of East African Ornithology is a peer-reviewed scientific journal on East African ornithology published by the Bird Committee of the . The journal was established in 1977 and the editor-in-chief is Mwangi Githiru."
+        }
+    ]
+}

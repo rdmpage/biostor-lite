@@ -1,0 +1,15 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0006-8241",
+    "issn": [
+        "0006-8241"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0006-8241",
+        "http://www.wikidata.org/entity/Q5732717",
+        "https://en.wikipedia.org/wiki/African_Biodiversity_%26_Conservation"
+    ],
+    "name": "African Biodiversity %26 Conservation",
+    "description": []
+}

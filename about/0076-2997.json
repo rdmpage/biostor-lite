@@ -1,0 +1,32 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0076-2997",
+    "issn": [
+        "0076-2997"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0076-2997",
+        "http://www.wikidata.org/entity/Q3668000",
+        "https://en.wikipedia.org/wiki/Malacologia"
+    ],
+    "name": "Malacologia",
+    "description": [
+        {
+            "@language": "fr",
+            "@value": "Malacologia est une revue scientifique de malacologie à comité de lecture des États-Unis publié par l'Institute of Malacology. Cette revue traite de la systématique, de l'écologie, de la génétique, de la génétique moléculaire, de l'évolution et de la phylogénie de ces animaux. Ce périodique publie de longs articles et des monographies. Généralement un ou deux volumes d'environ 400 pages sont publiés chaque année."
+        },
+        {
+            "@language": "en",
+            "@value": "Malacologia is a peer-reviewed scientific journal in the field of malacology, the study of mollusks. The journal publishes articles in the fields of molluscan systematics, ecology, population ecology, genetics, molecular genetics, evolution, and phylogenetics."
+        },
+        {
+            "@language": "es",
+            "@value": "Malacologia es una revista estadounidense de malacología revisada y arbitrada. Fue fundada en 1962 por el Ann Arbor, Institute of Malacology y auspiciada por el Field Museum de Chicago. La revista publica artículos en los campos de la sistemática de moluscos, ecología, ecología de poblaciones, genética, genética molecular, evolución y filogenia​​"
+        },
+        {
+            "@language": "zh",
+            "@value": "《Malacologia》是一份同行評審的 貝類學科學期刊。這份期刊會為軟體動物學在系統學、生態學、種群生態學、遺傳學、分子遺傳學、及系統發生學等各個領域出版論文。 本期刊專門於出版長篇論文及專著（monographs）。期刊每年都會出版一到兩卷，合共約400多頁紙；而每卷又通常包括期刊一到兩期的合訂本。 根據《Journal Citation Reports》，本期刊在2010年的影響因子為1.024，讓這本期刊在145份被列為「動物學」類別的期刊排名裡第66。期刊於1962年開始刊行。"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0003-0090",
+    "issn": [
+        "0003-0090"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0003-0090",
+        "http://www.wikidata.org/entity/Q3619498",
+        "https://en.wikipedia.org/wiki/Bulletin_of_the_American_Museum_of_Natural_History"
+    ],
+    "name": "Bulletin of the American Museum of Natural History",
+    "description": [
+        {
+            "@language": "es",
+            "@value": "Bulletin of the American Museum of Natural History (Boletín del Museo americano de Historia Natural) (Bull. Am. Mus. Nat. Hist.) es una revista científica revisada por pares en los campos de la zoología, paleontología, y geología. Es parte de un grupo de revistas publicadas por el Museo americano de Historia Natural, generalmente referida como el Boletín para distinguirla de otras series de revistas del museo."
+        },
+        {
+            "@language": "en",
+            "@value": "The Bulletin of the American Museum of Natural History is a peer-reviewed scientific journal in the fields of zoology, paleontology, and geology. It is part of a group of journals published by the American Museum of Natural History, in which context it is commonly referred to as the Bulletin to distinguish it from other series of journals published by the museum."
+        }
+    ]
+}

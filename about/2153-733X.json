@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/2153-733X",
+    "issn": [
+        "2153-733X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/2153-733X",
+        "http://www.wikidata.org/entity/Q15314455"
+    ],
+    "name": "Phytoneuron"
+}

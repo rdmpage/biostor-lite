@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0072-9612",
+    "issn": [
+        "0072-9612"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0072-9612",
+        "http://www.wikidata.org/entity/Q15760840"
+    ],
+    "name": "Mitteilungen aus dem Hamburgischen zoologischen Museum und Institut"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0373-465X",
+    "issn": [
+        "0373-465X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0373-465X",
+        "http://www.wikidata.org/entity/Q6160593"
+    ],
+    "name": "Verhandelingen der Koninklijke Nederlandsche Akademie van Wetenschappen te Amsterdam, Afdeeling Natuurkunde"
+}

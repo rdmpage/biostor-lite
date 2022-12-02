@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0370-2774",
+    "issn": [
+        "0370-2774"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0370-2774",
+        "http://www.wikidata.org/entity/Q19622568"
+    ],
+    "name": "Proc Zool Soc Lond"
+}

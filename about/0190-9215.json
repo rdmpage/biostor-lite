@@ -1,0 +1,32 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0190-9215",
+    "issn": [
+        "0190-9215"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0190-9215",
+        "http://www.wikidata.org/entity/Q1085036",
+        "https://en.wikipedia.org/wiki/Carnivorous_Plant_Newsletter"
+    ],
+    "name": "Carnivorous Plant Newsletter",
+    "description": [
+        {
+            "@language": "es",
+            "@value": "Carnivorous Plant Newsletter es la publicación oficial de International Carnivorous Plant Society (ICPS), la más importante de tales organizaciones en el mundo."
+        },
+        {
+            "@language": "en",
+            "@value": "The Carnivorous Plant Newsletter is the official publication of the International Carnivorous Plant Society (ICPS), the largest such organization in the world. It is headquartered in Walnut Creek, California."
+        },
+        {
+            "@language": "it",
+            "@value": "La Carnivorous Plant Newsletter (CPN) è la pubblicazione ufficiale della Società internazionale delle piante carnivore (International Carnivorous Plant Society, ICPS), la più grande organizzazione di questo tipo al mondo. È stata pubblicata ogni anno fin dal suo esordio nel 1972. Fondata originalmente da Don Schnell e Joe Mazrimas, includeva tra gli altri redattori Leo Song e Larry Mellichamp. Nel 1997, Don Schnell si ritirò e i nuovi redattori Jan Schlauer e Barry Rice si unirono allo staff redazionale. Mazrimas lasciò il comitato di redazione nel 1998, lasciando la produzione del giornale a Schlauer, Rice e Steve Baker (per l'impaginazione)."
+        },
+        {
+            "@language": "zh",
+            "@value": "《食虫植物通讯》（Carnivorous Plant Newsletter）是全世界最大的食虫植物组织——国际食虫植物协会的正式刊物。食虫植物通讯建刊自1972年，为季刊，全彩。其典型的文章包括园艺种植信息、实地考察报告、文献评论、新文献摘要以及新分类群或品种的描述。其为食虫植物新品种的国际品种登记管理机关，已发表大量食虫植物类群的正式描述，及栽培品种的名称。"
+        }
+    ]
+}

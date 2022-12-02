@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1094-0782",
+    "issn": [
+        "1094-0782"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1094-0782",
+        "http://www.wikidata.org/entity/Q21385788"
+    ],
+    "name": "Scientific Papers Natural History Museum the University of Kansas"
+}

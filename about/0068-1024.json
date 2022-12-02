@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0068-1024",
+    "issn": [
+        "0068-1024"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0068-1024",
+        "http://www.wikidata.org/entity/Q51450224"
+    ],
+    "name": "Brigham Young Univ Sci Bull"
+}

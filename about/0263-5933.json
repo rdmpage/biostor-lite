@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0263-5933",
+    "issn": [
+        "0263-5933"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0263-5933",
+        "http://www.wikidata.org/entity/Q27715022"
+    ],
+    "name": "Transactions of the Royal Society of Edinburgh"
+}

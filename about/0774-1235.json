@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0774-1235",
+    "issn": [
+        "0774-1235"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0774-1235"
+    ],
+    "name": "Bruxelles Memoires de la Societe Entomologie Belgique"
+}

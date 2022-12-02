@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1013-3461",
+    "issn": [
+        "1013-3461"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1013-3461",
+        "http://www.wikidata.org/entity/Q27721052"
+    ],
+    "name": "Proceedings of the Zoological Society."
+}

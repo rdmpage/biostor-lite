@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0017-3614",
+    "issn": [
+        "0017-3614"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0017-3614",
+        "http://www.wikidata.org/entity/Q6440472"
+    ],
+    "name": "Great Basin Nat"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0325-2051",
+    "issn": [
+        "0325-2051"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0325-2051",
+        "http://www.wikidata.org/entity/Q5731488"
+    ],
+    "name": "Boletin de la Academia de Cordoba"
+}

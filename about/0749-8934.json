@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0749-8934",
+    "issn": [
+        "0749-8934"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0749-8934",
+        "http://www.wikidata.org/entity/Q21384975"
+    ],
+    "name": "Proc. New Engl. Zool. Club"
+}

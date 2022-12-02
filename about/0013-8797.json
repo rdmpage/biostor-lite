@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0013-8797",
+    "issn": [
+        "0013-8797"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0013-8797",
+        "http://www.wikidata.org/entity/Q15763560",
+        "https://en.wikipedia.org/wiki/Proceedings_of_the_Entomological_Society_of_Washington"
+    ],
+    "name": "Proceedings of the Entomological Society of Washington",
+    "description": [
+        {
+            "@language": "pl",
+            "@value": "Proceedings of the Entomological Society of Washington (skrót: Proc. Entomol. Soc. Wash.) – amerykańskie, recenzowane czasopismo naukowe publikujące w zakresie entomologii Czasopismo to publikowane jest przez . Ukazuje się od 1884 roku. Wychodzi cztery razy do roku: w styczniu, kwietniu, czerwcu i październiku. Zamieszczane w nim publikacje obejmują tematyką wszelkie dziedziny entomologii, w tym: systematykę, taksonomię, biologię, naukę o zachowaniu, ekologię, morfologię i genetykę owadów."
+        },
+        {
+            "@language": "en",
+            "@value": "Proceedings of the Entomological Society of Washington is a peer-reviewed scientific journal of entomology published by the Entomological Society of Washington. The journal was established in 1886 and is currently published four times per year. The journal is edited by ."
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0070-6698",
+    "issn": [
+        "0070-6698"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0070-6698",
+        "http://www.wikidata.org/entity/Q21386288"
+    ],
+    "name": "Discovery Rep"
+}

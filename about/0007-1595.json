@@ -1,0 +1,15 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0007-1595",
+    "issn": [
+        "0007-1595"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0007-1595",
+        "http://www.wikidata.org/entity/Q4170994",
+        "https://en.wikipedia.org/wiki/Bulletin_of_the_British_Ornithologists%27_Club"
+    ],
+    "name": "Bulletin of the British Ornithologists%27 Club",
+    "description": []
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0073-0807",
+    "issn": [
+        "0073-0807"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0073-0807",
+        "http://www.wikidata.org/entity/Q51513093"
+    ],
+    "name": "Occasional Papers on Mollusks"
+}

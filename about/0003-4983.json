@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0003-4983",
+    "issn": [
+        "0003-4983"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0003-4983",
+        "http://www.wikidata.org/entity/Q22115494"
+    ],
+    "name": "Ann. trop. Med. Parasit"
+}

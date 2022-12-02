@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1941-5966",
+    "issn": [
+        "1941-5966"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1941-5966",
+        "http://www.wikidata.org/entity/Q15708954"
+    ],
+    "name": "London and Edinburgh Philosophical Magazine and Journal of Science"
+}

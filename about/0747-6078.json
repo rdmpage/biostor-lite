@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0747-6078",
+    "issn": [
+        "0747-6078"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0747-6078"
+    ],
+    "name": "Shells and sea life"
+}

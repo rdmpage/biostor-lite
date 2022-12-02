@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0365-6934",
+    "issn": [
+        "0365-6934"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0365-6934",
+        "http://www.wikidata.org/entity/Q5656921"
+    ],
+    "name": "Actes de la Société linnéenne de Bordeaux"
+}

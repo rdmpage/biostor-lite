@@ -1,0 +1,15 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0037-9271",
+    "issn": [
+        "0037-9271"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0037-9271",
+        "http://www.wikidata.org/entity/Q4767825",
+        "https://en.wikipedia.org/wiki/Annales_de_la_Soci%C3%A9t%C3%A9_entomologique_de_France"
+    ],
+    "name": "Annales de la Soci%C3%A9t%C3%A9 entomologique de France",
+    "description": []
+}

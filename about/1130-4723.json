@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1130-4723",
+    "issn": [
+        "1130-4723"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1130-4723",
+        "http://www.wikidata.org/entity/Q21385840"
+    ],
+    "name": "Revista de la Academia Canaria de Ciencias"
+}

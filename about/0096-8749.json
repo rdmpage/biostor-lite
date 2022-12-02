@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0096-8749",
+    "issn": [
+        "0096-8749"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0096-8749",
+        "http://www.wikidata.org/entity/Q6130489"
+    ],
+    "name": "Smithson. Misc. Collect"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0091-1860",
+    "issn": [
+        "0091-1860"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0091-1860",
+        "http://www.wikidata.org/entity/Q5785354"
+    ],
+    "name": "Contributions From The University of Michigan Herbarium"
+}

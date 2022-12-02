@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0041-1752",
+    "issn": [
+        "0041-1752"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0041-1752",
+        "http://www.wikidata.org/entity/Q5696394"
+    ],
+    "name": "Annals of the Transvaal Museum"
+}

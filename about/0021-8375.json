@@ -1,0 +1,48 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0021-8375",
+    "issn": [
+        "0021-8375"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0021-8375",
+        "http://www.wikidata.org/entity/Q473337",
+        "https://en.wikipedia.org/wiki/Journal_of_Ornithology"
+    ],
+    "name": "Journal of Ornithology",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "The Journal of Ornithology (formerly Journal für Ornithologie) is a scientific journal published by Springer Science+Business Media on behalf of the Deutsche Ornithologen-Gesellschaft. It was founded by Jean Cabanis in 1853, becoming the official journal of the Deutsche Ornithologen-Gesellschaft in 1854. According to the Journal Citation Reports, the journal has a 2012 impact factor of 1.632."
+        },
+        {
+            "@language": "de",
+            "@value": "Das Journal of Ornithology (bis 2003: Journal für Ornithologie) ist eine wissenschaftliche Fachzeitschrift in englischer Sprache, die von der Deutschen Ornithologen-Gesellschaft herausgegeben wird. Das Journal ist die älteste noch existierende ornithologische Zeitschrift der Welt und gilt bis heute als das führende in Deutschland erscheinende Periodikum seines Fachgebiets. Bis einschließlich Band 144 (2003) hieß die Zeitschrift „Journal für Ornithologie“ mit Publikationen in deutscher Sprache. Seit 2004 erscheint sie im Verlag Springer Science+Business Media."
+        },
+        {
+            "@language": "pl",
+            "@value": "Journal of Ornithology (dawniej niem. Journal für Ornithologie) – czasopismo naukowe publikowane przez Niemieckie Towarzystwo Ornitologiczne (niem. Deutsche Ornithologen-Gesellschaft). Utworzone przez Jeana Cabanisa w 1853 roku, w 1854 stało się oficjalnym czasopismem Niemieckiego Towarzystwa Ornitologicznego."
+        },
+        {
+            "@language": "ru",
+            "@value": "«Journal of Ornithology» — научный журнал, издаваемый Немецким обществом орнитологов. Старейший существующий орнитологический специализированный журнал во всём мире. До 2003 года, включая 144 выпуск, издавался на немецком языке и назывался «Journal für Ornithologie». С 2004 года журнал издаёт «Springer Science+Business Media». Впервые журнал был издан в 1853 году немецким орнитологом Жаном Луи Кабанисом. Первый экземпляр был напечатан в Касселе 1 января 1853 года. 41 год редактором журнала был Кабанис, пока ему на смену не пришёл его зять, орнитолог Антон Райхенов."
+        },
+        {
+            "@language": "nl",
+            "@value": "Het Journal of Ornithology is een wetenschappelijk tijdschrift dat wordt uitgegeven door Springer Science+Business Media namens het Deutsche Ornithologen-Gesellschaft. Het is het oudste nog bestaande ornithologische vaktijdschrift van de wereld en geldt binnen Duitsland tot meest gezaghebbend op dit vakgebied. Sinds 2004 wordt het uitgegeven door het Springerconcern. Tot jaargang 144 (in 2003) heette het tijdschrift Journal für Ornithologie."
+        },
+        {
+            "@language": "fr",
+            "@value": "Journal of Ornithology, intitulé Journal für Ornithologie jusqu'en 2003 (littéralement « journal d'ornithologie » dans les deux cas) est une revue scientifique éditée par la Deutsche Ornithologen-Gesellschaft (DOG). Il a été fondé par Gustav Hartlaub et son assistant Jean Cabanis en 1853 et est devenu l'organe de presse officiel de la DOG en 1854. Depuis 2004, le titre du journal a changé pour Journal of Ornithology et publie des articles en anglais avec des résumés en allemand. Ordre chronologique des responsables de rédaction Depuis 2004, elle est publiée par le groupe Springer Verlag"
+        },
+        {
+            "@language": "it",
+            "@value": "Journal of Ornithology, chiamato Journal für Ornithologie fino al 2003 (letteralmente «giornale di ornitologia» in entrambi i casi) è una rivista scientifica pubblicata dalla Deutsche Ornithologen-Gesellschaft (DOG). Venne fondato da Gustav Hartlaub e dal suo assistente Jean Cabanis nel 1853 e divenne l'organo di stampa ufficiale della DOG nel 1854. Dal 2004, viene pubblicato dal gruppo Springer Verlag; inoltre, il titolo del giornale è stato cambiato in Journal of Ornithology e pubblica articoli in inglese con abstract in tedesco."
+        },
+        {
+            "@language": "uk",
+            "@value": "Journal of Ornithology — науковий журнал, що видається . Найстаріший існуючий орнітологічний спеціалізований журнал у всьому світі. До 2003 року, включаючи 144 випуск, видавався німецькою мовою і називався «Journal für Ornithologie». З 2004 року журнал видає «Springer Science Business Media». Уперше журнал був виданий у 1853 році німецьким орнітологом Жаном Луї Кабанісом. Перший екземпляр було надруковано в Касселі 1 січня 1853 року. 41 рік редактором журналу був Жан Кабаніс, поки йому на зміну не прийшов його зять, орнітолог Антон Райхенов. Редактори журналу в хронологічному порядку:"
+        }
+    ]
+}

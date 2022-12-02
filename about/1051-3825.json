@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1051-3825",
+    "issn": [
+        "1051-3825"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1051-3825",
+        "http://www.wikidata.org/entity/Q24199503"
+    ],
+    "name": "Asiatic Herpetol. Res"
+}

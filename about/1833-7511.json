@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1833-7511",
+    "issn": [
+        "1833-7511"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1833-7511",
+        "http://www.wikidata.org/entity/Q51417892"
+    ],
+    "name": "The Beagle Supplement"
+}

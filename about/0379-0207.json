@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0379-0207",
+    "issn": [
+        "0379-0207"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0379-0207",
+        "http://www.wikidata.org/entity/Q5802718"
+    ],
+    "name": "Denkschriften der  Kaiserliche Akademie der Wissenschaften. Mathematisch-naturwissenschaftlichen classe. Wien."
+}

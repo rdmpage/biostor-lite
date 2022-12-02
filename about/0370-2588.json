@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0370-2588",
+    "issn": [
+        "0370-2588"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0370-2588"
+    ],
+    "name": "Proces Verb Soc Linn Bordeaux"
+}

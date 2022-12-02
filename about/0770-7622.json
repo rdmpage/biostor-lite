@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0770-7622",
+    "issn": [
+        "0770-7622"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0770-7622",
+        "http://www.wikidata.org/entity/Q21384997"
+    ],
+    "name": "Mémoires du Musée royal d'histoire naturelle de Belgique"
+}

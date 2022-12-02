@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0097-3807",
+    "issn": [
+        "0097-3807"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0097-3807",
+        "http://www.wikidata.org/entity/Q6009918"
+    ],
+    "name": "Memoirs of The Torrey Botanical Club"
+}

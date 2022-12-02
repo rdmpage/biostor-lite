@@ -1,0 +1,28 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0033-2615",
+    "issn": [
+        "0033-2615"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0033-2615",
+        "http://www.wikidata.org/entity/Q2071295",
+        "https://en.wikipedia.org/wiki/Psyche_(entomology_journal)"
+    ],
+    "name": "Psyche (entomology journal)",
+    "description": [
+        {
+            "@language": "fr",
+            "@value": "Psyche est une revue fondée en 1874 par le Cambridge Entomological Club. Elle se définissait comme une « revue publiant les contributions de toute personne compétente dans la biologie des Arthropodes »."
+        },
+        {
+            "@language": "ru",
+            "@value": "Psyche — старейший американский научный журнал, посвящённый проблемам энтомологии и всестороннему исследованию насекомых, а также некоторых других групп членистоногих.Основан в 1874 году."
+        },
+        {
+            "@language": "en",
+            "@value": "Psyche is a scientific journal of entomology which was established in 1874 by the Cambridge Entomological Club as a \"journal for the publication of biological contributions upon Arthropoda from any competent person\". The name of the journal is derived from the Ancient Greek word for butterfly."
+        }
+    ]
+}

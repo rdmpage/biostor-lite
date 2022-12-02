@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0100-4123",
+    "issn": [
+        "0100-4123"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0100-4123"
+    ],
+    "name": "Boletim do Museu Goeldi (Museu Paraense) de Historia Natural e Ethnographia"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1156-5233",
+    "issn": [
+        "1156-5233"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1156-5233",
+        "http://www.wikidata.org/entity/Q26839866"
+    ],
+    "name": "Journal of Mycology"
+}

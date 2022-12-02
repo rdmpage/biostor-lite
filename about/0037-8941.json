@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0037-8941",
+    "issn": [
+        "0037-8941"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0037-8941",
+        "http://www.wikidata.org/entity/Q5735483"
+    ],
+    "name": "Bulletin de la Société botanique de France"
+}

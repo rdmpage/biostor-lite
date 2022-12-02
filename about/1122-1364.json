@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1122-1364",
+    "issn": [
+        "1122-1364"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1122-1364",
+        "http://www.wikidata.org/entity/Q25653975"
+    ],
+    "name": "Atti della Reale Accademia delle scienze di Torino"
+}

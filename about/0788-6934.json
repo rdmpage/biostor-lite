@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0788-6934",
+    "issn": [
+        "0788-6934"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0788-6934",
+        "http://www.wikidata.org/entity/Q22103187"
+    ],
+    "name": "Acta Societatis Scientiarum Fennicae"
+}

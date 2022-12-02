@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0030-4158",
+    "issn": [
+        "0030-4158"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0030-4158",
+        "http://www.wikidata.org/entity/Q21385699"
+    ],
+    "name": "Opuscula Zoologica"
+}

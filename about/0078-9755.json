@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0078-9755",
+    "issn": [
+        "0078-9755"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0078-9755",
+        "http://www.wikidata.org/entity/Q6035806"
+    ],
+    "name": "Mémoires du Muséum National d'Histoire Naturelle. Série B, Botanique"
+}

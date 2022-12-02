@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1945-9475",
+    "issn": [
+        "1945-9475"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1945-9475",
+        "http://www.wikidata.org/entity/Q28840800"
+    ],
+    "name": "Journal of the Proceedings of the Linnean Society"
+}

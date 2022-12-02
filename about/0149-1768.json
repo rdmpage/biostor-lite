@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0149-1768",
+    "issn": [
+        "0149-1768"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0149-1768",
+        "http://www.wikidata.org/entity/Q21385822"
+    ],
+    "name": "Special Publications Museum of Texas Tech University"
+}

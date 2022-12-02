@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/2331-7515",
+    "issn": [
+        "2331-7515"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/2331-7515",
+        "http://www.wikidata.org/entity/Q51421916"
+    ],
+    "name": "Smithsonian Herpetological Information Service"
+}

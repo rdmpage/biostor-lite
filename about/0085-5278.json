@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0085-5278",
+    "issn": [
+        "0085-5278"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0085-5278",
+        "http://www.wikidata.org/entity/Q21385300"
+    ],
+    "name": "Record of the Queen Victoria Museum and Art Gallery"
+}

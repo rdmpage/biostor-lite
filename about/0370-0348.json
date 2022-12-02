@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0370-0348",
+    "issn": [
+        "0370-0348"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0370-0348"
+    ],
+    "name": "Proceedings of the section of sciences Koninklijke Akademie van Wetenschappen te Amsterdam"
+}

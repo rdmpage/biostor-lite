@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0372-1426",
+    "issn": [
+        "0372-1426"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0372-1426",
+        "http://www.wikidata.org/entity/Q15767111"
+    ],
+    "name": "R Trans R Soc S Aust"
+}

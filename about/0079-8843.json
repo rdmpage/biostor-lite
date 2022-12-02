@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0079-8843",
+    "issn": [
+        "0079-8843"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0079-8843",
+        "http://www.wikidata.org/entity/Q9065143"
+    ],
+    "name": "Queensland Naturalist"
+}

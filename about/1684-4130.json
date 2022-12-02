@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1684-4130",
+    "issn": [
+        "1684-4130"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1684-4130",
+        "http://www.wikidata.org/entity/Q21385660"
+    ],
+    "name": "Smithiana Bulletin"
+}

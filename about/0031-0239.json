@@ -1,0 +1,28 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0031-0239",
+    "issn": [
+        "0031-0239"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0031-0239",
+        "http://www.wikidata.org/entity/Q246729",
+        "https://en.wikipedia.org/wiki/Palaeontology_(journal)"
+    ],
+    "name": "Palaeontology (journal)",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "Palaeontology is one of the two scientific journals of the Palaeontological Association (the other being Papers in Palaeontology). It was established in 1957 and is published on behalf of the Association by Wiley-Blackwell. The editor-in-chief is Barry Lomax (University of Nottingham). Palaeontology publishes articles on a range of palaeontological topics, including taphonomy, functional morphology, systematics, palaeo-environmental reconstruction and biostratigraphy. According to the Journal Citation Reports, the journal has a 2017 impact factor of 3.730, ranking it 1st out of 55 journals in the category \"Paleontology\"."
+        },
+        {
+            "@language": "nl",
+            "@value": "Palaeontology is een internationaal, aan collegiale toetsing onderworpen wetenschappelijk tijdschrift op het gebied van de paleontologie. Het wordt uitgegeven door Wiley-Blackwell namens de en verschijnt tweemaandelijks. Het eerste nummer verscheen in 1957."
+        },
+        {
+            "@language": "sv",
+            "@value": "Palaeontology är en vetenskaplig tidskrift inom paleontologi som ges ut av The Palaeontological Association."
+        }
+    ]
+}

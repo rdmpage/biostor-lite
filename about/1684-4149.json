@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1684-4149",
+    "issn": [
+        "1684-4149"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1684-4149",
+        "http://www.wikidata.org/entity/Q51418510"
+    ],
+    "name": "Smithiana Special Publication"
+}

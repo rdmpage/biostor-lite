@@ -1,0 +1,76 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0261-0523",
+    "issn": [
+        "0261-0523"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0261-0523",
+        "http://www.wikidata.org/entity/Q913162",
+        "https://en.wikipedia.org/wiki/Philosophical_Transactions_of_the_Royal_Society"
+    ],
+    "name": "Philosophical Transactions of the Royal Society",
+    "description": [
+        {
+            "@language": "nl",
+            "@value": "Philosophical Transactions of the Royal Society of London, (dikwijls afgekort tot Philosophical Transactions of nog korter Phil. Trans.), is een wetenschappelijk tijdschrift van de Royal Society te Londen. Philosophical Transactions verscheen voor het eerst op 6 mei 1665, ongeveer drie maanden nadat Journal des savants van de Académie Royale des Sciences voor het eerst was verschenen. Daarmee was Philosophical Transactions het tweede wetenschappelijke tijdschrift in de wereld. De naam verwijst nog naar het feit dat destijds de natuurwetenschap nog onder de filosofie werd ingedeeld, vaak als \"natuurfilosofie\" of \"experimentele filosofie\"."
+        },
+        {
+            "@language": "es",
+            "@value": "Philosophical Transactions of the Royal Society (Phil. Trans.) es una revista científica publicada por la Royal Society. Fue creada en 1665, convirtiéndose en la primera revista del mundo dedicada exclusivamente a la ciencia, y se ha mantenido en continua publicación desde entonces, pudiendo considerarse el boletín científico que lleva más tiempo en activo a nivel mundial. La poco anterior Journal des sçavans puede también reclamar el ser la primera publicación de este tipo, si bien contenía una gran variedad de material no científico.​ El uso de la palabra philosophical («filosófico», en español) en el título deriva de la expresión natural philosophy («filosofía natural»), que por ese entonces era el equivalente de lo que hoy conocemos genéricamente por «ciencia»."
+        },
+        {
+            "@language": "pl",
+            "@value": "Philosophical Transactions of the Royal Society lub Phil. Trans. – czasopismo naukowe publikowane przez Royal Society (Królewskie Towarzystwo Naukowe) od 1665 roku. Jest to najstarsze na świecie, wciąż wydawane anglojęzyczne czasopismo naukowe. Starszy od niego jest tylko francuskojęzyczny „Journal des sçavans”. Użycie słowa Philosophical w tytule pochodzi od filozofii przyrody, która do końca XVII w. oznaczała działalność naukową. Dopiero z końcem stulecia zaczęto wyraźnie oddzielać pojęciowo naukę od filozofii."
+        },
+        {
+            "@language": "in",
+            "@value": "Philosophical Transactions, yang berjudul Philosophical Transactions of the Royal Society (sering kali disingkat menjadi Phil. Trans.) dari 1776, adalah sebuah yang diterbitkan oleh Royal Society. Pada masa-masa terawalnya, ini adalah ventura swasta dari sekretaris Royal Society. Ini menjadi publikasi perhimpunan resmi pada 1752. Jurnal tersebut didirikan pada 1665, menjadikannya jurnal pertama di dunia yang secara khusus dicurahkan untuk sains, dan sehingga juga merupakan jurnal saintifik dengan masa penerbitan terpanjang di dunia."
+        },
+        {
+            "@language": "zh",
+            "@value": "《自然科学会报》（The Philosophical Transactions of the Royal Society，缩写为 Phil. Trans.）是一本由英国皇家学会出版的科学期刊。它始创于1665年，是世界上最早专注于科学的期刊。因为该期刊在创办以来一直在持续出版，该期刊也是世界上运营时间最长的科学期刊。期刊标题中的词语“哲学”（philosophical）源于“自然哲学”（natural philosophy），也就是现在所说的科学（science）。"
+        },
+        {
+            "@language": "uk",
+            "@value": "Philosophical Transactions of the Royal Society (укр. Філософські праці Королівського товариства), скорочено Phil. Trans. — науковий журнал Лондонського королівського товариства, найстаріший англомовний науковий журнал, видається з 1665 року. З 1887 року поділений на два журнали: \n* публікує статті з фізичних, математичних та інженерних наук. \n* — публікує статті в царині біологічних наук. Термін \"Philosophical\" треба розуміти як \"натурфілософський\"."
+        },
+        {
+            "@language": "en",
+            "@value": "Philosophical Transactions of the Royal Society is a scientific journal published by the Royal Society. In its earliest days, it was a private venture of the Royal Society's secretary. It was established in 1665, making it the first journal in the world exclusively devoted to science, and therefore also the world's longest-running scientific journal. It became an official society publication in 1752. The use of the word philosophical in the title refers to natural philosophy, which was the equivalent of what would now be generally called science."
+        },
+        {
+            "@language": "ru",
+            "@value": "Philosophical Transactions of the Royal Society (в пер. с англ. — «Философские труды Королевского общества», сокращённо Phil. Trans.) — научный журнал, издаваемый Лондонским королевским обществом. Является старейшим научным журналом англоязычного мира и вторым в истории после французского «Журналь де саван». Журнал выходит с 6 марта 1665 года без перерывов, что делает его старейшим непрерывно издающимся научным журналом в мире. Слово «философский» в названии обозначает натурфилософию, которой в то время называли естественные науки."
+        },
+        {
+            "@language": "pt",
+            "@value": "The Philosophical Transactions of the Royal Society, ou Phil. Trans., é uma revista científica publicada pela Royal Society (Sociedade Real de Londres ). Começou a ser publicada em 1665, sendo por isso a publicação científica mais antiga do mundo anglófono, e a segunda mais antiga do mundo. A mais antiga é a Journal des Savants. É ainda a revista que há mais tempo é editada. O uso da palavra Philosophical no seu nome é derivada da expressão natural philosophy (filosofia natural), que na altura era utilizada para denominar o que hoje chamamos de ciência."
+        },
+        {
+            "@language": "fr",
+            "@value": "The Philosophical Transactions of the Royal Society (abrégé en Philos. Trans. R. Soc.) est une revue scientifique publiée par la Royal Society de Londres. Apparue en 1665, juste après le Journal des savants, c'est la deuxième revue scientifique au monde par ordre d'ancienneté et la première par ordre de longévité."
+        },
+        {
+            "@language": "ca",
+            "@value": "La Philosophical Transactions of the Royal Society (Phil. Trans.) és una revista científica publicada per la Royal Society de Londres. Es va iniciar l'any 1665, sent la primera revista del món exclusivament dedicada a la ciència, i ha continuat publicant-se des d'aleshores sent la revista científica de més llarga vida del món. La revista francesa Journal des sçavans és una mica anterior però a més de ciència contenia també molt material no científic. L'ús del terme \"philosophical\" en el seu títol deriva de la frase filosofia natural \"natural philosophy\", la qual és l'equivalent al que actualment se'n diu genèricament \"ciència\"."
+        },
+        {
+            "@language": "it",
+            "@value": "Le Philosophical Transactions of the Royal Society sono una rivista scientifica pubblicata dalla Royal Society di Londra. Nata nel 1665, è la prima rivista al mondo dedicata esclusivamente alla scienza, ed è rimasta attiva da allora fino ad oggi, rendendola anche la rivista scientifica più longeva al mondo. In leggero anticipo, il Journal des sçavans è considerato la prima rivista scientifica al mondo, anche se contenente molto materiale non scientifico. L'aggettivo \"filosofiche\" nel titolo si riferisce alla filosofia naturale, allora equivalente a ciò che oggi chiamiamo scienza."
+        },
+        {
+            "@language": "ar",
+            "@value": "المداولات الفلسفية (بالإنجليزية:Philosophical Transactions)، وسابقا المداولات الفلسفية للجمعية الملكية (بالإنجليزية:Philosophical Transactions of the Royal Society) هي مجلة علمية كانت تنشر بواسطة الجمعية الملكية وقد تأسست عام 1665، تعتبر أول مجلة علمية في العالم، وأطول مجلة علمية مستمرة حتى الآن."
+        },
+        {
+            "@language": "ja",
+            "@value": "『フィロソフィカル・トランザクションズ』（The Philosophical Transactions of the Royal Society）は王立協会の発行する学術論文誌。『哲学紀要』などと訳されることもある。創刊は1665年3月6日で英語圏では最古、世界的にもフランスの『ジュルナル・デ・サヴァン』（fr:Journal des sçavans）についで古い学術雑誌であり、現在でも刊行されている最長寿の科学雑誌でもある。フィロソフィカルを名乗るが、現在でいう狭義の哲学を指すわけではなく、古い意味における自然哲学、現在でいう科学を意味している。"
+        },
+        {
+            "@language": "de",
+            "@value": "Die Philosophical Transactions of the Royal Society, oder kurz Philosophical Transactions, ist eine wissenschaftliche Fachzeitschrift herausgegeben von der britischen Royal Society. Sie ist die älteste englische und – nach dem französischen Journal des sçavans – zweitälteste Fachzeitschrift der Welt. Die Bezeichnung philosophical hierin ist abgeleitet von dem damals gebräuchlichen Ausdruck natural philosophy, Naturwissenschaft."
+        }
+    ]
+}

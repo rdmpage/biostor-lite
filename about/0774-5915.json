@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0774-5915",
+    "issn": [
+        "0774-5915"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0774-5915",
+        "http://www.wikidata.org/entity/Q21385027"
+    ],
+    "name": "Ann Soc Entomol Belgique"
+}

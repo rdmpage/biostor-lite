@@ -1,0 +1,28 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0022-1503",
+    "issn": [
+        "0022-1503"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0022-1503",
+        "http://www.wikidata.org/entity/Q6295280",
+        "https://en.wikipedia.org/wiki/Journal_of_Heredity"
+    ],
+    "name": "Journal of Heredity",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "The Journal of Heredity is a peer-reviewed scientific journal concerned with heredity in a biological sense, covering all aspects of genetics. It is published by Oxford University Press on behalf of the American Genetic Association."
+        },
+        {
+            "@language": "fr",
+            "@value": "Journal of Heredity est une revue scientifique américaine bimensuelle qui publie des articles dans le domaine de la génétique. Créé en 1903, la revue couvre une large palette de sujets autour de la génétique : la génétique des populations, la phylogéographie ou encore l'évolution moléculaire ou les maladies génétiques des plantes et animaux. Journal of Heredity est indexé dans de nombreuses bases de données telles que Science Citation Index, Current Contents, MEDLINE (Index Medicus), Embase, et Chemical Abstracts Service."
+        },
+        {
+            "@language": "es",
+            "@value": "Journal of Heredity, (abreviado J. Heredity),​ es una revista con ilustraciones y descripciones botánicas que es editada en Washington, DC desde 1914, cuando comenzó con el número 5, sustituyendo a American Breeders Magazine."
+        }
+    ]
+}

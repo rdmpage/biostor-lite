@@ -1,0 +1,20 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1110-502X",
+    "issn": [
+        "1110-502X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1110-502X",
+        "http://www.wikidata.org/entity/Q7454962",
+        "https://en.wikipedia.org/wiki/Serket_(journal)"
+    ],
+    "name": "Serket (journal)",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "Serket, The Arachnological Bulletin of the Middle East and North Africa, is a biannual peer-reviewed scientific journal on arachnology. It was established in August 1987 in Egypt, taking its name from the ancient Egyptian for a scorpion."
+        }
+    ]
+}

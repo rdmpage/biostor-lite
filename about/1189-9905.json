@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1189-9905",
+    "issn": [
+        "1189-9905"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1189-9905",
+        "http://www.wikidata.org/entity/Q21386160"
+    ],
+    "name": "Amphipacifica"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1120-1592",
+    "issn": [
+        "1120-1592"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1120-1592",
+        "http://www.wikidata.org/entity/Q6010105"
+    ],
+    "name": "Memorie della Reale accademia delle scienze di Torino"
+}

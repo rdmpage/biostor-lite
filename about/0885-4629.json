@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0885-4629",
+    "issn": [
+        "0885-4629"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0885-4629",
+        "http://www.wikidata.org/entity/Q51503407"
+    ],
+    "name": "Memoirs of the California Academy of Sciences"
+}

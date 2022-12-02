@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0583-8401",
+    "issn": [
+        "0583-8401"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0583-8401",
+        "http://www.wikidata.org/entity/Q51458550"
+    ],
+    "name": "Compte rendu des séances de la Société de physique et d'histoire naturelle de Genève"
+}

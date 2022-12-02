@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1875-1059",
+    "issn": [
+        "1875-1059"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1875-1059"
+    ],
+    "name": "Capita Zoologica: Verhandelingen op systematisch-zoologisch gebied"
+}

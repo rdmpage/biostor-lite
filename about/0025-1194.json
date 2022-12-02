@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0025-1194",
+    "issn": [
+        "0025-1194"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0025-1194",
+        "http://www.wikidata.org/entity/Q42787934"
+    ],
+    "name": "Proceedings of the Malacological Society of Londo"
+}

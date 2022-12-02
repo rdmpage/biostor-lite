@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0365-7000",
+    "issn": [
+        "0365-7000"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0365-7000",
+        "http://www.wikidata.org/entity/Q5655070"
+    ],
+    "name": "Abhandlungen der Senckenbergischen Gesellschaft"
+}

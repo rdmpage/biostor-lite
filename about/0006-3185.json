@@ -1,0 +1,28 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0006-3185",
+    "issn": [
+        "0006-3185"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0006-3185",
+        "http://www.wikidata.org/entity/Q1954904",
+        "https://en.wikipedia.org/wiki/The_Biological_Bulletin"
+    ],
+    "name": "The Biological Bulletin",
+    "description": [
+        {
+            "@language": "nl",
+            "@value": "The Biological Bulletin is een internationaal, aan collegiale toetsing onderworpen wetenschappelijk tijdschrift op het gebied van debiologie.De naam wordt in literatuurverwijzingen meestal afgekort tot Biol. Bull.Het wordt uitgegeven door het Marine Biological Laboratory en verschijnt tweemaandelijks.Het eerste nummer verscheen in 1897, toen nog onder de naam Zoological Bulletin. Twee jaar later werd de naam gewijzigd."
+        },
+        {
+            "@language": "en",
+            "@value": "The Biological Bulletin is a peer-reviewed scientific journal covering the field of biology. The journal was established in 1897 as the Zoological Bulletin by Charles Otis Whitman and William Morton Wheeler. In 1899 the title was changed to The Biological Bulletin, and production was transferred to the Marine Biological Laboratory at Woods Hole, Massachusetts. The current editor-in-chief is Kenneth M. Halanych."
+        },
+        {
+            "@language": "fr",
+            "@value": "The Biological Bulletin est une revue scientifique à comité de lecture consacrée à la biologie. Elle a été créée en 1897 par Charles Otis Whitman et William Morton Wheeler sous le nom de Zoological Bulletin. Elle a pris son nom actuel en 1899, en même temps que sa production était transférée au Laboratoire de biologie marine de Woods Hole, dans le Massachusetts. Son rédacteur en chef est Kenneth M. Halanych."
+        }
+    ]
+}

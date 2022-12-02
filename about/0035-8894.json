@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0035-8894",
+    "issn": [
+        "0035-8894"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0035-8894",
+        "http://www.wikidata.org/entity/Q21385808"
+    ],
+    "name": "The Transactions of the Entomological Society of London"
+}

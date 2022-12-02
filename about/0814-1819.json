@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0814-1819",
+    "issn": [
+        "0814-1819"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0814-1819"
+    ],
+    "name": "Occasional papers from the Museum of Victoria"
+}

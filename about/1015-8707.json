@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1015-8707",
+    "issn": [
+        "1015-8707"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1015-8707",
+        "http://www.wikidata.org/entity/Q27718859"
+    ],
+    "name": "Utafiti : occasional papers of the National Museums of Kenya"
+}

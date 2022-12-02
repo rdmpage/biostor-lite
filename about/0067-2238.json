@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0067-2238",
+    "issn": [
+        "0067-2238"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0067-2238",
+        "http://www.wikidata.org/entity/Q15761652"
+    ],
+    "name": "Aust. Zool."
+}

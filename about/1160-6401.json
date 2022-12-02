@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1160-6401",
+    "issn": [
+        "1160-6401"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1160-6401",
+        "http://www.wikidata.org/entity/Q96701928"
+    ],
+    "name": "Annales de la Société linnéenne de Lyon"
+}

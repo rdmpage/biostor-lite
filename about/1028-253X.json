@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1028-253X",
+    "issn": [
+        "1028-253X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1028-253X",
+        "http://www.wikidata.org/entity/Q15733238"
+    ],
+    "name": "Lasianthera"
+}

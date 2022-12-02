@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1833-0290",
+    "issn": [
+        "1833-0290"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1833-0290",
+        "http://www.wikidata.org/entity/Q21385811"
+    ],
+    "name": "Museum Victoria Science Reports"
+}

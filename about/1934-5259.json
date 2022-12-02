@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1934-5259",
+    "issn": [
+        "1934-5259"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1934-5259",
+        "http://www.wikidata.org/entity/Q15731314"
+    ],
+    "name": "Journal of The Botanical Research Institute of Texas"
+}

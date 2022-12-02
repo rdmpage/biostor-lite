@@ -1,0 +1,52 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0024-4074",
+    "issn": [
+        "0024-4074"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0024-4074",
+        "http://www.wikidata.org/entity/Q2975482",
+        "https://en.wikipedia.org/wiki/Botanical_Journal_of_the_Linnean_Society"
+    ],
+    "name": "Botanical Journal of the Linnean Society",
+    "description": [
+        {
+            "@language": "nl",
+            "@value": "Botanical Journal of the Linnean Society is het botanische tijdschrift van de Linnean Society of London. In 1969 is het tijdschrift geïntroduceerd als voortzetting van Journal of the Linnean Society (Botany) . Het tijdschrift verschijnt elke maand en wordt uitgegeven door Wiley-Blackwell. De huidige hoofdredacteur is Mike Fay. In botanische literatuurverwijzingen wordt vaak de standaardafkorting 'Bot. J. Linn. Soc.' gebruikt."
+        },
+        {
+            "@language": "fr",
+            "@value": "Le Botanical Journal of the Linnean Society (Bot. J. Linn. Soc.) est une revue scientifique britannique à comité de lecture publiant des articles originaux sur la taxonomie de tous les groupes de plantes et de champignons, du point de vue anatomie, biosystématique, cytologie, écologie, ethnobotanique, microscopie électronique, morphogénèse, paléobotanique, palynologie et phytochimie. Après avoir été publié par John Wiley & Sons pour la Société linnéenne de Londres, il est publié depuis janvier 2017 par Oxford University Press. Il est disponible en formats papier et électronique."
+        },
+        {
+            "@language": "zh",
+            "@value": "林奈学会植物学杂志（Botanical Journal of the Linnean Society）是一本学术期刊，其内容为关于真菌和植物的原始论文，包括解剖学、、细胞学、生态学、植物学、、形态发生、古植物学、孢粉学和植物化学。 该杂志由伦敦林奈学会出版，以纸质版和电子版发行。 与《》类似，都是由协会内部的学报发展而来的，早期包含了查尔斯·达尔文和阿尔弗雷德·拉塞尔·华莱士的文件，现已成为植物学领域的重要现代出版物。"
+        },
+        {
+            "@language": "en",
+            "@value": "The Botanical Journal of the Linnean Society is a scientific journal publishing original papers relating to the taxonomy of all plant groups and fungi, including anatomy, biosystematics, cytology, ecology, ethnobotany, electron microscopy, morphogenesis, palaeobotany, palynology and phytochemistry. The journal is published by the Linnean Society of London and is available in both print and searchable online formats."
+        },
+        {
+            "@language": "es",
+            "@value": "Botanical Journal of the Linnean Society, (abreviado Bot. J. Linn. Soc.),​ es una revista ilustrada con descripciones botánicas que es editada por Sociedad Linneana de Londres. Comenzó su publicación en el año 1969. Fue precedida por Journal of the Linnean Society. Es una revista científica para la publicación de artículos originales relacionados con la taxonomía de las plantas y de los grupos de hongos, incluyendo la anatomía, biosistemática, citología, ecología, etnobotánica, microscopía electrónica, morfogénesis, paleobotánica, palinología y fitoquímica."
+        },
+        {
+            "@language": "ca",
+            "@value": "Botanical Journal of the Linnean Society, (abreujat Bot. J. Linn. Soc.), és una revista il·lustrada amb descripcions botàniques que és editada per Societat Linneana de Londres. Va començar la seva publicació l'any 1969. Va ser precedida per Journal of the Linnean Society. És una revista científica per a la publicació d'articles originals relacionats amb la taxonomia de les plantes i dels grups de fongs, inclosa l'anatomia, la biosistemàtica, la citologia, l'ecologia, l'etnobotànica, microscopi electrònic, morfogènesi, paleobotànica, palinologia i fitoquímica."
+        },
+        {
+            "@language": "pl",
+            "@value": "Botanical Journal of the Linnean Society (w publikacjach cytowane także w skrócie jako J. Linn. Soc., Bot.) – biologiczne czasopismo naukowe wydawane przez Towarzystwo Linneuszowskie w Londynie (ang. The Linnean Society of London). Jest kontynuacją czasopisma Journal of the proceedings of the Linnean Society. Botany. Pod nowym tytułem wychodzi od 1969 roku. Publikuje oryginalne prace dotyczące taksonomii wszystkich grup roślin i grzybów, w tym anatomii, biosystematyki, cytologii, ekologii, etnobotaniki, mikroskopii elektronowej, morfogenezy, paleobotaniki, palinologii i fitochemii."
+        },
+        {
+            "@language": "pt",
+            "@value": "Botanical Journal of the Linnean Society (abreviado como Bot. J. Linn. Soc.) é uma revista científica que publica artigos originais relacionados com a taxonomia de todos os grupos de plantas e fungos, incluindo anatomia, biossistemática, biologia celular, ecologia, etnobotânica, microscopia electrónica, morfogénese, paleobotânica, palinologia e fitoquímica. A revista é publicada pela Linnean Society of London e está disponível em formato impresso e em formato pesquisável online."
+        },
+        {
+            "@language": "ru",
+            "@value": "Botanical Journal of the Linnean Society (ISSN 0024-4074) — английский ботанический журнал для публикации научных исследований в различных областях науки о растениях. Официальный орган Лондонского Линнеевского общества (Linnean Society of London).Стандартное сокращение названия по ISO 4, используемое при цитировании журнала — Bot. J. Linn. Soc."
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0193-4406",
+    "issn": [
+        "0193-4406"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0193-4406",
+        "http://www.wikidata.org/entity/Q51450237"
+    ],
+    "name": "Brimleyana"
+}

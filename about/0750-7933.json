@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0750-7933",
+    "issn": [
+        "0750-7933"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0750-7933",
+        "http://www.wikidata.org/entity/Q3316224",
+        "https://en.wikipedia.org/wiki/Miscellanea_Entomologica"
+    ],
+    "name": "Miscellanea Entomologica",
+    "description": [
+        {
+            "@language": "fr",
+            "@value": "Miscellanea Entomologica était une revue d'entomologie. Elle a été créée par Eugène Barthe en 1892."
+        },
+        {
+            "@language": "en",
+            "@value": "Miscellanea Entomologica was a French entomological scientific journal. It was originally published by Eugène Barthe and established in 1892."
+        }
+    ]
+}

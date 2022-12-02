@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0968-0446",
+    "issn": [
+        "0968-0446"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0968-0446",
+        "http://www.wikidata.org/entity/Q5735549"
+    ],
+    "name": "Bulletin of the Natural History Museum (Botany)"
+}

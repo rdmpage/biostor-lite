@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0369-7169",
+    "issn": [
+        "0369-7169"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0369-7169",
+        "http://www.wikidata.org/entity/Q15375181"
+    ],
+    "name": "Ofversigt Danske Selsk"
+}

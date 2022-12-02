@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0032-2377",
+    "issn": [
+        "0032-2377"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0032-2377",
+        "http://www.wikidata.org/entity/Q21385714"
+    ],
+    "name": "Poirieria"
+}

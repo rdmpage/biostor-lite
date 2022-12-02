@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0145-9058",
+    "issn": [
+        "0145-9058"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0145-9058",
+        "http://www.wikidata.org/entity/Q21385763"
+    ],
+    "name": "Bulletin of Carnegie Museum of Natural History"
+}

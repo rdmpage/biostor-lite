@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0240-8937",
+    "issn": [
+        "0240-8937"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0240-8937",
+        "http://www.wikidata.org/entity/Q51412421"
+    ],
+    "name": "Bulletin Du Museum National D'histoire Naturelle Section B Adansonia Botanique Phytochimie"
+}

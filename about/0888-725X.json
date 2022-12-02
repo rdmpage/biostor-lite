@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0888-725X",
+    "issn": [
+        "0888-725X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0888-725X",
+        "http://www.wikidata.org/entity/Q51421416"
+    ],
+    "name": "Bulletin from the laboratories of Natural History of the State University of Iowa"
+}

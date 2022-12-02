@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0065-972X",
+    "issn": [
+        "0065-972X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0065-972X",
+        "http://www.wikidata.org/entity/Q64909638"
+    ],
+    "name": "Proc. Amer. Philos. Soc."
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0312-3162",
+    "issn": [
+        "0312-3162"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0312-3162",
+        "http://www.wikidata.org/entity/Q15755807"
+    ],
+    "name": "Records of The Western Australian Museum"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/2158-5520",
+    "issn": [
+        "2158-5520"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/2158-5520",
+        "http://www.wikidata.org/entity/Q21386195"
+    ],
+    "name": "Fieldiana Life and Earth Sciences"
+}

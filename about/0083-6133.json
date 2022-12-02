@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0083-6133",
+    "issn": [
+        "0083-6133"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0083-6133",
+        "http://www.wikidata.org/entity/Q5696312"
+    ],
+    "name": "Annalen des K.K. Naturhistorischen Hofmuseums"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0368-2927",
+    "issn": [
+        "0368-2927"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0368-2927",
+        "http://www.wikidata.org/entity/Q5946734"
+    ],
+    "name": "Journal of the Linnean Society of London, Botany"
+}

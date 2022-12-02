@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0024-0966",
+    "issn": [
+        "0024-0966"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0024-0966",
+        "http://www.wikidata.org/entity/Q21385521"
+    ],
+    "name": "Journal Lepid Soc"
+}

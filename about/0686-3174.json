@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0686-3174",
+    "issn": [
+        "0686-3174"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0686-3174"
+    ],
+    "name": null
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0884-8203",
+    "issn": [
+        "0884-8203"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0884-8203",
+        "http://www.wikidata.org/entity/Q51494377"
+    ],
+    "name": "Indiana University studies"
+}

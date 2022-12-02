@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0037-8437",
+    "issn": [
+        "0037-8437"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0037-8437",
+        "http://www.wikidata.org/entity/Q5674325"
+    ],
+    "name": "An Soc Cien Argentina"
+}

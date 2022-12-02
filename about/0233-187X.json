@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0233-187X",
+    "issn": [
+        "0233-187X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0233-187X",
+        "http://www.wikidata.org/entity/Q6105815"
+    ],
+    "name": "Repertorium specierum novarum regni vegetabilis. Beihefte"
+}

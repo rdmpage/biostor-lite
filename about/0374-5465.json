@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0374-5465",
+    "issn": [
+        "0374-5465"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0374-5465"
+    ],
+    "name": "Archives du Muséum d'histoire naturelle de Lyon"
+}

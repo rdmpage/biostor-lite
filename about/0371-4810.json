@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0371-4810",
+    "issn": [
+        "0371-4810"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0371-4810",
+        "http://www.wikidata.org/entity/Q6130175"
+    ],
+    "name": "Sitzungsberichte der Kaiserlichen Akademie der Wissenschaften, Wien"
+}

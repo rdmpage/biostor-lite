@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0716-0178",
+    "issn": [
+        "0716-0178"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0716-0178",
+        "http://www.wikidata.org/entity/Q15757741"
+    ],
+    "name": "Anales del Museo de Historia Natural de Valparaiso"
+}

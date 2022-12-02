@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0155-4093",
+    "issn": [
+        "0155-4093"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0155-4093",
+        "http://www.wikidata.org/entity/Q15759745"
+    ],
+    "name": "Northern Territory Naturalist"
+}

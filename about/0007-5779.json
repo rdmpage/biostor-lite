@@ -1,0 +1,20 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0007-5779",
+    "issn": [
+        "0007-5779"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0007-5779",
+        "http://www.wikidata.org/entity/Q4996851",
+        "https://en.wikipedia.org/wiki/Bulletins_of_American_Paleontology"
+    ],
+    "name": "Bulletins of American Paleontology",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "Bulletins of American Paleontology is a peer-reviewed scientific journal published by the Paleontological Research Institution and issued biannually that features monographs and dissertations in the field of paleontology and other related subjects. Founded by Gilbert Harris in 1895, it is the oldest continuously-published paleontological periodical in the Western Hemisphere, and one of the oldest in the world."
+        }
+    ]
+}

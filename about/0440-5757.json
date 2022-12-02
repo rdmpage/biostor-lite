@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0440-5757",
+    "issn": [
+        "0440-5757"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0440-5757",
+        "http://www.wikidata.org/entity/Q51487242"
+    ],
+    "name": "Heathers : yearbook of the Heather Society"
+}

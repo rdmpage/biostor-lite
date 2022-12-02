@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0022-4618",
+    "issn": [
+        "0022-4618"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0022-4618",
+        "http://www.wikidata.org/entity/Q5946711"
+    ],
+    "name": "Journal of South African botany"
+}

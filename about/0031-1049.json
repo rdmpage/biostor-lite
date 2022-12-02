@@ -1,0 +1,15 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0031-1049",
+    "issn": [
+        "0031-1049"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0031-1049",
+        "http://www.wikidata.org/entity/Q15716698",
+        "https://en.wikipedia.org/wiki/Pap%C3%A9is_Avulsos_de_Zoologia"
+    ],
+    "name": "Pap%C3%A9is Avulsos de Zoologia",
+    "description": []
+}

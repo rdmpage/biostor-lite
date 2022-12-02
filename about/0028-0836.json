@@ -1,0 +1,104 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0028-0836",
+    "issn": [
+        "0028-0836"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0028-0836",
+        "http://www.wikidata.org/entity/Q180445",
+        "https://en.wikipedia.org/wiki/Nature_(journal)"
+    ],
+    "name": "Nature (journal)",
+    "description": [
+        {
+            "@language": "uk",
+            "@value": "Nature («Нейче», з англ. — «Природа») — найпрестижніший науковий рецензований журнал світу. У 2009 році увійшов до Списку 100 найвпливовіших журналів з біології і медицини за останні 100 років під № 1 і був названий Журналом Сторіччя. Друкується щотижня у Сполученому королівстві, починаючи з 1869 року. Nature друкує статті з усіх областей досліджень. Видавництво — Nature Publishing Group."
+        },
+        {
+            "@language": "en",
+            "@value": "Nature is a British weekly scientific journal founded and based in London, England. As a multidisciplinary publication, Nature features peer-reviewed research from a variety of academic disciplines, mainly in science and technology. It has core editorial offices across the United States, continental Europe, and Asia under the international scientific publishing company Springer Nature. Nature was one of the world's most cited scientific journals by the Science Edition of the 2019 Journal Citation Reports (with an ascribed impact factor of 42.778), making it one of the world's most-read and most prestigious academic journals. As of 2012, it claimed an online readership of about three million unique readers per month."
+        },
+        {
+            "@language": "in",
+            "@value": "Nature adalah sebuah jurnal ilmiah mingguan yang berbasis di Inggris sejak tahun 1869. Sebagai sebuah jurnal interdisiplin, Nature diisi riset-riset yang sudah ditelaah secara sejawat yang membahas berbagai macam disiplin akademik, walaupun lebih condong kepada sains, teknologi, dan ilmu alam. Ia memiliki kantor editorial besar di Amerika Serikat, Eropa, dan Asia, dibawah pimpinan penerbit Springer Nature. Nature merupakan jurnal ilmiah yang paling direferensikan oleh Journal Citation Reports tahun 2019 (dengan faktor dampak sekitar 42.778), membuatnya jurnal akademik yang paling sering dibaca dan paling megah. Hingga 2012, Nature memiliki sekitar tiga miliar per bulan di situs daringnya, nature.com. Meski sering menjadi bahan kontroversi karena disinformasi, untuk diterbitkan di Nature te"
+        },
+        {
+            "@language": "fr",
+            "@value": "Nature est une revue scientifique généraliste de référence, à comité de lecture et publiée de manière hebdomadaire. C'est l'une des revues scientifiques les plus anciennes et les plus réputées au monde. Elle a été lancée en 1869 par le Britannique Joseph Norman Lockyer avec une vocation d'excellence dans tous les domaines des sciences dites dures — physique, mathématiques, chimie, biologie, génétique — mais aussi dans de nombreuses sciences dites exactes comme la paléontologie, la géologie, les sciences de l'évolution, l'archéologie, voire dans certains aspects des sciences sociales."
+        },
+        {
+            "@language": "es",
+            "@value": "Nature es una de las más prestigiosas revistas científicas a nivel mundial,​ que fue fundada por el astrónomo británico Joseph Norman Lockyer. Su primer número fue publicado el 4 de noviembre de 1869.​"
+        },
+        {
+            "@language": "cs",
+            "@value": "Nature (anglicky příroda) je prestižní vědecký časopis se všeobecným zaměřením vydávaný od roku 1869 ve Velké Británii (dnes nakladatelstvím ). Byly a stále jsou v něm uveřejňovány nejdůležitější vědecké práce (články i kratší texty, tzv. dopisy) z astronomie, biologie, geověd, jaderné fyziky atd. Vychází jako týdeník a všechna vydání od aktuálního čísla až do roku 1950 jsou (předplatitelům) dostupná na internetu."
+        },
+        {
+            "@language": "ru",
+            "@value": "Nature (в переводе с англ. — «Природа») — британский журнал, в котором публикуются исследования в основном естественно-научной тематики. Один из самых старых и авторитетных общенаучных журналов мира."
+        },
+        {
+            "@language": "zh",
+            "@value": "《自然》（英語：Nature）是世界上最早的科学期刊之一，也是全世界最权威及最有名望的学术期刊之一，首版於1869年11月4日。虽然今天大多数科学期刊都专一於一个特殊的领域，《自然》是少数（其它类似期刊有《科学》和《美国国家科学院院刊》）依然发表来自很多科学领域的一手研究论文的期刊。在许多科学研究领域中，每年最重要、最前沿的研究结果是在《自然》中以短文章的形式发表的。"
+        },
+        {
+            "@language": "ca",
+            "@value": "Nature és una de les revistes científiques més antigues i famoses. El seu primer número va sortir el 4 de novembre de 1869. A diferència d'altres revistes, no està especialitzada en cap camp en concret, i publica articles de temes molt diversos, encara que la seva principal àrea és la biologia. El seu principal competidor és la revista Science. \n* El descobriment de l'estructura de doble hèlix de l'ADN per James Watson i Francis Crick el 1953. \n* El descobriment del primer planeta extrasolar 51 Pegasi per Major i Queloz el 1995."
+        },
+        {
+            "@language": "eo",
+            "@value": "Nature estas brita reviziita interfaka scienca gazeto, unufoje publikigita la 4an de novembro 1869. Ĝi estis rangita kiel la plej citita scienca gazeto de la mondo fare de la Science Edition (scienca eldono) de 2010 de Journal Citation Reports, oni atribuis al ĝi efikfaktoron de proksimume 42.4, kaj estas amplekse konsiderata kiel unu el kelkaj restantaj akademiaj gazetoj kiuj publikigas originalan esploradon tra ampleksa gamo de sciencaj fakoj.Nature postulas retan legantaron de ĉirkaŭ 3 milionoj da unikaj legantoj monate. La gazeto havas ĉiusemajnan cirkuladon de ĉirkaŭ 53,000 sed kelkaj studoj estis konkludintaj, ke averaĝe unuopa kopio estas kunhavata de tiom multe kiom ĝis ok personoj."
+        },
+        {
+            "@language": "eu",
+            "@value": "Nature zientzia-aldizkari diziplinartekoa da. Norman Lockyer-ek sortu zuen Londresen, 1869ko azaroaren 4an. 2010ean Journal Citations Report txostenak sailkatu zuen Nature munduko zientzia-aldizkaririk aipatuena, 40.137ko inpaktu-faktorearekin. Horrek egiten du munduko aldizkari akademiko gorenetakoa. Ikerketa originala argitaratzen du, zientzia-esparru askotan. 300.000 bat zientzialari irakurle ditu, eta guztira 600.000 pertsonak irakurtzen dute."
+        },
+        {
+            "@language": "pl",
+            "@value": "Nature – jedno z najstarszych i najbardziej prestiżowych czasopism naukowych. Ukazuje się jako ilustrowany tygodnik. Zostało założone przez Normana Lockyera. Pierwszy numer ukazał się 4 listopada 1869 roku – poruszone w nim tematy obejmowały m.in. zapylanie kwiatów kwitnących w zimie, spotkanie niemieckich przyrodników i lekarzy w Innsbrucku, stan podróżnika Davida Livingstone’a czy otwarcie Kanału Sueskiego. Aktualnie wydawcą „Nature” jest firma , należąca do wydawnictwa Macmillan Publishers. Oprócz „Nature” wydaje ona także miesięczniki naukowe, prowadzi serwis internetowy news@nature.com oraz serwis rekrutacyjny ."
+        },
+        {
+            "@language": "ar",
+            "@value": "نيتشر (بالإنجليزية: Nature، وتعني الطبيعة)‏ هي مجلة دورية علمية أسبوعية بريطانية تصدر بالإنكليزية، تعتبر من أبرز الدوريات العلمية في العالم وقد نشرت لأول مرة في 4 تشرين الثاني/نوفمبر 1869. من أهم اختصاصات هذه المجلة مجالا الفيزياء والأحياء. أصبحت المجلة تصدر حديثاً باللغة العربية."
+        },
+        {
+            "@language": "it",
+            "@value": "Il poema di Parmenide, indicato dai commentatori posteriori con il titolo di Sulla natura, o Intorno alla natura a seconda delle traduzioni (dal greco Περί Φύσεως, Perí Physeos), può essere considerato il primo vero e proprio testo filosofico della storia del pensiero occidentale Il Poema sulla natura ci è pervenuto grazie alle citazioni di Simplicio nel De coelo (De cœlo 556, 25) e nei suoi commenti alla Fisica di Aristotele (In Aristotelis Physica commentaria), di Sesto Empirico in Adversus mathematicos (libro VII), e di altri scrittori antichi."
+        },
+        {
+            "@language": "sv",
+            "@value": "Nature är en framstående brittisk vetenskaplig veckotidskrift som började utges 4 november 1869 och grundades av Norman Lockyer. Den är världens mest citerade interdisciplinära vetenskapliga tidskrift. Fler än 1 700 artiklar har över åren författats av drygt 275 nobelpristagare."
+        },
+        {
+            "@language": "nl",
+            "@value": "Nature (Engels voor 'natuur') is een gerenommeerd, Brits wetenschappelijk tijdschrift dat wekelijks verschijnt. Het tijdschrift publiceert peer-reviewed onderzoek uit verschillende academische disciplines, voornamelijk in de natuurwetenschappen en technologie. Nature wordt bestuurd vanuit Londen, maar heeft redactiekantoren in de Verenigde Staten, Europa en Azië. Onderzoeken in Nature worden zeer veel geciteerd: de impactfactor was in 2019 ongeveer 42,8. Door zijn vermaarde status is Nature een van 's werelds meest gelezen academische periodieken."
+        },
+        {
+            "@language": "de",
+            "@value": "Nature: a weekly journal of science ist eine wöchentlich erscheinende, englischsprachige Fachzeitschrift mit Themen aus verschiedenen, vorwiegend naturwissenschaftlichen Disziplinen. Nature war im Jahr 2014 die weltweit am meisten zitierte interdisziplinäre Fachzeitschrift entsprechend den Journal Citation Reports sowie die Zeitschrift mit dem höchsten Impact Factor in ihrer Kategorie. Sie ist neben der US-amerikanischen Science die weltweit angesehenste Zeitschrift für Naturwissenschaften."
+        },
+        {
+            "@language": "it",
+            "@value": "Nature è una delle più antiche e importanti riviste scientifiche esistenti, forse in assoluto quella considerata di maggior prestigio nell'ambito della comunità scientifica internazionale (insieme a Science). Viene pubblicata fin dal 4 novembre 1869."
+        },
+        {
+            "@language": "ja",
+            "@value": "ネイチャー（Nature）は、イギリスのロンドンを拠点に設立された、国際的な週刊科学ジャーナルである。総合学術雑誌であり、科学技術を中心としたさまざまな学問分野からの査読済みの研究雑誌を掲載している。国際的な科学出版会社シュプリンガー・ネイチャーの傘下であり、米国、ヨーロッパ、アジアの各国に中核的な編集事務所が設置されている。2019 Journal Citation ReportsのScience Editionによると、世界で最も引用されている科学ジャーナルの1つであり（インパクトファクターは42.778）、世界で最も読まれ、最も権威のある学術ジャーナルの1つになっている。2012年現在、オンライン上では月に約300万のユニークアクセスがあった。 雑誌名は英語で「自然」の意味。 ネイチャーに掲載される論文の学術的な評価はサイエンスと並んで高いが、会員からの寄付で成り立つサイエンスとは異なり、ネイチャーは商業誌である。2013年、ノーベル賞受賞者であるランディ・シェクマンがこのネイチャーとサイエンス、セルの3誌は商業主義に陥っていると批判、絶縁宣言をした。"
+        },
+        {
+            "@language": "ko",
+            "@value": "( 이 문서는 과학 학술지에 관한 것입니다. 네이처(nature)의 원래 뜻에 대해서는 자연 문서를, 대한민국의 음악 그룹에 대해서는 네이처 (음악 그룹) 문서를 참고하십시오.) 《네이처》(영어: Nature)는 세계에서 가장 오래되고 저명하다고 평가되는 영국의 과학 학술지다. 자연과학, 공학 등 다양한 분야에서 동료평가를 거쳐 우수한 논문들을 게재한다. 미국이나 아시아 등지에도 지부가 있으며 를 통하여 발행되고 있다. 전세계에서 가장 많이 인용되는 학술지 중 하나로, 2019년 기준 42.778의 피인용지수를 가지고 있다. 2012년 기준으로 대략 300만 명의 온라인 구독자를 보유하고 있었다. 1869년 11월 4일에 이 창간했으며 20세기 중후반을 거치며 과학적 저널리즘의 배양과 편집자 네트워크의 형성으로 그 저명도가 꾸준히 향상되어 현재에 이른다. 회원들의 기부로 이루어지는 사이언스와 달리 네이처는 상업지에 해당한다. 2013년 노벨 생리학·의학상을 받은 랜디 셰크먼은 사이언스, 셀과 함께 네이처가 상업주의에 빠졌다고 비판했으며 \"주류 학술지의 전횡을 막기 위해 연구논문 기고를 전면 중단\"하겠다고 말하기도 했다."
+        },
+        {
+            "@language": "pt",
+            "@value": "Nature é uma revista científica interdisciplinar britânica, publicada pela primeira vez em 4 de novembro de 1869. Foi classificada a revista científica mais citada do mundo pela edição de 2010 do Journal Citation Reports, sendo amplamente considerada uma das poucas revistas acadêmicas remanescentes que publica pesquisas originais em uma ampla gama de campos científicos. A Nature tem um público on-line de cerca de 3 milhões de leitores únicos por mês. A revista tem uma circulação semanal de cerca de 53 mil exemplares, mas estudos concluíram que, em média, uma única cópia é compartilhada por até oito pessoas."
+        },
+        {
+            "@language": "el",
+            "@value": "Το Nature είναι αγγλικό επιστημονικό περιοδικό, από τα εγκυρότερα του πλανήτη, που δημοσιεύτηκε για πρώτη φορά στις 4 Νοεμβρίου 1869. Θεωρείται ως το γνωστότερο επιστημονικό περιοδικό στον κόσμο με συντελεστή επιρροής (impact factor) στο 42.778, ενώ έχει καθιερωθεί ως ένα από τα κορυφαία ακαδημαϊκά περιοδικά στον κόσμο. Είναι ένα από τα λίγα εναπομείναντα ακαδημαϊκά περιοδικά που δημοσιεύει πρωτότυπη έρευνα σε ένα ευρύ φάσμα επιστημονικών πεδίων. Το Nature διεκδικεί μια αναγνωρισιμότητα μέσω διαδικτύου περίπου 3 εκατομμυρίων αναγνωστών ανά μήνα. Το περιοδικό έχει μια εβδομαδιαία κυκλοφορία περίπου 53.000 αντιτύπων αλλά μελέτες έχουν καταλήξει στο συμπέρασμα ότι οκτώ άτομα μοιράζονται ένα αντίτυπο."
+        }
+    ]
+}

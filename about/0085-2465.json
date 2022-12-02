@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0085-2465",
+    "issn": [
+        "0085-2465"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0085-2465",
+        "http://www.wikidata.org/entity/Q51506211"
+    ],
+    "name": "Monograph of the Museum of Natural History, the University of Kansas"
+}

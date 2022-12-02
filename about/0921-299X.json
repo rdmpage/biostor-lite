@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0921-299X",
+    "issn": [
+        "0921-299X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0921-299X",
+        "http://www.wikidata.org/entity/Q27709709"
+    ],
+    "name": "Zoologist"
+}

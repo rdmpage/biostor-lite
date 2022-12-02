@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0376-2750",
+    "issn": [
+        "0376-2750"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0376-2750",
+        "http://www.wikidata.org/entity/Q47087690"
+    ],
+    "name": "Rec S Aust Mus"
+}

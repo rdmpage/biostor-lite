@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0366-3515",
+    "issn": [
+        "0366-3515"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0366-3515",
+        "http://www.wikidata.org/entity/Q5735493"
+    ],
+    "name": "Bulletin de la Societe Philomathique"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1132-0869",
+    "issn": [
+        "1132-0869"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1132-0869",
+        "http://www.wikidata.org/entity/Q5660140"
+    ],
+    "name": "Madrid Memorias de la Sociedad Espanola de Historia Natural"
+}

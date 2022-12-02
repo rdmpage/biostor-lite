@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0006-6982",
+    "issn": [
+        "0006-6982"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0006-6982",
+        "http://www.wikidata.org/entity/Q6296118",
+        "https://en.wikipedia.org/wiki/Journal_of_the_Bombay_Natural_History_Society"
+    ],
+    "name": "Journal of the Bombay Natural History Society",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "The Journal of the Bombay Natural History Society (also JBNHS) is a natural history journal published several times a year by the Bombay Natural History Society. First published in January 1886, and published with only a few interruptions since, the JBNHS is one of the best-known journals in the fields of natural history, conservation, and biodiversity research."
+        },
+        {
+            "@language": "es",
+            "@value": "Journal of the Bombay Natural History Society, (abreviado J. Bombay Nat. Hist. Soc.),​ es una revista con ilustraciones y descripciones botánicas que e editada en Bombay desde el año 1886."
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0304-0798",
+    "issn": [
+        "0304-0798"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0304-0798",
+        "http://www.wikidata.org/entity/Q22115423"
+    ],
+    "name": "Ann. Natal Mus."
+}

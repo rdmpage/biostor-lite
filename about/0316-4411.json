@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0316-4411",
+    "issn": [
+        "0316-4411"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0316-4411",
+        "http://www.wikidata.org/entity/Q47164121"
+    ],
+    "name": "Ottawa Naturalist"
+}

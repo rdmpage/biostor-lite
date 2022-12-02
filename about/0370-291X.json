@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0370-291X",
+    "issn": [
+        "0370-291X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0370-291X",
+        "http://www.wikidata.org/entity/Q21385309"
+    ],
+    "name": "Quarterly Journal of the Geological Society"
+}

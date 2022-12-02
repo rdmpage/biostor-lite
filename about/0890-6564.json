@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0890-6564",
+    "issn": [
+        "0890-6564"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0890-6564",
+        "http://www.wikidata.org/entity/Q2887592"
+    ],
+    "name": "Annals of The Lyceum of Natural History New York"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0340-4943",
+    "issn": [
+        "0340-4943"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0340-4943",
+        "http://www.wikidata.org/entity/Q21385067"
+    ],
+    "name": "Mitt Munch Ent Ges Munich"
+}

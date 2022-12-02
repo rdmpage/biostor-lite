@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0079-032X",
+    "issn": [
+        "0079-032X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0079-032X",
+        "http://www.wikidata.org/entity/Q21385116"
+    ],
+    "name": "Bull Peabody Mus Nat Hist."
+}

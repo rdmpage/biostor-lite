@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0340-3718",
+    "issn": [
+        "0340-3718"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0340-3718",
+        "http://www.wikidata.org/entity/Q5655068"
+    ],
+    "name": "Abh. naturw. Ver. Bremen"
+}

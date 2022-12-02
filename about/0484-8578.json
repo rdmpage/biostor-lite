@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0484-8578",
+    "issn": [
+        "0484-8578"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0484-8578",
+        "http://www.wikidata.org/entity/Q39125612"
+    ],
+    "name": "Revue de mycologie"
+}

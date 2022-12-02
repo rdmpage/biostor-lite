@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0006-808X",
+    "issn": [
+        "0006-808X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0006-808X",
+        "http://www.wikidata.org/entity/Q13548534",
+        "https://en.wikipedia.org/wiki/Botanical_Magazine_(Tokyo)"
+    ],
+    "name": "Botanical Magazine (Tokyo)",
+    "description": [
+        {
+            "@language": "ca",
+            "@value": "La Botanical Magazine, Tokyo, (abreujat en anglès Bot. Mag. (Tokyo)), va ser una revista amb il·lustracions i descripcions botàniques que va ser editada a Tòquio des del 1887 fins al 1992. Es van publicar 105 números amb el nom de Shokubutsu-gaku Zasshi. Va ser substituïda per Journal of Plant Research. Va tenir dues etapes ben diferenciades pel que fa a l'hora de publicar les revistes:"
+        },
+        {
+            "@language": "es",
+            "@value": "La Revista de Botánica (Tokio),​ (abreviado en inglés Bot. Mag. (Tokyo)),​ fue una revista con ilustraciones y descripciones botánicas que fue editada en Tokio desde 1887 hasta 1992. Se publicaron 105 números con el nombre de Shokubutsu-gaku Zasshi. Fue reemplazada por Journal of Plant Research."
+        }
+    ]
+}

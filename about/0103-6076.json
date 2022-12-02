@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0103-6076",
+    "issn": [
+        "0103-6076"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0103-6076",
+        "http://www.wikidata.org/entity/Q51402474"
+    ],
+    "name": "Goeldiana zoologia"
+}

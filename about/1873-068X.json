@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1873-068X",
+    "issn": [
+        "1873-068X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1873-068X"
+    ],
+    "name": "Verhandelingen der Koninklijke Akademie van Wetenschappen"
+}

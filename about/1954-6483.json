@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1954-6483",
+    "issn": [
+        "1954-6483"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1954-6483"
+    ],
+    "name": "Bulletin mensuel de la Société linnéenne de Paris"
+}

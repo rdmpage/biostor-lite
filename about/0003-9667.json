@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0003-9667",
+    "issn": [
+        "0003-9667"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0003-9667",
+        "http://www.wikidata.org/entity/Q33112749"
+    ],
+    "name": "Archives de Zoologie Expérimentale et Générale"
+}

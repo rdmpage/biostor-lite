@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0376-1649",
+    "issn": [
+        "0376-1649"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0376-1649",
+        "http://www.wikidata.org/entity/Q22106903"
+    ],
+    "name": "Arkiv för botanik"
+}

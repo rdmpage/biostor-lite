@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0311-9548",
+    "issn": [
+        "0311-9548"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0311-9548",
+        "http://www.wikidata.org/entity/Q51405822"
+    ],
+    "name": "Memoirs of The National Museum of Victoria"
+}

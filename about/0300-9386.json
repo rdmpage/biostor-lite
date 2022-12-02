@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0300-9386",
+    "issn": [
+        "0300-9386"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0300-9386",
+        "http://www.wikidata.org/entity/Q36778289"
+    ],
+    "name": "Bulletin du Muséum national d'Histoire naturelle 3ème série - Zoologie"
+}

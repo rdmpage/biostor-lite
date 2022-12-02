@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0716-2545",
+    "issn": [
+        "0716-2545"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0716-2545",
+        "http://www.wikidata.org/entity/Q20013547"
+    ],
+    "name": "Boletín del Museo Nacional de Chile"
+}

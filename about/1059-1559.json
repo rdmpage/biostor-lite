@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1059-1559",
+    "issn": [
+        "1059-1559"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1059-1559",
+        "http://www.wikidata.org/entity/Q37408732"
+    ],
+    "name": "Ins. Insc. Menstr"
+}

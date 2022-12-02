@@ -1,0 +1,40 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0158-4197",
+    "issn": [
+        "0158-4197"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0158-4197",
+        "http://www.wikidata.org/entity/Q2077317",
+        "https://en.wikipedia.org/wiki/Emu_(journal)"
+    ],
+    "name": "Emu (journal)",
+    "description": [
+        {
+            "@language": "pt",
+            "@value": "Emu, com subtítulo \"Austral Ornithology\" (ISSN 0158-4197), é uma revista científica com revisão por pares da Royal Australasian Ornithologists Union (RAOU). Foi primeiramente publicada em 1901 e é a mais antiga revista ornitológica publicada na Austrália."
+        },
+        {
+            "@language": "fr",
+            "@value": "L'Emu, ou Emu - Austral Ornithology, est la publication officielle de Birds Australia (anciennement la Royal Australasian Ornithologists Union). La revue publie des articles sur toutes les facettes de la biologie des oiseaux vivants dans l'hémisphère sud, et plus particulièrement sur la conservation des oiseaux. L'emblème de la société Birds Australia est l’émeu d'Australie (Emu en anglais)."
+        },
+        {
+            "@language": "en",
+            "@value": "Emu, subtitled Austral Ornithology, is the peer-reviewed scientific journal of BirdLife Australia (formerly the Royal Australasian Ornithologists Union). The journal was established in 1901 and is the oldest ornithological journal published in Australia. The current editor-in-chief is Kate Buchanan (Deakin University). The journal was published quarterly for the Royal Australasian Ornithologists Union in print and online by CSIRO Publishing until 2016. According to the Journal Citation Reports, the journal has a 2012 impact factor of 1.895, ranking it 4th out of 22 journals in the category \"Ornithology\"."
+        },
+        {
+            "@language": "eo",
+            "@value": "Emu, subtitola Austral Ornithology, estas reviziata scienca gazeto de la Royal Australasian Ornithologists Union. Tiu gazeto estis fondita en 1901 kaj estas la plej aĝa ornitologia gazeto publikigita en Aŭstralio. La nuna ĉefredaktoro estas Kate Buchanan. La gazeto estas publikigita kvarfoje jare fare de la Reĝa Aŭstralazia Ornitologista Unio prese kaj rete fare de CSIRO Publishing. Laŭ la Journal Citation Reports, tiu gazeto havis en 2012 efikindicon de 1.895, game la 4a el 22 gazetoj en la kategorio \"Ornitologio\"."
+        },
+        {
+            "@language": "ru",
+            "@value": "Emu (Emu - Austral Ornithology, ISSN 0158-4197) — австралийский орнитологический журнал для публикации научных исследований в различных областях науки о птицах."
+        },
+        {
+            "@language": "uk",
+            "@value": "Emu (Emu — Austral Ornithology, ISSN 0158-4197) — австралійський орнітологічний часопис для публікації результатів наукових досліджень у різних галузях науки про птахів."
+        }
+    ]
+}

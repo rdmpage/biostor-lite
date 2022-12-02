@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0069-8989",
+    "issn": [
+        "0069-8989"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0069-8989",
+        "http://www.wikidata.org/entity/Q21386281"
+    ],
+    "name": "Trans. Conn. Acad. Arts Sci"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0766-7248",
+    "issn": [
+        "0766-7248"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0766-7248",
+        "http://www.wikidata.org/entity/Q6045838"
+    ],
+    "name": "Nouvelles archives du Muséum d'histoire naturelle"
+}

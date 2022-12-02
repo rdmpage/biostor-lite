@@ -1,0 +1,12 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1138-6541",
+    "issn": [
+        "1138-6541"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1138-6541"
+    ],
+    "name": "Avicennia: revista de ecología, oceanología y biodiversidad tropical"
+}

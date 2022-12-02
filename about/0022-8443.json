@@ -1,0 +1,20 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0022-8443",
+    "issn": [
+        "0022-8443"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0022-8443",
+        "http://www.wikidata.org/entity/Q7833735",
+        "https://en.wikipedia.org/wiki/Transactions_of_the_Kansas_Academy_of_Science"
+    ],
+    "name": "Transactions of the Kansas Academy of Science",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "Transactions of the Kansas Academy of Science is a biannual peer-reviewed academic journal published by the Kansas Academy of Science. The journal covers biological and physical sciences, mathematics and computer science, history, culture, and philosophy of science, and science education. the journal is abstracted and indexed in The Zoological Record and BIOSIS Previews."
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0716-078X",
+    "issn": [
+        "0716-078X"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0716-078X",
+        "http://www.wikidata.org/entity/Q3669583",
+        "https://en.wikipedia.org/wiki/Revista_Chilena_de_Historia_Natural"
+    ],
+    "name": "Revista Chilena de Historia Natural",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "The Revista Chilena de Historia Natural is a bilingual open access scientific journal published by the covering research in many areas of biology. It was established in 1897 by ."
+        },
+        {
+            "@language": "es",
+            "@value": "Revista Chilena de Historia Natural, abreviada como Rev. Chil. Hist. Nat., RCHhN o RCHN, es una publicación científica bilingüe de acceso abierto, publicada por la , especializada en investigaciones inéditas de biología. La RCHN fue fundada en 1897 por Carlos Porter. Las áreas que abarca la revista son numerosas, pero prioriza trabajos sobre ecología con prueba de hipótesis explícitas."
+        }
+    ]
+}

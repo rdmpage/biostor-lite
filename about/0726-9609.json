@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0726-9609",
+    "issn": [
+        "0726-9609"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0726-9609",
+        "http://www.wikidata.org/entity/Q7774303",
+        "https://en.wikipedia.org/wiki/The_Western_Australian_Naturalist"
+    ],
+    "name": "The Western Australian Naturalist",
+    "description": [
+        {
+            "@language": "es",
+            "@value": "Western Australian Naturalist, (abreviado W. Austral. Naturalist),​ es una revista con ilustraciones y descripciones botánicas que es editada en Perth desde el año 1947. Fue precedida por West Australian Naturalist."
+        },
+        {
+            "@language": "en",
+            "@value": "The Western Australian Naturalist (also known as The Naturalist), is the peer-reviewed scientific journal of the Western Australian Naturalists' Club. It publishes original research on topics related to the natural history of Western Australia. It was established in 1947. Similar publications emanated from groups that were established in other Australian states, the South Australian being a part of the Royal Society in that state and the Victorian publication was established as early as the 1880s. The editor from 1947 to 1980 was Dom Serventy. The Naturalist was the location of:"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0096-3801",
+    "issn": [
+        "0096-3801"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0096-3801",
+        "http://www.wikidata.org/entity/Q18515885"
+    ],
+    "name": "Proc U S Nat Mus"
+}

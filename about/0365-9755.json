@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0365-9755",
+    "issn": [
+        "0365-9755"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0365-9755",
+        "http://www.wikidata.org/entity/Q21385181"
+    ],
+    "name": "Boletín de la Sociedad Española de Historia Natural"
+}

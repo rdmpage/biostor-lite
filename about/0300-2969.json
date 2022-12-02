@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0300-2969",
+    "issn": [
+        "0300-2969"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0300-2969",
+        "http://www.wikidata.org/entity/Q94626389"
+    ],
+    "name": "Cahiers de la Maboké"
+}

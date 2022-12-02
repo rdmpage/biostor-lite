@@ -1,0 +1,28 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0028-0798",
+    "issn": [
+        "0028-0798"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0028-0798",
+        "http://www.wikidata.org/entity/Q948624",
+        "https://en.wikipedia.org/wiki/Le_Naturaliste_Canadien"
+    ],
+    "name": "Le Naturaliste Canadien",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "Le Naturaliste Canadien is a Canadian French-language peer-reviewed scientific journal published semiannually by the . The journal publishes articles on all topics of natural sciences with a specific focus on ecology and conservation biology in Quebec. The journal also acts as the official publication of the society. The journal is the oldest scientific publication in French in North America and one of the oldest scientific journals still in publication in Canada."
+        },
+        {
+            "@language": "es",
+            "@value": "Le Naturaliste Canadien, (abreviado Naturaliste Canad.),​ es una revista científica con ilustraciones y descripciones Ciencias Naturales que es publicada en Quebec desde el año 1869 con el nombre de Naturaliste Canadien. Bulletin de Recherches, Observations et Decouvertes se Rapportant a l'Histoire Naturelle du Canada."
+        },
+        {
+            "@language": "fr",
+            "@value": "Le Naturaliste canadien est une revue scientifique de langue française avec comité de lecture (révision par les pairs) fondée par l'abbé Léon Provancher en 1868, ce qui en fait « la plus ancienne revue scientifique francophone en Amérique du Nord ». La revue cesse d'être publiée pendant un peu plus de deux ans à la suite du décès de Provancher en 1892. En 1894, elle reprend vie sous la responsabilité de Victor-Alphonse Huard jusqu'au décès de celui-ci en 1929. À partir de cette date jusqu'en 1993, la publication du Naturaliste est assurée par l'Université Laval. Elle est, depuis 1994, la publication officielle de la Société Provancher. Des numéros thématiques sont également publiés occasionnellement. La revue a été produite en format papier jusqu’en 2019. De 2012 à 2019, Le Naturaliste can"
+        }
+    ]
+}

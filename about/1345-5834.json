@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1345-5834",
+    "issn": [
+        "1345-5834"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1345-5834",
+        "http://www.wikidata.org/entity/Q21385173"
+    ],
+    "name": "Current herpetology"
+}

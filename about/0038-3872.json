@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0038-3872",
+    "issn": [
+        "0038-3872"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0038-3872",
+        "http://www.wikidata.org/entity/Q5735555"
+    ],
+    "name": "Bull Sth Calif Acad Sci"
+}

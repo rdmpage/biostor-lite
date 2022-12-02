@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0103-2526",
+    "issn": [
+        "0103-2526"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0103-2526",
+        "http://www.wikidata.org/entity/Q5477532"
+    ],
+    "name": "Archivos do Instituto de Biologia Vegetal"
+}

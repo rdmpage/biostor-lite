@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0730-8000",
+    "issn": [
+        "0730-8000"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0730-8000",
+        "http://www.wikidata.org/entity/Q15758847"
+    ],
+    "name": "Journal of shellfish research"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1562-0891",
+    "issn": [
+        "1562-0891"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1562-0891",
+        "http://www.wikidata.org/entity/Q27440753"
+    ],
+    "name": "Entomologische Zeitung Wien"
+}

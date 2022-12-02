@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1945-9440",
+    "issn": [
+        "1945-9440"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1945-9440",
+        "http://www.wikidata.org/entity/Q25654004"
+    ],
+    "name": "London Transactions of The Linnean Society Zoology"
+}
