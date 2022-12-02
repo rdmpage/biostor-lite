@@ -524,6 +524,10 @@ function display_html_start($title = '', $meta = '', $script = '', $jsonld = '',
 	  	font-size:1.5em;
 	  }
 	  
+	  .flexbox div input { 
+    	width: 90%; 
+      }
+	  
 	  article {
 	  	padding-left:0.5em;
 	  	padding-right:0.5em;
