@@ -792,7 +792,7 @@ function do_welcome()
 //----------------------------------------------------------------------------------------
 function do_footer()
 {
-	$html =  '<a href=".">BioStor-Lite</a> is a project by <a href="https://twitter.com/rdmpage">Rod Page</a>. 
+	$html =  '<a href=".">BioStor</a> is a project by <a href="https://twitter.com/rdmpage">Rod Page</a>. 
 It\'s goal is to make discoverable articles in the <a href="https://www.biodiversitylibrary.org">Biodiversity Heritage Library</a> (BHL).';
 
 	return $html;

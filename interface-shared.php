@@ -419,6 +419,10 @@ function display_html_start($title = '', $meta = '', $script = '', $jsonld = '',
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
 		
 		<meta name="theme-color" content="rgb(231,224,185)" />
+		
+		<!-- favicon -->
+		<link href="static/biostor-shadow32x32.png" rel="icon" type="image/png">    
+
 		';	
 		
 	display_google_analytics();
