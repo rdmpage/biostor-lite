@@ -908,7 +908,7 @@ function display_decade_list($data)
 					}
 					
 					$html .='>';
-					$html .= '<img class="works" src="https://aezjkodskr.cloudimg.io/' . $item->thumbnailUrl . '?height=200">';
+					$html .= '<img loading="lazy" class="works" src="https://aezjkodskr.cloudimg.io/' . $item->thumbnailUrl . '?height=200">';
 					$html .= '</a>';
 				}		
 				
