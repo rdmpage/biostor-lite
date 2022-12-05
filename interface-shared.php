@@ -887,6 +887,8 @@ function display_decade_list($data)
 		$html .= '</summary>' . "\n";
 		$html .= '<section class="works">';
 		
+		ksort($years);
+		
 		foreach ($years as $year => $items)
 		{
 			$html .= '<div class="works year">' . $year . '</div>';

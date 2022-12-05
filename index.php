@@ -829,34 +829,7 @@ It\'s goal is to make discoverable articles in the <a href="https://www.biodiver
 //----------------------------------------------------------------------------------------
 function do_issn($issn)
 {
-
 	return do_search('issn:' . $issn);
-	
-	/*
-	global $elastic;
-	
-	$fields = 'search_result_data.csl.ISSN.keyword';
-	
-	$query_json = '{
-	"size": 5000,
-	"_source": ["id", "search_result_data.name", "search_result_data.description", "search_result_data.thumbnailUrl", "search_data.year", "search_result_data.csl"],
-	"query": {
-		"bool": {
-			"must": {
-				"term": { "' . $fields . '" : "' . $issn .'" }
-			}
-		}
-	}
-}';
-	
-	$resp = $elastic->send('POST', '_search?pretty', $post_data = $query_json);
-	
-	$obj = json_decode($resp);
-	
-	$output = search_result_to_rdf($obj, $issn);
-
-	return $output;
-	*/
 }
 
 //----------------------------------------------------------------------------------------
@@ -1067,7 +1040,16 @@ function main()
 	if (isset($_GET['q']))
 	{	
 		$query = $_GET['q'];
+		
+		// specialised searches
+		if (preg_match('/^issn:(?<issn>[0-9]{4}-[0-9]{3}[0-9X])$/u', trim($query), $m))
+		{
+			display_issn($m['issn']);
+			exit(0);
+		}
+		
 		display_search($query);
+		
 		exit(0);
 	}	
 	
