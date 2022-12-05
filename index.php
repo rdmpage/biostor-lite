@@ -604,10 +604,12 @@ function search_result_to_rdf($obj, $query_string = "")
 					$dataFeedItem->dateModified = gmdate("Y-m-d", $hit->_source->search_result_data->modified);				
 				}				
 				
+				// item
 				$dataFeedItem->item = new stdclass;
 				
 				$dataFeedItem->item->{'@id'} = 'biostor:' . str_replace('biostor-', '', $hit->_id);
 				
+				// name
 				$dataFeedItem->item->name = "";
 				
 				if (isset($hit->_source->search_result_data->name))
@@ -615,20 +617,24 @@ function search_result_to_rdf($obj, $query_string = "")
 					$dataFeedItem->item->name = $hit->_source->search_result_data->name;				
 				}
 
+				// thumbnail
 				if (isset($hit->_source->search_result_data->thumbnailUrl))
 				{
 					$dataFeedItem->item->thumbnailUrl = $hit->_source->search_result_data->thumbnailUrl;				
 				}
 				
+				// description
 				if (isset($hit->_source->search_result_data->description))
 				{
 					$dataFeedItem->item->description = $hit->_source->search_result_data->description;				
 				}
 				
+				// CSL
 				if (isset($hit->_source->search_result_data->csl))
 				{
 					$csl = $hit->_source->search_result_data->csl;
 					
+					// type
 					$type = 'Thing';
 				
 					if (isset($csl->type))
@@ -648,9 +654,31 @@ function search_result_to_rdf($obj, $query_string = "")
 								$type = 'ScholarlyArticle';
 								break;	
 						}
-					}
-	
+					}	
 					$dataFeedItem->item->{'@type'}	= $type;
+					
+					// date
+					//------------------------------------------------------------------------------------
+					// date 
+					if (isset($csl->issued))
+					{
+						$date = '';
+						$d = $csl->issued->{'date-parts'}[0];
+
+						// sanity check
+						if (is_numeric($d[0]))
+						{
+							if ( count($d) > 0 ) $year = $d[0] ;
+							if ( count($d) > 1 ) $month = preg_replace ( '/^0+(..)$/' , '$1' , '00'.$d[1] ) ;
+							if ( count($d) > 2 ) $day = preg_replace ( '/^0+(..)$/' , '$1' , '00'.$d[2] ) ;
+							if ( isset($month) and isset($day) ) $date = "$year-$month-$day";
+							else if ( isset($month) ) $date = "$year-$month";
+							else if ( isset($year) ) $date = "$year";
+
+							$dataFeedItem->item->datePublished = $date;
+						}				
+					}									
+					
 				}
 				
 
@@ -910,7 +938,8 @@ function display_issn($issn)
 	}
 	
 	// articles in journal
-	display_list($obj);
+	//display_list($obj);
+	display_decade_list($obj);
 		
 	display_main_end();	
 	display_footer();

@@ -1,13 +1,13 @@
 <?php
 
-$url = 'https://archive.org/download/biostor-201883/biostor-201883.pdf';
+// Original proxy was a security mess so let's just redirect to home page
 
-if (isset($_GET['url']))
-{
-	$url = $_GET['url'];
-}
+error_reporting(E_ALL);
 
+require_once(dirname(__FILE__) . '/config.inc.php');
 
+$url = $config['web_server'] . $config['web_root'];
+	
 header("Location: " . $url);
 
 ?>

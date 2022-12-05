@@ -422,6 +422,9 @@ function display_html_start($title = '', $meta = '', $script = '', $jsonld = '',
 		
 		<!-- favicon -->
 		<link href="static/biostor-shadow32x32.png" rel="icon" type="image/png">    
+		
+		<!--- canonical -->
+		<link rel="canonical" href="' . (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" . '">
 
 		';	
 		
@@ -480,7 +483,7 @@ function display_html_start($title = '', $meta = '', $script = '', $jsonld = '',
      }
     .flexbox div button { 
     	font-size:1em; 
-    	background: rgb(53,113,222); 
+    	background: rgb(128,128,128); 
     	color:white;
     	padding: 0.5em 1em;
     	border-radius: 0.2em;
@@ -489,19 +492,7 @@ function display_html_start($title = '', $meta = '', $script = '', $jsonld = '',
     	display: inline-block;
         border: none;    
     }
-    
-    /* search button */
-    button {
-    	font-size:1em; 
-    	background: rgb(53,113,222); 
-    	color:white;
-    	padding: 0.5em 1em;
-    	border-radius: 0.2em;
-    	
-    	-webkit-appearance: none;
-    	display: inline-block;
-        border: none;    
-    }
+  
     
 	a {
 		text-decoration: none;
@@ -611,6 +602,83 @@ function display_html_start($title = '', $meta = '', $script = '', $jsonld = '',
     	display:block;
     	height:100px;   	
     }
+    
+section.works{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section.works::after{
+  content: \'\';
+  flex-grow: 999999999;
+}
+
+div.works{
+  /*flex-grow: 1;*/
+  margin: 2px;
+  height: 120px;
+  width:80px;
+  border:1px solid #b2dfdb;
+  overflow-wrap:break-word;
+  overflow:hidden;
+  font-size:1em;
+  line-height:1.0em;
+  padding:0px;
+  position:relative;
+}
+
+div.works.year {
+	text-align:center;
+	line-height:120px;
+	font-size:2em;
+	padding:0px;
+	color:#004d40 ;
+}
+
+a.works {
+	text-decoration:none;
+	color:#004d40;
+	
+}
+
+img.works{
+  object-fit: cover;
+  max-width: 100%;
+  min-width: 100%;
+  vertical-align: bottom;
+}	
+
+span.works {
+	font-size:0.7em;
+	line-height:1em;
+	position:absolute;
+	overflow-wrap:break-word;
+	overflow:hidden;
+	left:0px;
+	top:60px;
+	height:60px;
+	width:100%;
+	background-color:rgba(13, 77, 64, 0.3);
+	/*color:white;&*/
+	z-index:10;
+	padding:4px;
+}    
+
+	details {
+		border:1px solid rgb(128,128,128);
+		margin-bottom: 1em;
+		background:rgba(192,192,192,0.5);
+		border-radius:4px;
+	}
+	
+	summary {
+	    padding:0.5em;
+		outline-style: none; 
+		background:rgb(128,128,128);
+		color:white;
+		border-radius:4px;
+	}	
+
  
 	";
 
@@ -777,6 +845,182 @@ function display_list($data)
 	
 	echo $html;
 }
+
+//----------------------------------------------------------------------------------------
+// Display a list with items grouped by decade, such as a search result fior a journal
+function display_decade_list($data)
+{
+	$decades = array();
+	foreach ($data->{'@graph'}[0]->dataFeedElement as $dataFeedElement)
+	{
+		if (isset($dataFeedElement->item->datePublished))
+		{
+			$year = substr($dataFeedElement->item->datePublished, 0, 4);
+			if (is_numeric($year))
+			{
+				$decade = floor($year/10);
+			
+				if (!isset($decades[$decade]))
+				{
+					$decades[$decade] = array();
+				}
+				if (!isset($decades[$decade][$year]))
+				{
+					$decades[$decade][$year] = array();
+				}
+				$decades[$decade][$year][] = $dataFeedElement->item;
+			}
+		}
+	}	
+
+	//print_r($decades);
+	
+	ksort($decades);
+	
+	$html = '';
+	
+	foreach ($decades as $decade => $years)
+	{
+		$html .= '<details>';
+		$html .= '<summary>';
+		$html .= '<span style="font-size:1.5em;">' . ($decade * 10) . '</span>';
+		$html .= '</summary>' . "\n";
+		$html .= '<section class="works">';
+		
+		foreach ($years as $year => $items)
+		{
+			$html .= '<div class="works year">' . $year . '</div>';
+			
+			foreach ($items as $item)
+			{
+				$html .= '<div class="works">';
+				
+				if (isset($item->thumbnailUrl))
+				{
+					$html .= '<a class="works" href="reference/' . str_replace('biostor:', '', $item->{'@id'}) . '"';
+					
+					if (isset($item->name))
+					{
+						$title = get_literal($item->name);
+						$html .= ' title="' . addcslashes($title, '"') . '"';
+					}
+					
+					$html .='>';
+					$html .= '<img class="works" src="https://aezjkodskr.cloudimg.io/' . $item->thumbnailUrl . '?height=200">';
+					$html .= '</a>';
+				}		
+				
+				
+				$html .= '</div>';
+			}
+		}
+		
+		$html .= '</section>';
+		$html .= '</details>';
+	
+	}
+	
+	echo $html;
+	
+/*				var template_decades = `
+					<% for(var decade in data) {%>
+						<li>
+							<div class="collapsible-header"><%= (decade * 10) %></div>
+							<div class="collapsible-body">
+					
+								<div class="row">
+								
+								<section class="works">
+							
+						
+								<% for (var year in data[decade]) { %>
+						
+									<div class="works year teal lighten-2 ">
+										<%= year %>
+									</div>
+							
+									<% for (var i in data[decade][year]) { %>
+										<div class="works">
+											<!-- <%= data[decade][year][i].name %> -->
+											<a class="works" href="reference/<%- i.replace(/biostor-/, '') %>">
+											<img class="works" src="https://aezjkodskr.cloudimg.io/<%= data[decade][year][i].thumbnailUrl %>?height=200">
+											
+											<span class="works"><%= data[decade][year][i].name %></span>
+											</a>
+										</div>
+									<% } %>
+
+								<% } %>
+								
+								</section>
+							
+								</div>
+							
+							
+							
+						</div>
+						</li>
+						
+			
+					<% } %>
+*/	
+	
+
+	/*
+	$html = '';	
+	
+	$html .= '<p>' . $data->{'@graph'}[0]->description . '</p>';
+	
+	foreach ($data->{'@graph'}[0]->dataFeedElement as $dataFeedElement)
+	{
+		$html .=  '<article>';
+		
+		$html .=  '<div class="thumbnail">';
+		if (isset($dataFeedElement->item->thumbnailUrl))
+		{
+			//$html .= '<img src="' . $dataFeedElement->item->thumbnailUrl . '">';
+			$html .= '<img src="https://aezjkodskr.cloudimg.io/' . $dataFeedElement->item->thumbnailUrl . '?height=200">';
+		}		
+		$html .= '</div>';
+		
+		$html .=  '<div style="margin-left:100px;">';
+		
+		$html .= '<div style="font-size:1.2em;line-height:1.2em;display:block;padding-bottom:1em;">' ;
+		$html .= '<a href="reference/' . str_replace('biostor:', '', $dataFeedElement->item->{'@id'}) . '">';
+		$html .= $dataFeedElement->item->name;	
+		$html .= '</a>';
+		
+		$html .=  '</div>';
+		
+		if (isset($dataFeedElement->item->description))
+		{
+			$html .=  '<div style="color:rgb(64,64,64)">';
+			$html .= $dataFeedElement->item->description;
+			$html .=  '</div>';
+		}
+		
+		// Dates for this record
+		$html .= '<div style="font-size:0.7em;">';
+		if (isset($dataFeedElement->dateCreated))
+		{
+			$html .= 'Created: ' . $dataFeedElement->dateCreated;
+		}		
+		if (isset($dataFeedElement->dateModified))
+		{
+			$html .= ', modified: ' . $dataFeedElement->dateModified;
+		}		
+		$html .= '<div>';
+		
+		$html .=  '</div>';
+		
+		$html .=  '</article>';
+	}
+	
+	echo $html;
+	*/
+}
+
+
 
 //----------------------------------------------------------------------------------------
 function display_search($q)
