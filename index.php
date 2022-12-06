@@ -784,10 +784,15 @@ function do_welcome()
 	
 	$html .= '<p>BioStor is an interface to articles in the 
 	<a href="https://www.biodiversitylibrary.org">Biodiversity Heritage Library</a> (BHL). 
-	It is experimental, and things are likely to change. The articles here are regularly harvested by
-	BHL and so you can always view them there.</a></p>';
+	It is experimental, and things are likely to change. The articles displayed here are also
+	regularly harvested by BHL and so you can always view them there.</a></p>';
+	
+	$html .= '<p>You can search for articles by title, author, etc. 
+	You can also browse the <a href="containers">list of journals</a> for whch BioStor has articles.</p>';
 	
 	$html .= '<h2>Examples</h2>';
+	
+	//$html .= '<h3>Articles</h3>';
 	
 	$json =  '[
 				{ "pageID": 43605918, "referenceID": 248475},
@@ -799,6 +804,7 @@ function do_welcome()
 				{ "pageID": 52110073, "referenceID": 232256},
 				{ "pageID": 41229695, "referenceID": 115363}
 				]';
+				
 				
 	$html .= '<div>';
 	
@@ -812,6 +818,8 @@ function do_welcome()
 		$html .= '</a>';
 		$html .= '</div>';
 	}
+	
+	
 	$html .= '</div>';					
 	
 	return $html;
@@ -902,7 +910,30 @@ function display_issn($issn)
 		
 	//print_r($obj);
 	
-	// 
+	// Breadcrumbs
+	$path = array();
+	
+	$path["."] = "Home";	
+	$path["containers"] = "Containers";
+	$path[""] = $entity->issn[0];
+
+	echo '<ul class="breadcrumb">';
+	foreach ($path as $k => $v)
+	{
+		echo '<li>';		
+		if ($k != "")
+		{
+			echo '<a href="' . $k . '">';
+		}
+		echo $v;
+		if ($k != "")
+		{
+			echo '</a>';
+		}
+		echo '</li>';	
+	}	
+	echo '</ul>';
+	
 	echo '<h1>' . get_literal($entity->name) . '</h1>';
 	
 	if (isset($entity->description))
@@ -959,6 +990,7 @@ function display_issn_year($issn, $year)
 	$path = array();
 	
 	$path["."] = "Home";	
+	$path["containers"] = "Containers";
 	$path["issn/" . $entity->issn[0]] = get_literal($entity->name);
 	$path[""] = $year;
 
@@ -1005,6 +1037,95 @@ function display_google_analytics()
 		<!-- End Google Analytics -->	
 ";
 
+}
+
+//----------------------------------------------------------------------------------------
+function display_containers()
+{
+	global $config;
+	
+	$title = 'Containers';	
+	$meta = '';
+	$script = '';
+	$jsonld = '';
+	
+	$filename = 'about/containers.json';
+	
+	if (file_exists($filename))
+	{
+		$json = file_get_contents($filename);
+		$obj = json_decode($json);
+	}
+	else
+	{
+		$obj = array();
+	}
+	
+	//$jsonld = json_encode($entity, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+			
+		
+	display_html_start($title, $meta, $script, $jsonld);	
+	
+	// set search bar to ISSN query
+	display_header();	
+				
+	display_main_start();	
+	
+	// 
+	echo '<h1>Containers</h1>';
+	
+	echo '<p class="description">This page lists the journals and other "containers" (such as books) available in  BioStor.</p>';
+	
+	//print_r($containers);	
+	
+	// display
+	/*
+	echo '<div>';
+	$letters = array();
+	foreach ($obj as $letter => $containers)
+	{
+		echo '<span style="padding:1em;">' . $letter . '</span> ';
+	}
+	echo '</div>';
+	*/
+	
+	$html = '';
+		
+	foreach ($obj as $letter => $containers)
+	{
+		$html .= '<details>';
+		$html .= '<summary>';
+		$html .= $letter;
+		$html .= '</summary>' . "\n";
+	
+		$html .= '<ul style="list-style-type: none;">';
+	
+		foreach($containers as $name => $data)
+		{
+			$html .= '<li>';
+		
+			if (isset($data->issn))
+			{
+				$html .= '<a href="issn/' . $data->issn[0] . '">';
+			}
+			$html .= $name;
+			$html .= '</a>';
+			$html .= '</li>';
+			
+			//echo $name . ' ' . $link . "\n";
+		
+	
+		}
+		$html .= '</ul>';
+		$html .= '</details>';
+	}
+	
+	echo $html;
+	
+		
+	display_main_end();	
+	display_footer();
+	display_html_end();	
 }
 
 
@@ -1068,6 +1189,14 @@ function main()
 		display_issn($issn);		
 		exit(0);
 	}	
+	
+	// Containers
+	if (isset($_GET['containers']))
+	{	
+		display_containers();
+		exit(0);
+	}
+	
 	
 }
 

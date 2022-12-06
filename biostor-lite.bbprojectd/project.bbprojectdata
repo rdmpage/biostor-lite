@@ -6,6 +6,7 @@
 	<array>
 		<string>570E0F54-E7A5-47F3-A18F-8D56C92A69E1</string>
 		<string>81D84032-9558-4EC1-A586-DE0734C7B370</string>
+		<string>2AC2A48E-35DF-4B6F-8466-C4CC6F2013C3</string>
 		<string>F87AE77B-2CFC-4B37-B167-A256A37C7603</string>
 		<string>9D99F474-A81C-4416-8A1D-AE08FFA7CFFC</string>
 		<string>7542BC0B-7982-457C-A980-DD59903243D0</string>
@@ -233,6 +234,54 @@
 			<string>index.php</string>
 			<key>ItemType</key>
 			<string>FileReference</string>
+			<key>UserOverrideItemName</key>
+			<true/>
+		</dict>
+		<key>2AC2A48E-35DF-4B6F-8466-C4CC6F2013C3</key>
+		<dict>
+			<key>ItemData</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9va+ACAAAAAAQQMAAAAEJXrZp5S09PfMJPblAv93vQ
+				xC5iy+MVhGQOQRlx3Zn53AEAAAQAAAADAwAAAAgAKAUA
+				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAABQAA
+				AAEBAABTaXRlcwAAAAwAAAABAQAAYmlvc3Rvci1saXRl
+				BQAAAAEBAABhYm91dAAAABQAAAABBgAAEAAAACAAAAAw
+				AAAAQAAAAFQAAAAIAAAABAMAAIRcAAAAAAAACAAAAAQD
+				AACWxgMAAAAAAAgAAAAEAwAAQOgeAAAAAAAIAAAABAMA
+				AJHbeAAAAAAACAAAAAQDAABBWTkCAAAAABQAAAABBgAA
+				gAAAAJAAAACgAAAAsAAAAMAAAAAIAAAAAAQAAEHEnKfh
+				W28qGAAAAAECAAACAAAAAAAAAA8AAAAAAAAAAAAAAAAA
+				AAAIAAAABAMAAAMAAAAAAAAABAAAAAMDAAD1AQAACAAA
+				AAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhE
+				CAAAAAQDAAAAkIKW5wAAAAgAAAAABAAAQcR/aqKAAAAk
+				AAAAAQEAAEVFREJDNDk1LURGNTItNDU2QS1CNDMxLUZC
+				NjA3QkYwNEFEMRgAAAABAgAAgQAAAAEAAADvEwAAAQAA
+				AAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEFAADMAAAA
+				/v///wEAAAAAAAAAEAAAAAQQAABkAAAAAAAAAAUQAADQ
+				AAAAAAAAABAQAAD8AAAAAAAAAEAQAADsAAAAAAAAAAIg
+				AADIAQAAAAAAAAUgAAA4AQAAAAAAABAgAABIAQAAAAAA
+				ABEgAAB8AQAAAAAAABIgAABcAQAAAAAAABMgAABsAQAA
+				AAAAACAgAACoAQAAAAAAADAgAADUAQAAAAAAAAHAAAAc
+				AQAAAAAAABHAAAAgAAAAAAAAABLAAAAsAQAAAAAAABDQ
+				AAAEAAAAAAAAAA==
+				</data>
+				<key>FileURL</key>
+				<string>file:///Users/rpage/Sites/biostor-lite/about/</string>
+				<key>HasSecurityScope</key>
+				<true/>
+				<key>RelativePath</key>
+				<string>./about</string>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+			<key>ItemName</key>
+			<string>about</string>
+			<key>ItemType</key>
+			<string>FolderReference</string>
 			<key>UserOverrideItemName</key>
 			<true/>
 		</dict>

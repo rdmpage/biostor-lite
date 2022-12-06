@@ -7,17 +7,19 @@ RewriteEngine On
 RewriteBase /
 #RewriteBase /biostor-lite/
 
-
 #-----------------------------------------------------------------------------------------
 
 RewriteRule reference/(\d+)$ ?id=biostor-$1 [NC,L]
 
 #-----------------------------------------------------------------------------------------
 
-RewriteRule atom$ feed.php?format=atom [NC,L]
-RewriteRule rss2$ feed.php?format=rss2 [NC,L]
-RewriteRule rss1$ feed.php?format=rss1 [NC,L]
+RewriteRule ^atom$ feed.php?format=atom [NC,L]
+RewriteRule ^rss2$ feed.php?format=rss2 [NC,L]
+RewriteRule ^rss1$ feed.php?format=rss1 [NC,L]
 
+#-----------------------------------------------------------------------------------------
+
+RewriteRule ^containers ?containers [NC,L]
 
 #-----------------------------------------------------------------------------------------
 # DocumentCloud
