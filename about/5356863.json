@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/5356863",
+    "oclcnum": "5356863",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/5356863"
+    ],
+    "name": "Zoologisches Centralblatt"
+}

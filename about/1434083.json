@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1434083",
+    "oclcnum": "1434083",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1434083"
+    ],
+    "name": "Report of the Canadian Arctic Expedition 1913-18"
+}

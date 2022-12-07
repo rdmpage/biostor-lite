@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/5573198",
+    "oclcnum": "5573198",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/5573198"
+    ],
+    "name": "Revue Mensuelle de la Société Entomologique Namuroise"
+}

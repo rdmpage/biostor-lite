@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/5316074",
+    "oclcnum": "5316074",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/5316074"
+    ],
+    "name": "Genera Insectorum"
+}

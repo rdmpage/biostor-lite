@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/11963200",
+    "oclcnum": "11963200",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/11963200"
+    ],
+    "name": "Mission du Service Geographique de l'Armée pour la mesure d'un arc de méridien équatorial en Amérique du Sud sous le contrôle scientifique de l'Académie des Sciences, 1899-1906"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/7183565",
+    "oclcnum": "7183565",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/7183565"
+    ],
+    "name": "Report of The Australasian Association For The Advancement of Science"
+}

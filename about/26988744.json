@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/26988744",
+    "oclcnum": "26988744",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/26988744"
+    ],
+    "name": "Special bulletin Hatch Experiment Station of the Massachusetts Agricultural College"
+}

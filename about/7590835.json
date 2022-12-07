@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/7590835",
+    "oclcnum": "7590835",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/7590835"
+    ],
+    "name": "Schriften der Naturforschenden Gesellschaft in Danzig"
+}

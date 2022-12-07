@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/11450705",
+    "oclcnum": "11450705",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/11450705"
+    ],
+    "name": "Muzeum Imienia Dzieduszyckich we Lwowie."
+}

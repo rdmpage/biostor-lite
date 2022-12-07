@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/18122367",
+    "oclcnum": "18122367",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/18122367"
+    ],
+    "name": "Publication. Field Museum of Natural History. Botanical series"
+}

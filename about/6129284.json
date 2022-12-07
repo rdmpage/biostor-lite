@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/6129284",
+    "oclcnum": "6129284",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/6129284"
+    ],
+    "name": "Bulletin. United States Department of Agriculture. Division of Entomology. (Technical Series)"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/150366539",
+    "oclcnum": "150366539",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/150366539"
+    ],
+    "name": "Manchester Memoirs Literary Philosophical Society"
+}

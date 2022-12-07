@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/10477283",
+    "oclcnum": "10477283",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/10477283"
+    ],
+    "name": "Nova acta Academiae Caesareae Leopoldino-Carolinae Germanicae Naturae Curiosorum"
+}

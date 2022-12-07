@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/626715186",
+    "oclcnum": "626715186",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/626715186"
+    ],
+    "name": "Archiv fuer Naturgeschichte Berlin"
+}

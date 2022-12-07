@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/173338280",
+    "oclcnum": "173338280",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/173338280"
+    ],
+    "name": "The Zoologist"
+}

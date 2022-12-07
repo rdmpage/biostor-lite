@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/13783890",
+    "oclcnum": "13783890",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/13783890"
+    ],
+    "name": "Bulletin of the Hill Museum"
+}

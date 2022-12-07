@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1643284",
+    "oclcnum": "1643284",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1643284"
+    ],
+    "name": "Papilio"
+}

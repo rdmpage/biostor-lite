@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/9512941",
+    "oclcnum": "9512941",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/9512941"
+    ],
+    "name": "Scientific results of cruise VII of the Carnegie during 1928-1929 under command of Captain J. P. Ault : Biology"
+}

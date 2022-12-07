@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1308439",
+    "oclcnum": "1308439",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1308439"
+    ],
+    "name": "Bulletin of the Illinois State Laboratory of Natural History"
+}

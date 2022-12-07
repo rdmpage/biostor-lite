@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/27784865",
+    "oclcnum": "27784865",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/27784865"
+    ],
+    "name": "Natuur-en Geneeskundig Archif voor Neerlandsch Indië"
+}

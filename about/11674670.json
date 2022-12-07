@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/11674670",
+    "oclcnum": "11674670",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/11674670"
+    ],
+    "name": "Tijdschrift voor Entomologie The Hague"
+}

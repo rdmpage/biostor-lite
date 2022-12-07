@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/6599977",
+    "oclcnum": "6599977",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/6599977"
+    ],
+    "name": "A specimen of the botany of New Holland"
+}

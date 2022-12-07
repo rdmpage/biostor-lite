@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/11046574",
+    "oclcnum": "11046574",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/11046574"
+    ],
+    "name": "Report on the collections of natural history made in the Antarctic regions during the voyage of the \"Southern Cross\""
+}

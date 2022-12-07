@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/19872844",
+    "oclcnum": "19872844",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/19872844"
+    ],
+    "name": "Entomologische Blätter"
+}

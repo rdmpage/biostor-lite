@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/8131501",
+    "oclcnum": "8131501",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/8131501"
+    ],
+    "name": "An account of the alcyonarians collected by the Royal Indian marine survey ship Investigator in the Indian Ocean"
+}

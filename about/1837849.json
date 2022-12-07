@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1837849",
+    "oclcnum": "1837849",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1837849"
+    ],
+    "name": "Occasional Papers on Mollusks"
+}

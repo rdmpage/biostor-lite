@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1681214",
+    "oclcnum": "1681214",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1681214"
+    ],
+    "name": "Annales de la Societé Belge de Microscopie"
+}

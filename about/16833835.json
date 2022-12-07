@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/16833835",
+    "oclcnum": "16833835",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/16833835"
+    ],
+    "name": "Beitraege zur Kenntnis der Meeresfauna Westafrikas Herausg von W Michaelsen"
+}

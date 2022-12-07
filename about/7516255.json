@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/7516255",
+    "oclcnum": "7516255",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/7516255"
+    ],
+    "name": "Magazine of Natural History"
+}

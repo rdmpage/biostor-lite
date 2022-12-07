@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/9127562",
+    "oclcnum": "9127562",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/9127562"
+    ],
+    "name": "L'Afrique Centrale Française, Récit du Voyage de la Mission Chari-Lac Tchad, 1902–1904"
+}

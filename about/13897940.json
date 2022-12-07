@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/13897940",
+    "oclcnum": "13897940",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/13897940"
+    ],
+    "name": "Zoological Series of Field Museum Natural History"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/6255540",
+    "oclcnum": "6255540",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/6255540"
+    ],
+    "name": "University of California Publications, Bulletin of the Department of Geology"
+}

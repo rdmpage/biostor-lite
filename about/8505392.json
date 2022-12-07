@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/8505392",
+    "oclcnum": "8505392",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/8505392"
+    ],
+    "name": "Reise in Ostafrika"
+}

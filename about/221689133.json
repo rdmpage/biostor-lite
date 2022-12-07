@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/221689133",
+    "oclcnum": "221689133",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/221689133"
+    ],
+    "name": "Ruwenzori Expedition 1934-5"
+}

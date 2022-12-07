@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1577337",
+    "oclcnum": "1577337",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1577337"
+    ],
+    "name": "Ergebnisse der Zweiten Deutschen Zentral-Afrika-Expedition 1910-1911"
+}

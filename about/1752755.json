@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1752755",
+    "oclcnum": "1752755",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1752755"
+    ],
+    "name": "Memoirs of the Department of Agriculture India"
+}

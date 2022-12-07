@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1277606",
+    "oclcnum": "1277606",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1277606"
+    ],
+    "name": "Buffalo Society of the Natural Sciences"
+}

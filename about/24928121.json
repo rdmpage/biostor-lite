@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/24928121",
+    "oclcnum": "24928121",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/24928121"
+    ],
+    "name": "Australasian Antarctic Expedition 1911-1914. Scientific Report"
+}

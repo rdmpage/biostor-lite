@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1760504",
+    "oclcnum": "1760504",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1760504"
+    ],
+    "name": "North American Entomologist"
+}

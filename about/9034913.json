@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/9034913",
+    "oclcnum": "9034913",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/9034913"
+    ],
+    "name": "Nyt Mag Naturv Kristiania"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1607705",
+    "oclcnum": "1607705",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1607705"
+    ],
+    "name": "Mémoires de la Société entomologique d'Egypte"
+}

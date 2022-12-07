@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1523019",
+    "oclcnum": "1523019",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1523019"
+    ],
+    "name": "Annual Report of The United States Commission On Fisheries"
+}

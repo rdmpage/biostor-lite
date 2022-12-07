@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/11001173",
+    "oclcnum": "11001173",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/11001173"
+    ],
+    "name": "Ergebnisse der Hamburger Magalhaenischen Sammelreise"
+}

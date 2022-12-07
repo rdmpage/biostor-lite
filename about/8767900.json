@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/8767900",
+    "oclcnum": "8767900",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/8767900"
+    ],
+    "name": "Atlas zu der Reise im nördlichen Afrika"
+}

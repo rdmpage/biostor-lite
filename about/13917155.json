@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/13917155",
+    "oclcnum": "13917155",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/13917155"
+    ],
+    "name": "Rovartani lapok : havi folyóirat különös tekintettel a hasznos és kártékony rovarokra"
+}

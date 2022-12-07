@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1269839",
+    "oclcnum": "1269839",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1269839"
+    ],
+    "name": "Bulletin of the United States Geological and Geographical Survey of the Territories"
+}

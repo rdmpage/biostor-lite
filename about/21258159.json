@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/21258159",
+    "oclcnum": "21258159",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/21258159"
+    ],
+    "name": "Report on the scientific results of the voyage of H.M.S. Challenger during the years 1873-76. Zoology"
+}

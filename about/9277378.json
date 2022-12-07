@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/9277378",
+    "oclcnum": "9277378",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/9277378"
+    ],
+    "name": "El Naturalista argentino : revista de historia natural"
+}

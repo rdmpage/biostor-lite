@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/4471967",
+    "oclcnum": "4471967",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/4471967"
+    ],
+    "name": "Proceedings of the Davenport Academy of Natural Sciences"
+}

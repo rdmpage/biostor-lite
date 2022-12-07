@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/17593630",
+    "oclcnum": "17593630",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/17593630"
+    ],
+    "name": "Zoological Results of the Fisheries Experiments 'Endeavour'"
+}

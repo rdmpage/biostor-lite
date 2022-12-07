@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/5769143",
+    "oclcnum": "5769143",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/5769143"
+    ],
+    "name": "Beiträge zur Meeresfauna der Insel Mauritius und der Seychellen"
+}

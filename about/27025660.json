@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/27025660",
+    "oclcnum": "27025660",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/27025660"
+    ],
+    "name": "Journal of entomology"
+}

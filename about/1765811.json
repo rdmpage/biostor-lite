@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1765811",
+    "oclcnum": "1765811",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1765811"
+    ],
+    "name": "Bulletin de la Société Entomologique de France"
+}

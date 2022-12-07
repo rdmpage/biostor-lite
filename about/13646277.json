@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/13646277",
+    "oclcnum": "13646277",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/13646277"
+    ],
+    "name": "Studi entomologici"
+}

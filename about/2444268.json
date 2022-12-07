@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/2444268",
+    "oclcnum": "2444268",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/2444268"
+    ],
+    "name": "Boletín de la Academia Nacional de Ciencias en Córdoba"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/727270893",
+    "oclcnum": "727270893",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/727270893"
+    ],
+    "name": "Verhandlungen des V. Internationalen Zoologen-Congresses zu Berlin, 12.-16. August 1901"
+}

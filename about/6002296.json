@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/6002296",
+    "oclcnum": "6002296",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/6002296"
+    ],
+    "name": "Annals of Natural History London"
+}

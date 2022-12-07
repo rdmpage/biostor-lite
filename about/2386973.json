@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/2386973",
+    "oclcnum": "2386973",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/2386973"
+    ],
+    "name": "Occasional Papers of the Farlow Herbarium of Cryptogamic Botany"
+}

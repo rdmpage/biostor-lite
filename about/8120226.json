@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/8120226",
+    "oclcnum": "8120226",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/8120226"
+    ],
+    "name": "Natural history of Central Asia"
+}

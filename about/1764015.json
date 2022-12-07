@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1764015",
+    "oclcnum": "1764015",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1764015"
+    ],
+    "name": "Revue Biologique du Nord de la France"
+}

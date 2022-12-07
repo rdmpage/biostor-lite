@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/12737790",
+    "oclcnum": "12737790",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/12737790"
+    ],
+    "name": "Mélanges biologiques tirés du Bulletin de l'Académie impériale des sciences de St. Pétersbourg"
+}

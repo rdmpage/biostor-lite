@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1145791",
+    "oclcnum": "1145791",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1145791"
+    ],
+    "name": "Annals of the Entomological Society of America (Ann. Ent. Soc. Amer.)"
+}

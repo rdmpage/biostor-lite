@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1536854",
+    "oclcnum": "1536854",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1536854"
+    ],
+    "name": "Boston Journal of Natural History. Boston"
+}

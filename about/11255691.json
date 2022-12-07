@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/11255691",
+    "oclcnum": "11255691",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/11255691"
+    ],
+    "name": "Isis von Oken"
+}

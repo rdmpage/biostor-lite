@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/5883001",
+    "oclcnum": "5883001",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/5883001"
+    ],
+    "name": "Kaiserliche Akademie der Wissenschaften zu Wien. Sitzungsberichte der Mathematisch-naturwissenschaftlichen Klasse"
+}

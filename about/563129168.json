@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/563129168",
+    "oclcnum": "563129168",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/563129168"
+    ],
+    "name": "Revue Zoologique par la Société Cuvierienne"
+}

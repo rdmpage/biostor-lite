@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1587625",
+    "oclcnum": "1587625",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1587625"
+    ],
+    "name": "Bull. Acad. Cracovie"
+}

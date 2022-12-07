@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/10086121",
+    "oclcnum": "10086121",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/10086121"
+    ],
+    "name": "Record of The Albany Museum"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1756457",
+    "oclcnum": "1756457",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1756457"
+    ],
+    "name": "Magazine of zoology and botany"
+}

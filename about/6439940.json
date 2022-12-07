@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/6439940",
+    "oclcnum": "6439940",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/6439940"
+    ],
+    "name": "Memoirs of the Wernerian Natural History Society"
+}

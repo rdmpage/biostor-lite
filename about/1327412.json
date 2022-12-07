@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1327412",
+    "oclcnum": "1327412",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1327412"
+    ],
+    "name": "University of Kansas Publications. Museum of Natural History. Lawrence."
+}

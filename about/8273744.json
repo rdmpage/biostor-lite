@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/8273744",
+    "oclcnum": "8273744",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/8273744"
+    ],
+    "name": "Pomona Journal of Entomology"
+}

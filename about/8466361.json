@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/8466361",
+    "oclcnum": "8466361",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/8466361"
+    ],
+    "name": "Mitt. Naturhist. Mus. Hamburg"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/10771008",
+    "oclcnum": "10771008",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/10771008"
+    ],
+    "name": "Katalog der Reptilien-Sammlung im Museum der Senckenbergische Naturforschende Gesellschaft in Frankfurt am Main"
+}

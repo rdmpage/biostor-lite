@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1758997",
+    "oclcnum": "1758997",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1758997"
+    ],
+    "name": "Annuario del Museo Zoologico della R. Università di Napoli. Naples"
+}

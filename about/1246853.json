@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1246853",
+    "oclcnum": "1246853",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1246853"
+    ],
+    "name": "Compte Rendu Des Seances De La Societe De Biologie Paris"
+}

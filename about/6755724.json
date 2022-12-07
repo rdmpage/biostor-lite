@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/6755724",
+    "oclcnum": "6755724",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/6755724"
+    ],
+    "name": "Études d'entomologie : Faunes entomologiques ; descriptions d'insectes nouveaux ou peu connus"
+}

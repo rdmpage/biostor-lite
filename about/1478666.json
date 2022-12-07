@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1478666",
+    "oclcnum": "1478666",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1478666"
+    ],
+    "name": "Abhandlungen der Königlich Preussischen Akademie der Wissenschaftern"
+}

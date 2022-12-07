@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/18264117",
+    "oclcnum": "18264117",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/18264117"
+    ],
+    "name": "I molluschi dei terreni terziarii del Piemonte e della Liguria"
+}

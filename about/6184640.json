@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/6184640",
+    "oclcnum": "6184640",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/6184640"
+    ],
+    "name": "Invertebrata Pacifica"
+}

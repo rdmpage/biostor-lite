@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/6201139",
+    "oclcnum": "6201139",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/6201139"
+    ],
+    "name": "Archiv für Mikroskopische Anatomie"
+}

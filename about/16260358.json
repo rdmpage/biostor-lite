@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/16260358",
+    "oclcnum": "16260358",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/16260358"
+    ],
+    "name": "Memoirs of the California Academy of Sciences"
+}

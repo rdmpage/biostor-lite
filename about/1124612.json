@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1124612",
+    "oclcnum": "1124612",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1124612"
+    ],
+    "name": "Compte Rendu De L'academie Des Sciences Paris"
+}

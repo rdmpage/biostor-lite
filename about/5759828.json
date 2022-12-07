@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/5759828",
+    "oclcnum": "5759828",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/5759828"
+    ],
+    "name": "Annalen des Naturhistorischen Hofmus in Wien"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/7752160",
+    "oclcnum": "7752160",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/7752160"
+    ],
+    "name": "The birds of Australia"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/2687203",
+    "oclcnum": "2687203",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/2687203"
+    ],
+    "name": "The mammals of Australia"
+}

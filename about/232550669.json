@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/232550669",
+    "oclcnum": "232550669",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/232550669"
+    ],
+    "name": "Catalogue of the fishes in the British Museum"
+}

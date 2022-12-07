@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/7534490",
+    "oclcnum": "7534490",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/7534490"
+    ],
+    "name": "Annales du Musee Zoologique Academie des Sciences St Peterburg"
+}

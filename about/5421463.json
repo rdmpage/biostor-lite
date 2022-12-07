@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/5421463",
+    "oclcnum": "5421463",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/5421463"
+    ],
+    "name": "Archives des missions scientifiques et littéraires"
+}

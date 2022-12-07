@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/27422946",
+    "oclcnum": "27422946",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/27422946"
+    ],
+    "name": "The fauna of British India, including Ceylon and Burma"
+}

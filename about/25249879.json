@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/25249879",
+    "oclcnum": "25249879",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/25249879"
+    ],
+    "name": "Wissenschaftliche Ergebnisse der Schwedischen zoologischen Expedition nach dem Kilimandjaro, dem Meru und den umgebenden Massaisteppen Deutsch-Ostafrikas 1905-1906"
+}

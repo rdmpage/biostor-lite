@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1026679471",
+    "oclcnum": "1026679471",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1026679471"
+    ],
+    "name": "The entomology of Australia in a series of monographs"
+}

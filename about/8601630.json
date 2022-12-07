@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/8601630",
+    "oclcnum": "8601630",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/8601630"
+    ],
+    "name": "British Antarctic (\"Terra Nova\") Expedition, 1910, Natural History Reports.-- British Museum (Natural History) Bulletin, Zoology"
+}

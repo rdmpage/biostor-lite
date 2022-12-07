@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1536645",
+    "oclcnum": "1536645",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1536645"
+    ],
+    "name": "Bulletin de l'Institut botanique de Buitenzorg"
+}

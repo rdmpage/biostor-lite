@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1614778",
+    "oclcnum": "1614778",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1614778"
+    ],
+    "name": "Bulletin De L'institut Océanographique De Monaco"
+}

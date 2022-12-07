@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/29251270",
+    "oclcnum": "29251270",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/29251270"
+    ],
+    "name": "Bulletin des sciences par la Société philomathique de Paris"
+}

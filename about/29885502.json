@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/29885502",
+    "oclcnum": "29885502",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/29885502"
+    ],
+    "name": "British Antarctic Expedition, 1907-9, under the command of Sir E.H. Shackleton, C.V.O. Reports on the Scientific Investigations. Biology"
+}

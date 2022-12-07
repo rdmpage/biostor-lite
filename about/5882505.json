@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/5882505",
+    "oclcnum": "5882505",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/5882505"
+    ],
+    "name": "Sitzungsber. Kais. Akad. Wiss. Wien. Math.-naturw. Cl."
+}

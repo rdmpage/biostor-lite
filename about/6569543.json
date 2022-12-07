@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/6569543",
+    "oclcnum": "6569543",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/6569543"
+    ],
+    "name": "Mémoires de l'Académie impériale des sciences de St.-Pétersbourg. 6e série. Seconde partie. Sciences naturelles"
+}

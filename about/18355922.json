@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/18355922",
+    "oclcnum": "18355922",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/18355922"
+    ],
+    "name": "Wissenschaftlich Ergebnisse der Schwedischen Rhodesia-Kongo-Expedition 1911-1912"
+}

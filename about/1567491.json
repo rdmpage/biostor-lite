@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1567491",
+    "oclcnum": "1567491",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1567491"
+    ],
+    "name": "The Edinburgh philosophical journal"
+}

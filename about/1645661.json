@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1645661",
+    "oclcnum": "1645661",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1645661"
+    ],
+    "name": "Hooker's journal of botany and Kew Garden miscellany"
+}

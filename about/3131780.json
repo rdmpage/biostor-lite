@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/3131780",
+    "oclcnum": "3131780",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/3131780"
+    ],
+    "name": "Reise der österreichischen Fregatte Novara um die Erde in den Jahren 1857, 1858, 1859 unter den Befehlen des Commodore B. von W"
+}

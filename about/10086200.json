@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/10086200",
+    "oclcnum": "10086200",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/10086200"
+    ],
+    "name": "Memoria della Reale Accademia delle Scienzia dell' Istituto di Bologna."
+}

@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1554754",
+    "oclcnum": "1554754",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1554754"
+    ],
+    "name": "Cistula Entomologica"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1770035",
+    "oclcnum": "1770035",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1770035"
+    ],
+    "name": "Bull. Wisc. Nat. Hist. Soc"
+}

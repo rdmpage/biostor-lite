@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/3483827",
+    "oclcnum": "3483827",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/3483827"
+    ],
+    "name": "The Zoology of the voyage of H.M.S. Samarang, under the command of Captain Sir Edward Belcher, C.B., F.R.A.S., F.G.S., during the years 1843-1846"
+}

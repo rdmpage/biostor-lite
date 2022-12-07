@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/7487559",
+    "oclcnum": "7487559",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/7487559"
+    ],
+    "name": "Transactions And Proceedings of The Royal Society of South Australia"
+}

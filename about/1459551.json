@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1459551",
+    "oclcnum": "1459551",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1459551"
+    ],
+    "name": "Transactions of the Geological Society of London"
+}

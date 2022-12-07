@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1765810",
+    "oclcnum": "1765810",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1765810"
+    ],
+    "name": "Annales de la Société Entomologique de France (Ann. Soc. ent. Fr.)"
+}

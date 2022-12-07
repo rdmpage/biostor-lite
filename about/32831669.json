@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/32831669",
+    "oclcnum": "32831669",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/32831669"
+    ],
+    "name": "Edinburgh New Philos. J."
+}

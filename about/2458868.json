@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/2458868",
+    "oclcnum": "2458868",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/2458868"
+    ],
+    "name": "British National Antarctic Expedition 1901-1904. Natural History"
+}

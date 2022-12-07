@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/28154145",
+    "oclcnum": "28154145",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/28154145"
+    ],
+    "name": "Proceedings of The Zoological And Acclimatisation Society of Victoria"
+}

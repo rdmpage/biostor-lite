@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/9363670",
+    "oclcnum": "9363670",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/9363670"
+    ],
+    "name": "Journal de Physique, de Chimie et d'Histoire Naturelle"
+}

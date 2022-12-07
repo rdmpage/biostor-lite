@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/7598007",
+    "oclcnum": "7598007",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/7598007"
+    ],
+    "name": "Quarterly journal of science"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/9928330",
+    "oclcnum": "9928330",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/9928330"
+    ],
+    "name": "Bulletin de la Société d'histoire naturelle de Metz"
+}

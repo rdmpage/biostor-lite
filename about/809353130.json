@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/809353130",
+    "oclcnum": "809353130",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/809353130"
+    ],
+    "name": "Abhandlungen und Berichte des Königl. Zoologischen und Anthropologisch-Etnographischen Museums zu Dresden"
+}

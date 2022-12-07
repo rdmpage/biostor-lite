@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/8612139",
+    "oclcnum": "8612139",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/8612139"
+    ],
+    "name": "Bulletin de l'Académie Internationale de Géographie Botanique"
+}

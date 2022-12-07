@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1204376",
+    "oclcnum": "1204376",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1204376"
+    ],
+    "name": "Occasional Papers of the Bernice P. Bishop Museum"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1641554",
+    "oclcnum": "1641554",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1641554"
+    ],
+    "name": "Polskie Pismo Entomologiczne, Lemberg"
+}

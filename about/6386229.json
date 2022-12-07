@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/6386229",
+    "oclcnum": "6386229",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/6386229"
+    ],
+    "name": "Mission Scientifique Du Cap Horn 1882-1883"
+}

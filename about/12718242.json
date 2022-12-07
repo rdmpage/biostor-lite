@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/12718242",
+    "oclcnum": "12718242",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/12718242"
+    ],
+    "name": "Mémoires sur les Lépidoptères"
+}

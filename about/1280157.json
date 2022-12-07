@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1280157",
+    "oclcnum": "1280157",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1280157"
+    ],
+    "name": "Transactions of The 23Rd Annual Meeting of The Kansas Academy of Science"
+}

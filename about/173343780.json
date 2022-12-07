@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/173343780",
+    "oclcnum": "173343780",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/173343780"
+    ],
+    "name": "Bulletin de l'Académie Royale des Sciences de Belgique Classe des Sciences"
+}

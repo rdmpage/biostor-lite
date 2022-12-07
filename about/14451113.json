@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/14451113",
+    "oclcnum": "14451113",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/14451113"
+    ],
+    "name": "Report of work of the Experiment Station of the Hawaiian Sugar Planters' Association. Division of Entomology bulletin"
+}

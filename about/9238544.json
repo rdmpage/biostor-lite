@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/9238544",
+    "oclcnum": "9238544",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/9238544"
+    ],
+    "name": "Biological results of the fishing experiments carried out by F.I.S. \"Endeavor\" 1909-10"
+}

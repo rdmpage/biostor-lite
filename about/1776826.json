@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1776826",
+    "oclcnum": "1776826",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1776826"
+    ],
+    "name": "Mémoires de l'Académie Royal de Belgique, Classe des Sciences"
+}

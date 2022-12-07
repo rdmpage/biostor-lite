@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/25635627",
+    "oclcnum": "25635627",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/25635627"
+    ],
+    "name": "Zeitschrift fuer die Gesammte Ornithologie"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/5935395",
+    "oclcnum": "5935395",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/5935395"
+    ],
+    "name": "Comptes-rendus des séances de la Société entomologique de Belgique"
+}

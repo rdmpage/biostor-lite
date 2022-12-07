@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/4813936",
+    "oclcnum": "4813936",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/4813936"
+    ],
+    "name": "Bulletin de l'Académie impériale des sciences de St.-Pétersbourg"
+}

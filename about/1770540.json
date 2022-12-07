@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1770540",
+    "oclcnum": "1770540",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1770540"
+    ],
+    "name": "Zeitschrift für Systematische Hymenopterologie und Dipterologie"
+}

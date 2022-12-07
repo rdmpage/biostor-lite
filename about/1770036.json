@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1770036",
+    "oclcnum": "1770036",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1770036"
+    ],
+    "name": "Occ. Pap. nat. Hist. Soc. Wiscons."
+}

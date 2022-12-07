@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/25175084",
+    "oclcnum": "25175084",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/25175084"
+    ],
+    "name": "Trabajos del Museo de Ciencias Naturales"
+}

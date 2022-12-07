@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1759015",
+    "oclcnum": "1759015",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1759015"
+    ],
+    "name": "Memoirs of the National Academy of Science Washington"
+}

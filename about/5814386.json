@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/5814386",
+    "oclcnum": "5814386",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/5814386"
+    ],
+    "name": "Rep. Comm. Dept. Agric."
+}

@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/49481659",
+    "oclcnum": "49481659",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/49481659"
+    ],
+    "name": "Madrid Memorias de la Sociedad Espanola de Historia Natural"
+}

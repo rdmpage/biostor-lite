@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/8096567",
+    "oclcnum": "8096567",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/8096567"
+    ],
+    "name": "Entomologicheskoe Obozrenie"
+}

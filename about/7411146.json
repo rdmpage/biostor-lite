@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/7411146",
+    "oclcnum": "7411146",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/7411146"
+    ],
+    "name": "Bericht über die Senckenbergische Naturforschende Gesellschaft in Frankfurt am Main"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/14588383",
+    "oclcnum": "14588383",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/14588383"
+    ],
+    "name": "Resultats de Campagnes Scientifiques Monaco"
+}

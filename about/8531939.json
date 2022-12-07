@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/8531939",
+    "oclcnum": "8531939",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/8531939"
+    ],
+    "name": "Memorias de la Real Sociedad Española de Historia Natural"
+}

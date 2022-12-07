@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/183367270",
+    "oclcnum": "183367270",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/183367270"
+    ],
+    "name": "Entomologische Monatsblätter"
+}

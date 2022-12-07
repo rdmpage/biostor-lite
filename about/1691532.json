@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1691532",
+    "oclcnum": "1691532",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1691532"
+    ],
+    "name": "Bulletin du Musée royal d'histoire naturelle de Belgique"
+}

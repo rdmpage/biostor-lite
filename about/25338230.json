@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/25338230",
+    "oclcnum": "25338230",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/25338230"
+    ],
+    "name": "Proceedings of the Asiatic Society of Bengal"
+}

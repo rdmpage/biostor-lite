@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/9639255",
+    "oclcnum": "9639255",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/9639255"
+    ],
+    "name": "Abhandl. Konig. Preuss. Akad. Wiss., Berlin"
+}

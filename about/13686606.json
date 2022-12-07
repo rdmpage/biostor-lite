@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/13686606",
+    "oclcnum": "13686606",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/13686606"
+    ],
+    "name": "Wissenschaftliche Ergebnisse der Schwedischen Expedition nach den Magellansländern 1895-1897, unter Leitung von Dr Otto Nordenskjöld"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/7849336",
+    "oclcnum": "7849336",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/7849336"
+    ],
+    "name": "Boletín de la Sociedad Physis"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/220271732",
+    "oclcnum": "220271732",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/220271732"
+    ],
+    "name": "Southern Science Record"
+}

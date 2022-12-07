@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/2446377",
+    "oclcnum": "2446377",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/2446377"
+    ],
+    "name": "Jahrbücher der Deutschen Malakozoologischen Gesellschaft"
+}

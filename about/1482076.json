@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1482076",
+    "oclcnum": "1482076",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1482076"
+    ],
+    "name": "Archives de Zoologie Experimentale"
+}

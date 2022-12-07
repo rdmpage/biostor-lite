@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/5882578",
+    "oclcnum": "5882578",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/5882578"
+    ],
+    "name": "Sitzungsberichte der Akademie der Wissenschaften in Wien"
+}

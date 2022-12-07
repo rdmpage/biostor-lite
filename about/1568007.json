@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1568007",
+    "oclcnum": "1568007",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1568007"
+    ],
+    "name": "Entomological News and Proceedings of the Entomological Section, Academy of Natural Science, Philadelphia"
+}

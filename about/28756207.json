@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/28756207",
+    "oclcnum": "28756207",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/28756207"
+    ],
+    "name": "Lepidoptera of the British ornithologists' union and Wollaston expeditions in the Snow Mountains, southern Dutch New Guinea"
+}

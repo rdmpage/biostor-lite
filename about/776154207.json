@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/776154207",
+    "oclcnum": "776154207",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/776154207"
+    ],
+    "name": "Boletim Biologico Sao Paulo"
+}

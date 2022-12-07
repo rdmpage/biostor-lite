@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/50356502",
+    "oclcnum": "50356502",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/50356502"
+    ],
+    "name": "Annales Françaises et Étrangères d'Anatomie et de Physiologie. Paris"
+}

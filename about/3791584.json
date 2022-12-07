@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/3791584",
+    "oclcnum": "3791584",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/3791584"
+    ],
+    "name": "Das Pflanzenreich. Regni vegetabilis conspectus. Im auftrage der Königl. preuss. akademie der wissenschaften herausgegeben von A. Engler"
+}

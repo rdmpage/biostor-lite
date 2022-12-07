@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/16955744",
+    "oclcnum": "16955744",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/16955744"
+    ],
+    "name": "Iris Dresden"
+}

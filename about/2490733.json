@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/2490733",
+    "oclcnum": "2490733",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/2490733"
+    ],
+    "name": "Report on the scientific results of the \"Michael Sars\" north Atlantic deep-sea expedition"
+}

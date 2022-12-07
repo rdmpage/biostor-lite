@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/8742082",
+    "oclcnum": "8742082",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/8742082"
+    ],
+    "name": "Anz. k. Akad. Wiss., Wien"
+}

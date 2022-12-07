@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1770765",
+    "oclcnum": "1770765",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1770765"
+    ],
+    "name": "Mémoires couronnes et autres mémoires Academie Boyale des ciences de Belgique"
+}

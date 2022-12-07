@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/29161417",
+    "oclcnum": "29161417",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/29161417"
+    ],
+    "name": "Recherches sur la faune de Madagascar et de ses dépendances"
+}

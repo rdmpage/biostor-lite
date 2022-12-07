@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/25691182",
+    "oclcnum": "25691182",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/25691182"
+    ],
+    "name": "Éxpeditions scientifiques du Travailleur et du Talisman pendant les années 1880, 1881, 1882, 1883"
+}

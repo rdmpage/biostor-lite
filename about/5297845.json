@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/5297845",
+    "oclcnum": "5297845",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/5297845"
+    ],
+    "name": "Bull. Mus. natl. Hist. nat. Paris"
+}

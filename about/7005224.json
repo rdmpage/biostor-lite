@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/7005224",
+    "oclcnum": "7005224",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/7005224"
+    ],
+    "name": "Voyage de M. le baron Maurice de Rothschild en Éthiopie et en Afrique orientale anglaise (1904-1905)"
+}

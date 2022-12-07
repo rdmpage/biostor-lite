@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/4285822",
+    "oclcnum": "4285822",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/4285822"
+    ],
+    "name": "Obras completas y correspondencia cientifica de Florentino Ameghino"
+}

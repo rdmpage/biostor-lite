@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1556758",
+    "oclcnum": "1556758",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1556758"
+    ],
+    "name": "Wissenschaftliche ergebnisse der zweiten Deutschen Zentral-Africa-Expedition, 1910-1911, unter Führung Adolf Friedrichs"
+}

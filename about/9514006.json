@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/9514006",
+    "oclcnum": "9514006",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/9514006"
+    ],
+    "name": "Ticks, a monograph of the Ixodoidea"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1567201",
+    "oclcnum": "1567201",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1567201"
+    ],
+    "name": "Journal of The East Africa and Uganda Natural History Society"
+}

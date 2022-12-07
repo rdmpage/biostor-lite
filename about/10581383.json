@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/10581383",
+    "oclcnum": "10581383",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/10581383"
+    ],
+    "name": "Exotic Microlepidoptera"
+}

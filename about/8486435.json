@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/8486435",
+    "oclcnum": "8486435",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/8486435"
+    ],
+    "name": "Report. U. S. Geol. Surv. W of 100th Merid"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1640255",
+    "oclcnum": "1640255",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1640255"
+    ],
+    "name": "Acta Societatis pro Fauna et Flora Fennica"
+}

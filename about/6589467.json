@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/6589467",
+    "oclcnum": "6589467",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/6589467"
+    ],
+    "name": "Ann. Mus. Bot. Lugduno-Batavi"
+}

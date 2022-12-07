@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1754134",
+    "oclcnum": "1754134",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1754134"
+    ],
+    "name": "Jahrbücher für Wissenschaftliche Botanik"
+}

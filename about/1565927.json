@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1565927",
+    "oclcnum": "1565927",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1565927"
+    ],
+    "name": "Oversigt over det Kongelige Danske videnskabernes selskabs forhandlinger"
+}

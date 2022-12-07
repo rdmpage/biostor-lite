@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/15016333",
+    "oclcnum": "15016333",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/15016333"
+    ],
+    "name": "Die in Bernstein Befindlichen Organischen Reste der Vorwelt Gesammelt in Verbindung mit Mehreren Bearbeitetet und Herausgegeben"
+}

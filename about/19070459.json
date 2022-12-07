@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/19070459",
+    "oclcnum": "19070459",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/19070459"
+    ],
+    "name": "Abhandlungen der math.-phys. Klasse der K. Bayer. Akademie der Wissenschaften"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1765859",
+    "oclcnum": "1765859",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1765859"
+    ],
+    "name": "Bulletin de la Société Royale de Botanique de Belgique"
+}

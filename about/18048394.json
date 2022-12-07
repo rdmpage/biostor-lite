@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/18048394",
+    "oclcnum": "18048394",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/18048394"
+    ],
+    "name": "Mission Pavie Indo-Chine, 1879-1895"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/4921036",
+    "oclcnum": "4921036",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/4921036"
+    ],
+    "name": "Zoological results based on material from New Britain, New Guinea, Loyalty Islands and elsewhere, collected during the years 1895, 1896, and 1897"
+}

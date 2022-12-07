@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/6210197",
+    "oclcnum": "6210197",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/6210197"
+    ],
+    "name": "Anales del Museo Nacional de Historia Natural de Buenos Aires"
+}

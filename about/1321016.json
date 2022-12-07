@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1321016",
+    "oclcnum": "1321016",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1321016"
+    ],
+    "name": "Bulletins of the Zoological Society of San Diego"
+}

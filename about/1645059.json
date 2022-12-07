@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1645059",
+    "oclcnum": "1645059",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1645059"
+    ],
+    "name": "Mitteilungen der Münchener Entomologischen Gesellschaft"
+}

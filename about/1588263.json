@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1588263",
+    "oclcnum": "1588263",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1588263"
+    ],
+    "name": "Philippine Journal of Science D"
+}

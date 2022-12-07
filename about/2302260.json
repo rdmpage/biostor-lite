@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/2302260",
+    "oclcnum": "2302260",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/2302260"
+    ],
+    "name": "Proceedings of the California Academy of Natural Sciences"
+}

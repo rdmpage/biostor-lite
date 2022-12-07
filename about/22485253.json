@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/22485253",
+    "oclcnum": "22485253",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/22485253"
+    ],
+    "name": "Prodromus of The Zoology of Victoria"
+}

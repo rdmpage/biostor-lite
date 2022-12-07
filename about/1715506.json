@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1715506",
+    "oclcnum": "1715506",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1715506"
+    ],
+    "name": "Schriften der Physikalisch-Ökonomischen Gesellschaft zu Königsberg"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/8586761",
+    "oclcnum": "8586761",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/8586761"
+    ],
+    "name": "Mémoires presentés a L'Institut des Sciences, Lettres et Arts, par divers savants èt lus dans ses assemblées: Sciences, Mathématiques et Physiques"
+}

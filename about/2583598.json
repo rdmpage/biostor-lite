@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/2583598",
+    "oclcnum": "2583598",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/2583598"
+    ],
+    "name": "Univ. Kansas Sci. Bull. 1936"
+}

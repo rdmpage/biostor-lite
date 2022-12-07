@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1777709",
+    "oclcnum": "1777709",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1777709"
+    ],
+    "name": "Annual Report of the Minnesota State Horticulture Society"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1328776",
+    "oclcnum": "1328776",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1328776"
+    ],
+    "name": "A monograph of the recent Cephalopoda based on the collections in the British Museum (Natural History)"
+}

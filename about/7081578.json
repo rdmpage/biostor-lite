@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/7081578",
+    "oclcnum": "7081578",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/7081578"
+    ],
+    "name": "Memorie della Reale accademia delle scienze di Torino"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/4942991",
+    "oclcnum": "4942991",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/4942991"
+    ],
+    "name": "Timehri : the journal of the Royal Agricultural and Commercial Society of British Guiana"
+}

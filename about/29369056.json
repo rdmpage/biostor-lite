@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/29369056",
+    "oclcnum": "29369056",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/29369056"
+    ],
+    "name": "Revue critique de paléozoologie et de paléophytologie"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/5704041",
+    "oclcnum": "5704041",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/5704041"
+    ],
+    "name": "Bolletino della Società Adriatica di Scienze Naturali in Trieste"
+}

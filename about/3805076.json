@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/3805076",
+    "oclcnum": "3805076",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/3805076"
+    ],
+    "name": "Abhandlungen des Naturwissenschaftlichen Vereins zu Bremen"
+}

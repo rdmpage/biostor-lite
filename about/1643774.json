@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1643774",
+    "oclcnum": "1643774",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1643774"
+    ],
+    "name": "Indian Museum notes"
+}

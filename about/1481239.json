@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1481239",
+    "oclcnum": "1481239",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1481239"
+    ],
+    "name": "Annales de Biologie Lacustre"
+}

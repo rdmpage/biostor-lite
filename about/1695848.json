@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1695848",
+    "oclcnum": "1695848",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1695848"
+    ],
+    "name": "Annales de l'Institut Pasteur"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/6210348",
+    "oclcnum": "6210348",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/6210348"
+    ],
+    "name": "Anales del Museo Buenos Aires"
+}

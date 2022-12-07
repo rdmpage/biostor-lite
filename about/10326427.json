@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/10326427",
+    "oclcnum": "10326427",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/10326427"
+    ],
+    "name": "Cape Town Marine Investigations"
+}

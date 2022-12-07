@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1755000",
+    "oclcnum": "1755000",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1755000"
+    ],
+    "name": "Occasional Papers of the Museum of Natural History of the University of Kansas"
+}

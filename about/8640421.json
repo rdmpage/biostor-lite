@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/8640421",
+    "oclcnum": "8640421",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/8640421"
+    ],
+    "name": "Insects of Samoa"
+}

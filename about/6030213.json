@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/6030213",
+    "oclcnum": "6030213",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/6030213"
+    ],
+    "name": "Deutsche Subpolar-Expedition 1901-1903"
+}

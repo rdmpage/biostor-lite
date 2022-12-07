@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1553406",
+    "oclcnum": "1553406",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1553406"
+    ],
+    "name": "Papers from the Department of Marine Biology of the Carnegie Institution of Washington"
+}

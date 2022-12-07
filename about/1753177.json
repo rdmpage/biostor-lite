@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1753177",
+    "oclcnum": "1753177",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1753177"
+    ],
+    "name": "Insecta; publication mensuelle de la Station entomologique de la Faculté des sciences de Rennes"
+}

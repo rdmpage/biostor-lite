@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/878725232",
+    "oclcnum": "878725232",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/878725232"
+    ],
+    "name": "Allen Hirum Curtiss letters to Asa Gray, 1867-1889"
+}

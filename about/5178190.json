@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/5178190",
+    "oclcnum": "5178190",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/5178190"
+    ],
+    "name": "Contributions to a science of nematology"
+}

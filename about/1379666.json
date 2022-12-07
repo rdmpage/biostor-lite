@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1379666",
+    "oclcnum": "1379666",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1379666"
+    ],
+    "name": "Proceeding of the Rochester Academy of Sceince"
+}

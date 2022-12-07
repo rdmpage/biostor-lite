@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/8858169",
+    "oclcnum": "8858169",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/8858169"
+    ],
+    "name": "Videnskabelige Meddelelser fra Dansk naturhistorisk Forening i Kjøbenhavn"
+}

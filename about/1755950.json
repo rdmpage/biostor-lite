@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1755950",
+    "oclcnum": "1755950",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1755950"
+    ],
+    "name": "Proc. Linn. Soc. New South Wales, Sydney"
+}

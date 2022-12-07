@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1478807",
+    "oclcnum": "1478807",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1478807"
+    ],
+    "name": "Mémoires de l'Académie impériale des sciences de St.-Pétersbourg"
+}

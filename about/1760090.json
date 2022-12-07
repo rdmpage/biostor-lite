@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1760090",
+    "oclcnum": "1760090",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1760090"
+    ],
+    "name": "Journal of the New York Microscopy Society"
+}

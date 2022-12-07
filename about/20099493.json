@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/20099493",
+    "oclcnum": "20099493",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/20099493"
+    ],
+    "name": "Voyage de Ch. Alluaud et R. Jeannel en Afrique orientale (1911-1912). Résultats scientifiques"
+}

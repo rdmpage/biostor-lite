@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/8470300",
+    "oclcnum": "8470300",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/8470300"
+    ],
+    "name": "The Danish Ingolf Expedition"
+}

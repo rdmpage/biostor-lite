@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/220763467",
+    "oclcnum": "220763467",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/220763467"
+    ],
+    "name": "Studies from the Institute for Medical Research FMS"
+}

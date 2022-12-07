@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1891851",
+    "oclcnum": "1891851",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1891851"
+    ],
+    "name": "Bulletin from the Laboratories of Natural History of the State University of Iowa"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1588890",
+    "oclcnum": "1588890",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1588890"
+    ],
+    "name": "Trans. Illinois State Acad. Sci"
+}

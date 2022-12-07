@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/13016115",
+    "oclcnum": "13016115",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/13016115"
+    ],
+    "name": "U.S. Dep. Agric. Ent. Washington Rep"
+}
