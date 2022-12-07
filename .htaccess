@@ -54,3 +54,7 @@ RewriteRule ^item/([0-9]+)   item.php?item=$1 [NC,L]
 # API
 RewriteRule ^reconcile(.*)	api_reconciliation.php$1
 
+#-----------------------------------------------------------------------------------------
+# OCLC
+RewriteRule ^oclc/(\d+)/year/([0-9]{4})$   ?oclc=$1&year=$2 [NC,L]
+RewriteRule ^oclc/(\d+)$   ?oclc=$1 [NC,L]

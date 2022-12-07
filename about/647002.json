@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/647002",
+    "oclcnum": "647002",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/647002"
+    ],
+    "name": "Research report NM 050.29.07 of the Bureau of Medicine and Surgery"
+}

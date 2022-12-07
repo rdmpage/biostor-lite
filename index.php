@@ -19,6 +19,8 @@ function csl_to_jsonld($csl)
 	$obj = new stdclass;
 	$obj->{'@context'}	= 'http://schema.org/';
 	
+	$type = 'schema:Thing';
+	
 	if (isset($csl->type))
 	{
 		switch ($csl->type)
@@ -131,7 +133,19 @@ function csl_to_jsonld($csl)
 				}
 				$container->sameAs[] = 'http://issn.org/resource/ISSN/' . $issn;							
 			}
-		}		
+		}
+		else		
+		{
+			if (isset($csl->OCLC))
+			{
+				$container->oclcnum = $csl->OCLC;
+				if (!isset($container->sameAs))
+				{
+					$container->sameAs = array();
+				}
+				$container->sameAs[] = 'http://www.worldcat.org/oclc/' . $csl->OCLC;
+			}		
+		}
 
 		$obj->isPartOf[] = $container;
 	}
@@ -729,6 +743,25 @@ function do_search($q)
 	
 		if (!$matched)
 		{
+			if (preg_match('/^oclc:(?<oclc>\d+)$/u', trim($q), $m))
+			{
+				$query_json = '{
+					"size": 5000,
+					"_source": ["id", "search_result_data.name", "search_result_data.description", "search_result_data.thumbnailUrl", "search_data.year", "search_result_data.csl"],
+					"query": {
+						"bool": {
+							"must": {
+								"term": { "search_result_data.csl.OCLC.keyword" : "' . $m['oclc'] .'" }
+							}
+						}
+					}
+				}';		
+				$matched = true;
+			}	
+		}	
+	
+		if (!$matched)
+		{
 			$query_json = '{
 			"size":50,
 				"query": {
@@ -1020,6 +1053,193 @@ function display_issn_year($issn, $year)
 	display_html_end();	
 }
 
+//----------------------------------------------------------------------------------------
+function do_oclc($oclc)
+{
+	return do_search('oclc:' . $oclc);
+}
+
+//----------------------------------------------------------------------------------------
+function do_oclc_year($oclc, $year)
+{
+	global $elastic;
+	
+	$fields = 'search_result_data.csl.OCLC.keyword';
+	
+	$query_json = '{
+	"size": 500,
+	"_source": ["id", "search_result_data.name", "search_result_data.description", "search_result_data.thumbnailUrl", "search_data.year", "search_result_data.csl"],
+	"query": {
+		"bool": {
+			"must": {
+				"term": { "' . $fields . '" : "' . $oclc .'" }
+			},
+			"filter": [
+				{
+					"term": { "search_data.year": ' . $year .'}
+				}
+			]			
+		}
+	}
+}';
+	
+	$resp = $elastic->send('POST', '_search?pretty', $post_data = $query_json);
+	
+	$obj = json_decode($resp);
+	
+	$output = search_result_to_rdf($obj, "oclc=$oclc, year=$year");
+
+	return $output;
+}
+
+//----------------------------------------------------------------------------------------
+function display_oclc($oclc)
+{
+	global $config;
+	
+	$title = '';	
+	$meta = '';
+	$script = '';
+	
+	// Can we get details about the journal and treat that as the entity for the page?	
+	$filename = 'about/' . $oclc . '.json';
+	
+	if (file_exists($filename))
+	{
+		$json = file_get_contents($filename);
+		$entity = json_decode($json);
+	}
+	else
+	{
+		$entity = new stdclass;
+		$entity->name = "Unknown";
+		$entity->oclcnum = 0;
+	}
+	
+	$jsonld = json_encode($entity, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+			
+	$obj = do_oclc($oclc);
+		
+	display_html_start($title, $meta, $script, $jsonld);	
+	
+	// set search bar to ISSN query
+	display_header('oclc:' . $oclc);	
+				
+	display_main_start();	
+		
+	//print_r($obj);
+	
+	// Breadcrumbs
+	$path = array();
+	
+	$path["."] = "Home";	
+	$path["containers"] = "Containers";
+	$path[""] = $entity->oclcnum;
+
+	echo '<ul class="breadcrumb">';
+	foreach ($path as $k => $v)
+	{
+		echo '<li>';		
+		if ($k != "")
+		{
+			echo '<a href="' . $k . '">';
+		}
+		echo $v;
+		if ($k != "")
+		{
+			echo '</a>';
+		}
+		echo '</li>';	
+	}	
+	echo '</ul>';
+	
+	echo '<h1>' . get_literal($entity->name) . '</h1>';
+	
+	if (isset($entity->description))
+	{
+		echo '<p class="description">' . get_literal($entity->description, 'en') . '</p>';
+	}
+	
+	// articles in journal
+	//display_list($obj);
+	display_decade_list($obj);
+		
+	display_main_end();	
+	display_footer();
+	display_html_end();	
+}
+
+
+//----------------------------------------------------------------------------------------
+function display_oclc_year($oclc, $year)
+{
+	global $config;
+	
+	$title = '';	
+	$meta = '';
+	$script = '';
+	
+	// Can we get details about the journal	
+	$filename = 'about/' . $oclc . '.json';
+	
+	if (file_exists($filename))
+	{
+		$json = file_get_contents($filename);
+		$entity = json_decode($json);
+	}
+	else
+	{
+		$entity = new stdclass;
+		$entity->name = "Unknown";
+		$entity->oclcnum = 0;
+	}
+	
+	
+	// Do search	
+	$obj = do_oclc_year($oclc, $year);
+	
+	$jsonld = json_encode($obj, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+	
+	display_html_start($title, $meta, $script, $jsonld);	
+	
+	display_header();	
+				
+	display_main_start();	
+	
+	// Breadcrumbs
+	$path = array();
+	
+	$path["."] = "Home";	
+	$path["containers"] = "Containers";
+	$path["oclc/" . $entity->oclcnum] = get_literal($entity->name);
+	$path[""] = $year;
+
+	echo '<ul class="breadcrumb">';
+	foreach ($path as $k => $v)
+	{
+		echo '<li>';		
+		if ($k != "")
+		{
+			echo '<a href="' . $k . '">';
+		}
+		echo $v;
+		if ($k != "")
+		{
+			echo '</a>';
+		}
+		echo '</li>';	
+	}	
+	echo '</ul>';
+	
+	//print_r($obj);
+	
+	display_list($obj);
+		
+	display_main_end();	
+	display_footer();
+	display_html_end();	
+}
+
 
 //----------------------------------------------------------------------------------------
 function display_google_analytics()
@@ -1103,12 +1323,25 @@ function display_containers()
 		foreach($containers as $name => $data)
 		{
 			$html .= '<li>';
+			
+			$label = $name;
 		
 			if (isset($data->issn))
 			{
 				$html .= '<a href="issn/' . $data->issn[0] . '">';
+				
+				$label .= ' (' . $data->issn[0] . ')';
 			}
-			$html .= $name;
+			
+			if (isset($data->oclcnum))
+			{
+				$html .= '<a href="oclc/' . $data->oclcnum . '">';
+				
+				$label .= ' (OCLCnum ' . $data->oclcnum . ')';
+			}
+			
+			
+			$html .= $label;
 			$html .= '</a>';
 			$html .= '</li>';
 			
@@ -1189,6 +1422,23 @@ function main()
 		display_issn($issn);		
 		exit(0);
 	}	
+	
+	// Custom searches
+	if (isset($_GET['oclc']))
+	{	
+		$oclc = $_GET['oclc'];
+		
+		if (isset($_GET['year']))
+		{	
+			$year = $_GET['year'];
+			display_oclc_year($oclc, $year);
+			exit(0);			
+		}
+		
+		display_oclc($oclc);		
+		exit(0);
+	}	
+	
 	
 	// Containers
 	if (isset($_GET['containers']))
