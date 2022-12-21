@@ -314,13 +314,13 @@ function display_entity_details($entity)
 	
 	if ($bhl != '')
 	{
-		echo '<div class="actions">BHL: <a href="https://www.biodiversitylibrary.org/page/' . $bhl . '" target="_new">' . $bhl . '</a></div>';
+		echo '<div class="actions">BHL: <a href="https://www.biodiversitylibrary.org/page/' . $bhl . '" target="_new" onClick="ga(\'send\', \'event\', { eventCategory: \'Outbound Link\', eventAction: \'BHL\', eventLabel: event.target.href} );">' . $bhl . '</a></div>';
 	}
 	
 	
 	if ($pdf != '')
 	{
-		echo '<div class="actions"><a href="' . $pdf . '" target="_new">View PDF</a></div>';
+		echo '<div class="actions"><a href="' . $pdf . '" target="_new" onClick="ga(\'send\', \'event\', { eventCategory: \'Outbound Link\', eventAction: \'PDF\', eventLabel: event.target.href} );">View PDF</a></div>';
 	}
 		
 	echo '</div>';
