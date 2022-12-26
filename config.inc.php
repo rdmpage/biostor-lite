@@ -36,12 +36,12 @@ else
 // Cloudimage-----------------------------------------------------------------------------
 
 $config['use_cloudimage'] = true;
+$config['use_cloudimage'] = false;
 
 
 // Elastic--------------------------------------------------------------------------------
 
 $config['use_elastic'] = true;
-
 
 if (file_exists(dirname(__FILE__) . '/env.php'))
 {

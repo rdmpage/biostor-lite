@@ -176,6 +176,7 @@ function do_entity_twitter_tags($entity, $tag_names)
 // this needs to be able to be customised....
 function display_entity_details($entity)
 {
+	global $config;
 
 	// Custom stuff
 	// Breadcrumbs
@@ -338,7 +339,14 @@ function display_entity_details($entity)
 			echo '<a href="https://www.biodiversitylibrary.org/page/' . $bhl . '" target="_new">';
 		}
 		
-		echo '<img src="https://aezjkodskr.cloudimg.io/' . $imageUrl . 'height=500">';
+		if ($config['use_cloudimage'])
+		{		
+			echo '<img src="https://aezjkodskr.cloudimg.io/' . $imageUrl . 'height=500">';
+		}
+		else
+		{
+			echo '<img src="' . $imageUrl . '">';		
+		}
 		
 		if ($bhl != '')
 		{
@@ -797,6 +805,8 @@ function display_main_end()
 // Display a list, such as a search result
 function display_list($data)
 {
+	global $config;
+	
 	$html = '';	
 	
 	/*
@@ -815,8 +825,14 @@ function display_list($data)
 		$html .=  '<div class="thumbnail">';
 		if (isset($dataFeedElement->item->thumbnailUrl))
 		{
-			//$html .= '<img src="' . $dataFeedElement->item->thumbnailUrl . '">';
-			$html .= '<img src="https://aezjkodskr.cloudimg.io/' . $dataFeedElement->item->thumbnailUrl . '?height=200">';
+			if ($config['use_cloudimage'])
+			{
+				$html .= '<img src="https://aezjkodskr.cloudimg.io/' . $dataFeedElement->item->thumbnailUrl . '?height=200">';
+			}
+			else
+			{
+				$html .= '<img height="200" src="' . $dataFeedElement->item->thumbnailUrl . '">';
+			}
 		}		
 		$html .= '</div>';
 		
@@ -860,6 +876,8 @@ function display_list($data)
 // Display a list with items grouped by decade, such as a search result fior a journal
 function display_decade_list($data)
 {
+	global $config;
+	
 	$decades = array();
 	foreach ($data->{'@graph'}[0]->dataFeedElement as $dataFeedElement)
 	{
@@ -918,7 +936,15 @@ function display_decade_list($data)
 					}
 					
 					$html .='>';
-					$html .= '<img loading="lazy" class="works" src="https://aezjkodskr.cloudimg.io/' . $item->thumbnailUrl . '?height=200">';
+							
+					if ($config['use_cloudimage'])
+					{
+						$html .= '<img loading="lazy" class="works" src="https://aezjkodskr.cloudimg.io/' . $item->thumbnailUrl . '?height=200">';
+					}
+					else
+					{
+						$html .= '<img height="200" loading="lazy" class="works" src="' . $item->thumbnailUrl . '">';					
+					}
 					$html .= '</a>';
 				}		
 				

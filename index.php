@@ -813,6 +813,8 @@ function do_search($q)
 //----------------------------------------------------------------------------------------
 function do_welcome()
 {
+	global $config;
+	
 	$html = '<div style="font-size:5em;">BioStor</div>';
 	
 	$html .= '<p>BioStor is an interface to articles in the 
@@ -847,7 +849,15 @@ function do_welcome()
 	{
 		$html .= '<div class="example">';
 		$html .= '<a href="reference/' . $example->referenceID . '">';
-		$html .= '<img src="https://aezjkodskr.cloudimg.io/https://www.biodiversitylibrary.org/pagethumb/' . $example->pageID . ',200,200?height=200">';
+		if ($config['use_cloudimage'])
+		{
+			$html .= '<img src="https://aezjkodskr.cloudimg.io/https://www.biodiversitylibrary.org/pagethumb/' . $example->pageID . ',200,200?height=200">';
+		}
+		else
+		{
+			$html .= '<img src="https://www.biodiversitylibrary.org/pagethumb/' . $example->pageID . ',200,200">';
+		}
+		
 		$html .= '</a>';
 		$html .= '</div>';
 	}
