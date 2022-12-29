@@ -215,6 +215,14 @@ function csl_to_jsonld($csl)
 		add_property_value($obj, 'identifier', 'doi', strtolower($csl->DOI));
 	}
 	
+	// Wikidata
+	if (isset($csl->WIKIDATA))
+	{		
+		$obj->sameAs[] = 'http://www.wikidata.org/entity/' . strtolower($csl->WIKIDATA);
+		
+		add_property_value($obj, 'identifier', 'wikidata', $csl->WIKIDATA);
+	}
+	
 	//------------------------------------------------------------------------------------
 	// authors
 	if (isset($csl->author))

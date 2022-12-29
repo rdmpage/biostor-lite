@@ -306,6 +306,9 @@ function display_entity_details($entity)
 		}
 	}
 	
+	// Wikidata
+	$wikidata = get_property_value($entity, 'identifier', 'wikidata');
+		
 	echo '<div>';
 	
 	if ($doi != '')
@@ -313,12 +316,16 @@ function display_entity_details($entity)
 		echo '<div class="actions">DOI: <a href="https://doi.org/' . $doi . '" target="_new">' . $doi . '</a></div>';
 	}
 	
+	if ($wikidata != '')
+	{
+		echo '<div class="actions">Wikidata: <a href="https://www.wikidata.org/wiki/' . $wikidata . '" target="_new" onClick="ga(\'send\', \'event\', { eventCategory: \'Outbound Link\', eventAction: \'WIKIDATA\', eventLabel: event.target.href} );">'. $wikidata . '</a></div>';
+	}	
+	
 	if ($bhl != '')
 	{
 		echo '<div class="actions">BHL: <a href="https://www.biodiversitylibrary.org/page/' . $bhl . '" target="_new" onClick="ga(\'send\', \'event\', { eventCategory: \'Outbound Link\', eventAction: \'BHL\', eventLabel: event.target.href} );">' . $bhl . '</a></div>';
 	}
-	
-	
+		
 	if ($pdf != '')
 	{
 		echo '<div class="actions"><a href="' . $pdf . '" target="_new" onClick="ga(\'send\', \'event\', { eventCategory: \'Outbound Link\', eventAction: \'PDF\', eventLabel: event.target.href} );">View PDF</a></div>';
@@ -326,6 +333,7 @@ function display_entity_details($entity)
 		
 	echo '</div>';
 	
+	/*
 	// hack to display one page
 	if (isset($entity->thumbnailUrl))
 	{
@@ -356,6 +364,7 @@ function display_entity_details($entity)
 	
 		echo '</div>';
 	}
+	*/
 	
 	/*
 	if ($pdf != '')
@@ -366,6 +375,13 @@ function display_entity_details($entity)
 	
 	}
 	*/
+	
+	if ($pdf != '')
+	{
+		//echo '<div style="margin-top:1em;"><object data="' . $pdf . '" width="100%" height="800"></object>';
+		echo '<div style="margin-top:1em;"><iframe style="border:none;" src="' . $pdf . '" width="100%" height="800"></iframe>';
+	}
+	
 	
 	
 	// map?
