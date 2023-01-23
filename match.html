@@ -111,12 +111,19 @@ body {
 									
 					for (var i in data) {
 						if (data[i].result) {
+							var best_score = 0;
+							var best_index = 0;
 							
 					   		for (var j in data[i].result) {
-					   			$('#' + i + '_name').html(data[i].result[j].name);
-					   			$('#' + i + '_id').html('<a href="reference/' + data[i].result[j].id + '" target="_new">' +  data[i].result[j].id + '</a>');
-					   			$('#' + i + '_score').html(data[i].result[j].score);
+					   			if (data[i].result[j].score > best_score) {
+					   				best_score = data[i].result[j].score;
+					   				best_index = j;
+					   			}					   			
 					   		}
+					   		
+							$('#' + i + '_name').html(data[i].result[best_index].name);
+							$('#' + i + '_id').html('<a href="reference/' + data[i].result[best_index].id + '" target="_new">' +  data[i].result[best_index].id + '</a>');
+							$('#' + i + '_score').html(data[i].result[best_index].score);					   		
 					   } else {
 					   	// not found
 					   	$('#' + i + '_id').html('-');
