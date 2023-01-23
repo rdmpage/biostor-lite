@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(E_ALL);
+
 // Base class for Google Refine reconciliation service
 // http://code.google.com/p/google-refine/wiki/ReconciliationServiceApi
 

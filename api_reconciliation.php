@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(E_ALL);
+
 // Match specimen codes to GBIF occurrences
 require_once (dirname(__FILE__) . '/config.inc.php');
 
