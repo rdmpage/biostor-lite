@@ -5,10 +5,79 @@ require_once (dirname(__FILE__) . '/config.inc.php');
 
 require_once (dirname(__FILE__) . '/reconciliation_api.php');
 
-require_once (dirname(__FILE__) . '/fingerprint.php');
+require_once (dirname(__FILE__) . '/compare.php');
 require_once (dirname(__FILE__) . '/lcs.php');
 
 require_once (dirname(__FILE__) . '/api_utils.php');
+
+
+//----------------------------------------------------------------------------------------
+// Convert CSL into a string we can use to compare with
+function csl_to_string ($csl, $include_authors = true)
+{
+	$keys = ['author', 'issued', 'title', 'container-title', 'volume', 'issue', 'page', 'DOI', 'ISSN'];
+
+	$terms = array();
+	
+	foreach ($keys as $k)
+	{
+		if (isset($csl->$k))
+		{
+			switch ($k)
+			{
+				case 'author':
+					if ($include_authors) // include if we want to
+					{
+						foreach ($csl->$k as $author)
+						{
+							$author_parts = array();
+							if (isset($author->family))
+							{
+								$author_parts[] = $author->family;
+							}
+							if (isset($author->given))
+							{
+								$author_parts[] = $author->given;
+							}
+							$terms[] = join(', ', $author_parts);
+						}
+					}
+					break;
+					
+				case 'issued':
+					$terms[] = $csl->$k->{'date-parts'}[0][0];
+					break;
+					
+				case 'DOI':
+					// eat(?)
+					if (preg_match('/10\.\d+/', $csl->$k))
+					{
+						$terms[] = $csl->$k;
+					}
+					break;
+					
+				case 'ISSN':
+					// eat(?)
+					break;
+					
+				default:
+					if (is_array($csl->$k))
+					{
+						$terms[] = html_entity_decode($csl->$k[0], ENT_QUOTES | ENT_HTML5, 'UTF-8');
+					}
+					else
+					{
+						$terms[] = html_entity_decode($csl->$k, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+					}
+					break;
+			
+			}
+		}
+	
+	}
+	
+	return join(' ', $terms);
+}
 
 
 //----------------------------------------------------------------------------------------
@@ -57,6 +126,8 @@ class BioStorService extends ReconciliationService
 	{
 		global $config;
 		
+		$debug = false;
+		
 		// clean text
 		$text = str_replace(':', '', $text);
 		$text = str_replace('"', '', $text);
@@ -78,45 +149,53 @@ class BioStorService extends ReconciliationService
 			{
 				for ($i = 0; $i < 3; $i++)
 				{
-					$row = $obj->hits->hits[$i];
-					// check 
+					// we have some possible hits, so check them
 					
-					$v1 = finger_print($text);
+					// does query string have authors?
+					// check this as some sources, e.g. ION, won't
 					
-					$hit_text = '';
-					
-					if (isset($obj->hits->hits[$i]->_source->search_result_data->creator))
+					$have_authors = false;
+					if (preg_match('/(\b[0-9]{4}[a-z]?\b.*)$/', $text, $m)) // look for year string
 					{
-						$hit_text .= join(' ', $obj->hits->hits[$i]->_source->search_result_data->creator);
-						$hit_text .= ' ';
+						$have_authors = strlen($m[1]) > 4;						
 					}
 					
-					$hit_text .= $obj->hits->hits[$i]->_source->search_result_data->name;
-					$hit_text .= $obj->hits->hits[$i]->_source->search_result_data->description;
+					$hit_text = csl_to_string ($obj->hits->hits[$i]->_source->search_result_data->csl, $have_authors);
 					
-					$hit_text = preg_replace('/Published\s+in\s+/', '', $hit_text);
-					$hit_text = preg_replace('/,\s+in\s+/', ' ', $hit_text);
-					$hit_text = preg_replace('/\s+volume/', '', $hit_text);
-					$hit_text = preg_replace('/,\s+pages\s+/', ' ', $hit_text);
+		
+					// compare
+					if ($debug)
+					{
+						echo "\n";
+						$result = compare_common_subsequence($text, $hit_text, true);
+						echo "\n";
+					}
+					else
+					{
+						$result = compare_common_subsequence($text, $hit_text, false);						
+					}
 					
-					$v2 = finger_print($hit_text);
+					$matched = false;
+
+					if ($result->normalised[1] > 0.85)
+					{
+						// one string is almost an exact substring of the other
+						if ($result->normalised[0] > 0.75)
+						{
+							// and the shorter string matches a good chunk of the bigger string
+							$matched = true;	
+						}
+					}
 					
-					$lcs = new LongestCommonSequence($v1, $v2);
-					$d = $lcs->score();
-					
-					// echo $d;
-					
-					$score = min($d / strlen($v1), $d / strlen($v2));
-					
-					if ($score > 0.70)
+					if ($matched)
 					{
 						$hit = new stdclass;
 						$hit->id 	= str_replace('biostor-', '', $obj->hits->hits[$i]->_id);
 				
 						$hit->name 	= $obj->hits->hits[$i]->_source->search_result_data->name;
 				
-						$hit->score = $score;
-						$hit->match = ($score > 0.7);
+						$hit->score = $result->normalised[1];
+						$hit->match = true;
 						$this->StoreHit($query_key, $hit);
 					}				
 				
@@ -124,13 +203,7 @@ class BioStorService extends ReconciliationService
 				}
 			}
 		}
-		
-
-		
 	}	
-	
-	
-	
 	
 }
 
