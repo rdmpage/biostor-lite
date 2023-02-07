@@ -1262,6 +1262,7 @@ function display_oclc_year($oclc, $year)
 //----------------------------------------------------------------------------------------
 function display_google_analytics()
 {
+/*
 	echo "<!-- Google Analytics -->
 		<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -1274,6 +1275,17 @@ function display_google_analytics()
 		</script>
 		<!-- End Google Analytics -->	
 ";
+*/
+
+	echo "<!-- Google tag (gtag.js) -->
+<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-Z8PG2FRW7J\"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z8PG2FRW7J');
+</script>";
 
 }
 
