@@ -12,7 +12,7 @@ class ElasticSearch
      function __construct($options)
      {
          foreach($options AS $key => $value) {
-             $this->$key = $value;
+             $this->{$key} = $value;
          }
      }
      
