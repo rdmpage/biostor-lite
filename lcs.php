@@ -1,5 +1,8 @@
 <?php
 
+error_reporting(E_ALL);
+
+
 // $Id: $
 
 /**
@@ -56,7 +59,7 @@ class LongestCommonSequence
 		{
 			for ($j = 1; $j <= $n; $j++)
 			{
-				if ($this->X{$i-1} == $this->Y{$j-1})
+				if ($this->X[$i-1] == $this->Y[$j-1])
 				{
 					$this->C[$i][$j] = $this->C[$i-1][$j-1]+1;
 				}
@@ -96,13 +99,13 @@ class LongestCommonSequence
 	//----------------------------------------------------------------------------------------------
 	function printDiff($C, $X, $Y, $i, $j)
 	{
-		if (($i > 0) and ($j > 0) and ($X{$i-1} == $Y{$j-1}))
+		if (($i > 0) and ($j > 0) and ($X[$i-1] == $Y[$j-1]))
 		{
 			$this->printDiff($C, $X, $Y, $i-1, $j-1);
 			//echo "  " , $X{$i-1};
 	
-			$this->left .= "<span style=\"background:rgb(100,255,100);color:black;\">" . $X{$i-1} . "</span>";
-			$this->right .= "<span style=\"background:rgb(100,255,100);color:black;\">" . $X{$i-1} . "</span>";
+			$this->left .= "<span style=\"background:rgb(100,255,100);color:black;\">" . $X[$i-1] . "</span>";
+			$this->right .= "<span style=\"background:rgb(100,255,100);color:black;\">" . $X[$i-1] . "</span>";
 		   }
 		else
 		{
@@ -111,7 +114,7 @@ class LongestCommonSequence
 				$this->printDiff($C, $X, $Y, $i, $j-1);
 				//echo "+ " , $Y{$j-1};
 	
-				$this->right .= $Y{$j-1};
+				$this->right .= $Y[$j-1];
 			}
 			else 
 			{
@@ -120,7 +123,7 @@ class LongestCommonSequence
 					$this->printDiff($C, $X, $Y, $i-1, $j);
 					//echo "- " , $X{$i-1};
 		
-					$this->left .= $X{$i-1};
+					$this->left .= $X[$i-1];
 				}
 			}
 		}
@@ -133,13 +136,13 @@ class LongestCommonSequence
 		$this->bars = '';
 		$this->right = '';
 	
-		if (($i > 0) and ($j > 0) and ($X{$i-1} == $Y{$j-1}))
+		if (($i > 0) and ($j > 0) and ($X[$i-1] == $Y[$j-1]))
 		{
 			$this->alignment($C, $X, $Y, $i-1, $j-1);
 			
-			$this->left .= $X{$i-1};
+			$this->left .= $X[$i-1];
 			$this->bars .= '|';
-			$this->right .= $Y{$j-1};
+			$this->right .= $Y[$j-1];
 		   }
 		else
 		{
@@ -149,7 +152,7 @@ class LongestCommonSequence
 	
 				$this->left .= '-';
 				$this->bars .= ' ';
-				$this->right .= $Y{$j-1};
+				$this->right .= $Y[$j-1];
 			}
 			else 
 			{
@@ -157,7 +160,7 @@ class LongestCommonSequence
 				{
 					$this->alignment($C, $X, $Y, $i-1, $j);
 					
-					$this->left .= $X{$i-1};
+					$this->left .= $X[$i-1];
 					$this->bars .= ' ';
 					$this->right .= '-';
 				}
@@ -217,7 +220,7 @@ function LongestCommonSubstring($S, $T, &$str)
 	{
 		for ($j = 0; $j < $n; $j++)
 		{
-			if ($S{$i} == $T{$j})
+			if ($S[$i] == $T[$j])
 			{
 				if ($i == 0 || $j == 0)
 				{
