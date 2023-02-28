@@ -170,6 +170,69 @@ function do_entity_twitter_tags($entity, $tag_names)
 	return $tags;
 }
 
+//----------------------------------------------------------------------------------------
+function do_entity_og_tags($entity, $tag_names)
+{
+	$tags = array();
+	
+	foreach ($tag_names as $tag_name)
+	{
+		switch ($tag_name)
+		{
+			case 'og:type':
+				if (!isset($tags[$tag_name]))
+				{
+					$tags[$tag_name] = array();
+				}
+				$tags[$tag_name][] = "website";
+				break;
+
+			case 'og:title':
+				if (!isset($tags[$tag_name]))
+				{
+					$tags[$tag_name] = array();
+				}
+				
+				if (isset($entity->name))
+				{
+					$tags[$tag_name][] = get_literal($entity->name);
+				}
+				break;
+
+			case 'og:image':
+				if (!isset($tags[$tag_name]))
+				{
+					$tags[$tag_name] = array();
+				}
+				
+				if (isset($entity->thumbnailUrl))
+				{
+					$tags[$tag_name][] = $entity->thumbnailUrl;
+				}
+				break;
+					
+			case 'og:description':
+				if (!isset($tags[$tag_name]))
+				{
+					$tags[$tag_name] = array();
+				}
+				
+				if (isset($entity->description))
+				{
+					$tags[$tag_name][] = get_literal($entity->description);
+				}
+				break;
+
+		
+			default:
+				break;
+		}
+	
+	}
+
+	return $tags;
+}
+
 
 
 //----------------------------------------------------------------------------------------
@@ -420,6 +483,15 @@ function display_entity($id)
 		}
 	}
 	
+	$tags = do_entity_og_tags($entity, ['og:type', 'og:title', 'og:image', 'og:description']);
+	foreach ($tags as $key => $values)
+	{
+		foreach ($values as $value)
+		{
+			$meta .= '<meta property="' . $key . '" content="' . htmlentities($value, ENT_HTML5) . '" />';
+		}
+	}	
+	
 	// JSON-LD
 	$script = '';
 	$jsonld = json_encode($entity);	
@@ -452,7 +524,8 @@ function display_html_start($title = '', $meta = '', $script = '', $jsonld = '',
 		<!--Let browser know website is optimized for mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
 		
-		<meta name="theme-color" content="rgb(231,224,185)" />
+		<!-- do we want a coloured browser bar in Safari? -->
+		<!-- <meta name="theme-color" content="rgb(231,224,185)" /> -->
 		
 		<!-- favicon -->
 		<link href="static/biostor-shadow32x32.png" rel="icon" type="image/png">    
@@ -477,7 +550,11 @@ function display_html_start($title = '', $meta = '', $script = '', $jsonld = '',
 		display: flex;
     	min-height: 100vh;
     	flex-direction: column;
-
+	}
+	
+	h1 {
+		font-weight:normal;
+		line-height: 1.2em;
 	}
 	
 	main {
@@ -492,13 +569,16 @@ function display_html_start($title = '', $meta = '', $script = '', $jsonld = '',
 	nav {
 		position: sticky; 
 		top: 0;
-		background:rgb(231,224,185);
+		/* background:rgb(231,224,185); */
 		padding:1em;
 		border-bottom:1px solid rgb(222,222,222);
+		
+		background:white;
+		z-index:1000;
 	}
 	
 	footer {
-		background:rgb(231,224,185);
+		/* background:rgb(231,224,185); */
 		padding:1em;
 		border-top:1px solid rgb(222,222,222);
 	}
@@ -510,21 +590,26 @@ function display_html_start($title = '', $meta = '', $script = '', $jsonld = '',
     .flexbox div input { 
     	width: 95%; 
     	font-size:1em; 
-    	border:1px solid #C0C0C0; 
+    	border:1px solid rgb(222,222,222); 
     	font-weight:bold;
     	padding: 0.5em 1em;
     	border-radius: 0.2em;
      }
     .flexbox div button { 
     	font-size:1em; 
+    	/*
     	background: rgb(128,128,128); 
     	color:white;
+    	*/
+    	background:white;
+    	border:1px solid rgb(192,192,192);
+    	
     	padding: 0.5em 1em;
     	border-radius: 0.2em;
     	
     	-webkit-appearance: none;
     	display: inline-block;
-        border: none;    
+        /* border: none;    */
     }
   
     
