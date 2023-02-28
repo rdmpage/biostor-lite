@@ -144,6 +144,9 @@ function do_entity_twitter_tags($entity, $tag_names)
 				
 				if (isset($entity->thumbnailUrl))
 				{
+					// BHL hack
+					$entity->thumbnailUrl = preg_replace('/\d+,\d+$/', '', $entity->thumbnailUrl);
+				
 					$tags[$tag_name][] = $entity->thumbnailUrl;
 				}
 				break;
@@ -207,6 +210,9 @@ function do_entity_og_tags($entity, $tag_names)
 				
 				if (isset($entity->thumbnailUrl))
 				{
+					// BHL hack
+					$entity->thumbnailUrl = preg_replace('/\d+,\d+$/', '', $entity->thumbnailUrl);
+
 					$tags[$tag_name][] = $entity->thumbnailUrl;
 				}
 				break;
