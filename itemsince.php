@@ -63,8 +63,9 @@ foreach ($response_obj->hits->hits as $hit)
 	$obj->items[] = $hit->_source->search_data->item;
 }
 
-$obj->count = count($obj->items);
+$obj->items = array_values(array_unique($obj->items));
 
+$obj->count = count($obj->items);
 
 header('Content-type: text/plain');
 if ($callback != '')
