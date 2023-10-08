@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/1174-9202",
+    "issn": [
+        "1174-9202"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/1174-9202",
+        "http://www.wikidata.org/entity/Q15756170"
+    ],
+    "name": "Records of The Auckland Museum"
+}
