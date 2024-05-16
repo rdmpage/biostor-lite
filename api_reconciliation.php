@@ -179,10 +179,10 @@ class BioStorService extends ReconciliationService
 					
 					$matched = false;
 
-					if ($result->normalised[1] > 0.85)
+					if ($result->normalised[1] > 0.9)
 					{
 						// one string is almost an exact substring of the other
-						if ($result->normalised[0] > 0.75)
+						if ($result->normalised[0] > 0.50)
 						{
 							// and the shorter string matches a good chunk of the bigger string
 							$matched = true;	

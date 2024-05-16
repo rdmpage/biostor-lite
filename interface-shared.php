@@ -403,6 +403,21 @@ function display_entity_details($entity)
 	echo '</div>';
 	
 	/*
+	print_r($entity);
+	
+	echo '<div class="gallery">';
+	echo '<ul>';
+	foreach ($entity->bhl_pages as $PageID)
+	{
+		echo '<li>';
+		echo '<img src="https://www.biodiversitylibrary.org/pagethumb/' . $PageID . ',80,80">';
+		echo '</li>';
+	}
+	echo '</ul>';
+	echo '</div>';
+	*/
+	
+	/*
 	// hack to display one page
 	if (isset($entity->thumbnailUrl))
 	{
@@ -538,6 +553,11 @@ function display_html_start($title = '', $meta = '', $script = '', $jsonld = '',
 		
 		<!--- canonical -->
 		<link rel="canonical" href="' . (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" . '">
+		
+		<!-- RSS -->
+		<link rel="alternate" type="application/rdf+xml" title="BioStor" href="' . (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]/feed.php?format=rss1" . '">
+		<link rel="alternate" type="application/rss+xml" title="BioStor" href="' . (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]/feed.php?format=rss2" . '">
+		<link rel="alternate" type="application/atom+xml" title="BioStor" href="' . (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]/feed.php?format=atom" . '">
 
 		';	
 		
@@ -945,7 +965,7 @@ function display_list($data)
 		
 		$html .=  '<div style="margin-left:100px;">';
 		
-		$html .= '<div style="font-size:1.2em;line-height:1.2em;display:block;padding-bottom:1em;">' ;
+		$html .= '<div style="font-size:1.2em;line-height:1.2em;display:block;padding-bottom:0.5em;">' ;
 		$html .= '<a href="reference/' . str_replace('biostor:', '', $dataFeedElement->item->{'@id'}) . '">';
 		$html .= $dataFeedElement->item->name;	
 		$html .= '</a>';
@@ -960,7 +980,7 @@ function display_list($data)
 		}
 		
 		// Dates for this record
-		$html .= '<div style="font-size:0.7em;">';
+		$html .= '<div style="font-size:0.7em;color:#999;">';
 		if (isset($dataFeedElement->dateCreated))
 		{
 			$html .= 'Created: ' . $dataFeedElement->dateCreated;

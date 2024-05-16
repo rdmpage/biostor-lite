@@ -416,7 +416,94 @@ function display_geo ($geojson, $format = 'json', $callback = '')
 	api_output($obj, $callback, $format, $status);
 }	
 
+//----------------------------------------------------------------------------------------
+function display_locate_page($containerName, $volumeNumber, $page, $callback = '')
+{
+	global $elastic;
+	
+	$obj = null;
+	$status = 404;
 
+	$query = new stdclass;
+	$query->size = 10;
+	$query->query = new stdclass;
+	$query->query->bool = new stdclass;
+	$query->query->bool->must = array();
+	
+	// starting page <= page
+	$startpage = new stdclass;
+	$startpage->range = new stdclass;
+	$startpage->range->{'search_data.start_page'} = new stdclass;
+	$startpage->range->{'search_data.start_page'}->lte = (int)$page;
+	
+	$query->query->bool->must[] = $startpage;
+	
+	// end page >= page
+	$endpage = new stdclass;
+	$endpage->range = new stdclass;
+	$endpage->range->{'search_data.end_page'} = new stdclass;
+	$endpage->range->{'search_data.end_page'}->gte = (int)$page;
+	
+	$query->query->bool->must[] = $endpage;
+	
+	// volume
+	$volume = new stdclass;
+	$volume->match = new stdclass;
+	$volume->match->{'search_result_data.csl.volume'} = $volumeNumber;
+	
+	$query->query->bool->must[] = $volume;
+		
+	// container is either a journal name or an ISSN
+	$container = new stdclass;
+	$container->match = new stdclass;
+	
+	if (preg_match('/[0-9]{4}-[0-9]{3}[0-9X]/', $containerName))
+	{
+		$container->match->{'search_result_data.csl.ISSN'} = $containerName;	
+	}
+	else
+	{
+		$container->match->{'search_data.container'} = $containerName;	
+	}
+	
+	$query->query->bool->must[] = $container;
+		
+	$response = $elastic->send('POST',  '_search?pretty', json_encode($query));					
+	$response_obj = json_decode($response);
+	
+	if ($response_obj)
+	{
+		$status = 200;
+	}
+	
+	// format results
+	$obj = new stdclass;
+	$obj->hits = array();
+	
+	foreach ($response_obj->hits->hits as $hit)
+	{
+		$item = new stdclass;
+		$item->id = $hit->_source->id;
+		$item->name = $hit->_source->search_result_data->name;
+		$item->csl = $hit->_source->search_result_data->csl;
+		
+		$page_index = array_search($page, $hit->_source->search_result_data->page_numbers);
+		if ($page_index === false)
+		{
+		}
+		else
+		{
+			$item->bhl = (Integer)$hit->_source->search_result_data->bhl_pages[$page_index];
+		}
+		
+		$item->start_page = $hit->_source->search_data->startpage;
+		$item->end_page = $hit->_source->search_data->endpage;
+		
+		$obj->hits[] = $item;
+	}
+		
+	api_output($obj, $callback, $status);
+}
 
 //--------------------------------------------------------------------------------------------------
 function main()
@@ -495,6 +582,23 @@ function main()
 		}
 	}	
 	
+	// locate item from [container, volume, page] tuple
+	if (!$handled)
+	{
+		if (isset($_GET['container']) && isset($_GET['volume']) && isset($_GET['page']))
+		{	
+			$container 	= $_GET['container'];
+			$volume		= $_GET['volume'];
+			$page   	= $_GET['page'];
+			
+			display_locate_page($container, $volume, $page, $callback);
+			
+			$handled = true;
+		}
+			
+	}		
+	
+	
 	
 	if (!$handled)
 	{
@@ -534,6 +638,8 @@ function main()
 		}
 			
 	}
+	
+	
 	
 	if (!$handled)
 	{

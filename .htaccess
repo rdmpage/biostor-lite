@@ -17,6 +17,8 @@ RewriteRule ^atom$ feed.php?format=atom [NC,L]
 RewriteRule ^rss2$ feed.php?format=rss2 [NC,L]
 RewriteRule ^rss1$ feed.php?format=rss1 [NC,L]
 
+RewriteRule ^map$ map.php [NC,L]
+
 #-----------------------------------------------------------------------------------------
 
 RewriteRule ^containers ?containers [NC,L]
