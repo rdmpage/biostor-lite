@@ -12,7 +12,7 @@ $y 		= 0;
 $zoom 	= 0;
 
 define ('TILE_SIZE', 256);
-define ('MARKER_SIZE', 10);
+define ('MARKER_SIZE', 6);
 
 $debug = false;
 //$debug = true;

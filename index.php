@@ -835,6 +835,8 @@ function do_welcome()
 	
 	$html .= '<h2>Examples</h2>';
 	
+	$html .= '<p>Articles to start exploring BioStor.</p>';
+	
 	//$html .= '<h3>Articles</h3>';
 	
 	$json =  '[
@@ -871,7 +873,19 @@ function do_welcome()
 	}
 	
 	
-	$html .= '</div>';					
+	$html .= '</div>';	
+	
+	$html .= '<div style="clear:both;"/>';		
+	
+	$html .= '<h2>Map</h2>';
+	
+	$html .= '<p>Point localities mentioned in articles in BioStor.</p>';	
+	
+	$html .= '<div>';
+	$html .= '<a href="map">';
+	$html .= '<img src="images/map.png" width="100%">';
+	$html .= '</a>';
+	$html .= '</div>';	
 	
 	return $html;
 }
