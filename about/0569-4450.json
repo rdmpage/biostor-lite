@@ -1,0 +1,20 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0569-4450",
+    "issn": [
+        "0569-4450"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0569-4450",
+        "http://www.wikidata.org/entity/Q21386228"
+    ],
+    "name": "Contributions of the American Entomological Institute",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "Contributions of the American Entomological Institute — journal, began with v. 1 in 1964; ceased with v. 36, no. 3, published in 2010"
+        }
+    ]
+    
+}

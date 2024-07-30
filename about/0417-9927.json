@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0417-9927",
+    "issn": [
+        "0417-9927"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0417-9927",
+        "http://www.wikidata.org/entity/Q21386019"
+    ],
+    "name": "Doriana"
+}

@@ -1,0 +1,28 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0093-4666",
+    "issn": [
+        "0093-4666"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0093-4666",
+        "http://www.wikidata.org/entity/Q6947226",
+        "https://en.wikipedia.org/wiki/Mycotaxon"
+    ],
+    "name": "Mycotaxon",
+    "description": [
+        {
+            "@language": "pl",
+            "@value": "Mycotaxon – recenzowane czasopismo naukowe, w którym publikowane są artykuły w zakresie taksonomii i nazewnictwa grzybów, w tym także porostów. Założyli go i Richard Paul Korf w 1974 r.. Byli sfrustrowani tym, że w istniejących czasopismach mykologicznych, jak np. Mycologia, mijał rok między czasem przesłania artykułu, a jego publikacją w czasopiśmie. Korf i Hennebert wprowadzili szereg innowacji, dzięki którym ich czasopismo jest szybsze i bardziej dostępne niż inne czasopisma mykologiczne. Zamiast składania czasopisma w linotypie, który był wówczas standardem branżowym. Mycotaxon zastosował litografię z offsetem fotograficznym, co przyspieszyło publikację. Poza tym Mycotaxon jest kwartalnikiem, a więc pojawia się co trzy miesiące, a nie raz lub dwa razy do roku, jak inne naukowe czasopi"
+        },
+        {
+            "@language": "fr",
+            "@value": "Mycotaxon est une revue scientifique à comité de lecture. Ce trimestriel publie des articles de recherches originales concernant tous les champs de recherche autour de la taxinomie et de la nomenclature des champignons. D'après le Journal Citation Reports, le facteur d'impact de ce journal était de 0,821 en 2012. Actuellement, la direction de publication est assurée par Seppo Huhtinen, Henning Knudsen, Scott Redhead, Wen-ying Zhuang, Sabine Huhndorf et Peter Buchanan ."
+        },
+        {
+            "@language": "en",
+            "@value": "Mycotaxon is a peer-reviewed scientific journal that covers the nomenclature and taxonomy of fungi, including lichens. The journal was founded by Grégoire L. Hennebert and Richard P. Korf in 1974. They were frustrated that papers submitted to journals such as Mycologia took a year or longer from submission to publication. Korf and Hennebert introduced a number of innovations to make their journal more efficient and accessible than its contemporaries. Mycotaxon reduced the wait time between submission and publication by requiring authors to submit camera-ready copy. Linotype was the industry standard at the time; Mycotaxon used photo-offset lithography to expedite publication. A quarterly journal, Mycotaxon aimed to publish papers within four months of submission. Mycotaxon took an unusual "
+        }
+    ]
+}

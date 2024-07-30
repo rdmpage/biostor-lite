@@ -1,6 +1,6 @@
 <?php
 
-
+require_once(dirname(__FILE__) . '/config.inc.php');
 
 $item = 125545;
 
@@ -48,8 +48,8 @@ $json = get($url);
 $item_data = json_decode($json);
 
 
-// articles		
-$url = 'http://direct.biostor.org/itemarticles.php?item=' . $item;
+// articles	
+$url = $config['web_server'] . $config['web_root'] . 'itemarticles.php?item=' . $item;
 
 $json = get($url);
 
@@ -125,7 +125,7 @@ foreach ($item_data->Result->Pages as $page)
 	
 	$html .= '<img style="border:1px solid rgb(192,192,192);" height="130" src="http://exeg5le.cloudimg.io/s/height/200/http://biodiversitylibrary.org/pagethumb/' . $page->PageID . ',200,200" />';
 	
-	if (isset($page->PageNumbers))
+	if (isset($page->PageNumbers) && count($page->PageNumbers) > 0)
 	{
 		$html .=  '<div style="text-align:center">' . $page->PageNumbers[0]->Prefix . '&nbsp;' . str_replace('%', '&nbsp;', $page->PageNumbers[0]->Number) . '</div>';
 	}
