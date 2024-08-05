@@ -397,25 +397,36 @@ function display_entity_details($entity)
 		
 	if ($pdf != '')
 	{
-		echo '<div class="actions"><a href="' . $pdf . '" target="_new" onClick="ga(\'send\', \'event\', { eventCategory: \'Outbound Link\', eventAction: \'PDF\', eventLabel: event.target.href} );">View PDF</a></div>';
+		echo '<div class="actions">PDF: <a href="' . $pdf . '" target="_new" onClick="ga(\'send\', \'event\', { eventCategory: \'Outbound Link\', eventAction: \'PDF\', eventLabel: event.target.href} );">View</a></div>';
 	}
 		
 	echo '</div>';
 	
-	/*
-	print_r($entity);
+	if (0)
+	{
+		echo '<pre>';
+		print_r($entity);
+		echo '</pre>';
+		
+		echo json_encode($entity);
+	}
 	
+	echo '<h2>Page images</h2>';
 	echo '<div class="gallery">';
 	echo '<ul>';
-	foreach ($entity->bhl_pages as $PageID)
+	foreach ($entity->hasPart->hasPart as $image)
 	{
 		echo '<li>';
-		echo '<img src="https://www.biodiversitylibrary.org/pagethumb/' . $PageID . ',80,80">';
+		echo '<img src="' . $image->thumbnailUrl . ',80,80"';
+		
+		echo ' title="' . $image->caption . '"';
+		
+		echo '>';
 		echo '</li>';
 	}
 	echo '</ul>';
 	echo '</div>';
-	*/
+	
 	
 	/*
 	// hack to display one page
@@ -453,22 +464,30 @@ function display_entity_details($entity)
 	/*
 	if ($pdf != '')
 	{
-	
+		// pdf.js
 		echo '<iframe id="pdf" width="100%" height="600" frameborder="0" src="pdfjs/web/viewer.html?file=' 
 			. urlencode('../../pdfproxy.php?url=' . urlencode($pdf)) . '"></iframe>';
 	
 	}
 	*/
 	
+	/*
 	if ($pdf != '')
 	{
+		// direct embed of PDF (doesn't work on iOS)
 		//echo '<div style="margin-top:1em;"><object data="' . $pdf . '" width="100%" height="800"></object>';
 		echo '<div style="margin-top:1em;"><iframe style="border:none;" src="' . $pdf . '" width="100%" height="800"></iframe>';
 	}
+	*/
 	
+	// map
 	
+	if (isset($entity->geometry))
+	{
+		echo '<h2>Localities in the text</h2>';
+		echo '<div id="map" style="width:100%; height:300px;"></div>';
+	}
 	
-	// map?
 }
 
 //----------------------------------------------------------------------------------------
@@ -522,11 +541,21 @@ function display_entity($id)
 	display_main_start();
 	
  	display_entity_details($entity);	
+ 	
+ 	if (isset($entity->geometry))
+ 	{
+ 		echo '<script>
+ 			create_map();
+ 			add_data(' . json_encode($entity->geometry) . ');
+ 		</script>';
+ 	}
+
 	
 	display_main_end();	
 	display_footer();	
 	display_html_end();	
 }
+
 
 //----------------------------------------------------------------------------------------
 // Start of HTML document
@@ -558,10 +587,136 @@ function display_html_start($title = '', $meta = '', $script = '', $jsonld = '',
 		<link rel="alternate" type="application/rdf+xml" title="BioStor" href="' . (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]/feed.php?format=rss1" . '">
 		<link rel="alternate" type="application/rss+xml" title="BioStor" href="' . (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]/feed.php?format=rss2" . '">
 		<link rel="alternate" type="application/atom+xml" title="BioStor" href="' . (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]/feed.php?format=atom" . '">
+		
+		<!-- leaflet -->
+		<link rel="stylesheet" type="text/css" href="js/leaflet-0.7.3/leaflet.css" />
+		<script src="js/leaflet-0.7.3/leaflet.js" type="text/javascript"></script>
 
 		';	
 		
 	display_google_analytics();
+	
+	// map stuff
+	echo "<script>
+		var map;
+		var geojson = null;
+
+    		
+		// http://gis.stackexchange.com/a/116193
+		// http://jsfiddle.net/GFarkas/qzdr2w73/4/
+    	// The most important part is the border-radius property. 
+    	// It will round your shape at the corners. To create a regular circle with it, 
+    	// you have to calculate the radius with the border. 
+    	// The formula is width / 2 + border * 4 if width = height.
+		var icon = new L.divIcon({className: 'mydivicon'});		
+
+		//--------------------------------------------------------------------------------
+		function onEachFeature(feature, layer) {
+			// does this feature have a property named popupContent?
+			if (feature.properties && feature.properties.popupContent) {
+				//console.log(feature.properties.popupContent);
+				// content must be a string, see http://stackoverflow.com/a/22476287
+				layer.bindPopup(String(feature.properties.popupContent));
+			}
+		}	
+			
+		//--------------------------------------------------------------------------------
+		function create_map() {
+			map = new L.Map('map');
+
+			// create the tile layer with correct attribution
+			var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+			var osmAttrib='Map data © <a href=\"http://openstreetmap.org\">OpenStreetMap</a> contributors';
+			var osm = new L.TileLayer(osmUrl, {minZoom: 1, maxZoom: 12, attribution: osmAttrib});		
+
+			map.setView(new L.LatLng(0, 0),4);
+			map.addLayer(osm);		
+		}
+		
+		//--------------------------------------------------------------------------------
+		function clear_map() {
+			if (geojson) {
+				map.removeLayer(geojson);
+			}
+		}	
+	
+		//--------------------------------------------------------------------------------
+		function add_data(data) {
+			clear_map();
+		
+			geojson = L.geoJson(data, { 
+
+			pointToLayer: function (feature, latlng) {
+                return L.marker(latlng, {
+                    icon: icon});
+            },			
+			style: function (feature) {
+				return feature.properties && feature.properties.style;
+			},
+			onEachFeature: onEachFeature,
+			}).addTo(map);
+			
+			// Open popups on hover
+  			geojson.on('mouseover', function (e) {
+    			e.layer.openPopup();
+  			});
+		
+			if (data.type) {
+				if (data.type == 'Polygon') {
+					for (var i in data.coordinates) {
+					  minx = 180;
+					  miny = 90;
+					  maxx = -180;
+					  maxy = -90;
+				  
+					  for (var j in data.coordinates[i]) {
+						minx = Math.min(minx, data.coordinates[i][j][0]);
+						miny = Math.min(miny, data.coordinates[i][j][1]);
+						maxx = Math.max(maxx, data.coordinates[i][j][0]);
+						maxy = Math.max(maxy, data.coordinates[i][j][1]);
+					  }
+					}
+					
+					bounds = L.latLngBounds(L.latLng(miny,minx), L.latLng(maxy,maxx));
+					map.fitBounds(bounds);
+				}
+				if (data.type == 'MultiPoint') {
+					minx = 180;
+					miny = 90;
+					maxx = -180;
+					maxy = -90;				
+					for (var i in data.coordinates) {
+						minx = Math.min(minx, data.coordinates[i][0]);
+						miny = Math.min(miny, data.coordinates[i][1]);
+						maxx = Math.max(maxx, data.coordinates[i][0]);
+						maxy = Math.max(maxy, data.coordinates[i][1]);
+					}
+					
+					bounds = L.latLngBounds(L.latLng(miny,minx), L.latLng(maxy,maxx));
+					map.fitBounds(bounds);
+				}
+				if (data.type == 'FeatureCollection') {
+					minx = 180;
+					miny = 90;
+					maxx = -180;
+					maxy = -90;				
+					for (var i in data.features) {
+						//console.log(JSON.stringify(data.features[i]));
+					
+						minx = Math.min(minx, data.features[i].geometry.coordinates[0]);
+						miny = Math.min(miny, data.features[i].geometry.coordinates[1]);
+						maxx = Math.max(maxx, data.features[i].geometry.coordinates[0]);
+						maxy = Math.max(maxy, data.features[i].geometry.coordinates[1]);
+						
+					}
+					
+					bounds = L.latLngBounds(L.latLng(miny,minx), L.latLng(maxy,maxx));
+					map.fitBounds(bounds);
+				}
+			}		    					
+		}
+	</script>";
+		
 		
 	echo '<style type="text/css">' . "\n";
 			
@@ -823,6 +978,50 @@ span.works {
 		color:white;
 		border-radius:4px;
 	}	
+
+
+/* dot on map */
+.mydivicon{
+    width: 12px
+    height: 12px;
+    border-radius: 10px;
+    background: rgb(208,104,85);
+    border: 1px solid rgb(38,38,38);
+    opacity: 0.85
+}			
+
+	/* heavily based on https://css-tricks.com/adaptive-photo-layout-with-flexbox/ */
+	.gallery ul {
+	  display: flex;
+	  flex-wrap: wrap;
+	  
+	  list-style:none;
+	  padding-left:2px;
+	  /* background-color:rgb(224,224,224); */
+	}
+
+	.gallery li {
+	  height: 80px;
+	  padding:2px;
+	  /*flex-grow: 1;*/
+  
+	}
+
+/*
+	.gallery li:last-child {
+	  flex-grow: 10;
+	}
+	*/
+
+	.gallery img {
+	  max-height: 90%;
+	  min-width: 90%;
+	  object-fit: cover;
+	  vertical-align: bottom;
+	  
+	  border:1px solid rgb(192,192,192);
+	}	
+
 
  
 	";

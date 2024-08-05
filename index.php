@@ -17,7 +17,21 @@ function csl_to_jsonld($csl)
 	// crude hack to get JSON-LD
 	
 	$obj = new stdclass;
-	$obj->{'@context'}	= 'http://schema.org/';
+	$obj->{'@context'}	= new stdclass;
+	$obj->{'@context'}->{'@vocab'} = 'http://schema.org/';
+	
+	$obj->{'@context'}->geojson = "https://purl.org/geojson/vocab#";
+	$obj->{'@context'}->Feature = "geojson:Feature";
+	$obj->{'@context'}->MultiPoint = "geojson:MultiPoint";
+	$obj->{'@context'}->Point = "geojson:Point";
+	$obj->{'@context'}->GeometryCollection = "geojson:GeometryCollection";
+
+	$obj->{'@context'}->coordinates = new stdclass;
+	$obj->{'@context'}->coordinates->{'@container'} = '@list';
+	$obj->{'@context'}->coordinates->{'@id'} = 'geojson:coordinates';
+	
+	$obj->{'@context'}->geometry = "geojson:geometry";
+	
 	
 	$type = 'schema:Thing';
 	
@@ -524,6 +538,30 @@ function do_one($id)
 		$encoding->contentUrl = 'https://archive.org/download/' . $id . '/' . $id . '.pdf';
 	
 		$record->encoding[] = $encoding;
+		
+		// Geo
+		// https://geojson.org/geojson-ld/
+		if (isset($obj->_source->search_data->geometry))
+		{
+			$record->geometry = $obj->_source->search_data->geometry;
+		}
+		
+		// Page images
+		// https://webmasters.stackexchange.com/a/109097
+		$record->hasPart = new stdclass;
+		$record->hasPart->{'@type'} = 'Collection';
+		$record->hasPart->hasPart = array();
+		
+		$num_images = count($obj->_source->search_result_data->bhl_pages);
+		for ($i = 0; $i < $num_images; $i++)
+		{
+			$image = new stdclass;
+			$image->{'@type'} = 'ImageObject';
+			$image->thumbnailUrl = 'https://www.biodiversitylibrary.org/pagethumb/' . $obj->_source->search_result_data->bhl_pages[$i];
+			$image->caption = $obj->_source->search_result_data->page_numbers[$i];
+			
+			$record->hasPart->hasPart[] = $image;
+		}		
 	}
 	
 	return $record;
