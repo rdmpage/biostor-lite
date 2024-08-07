@@ -971,6 +971,52 @@ function do_issn_year($issn, $year)
 	
 	$obj = json_decode($resp);
 	
+	// Sort hits by year, volume, issue, page number	
+	$sorted_hits = array();
+	
+	if (isset($obj->hits->hits))
+	{		
+		foreach ($obj->hits->hits as $hit)
+		{
+			$key = array();
+			
+			if (isset($hit->_source->search_result_data->csl->issued))
+			{
+				$key[] = $hit->_source->search_result_data->csl->issued->{'date-parts'}[0][0];
+			}
+			if (isset($hit->_source->search_result_data->csl->volume))
+			{
+				$key[] = str_pad($hit->_source->search_result_data->csl->volume, 4, '0', STR_PAD_LEFT);;
+			}
+
+			if (isset($hit->_source->search_result_data->csl->issue))
+			{
+				$key[] = str_pad($hit->_source->search_result_data->csl->issue, 4, '0', STR_PAD_LEFT);;
+			}
+			else
+			{
+				$key[] = '0000';
+			}
+
+			if (isset($hit->_source->search_result_data->csl->page))
+			{
+				$page = $hit->_source->search_result_data->csl->page;
+				if (preg_match('/(.*)-/', $hit->_source->search_result_data->csl->page, $m))
+				{
+					$page = $m[1];
+				}
+			
+				$key[] = str_pad($page, 4, '0', STR_PAD_LEFT);
+			}
+			
+			$keys[] = join("-", $key);
+			
+			$sorted_hits[join("-", $key)] = $hit;
+		}		
+		ksort($sorted_hits);
+		$obj->hits->hits = $sorted_hits;
+	}
+	
 	$output = search_result_to_rdf($obj, "issn=$issn, year=$year");
 
 	return $output;
@@ -1156,6 +1202,52 @@ function do_oclc_year($oclc, $year)
 	$resp = $elastic->send('POST', '_search?pretty', $post_data = $query_json);
 	
 	$obj = json_decode($resp);
+	
+	// Sort hits by year, volume, issue, page number	
+	$sorted_hits = array();
+	
+	if (isset($obj->hits->hits))
+	{		
+		foreach ($obj->hits->hits as $hit)
+		{
+			$key = array();
+			
+			if (isset($hit->_source->search_result_data->csl->issued))
+			{
+				$key[] = $hit->_source->search_result_data->csl->issued->{'date-parts'}[0][0];
+			}
+			if (isset($hit->_source->search_result_data->csl->volume))
+			{
+				$key[] = str_pad($hit->_source->search_result_data->csl->volume, 4, '0', STR_PAD_LEFT);;
+			}
+
+			if (isset($hit->_source->search_result_data->csl->issue))
+			{
+				$key[] = str_pad($hit->_source->search_result_data->csl->issue, 4, '0', STR_PAD_LEFT);;
+			}
+			else
+			{
+				$key[] = '0000';
+			}
+
+			if (isset($hit->_source->search_result_data->csl->page))
+			{
+				$page = $hit->_source->search_result_data->csl->page;
+				if (preg_match('/(.*)-/', $hit->_source->search_result_data->csl->page, $m))
+				{
+					$page = $m[1];
+				}
+			
+				$key[] = str_pad($page, 4, '0', STR_PAD_LEFT);
+			}
+			
+			$keys[] = join("-", $key);
+			
+			$sorted_hits[join("-", $key)] = $hit;
+		}		
+		ksort($sorted_hits);
+		$obj->hits->hits = $sorted_hits;
+	}	
 	
 	$output = search_result_to_rdf($obj, "oclc=$oclc, year=$year");
 
