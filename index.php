@@ -869,7 +869,14 @@ function do_welcome()
 	regularly harvested by BHL and so you can always view them there.</a></p>';
 	
 	$html .= '<p>You can search for articles by title, author, etc. 
-	You can also browse the <a href="containers">list of journals</a> for whch BioStor has articles.</p>';
+	You can also browse the <a href="containers">list of journals</a> for which BioStor has articles.</p>';
+	
+	$html .= '<h2>Citing BioStor</h2>';
+	
+	$html .= '<p>Page, R.D. Extracting scientific articles from a large digital 
+	archive: BioStor and the Biodiversity Heritage Library. 
+	BMC Bioinformatics 12, 187 (2011). <a href="https://doi.org/10.1186/1471-2105-12-187" target="_new">https://doi.org/10.1186/1471-2105-12-187</a>
+	</p>';	
 	
 	$html .= '<h2>Examples</h2>';
 	
@@ -923,7 +930,9 @@ function do_welcome()
 	$html .= '<a href="map">';
 	$html .= '<img src="images/map.png" width="100%">';
 	$html .= '</a>';
-	$html .= '</div>';	
+	$html .= '</div>';
+	
+
 	
 	return $html;
 }
