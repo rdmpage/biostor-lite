@@ -1367,6 +1367,77 @@ function display_oclc($oclc)
 }
 
 //----------------------------------------------------------------------------------------
+function display_oclc_year($oclc, $year)
+{
+	global $config;
+	
+	$title = '';	
+	$meta = '';
+	$script = '';
+	
+	// Can we get details about the journal	
+	$filename = 'about/' . $oclc . '.json';
+	
+	if (file_exists($filename))
+	{
+		$json = file_get_contents($filename);
+		$entity = json_decode($json);
+	}
+	else
+	{
+		$entity = new stdclass;
+		$entity->name = "Unknown";
+		$entity->oclcnum = 0;
+	}
+	
+	
+	// Do search	
+	$obj = do_oclc_year($oclc, $year);
+	
+	$jsonld = json_encode($obj, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+	
+	display_html_start($title, $meta, $script, $jsonld);	
+	
+	display_header();	
+				
+	display_main_start();	
+	
+	// Breadcrumbs
+	$path = array();
+	
+	$path["."] = "Home";	
+	$path["containers"] = "Containers";
+	$path["oclc/" . $entity->oclcnum] = get_literal($entity->name);
+	$path[""] = $year;
+
+	echo '<ul class="breadcrumb">';
+	foreach ($path as $k => $v)
+	{
+		echo '<li>';		
+		if ($k != "")
+		{
+			echo '<a href="' . $k . '">';
+		}
+		echo $v;
+		if ($k != "")
+		{
+			echo '</a>';
+		}
+		echo '</li>';	
+	}	
+	echo '</ul>';
+	
+	//print_r($obj);
+	
+	display_list($obj);
+		
+	display_main_end();	
+	display_footer();
+	display_html_end();	
+}
+
+
+//----------------------------------------------------------------------------------------
 function do_isbn($isbn)
 {
 	return do_search('isbn:' . $isbn);
