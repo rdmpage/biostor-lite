@@ -264,15 +264,16 @@ function display_entity_details($entity)
 				$year = substr($entity->datePublished, 0, 4);
 				$path["issn/" . $container->issn[0] . '/year/' . $year] = $year;
 			}
-			else
+			elseif (isset($container->oclcnum))
 			{
-				if (isset($container->oclcnum))
-				{
-					$path["oclc/" . $container->oclcnum] = get_literal($container->name);
-			
-					$year = substr($entity->datePublished, 0, 4);
-					$path["oclc/" . $container->oclcnum . '/year/' . $year] = $year;
-				}
+				$path["oclc/" . $container->oclcnum] = get_literal($container->name);
+		
+				$year = substr($entity->datePublished, 0, 4);
+				$path["oclc/" . $container->oclcnum . '/year/' . $year] = $year;
+			}				
+			elseif (isset($container->isbn))
+			{
+				$path["isbn/" . $container->isbn] = get_literal($container->name);
 			}
 		}
 	}

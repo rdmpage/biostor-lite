@@ -1,4 +1,6 @@
 .DS_Store
+css/.DS_Store
+js/.DS_Store
 
 /vendor/
 
@@ -11,10 +13,7 @@ upload/*.json
 upload/*.jsonl
 
 upload/go.sh
-.DS_Store
 
 www
-.DS_Store
-css/.DS_Store
 
 pdfjs

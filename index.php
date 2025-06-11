@@ -148,18 +148,26 @@ function csl_to_jsonld($csl)
 				$container->sameAs[] = 'http://issn.org/resource/ISSN/' . $issn;							
 			}
 		}
-		else		
+		elseif (isset($csl->OCLC))
 		{
-			if (isset($csl->OCLC))
+			$container->oclcnum = $csl->OCLC;
+			if (!isset($container->sameAs))
 			{
-				$container->oclcnum = $csl->OCLC;
-				if (!isset($container->sameAs))
-				{
-					$container->sameAs = array();
-				}
-				$container->sameAs[] = 'http://www.worldcat.org/oclc/' . $csl->OCLC;
-			}		
+				$container->sameAs = array();
+			}
+			$container->sameAs[] = 'http://www.worldcat.org/oclc/' . $csl->OCLC;
 		}
+		elseif (isset($csl->ISBN))
+		{
+			$container->isbn = $csl->ISBN[0];
+			/*
+			if (!isset($container->sameAs))
+			{
+				$container->sameAs = array();
+			}
+			$container->sameAs[] = 'http://www.worldcat.org/oclc/' . $csl->OCLC;
+			*/
+		}		
 
 		$obj->isPartOf[] = $container;
 	}
@@ -805,6 +813,26 @@ function do_search($q)
 				$matched = true;
 			}	
 		}	
+		
+		if (!$matched)
+		{
+			if (preg_match('/^isbn:(?<isbn>\d+[0-9X])$/u', trim($q), $m))
+			{
+				$query_json = '{
+					"size": 100,
+					"_source": ["id", "search_result_data.name", "search_result_data.description", "search_result_data.thumbnailUrl", "search_data.year", "search_result_data.csl"],
+					"query": {
+						"bool": {
+							"must": {
+								"term": { "search_result_data.csl.ISBN.keyword" : "' . $m['isbn'] .'" }
+							}
+						}
+					}
+				}';	
+				
+				$matched = true;
+			}	
+		}	
 	
 		if (!$matched)
 		{
@@ -847,8 +875,6 @@ function do_search($q)
 		$resp = $elastic->send('POST', '_search?pretty', $post_data = $query_json);
 		
 		$obj = json_decode($resp);
-		
-		//print_r($obj);
 	}
 	
 	$output = search_result_to_rdf($obj, $q);
@@ -1340,9 +1366,14 @@ function display_oclc($oclc)
 	display_html_end();	
 }
 
+//----------------------------------------------------------------------------------------
+function do_isbn($isbn)
+{
+	return do_search('isbn:' . $isbn);
+}
 
 //----------------------------------------------------------------------------------------
-function display_oclc_year($oclc, $year)
+function display_isbn($isbn)
 {
 	global $config;
 	
@@ -1350,8 +1381,8 @@ function display_oclc_year($oclc, $year)
 	$meta = '';
 	$script = '';
 	
-	// Can we get details about the journal	
-	$filename = 'about/' . $oclc . '.json';
+	// Can we get details about the ISBN and treat that as the entity for the page?	
+	$filename = 'about/' . $isbn . '.json';
 	
 	if (file_exists($filename))
 	{
@@ -1362,54 +1393,27 @@ function display_oclc_year($oclc, $year)
 	{
 		$entity = new stdclass;
 		$entity->name = "Unknown";
-		$entity->oclcnum = 0;
 	}
 	
-	
-	// Do search	
-	$obj = do_oclc_year($oclc, $year);
-	
-	$jsonld = json_encode($obj, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
-	
+	$jsonld = json_encode($entity, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+			
+	$obj = do_isbn($issn);
+		
 	display_html_start($title, $meta, $script, $jsonld);	
 	
-	display_header();	
+	// set search bar to ISSN query
+	display_header('isbn:' . $isbn);	
 				
 	display_main_start();	
-	
-	// Breadcrumbs
-	$path = array();
-	
-	$path["."] = "Home";	
-	$path["containers"] = "Containers";
-	$path["oclc/" . $entity->oclcnum] = get_literal($entity->name);
-	$path[""] = $year;
-
-	echo '<ul class="breadcrumb">';
-	foreach ($path as $k => $v)
-	{
-		echo '<li>';		
-		if ($k != "")
-		{
-			echo '<a href="' . $k . '">';
-		}
-		echo $v;
-		if ($k != "")
-		{
-			echo '</a>';
-		}
-		echo '</li>';	
-	}	
-	echo '</ul>';
-	
-	//print_r($obj);
-	
+		
+	// chapters in book
 	display_list($obj);
 		
 	display_main_end();	
 	display_footer();
 	display_html_end();	
 }
+
 
 
 //----------------------------------------------------------------------------------------
@@ -1591,6 +1595,8 @@ function main()
 	}	
 	
 	// Custom searches
+	
+	// ISSN
 	if (isset($_GET['issn']))
 	{	
 		$issn = $_GET['issn'];
@@ -1606,7 +1612,7 @@ function main()
 		exit(0);
 	}	
 	
-	// Custom searches
+	// OCLC number
 	if (isset($_GET['oclc']))
 	{	
 		$oclc = $_GET['oclc'];
@@ -1619,6 +1625,15 @@ function main()
 		}
 		
 		display_oclc($oclc);		
+		exit(0);
+	}
+	
+	// ISBN
+	if (isset($_GET['isbn']))
+	{	
+		$isbn = $_GET['isbn'];
+		
+		display_isbn($isbn);		
 		exit(0);
 	}	
 	
