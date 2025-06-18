@@ -520,7 +520,7 @@ function display_entity($id)
 	{
 		foreach ($values as $value)
 		{
-			$meta .= '<meta name="' . $key . '" content="' . htmlentities($value, ENT_HTML5) . '" />';
+			$meta .= '<meta name="' . $key . '" content="' . htmlspecialchars($value, ENT_HTML5) . '" />';
 		}
 	}
 	
@@ -529,7 +529,7 @@ function display_entity($id)
 	{
 		foreach ($values as $value)
 		{
-			$meta .= '<meta property="' . $key . '" content="' . htmlentities($value, ENT_HTML5) . '" />';
+			$meta .= '<meta property="' . $key . '" content="' . htmlspecialchars($value, ENT_HTML5) . '" />';
 		}
 	}	
 	
