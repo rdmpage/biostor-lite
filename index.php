@@ -1468,7 +1468,7 @@ function display_isbn($isbn)
 	
 	$jsonld = json_encode($entity, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 			
-	$obj = do_isbn($issn);
+	$obj = do_isbn($isbn);
 		
 	display_html_start($title, $meta, $script, $jsonld);	
 	
