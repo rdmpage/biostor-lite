@@ -1190,6 +1190,14 @@ function display_list($data)
 			$html .= ', modified: ' . $dataFeedElement->dateModified;
 		}		
 		$html .= '<div>';
+				
+		if (isset($dataFeedElement->item->doi))
+		{
+			$html .= '<div>';
+			$html .= 'doi:<a href="https://doi.org/' . $dataFeedElement->item->doi . '" target="_new">' . $dataFeedElement->item->doi . '</a>';
+			$html .= '</div>';
+		}
+		
 		
 		$html .=  '</div>';
 		

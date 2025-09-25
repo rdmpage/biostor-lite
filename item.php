@@ -47,9 +47,12 @@ $json = get($url);
 
 $item_data = json_decode($json);
 
+// print_r($item_data);
 
 // articles	
 $url = $config['web_server'] . $config['web_root'] . 'itemarticles.php?item=' . $item;
+
+//echo $url;
 
 $json = get($url);
 
@@ -103,6 +106,16 @@ $html .= '</head>';
 
 $html .= '<body>';	
 
+$html .= '<h1>Item ' . $item . '</h1>';
+$html .= '<p>' .  $item_data->Result->SourceIdentifier . ', ' . $item_data->Result->Volume . '</p>';
+
+$html .= '<div><img style="float:left;border:1px solid rgb(192,192,192);" height="130" src="http://exeg5le.cloudimg.io/s/height/200/http://biodiversitylibrary.org/pagethumb/' . $item_data->Result->ThumbnailPageID . ',200,200" /></div>';
+
+$html .= '</div>';
+$html .= '<div style="clear:both;"></div>';
+
+$html .= '<h2>Pages</h2>';
+
 $html .= '<div style="background:#EEE;display: block;overflow: auto;">';	
 
 foreach ($item_data->Result->Pages as $page)
@@ -117,7 +130,7 @@ foreach ($item_data->Result->Pages as $page)
 	}
 	else
 	{
-		$html .= ' href="https://biostor.org/reference/' . $page_to_biostor[$page->PageID] . '"';		
+		$html .= ' href="' . $url = $config['web_server'] . $config['web_root'] .  'reference/' . $page_to_biostor[$page->PageID] . '"';		
 	}
 	$html .= ' target="_new"';
 	$html .= '>';

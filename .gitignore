@@ -17,3 +17,5 @@ upload/go.sh
 www
 
 pdfjs
+.DS_Store
+js/.DS_Store

@@ -589,7 +589,9 @@ function search_result_to_rdf($obj, $query_string = "")
 			'goog' 					=> 'http://schema.googleapis.com/',
 			'resultScore'		 	=> 'goog:resultScore',
 			
-			'biostor'				=> 'https://biostor.org/reference/'
+			'biostor'				=> 'https://biostor.org/reference/',
+			'bibo'					=> 'http://purl.org/ontology/bibo/',
+			'doi'				    => 'bibo:doi'
 		);
 
 	$output->{'@graph'} = array();
@@ -745,7 +747,13 @@ function search_result_to_rdf($obj, $query_string = "")
 
 							$dataFeedItem->item->datePublished = $date;
 						}				
-					}									
+					}
+					
+					// DOI
+					if (isset($csl->DOI))
+					{
+						$dataFeedItem->item->doi = $csl->DOI;	
+					}							
 					
 				}
 				
@@ -987,7 +995,7 @@ function do_issn_year($issn, $year)
 	
 	$query_json = '{
 	"size": 500,
-	"_source": ["id", "search_result_data.name", "search_result_data.description", "search_result_data.thumbnailUrl", "search_data.year", "search_result_data.csl"],
+	"_source": ["id", "search_result_data.name", "search_result_data.description", "search_result_data.thumbnailUrl", "search_data.year", "search_result_data.csl", "search_result_data.created", "search_result_data.modified"],
 	"query": {
 		"bool": {
 			"must": {
@@ -1219,7 +1227,7 @@ function do_oclc_year($oclc, $year)
 	
 	$query_json = '{
 	"size": 500,
-	"_source": ["id", "search_result_data.name", "search_result_data.description", "search_result_data.thumbnailUrl", "search_data.year", "search_result_data.csl"],
+	"_source": ["id", "search_result_data.name", "search_result_data.description", "search_result_data.thumbnailUrl", "search_data.year", "search_result_data.csl", "search_result_data.created", "search_result_data.modified"],
 	"query": {
 		"bool": {
 			"must": {
