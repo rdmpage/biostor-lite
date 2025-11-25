@@ -1,0 +1,14 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/2643-4776",
+    "issn": [
+        "2643-4776"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/2643-4776",
+        "http://www.wikidata.org/entity/Q97436541"
+    ],
+    "name": "Taxonomic Report of The International Lepidoptera Survey"
+}
+

@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0304-2235",
+    "issn": [
+        "0304-2235"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0304-2235",
+        "http://www.wikidata.org/entity/Q30673512"
+    ],
+    "name": "Journal of the Ceylon Branch of the Royal Asiatic Society"
+}
