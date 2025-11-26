@@ -1,0 +1,21 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0011-4073",
+    "issn": [
+        "0011-4073"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0011-4073",
+        "http://www.wikidata.org/entity/Q2269599",
+        "https://en.wikipedia.org/wiki/Curtis%27s_Botanical_Magazine"
+    ],
+    "name": "Curtis's botanical magazine",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "Curtis's Botanical Magazine is the world’s longest running, continuously published botanical periodical featuring original colour illustrations of plants"
+        }
+    ]
+    
+}
