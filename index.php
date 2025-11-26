@@ -1061,6 +1061,9 @@ function do_issn_year($issn, $year)
 			
 				$key[] = str_pad($page, 4, '0', STR_PAD_LEFT);
 			}
+
+			// handle cases where multiple items have same pages, e.g. volumes with plates with no pages
+			$key[] = mb_substr($hit->_source->search_result_data->csl->title, 0, 10);
 			
 			$keys[] = join("-", $key);
 			
