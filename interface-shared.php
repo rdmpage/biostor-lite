@@ -368,6 +368,8 @@ function display_entity_details($entity)
 	$doi = get_property_value($entity, 'identifier', 'doi');
 	
 	// BHL
+	// The thumbnail need not be the first page in the article (e.g., "pretty")
+	/*
 	if (isset($entity->thumbnailUrl))
 	{
 		if (preg_match('/pagethumb\/(?<id>\d+)/', $entity->thumbnailUrl, $m))
@@ -375,6 +377,19 @@ function display_entity_details($entity)
 			$bhl = $m['id'];
 		}
 	}
+	*/
+	
+	if (isset($entity->sameAs))
+	{
+		foreach ($entity->sameAs as $url)
+		{
+			if (preg_match('/biodiversitylibrary.org\/page\/(?<id>\d+)/', $url, $m))
+			{
+				$bhl = $m['id'];
+			}		
+		}
+	}
+	
 	
 	// Wikidata
 	$wikidata = get_property_value($entity, 'identifier', 'wikidata');

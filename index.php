@@ -530,6 +530,16 @@ function do_one($id)
 		{
 			$record->thumbnailUrl = $obj->_source->search_result_data->thumbnailUrl;
 		}
+		
+		// BHL URL
+		if (isset($obj->_source->search_result_data->bhl_pages))
+		{
+			if (!isset($record->sameAs))
+			{
+				$record->sameAs = array();
+			}
+			$record->sameAs[] = 'https://biodiversitylibrary.org/page/' . $obj->_source->search_result_data->bhl_pages[0];			
+		}
 				
 		if (isset($obj->_source->search_result_data->description))
 		{
