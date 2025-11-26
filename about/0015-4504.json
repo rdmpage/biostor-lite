@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0015-4504",
+    "issn": [
+        "0015-4504"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0015-4504",
+        "http://www.wikidata.org/entity/Q5863294"
+    ],
+    "name": "Flowering Plants of Africa"
+}
