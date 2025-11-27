@@ -1,0 +1,19 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Periodical",
+    "@id": "https://biostor.org/issn/0269-3542",
+    "issn": [
+        "0269-3542"
+    ],
+    "sameAs": [
+        "http://issn.org/resource/ISSN/0269-3542",
+        "http://www.wikidata.org/entity/Q5492228"
+    ],
+    "name": "Icones plantarum",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "Icones Plantarum is an extensive series of published volumes of botanical illustration, initiated by Sir William Jackson Hooker. The Latin name of the work means \"Illustrations of Plants\". The illustrations are drawn from herbarium specimens of Hooker's herbarium, and subsequently the herbarium of Kew Gardens. Hooker was the author of the first ten volumes, produced 1837–1854. His son, Sir Joseph Dalton Hooker, was responsible for Volumes XI-XIX (most of Series III). Daniel Oliver was the editor of Volumes XX-XXIV. His successor was William Turner Thiselton-Dyer. The series now comprises forty volumes."
+        }
+    ]
+}
