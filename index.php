@@ -237,7 +237,15 @@ function csl_to_jsonld($csl)
 		add_property_value($obj, 'identifier', 'doi', strtolower($csl->DOI));
 	}
 	
-	// Wikidata
+	// JSTOR is sameAs and also an identifier
+	if (isset($csl->JSTOR))
+	{		
+		$obj->sameAs[] = 'https://www.jstor.org/stable/' . strtolower($csl->JSTOR);
+		
+		add_property_value($obj, 'identifier', 'jstor', strtolower($csl->JSTOR));
+	}
+	
+	// Wikidata is sameAs and also an identifier
 	if (isset($csl->WIKIDATA))
 	{		
 		$obj->sameAs[] = 'http://www.wikidata.org/entity/' . strtolower($csl->WIKIDATA);

@@ -114,6 +114,7 @@ function to_jats($obj)
 		$volume = $article_meta->appendChild($doc->createElement('volume'));
 		$volume->appendChild($doc->createTextNode($csl->volume));
 	}
+	
 	if (isset($csl->issue))
 	{
 		$issue = $article_meta->appendChild($doc->createElement('issue'));

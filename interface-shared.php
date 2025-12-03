@@ -367,6 +367,9 @@ function display_entity_details($entity)
 	// DOI
 	$doi = get_property_value($entity, 'identifier', 'doi');
 	
+	// JSTOR
+	$jstor = get_property_value($entity, 'identifier', 'jstor');
+	
 	// BHL
 	// The thumbnail need not be the first page in the article (e.g., "pretty")
 	/*
@@ -399,6 +402,11 @@ function display_entity_details($entity)
 	if ($doi != '')
 	{
 		echo '<div class="actions">DOI: <a href="https://doi.org/' . $doi . '" target="_new">' . $doi . '</a></div>';
+	}
+	
+	if ($jstor != '')
+	{
+		echo '<div class="actions">JSTOR: <a href="https://www.jstor.org/stable/' . $jstor . '" target="_new">' . $jstor . '</a></div>';
 	}
 	
 	if ($wikidata != '')
