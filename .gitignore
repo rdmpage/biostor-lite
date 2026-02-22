@@ -1,6 +1,7 @@
 .DS_Store
 css/.DS_Store
 js/.DS_Store
+upload/.DS_Store
 
 /vendor/
 
@@ -11,11 +12,12 @@ junk
 
 upload/*.json
 upload/*.jsonl
-
 upload/go.sh
+upload/junk
 
 www
 
 pdfjs
-.DS_Store
-js/.DS_Store
+
+*.request
+#elastic/*.request

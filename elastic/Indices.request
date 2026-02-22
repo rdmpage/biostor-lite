@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>baseURL</key>
-	<string>http://65.108.58.109:9200/_cat/indices</string>
+	<string>http://65.108.58.109:80/_cat/indices</string>
 	<key>followRedirect</key>
 	<true/>
 	<key>handleJSONPCallbacks</key>
@@ -21,9 +21,11 @@
 	<key>parametersType</key>
 	<integer>0</integer>
 	<key>presentBeforeChallenge</key>
-	<false/>
+	<true/>
 	<key>stringEncoding</key>
 	<integer>4</integer>
+	<key>username</key>
+	<string>user</string>
 	<key>usingHTTPBody</key>
 	<false/>
 </dict>

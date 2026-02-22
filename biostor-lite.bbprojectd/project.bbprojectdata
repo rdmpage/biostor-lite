@@ -12,6 +12,7 @@
 		<string>7542BC0B-7982-457C-A980-DD59903243D0</string>
 		<string>80B6C71C-CBFA-499E-B07F-A12F307170B5</string>
 		<string>16F8CA01-1417-4A98-9C1C-98774222BD84</string>
+		<string>4269DDDE-67F3-4B83-BC6A-B04D945412F1</string>
 		<string>0BAC63E4-8FAB-4922-8D48-D5F95E8F2E96</string>
 		<string>AFC9D3BE-CC05-4574-B1C8-00F861276C38</string>
 		<string>97EA1548-EE09-42EF-8C4F-21E921E0F54A</string>
@@ -528,6 +529,54 @@
 			</dict>
 			<key>ItemName</key>
 			<string>env.php</string>
+			<key>ItemType</key>
+			<string>FileReference</string>
+			<key>UserOverrideItemName</key>
+			<true/>
+		</dict>
+		<key>4269DDDE-67F3-4B83-BC6A-B04D945412F1</key>
+		<dict>
+			<key>ItemData</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9va+QCAAAAAAQQMAAAAIPZeQ3p/hp2iUf1nymOo+W5
+				AgJNMmqTr39OorDhs2fn4AEAAAQAAAADAwAAAAgAKAUA
+				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAABQAA
+				AAEBAABTaXRlcwAAAAwAAAABAQAAYmlvc3Rvci1saXRl
+				CwAAAAEBAABjb21wYXJlLnBocAAUAAAAAQYAABAAAAAg
+				AAAAMAAAAEAAAABUAAAACAAAAAQDAACEXAAAAAAAAAgA
+				AAAEAwAAlsYDAAAAAAAIAAAABAMAAEDoHgAAAAAACAAA
+				AAQDAACR23gAAAAAAAgAAAAEAwAAJTSqAgAAAAAUAAAA
+				AQYAAIQAAACUAAAApAAAALQAAADEAAAACAAAAAAEAABB
+				xDbmSlasExgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAA
+				AAAAAAAACAAAAAQDAAADAAAAAAAAAAQAAAADAwAA9QEA
+				AAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9z
+				aCBIRAgAAAAEAwAAAJCClucAAAAIAAAAAAQAAEHEf2qi
+				gAAAJAAAAAEBAABFRURCQzQ5NS1ERjUyLTQ1NkEtQjQz
+				MS1GQjYwN0JGMDRBRDEYAAAAAQIAAIEAAAABAAAA7xMA
+				AAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAA
+				zAAAAP7///8BAAAAAAAAABAAAAAEEAAAaAAAAAAAAAAF
+				EAAA1AAAAAAAAAAQEAAAAAEAAAAAAABAEAAA8AAAAAAA
+				AAACIAAAzAEAAAAAAAAFIAAAPAEAAAAAAAAQIAAATAEA
+				AAAAAAARIAAAgAEAAAAAAAASIAAAYAEAAAAAAAATIAAA
+				cAEAAAAAAAAgIAAArAEAAAAAAAAwIAAA2AEAAAAAAAAB
+				wAAAIAEAAAAAAAARwAAAIAAAAAAAAAASwAAAMAEAAAAA
+				AAAQ0AAABAAAAAAAAAA=
+				</data>
+				<key>FileURL</key>
+				<string>file:///Users/rpage/Sites/biostor-lite/compare.php</string>
+				<key>HasSecurityScope</key>
+				<true/>
+				<key>RelativePath</key>
+				<string>./compare.php</string>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+			<key>ItemName</key>
+			<string>compare.php</string>
 			<key>ItemType</key>
 			<string>FileReference</string>
 			<key>UserOverrideItemName</key>
