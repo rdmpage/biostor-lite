@@ -24,6 +24,10 @@ RewriteRule ^map$ map.php [NC,L]
 RewriteRule ^containers ?containers [NC,L]
 
 #-----------------------------------------------------------------------------------------
+# BHL image proxy
+RewriteRule ^pageimage/([0-9]+)/([0-9]+)/([0-9]+)$  pageimage.php?id=$1&w=$2&h=$3  [NC,L]
+
+#-----------------------------------------------------------------------------------------
 # DocumentCloud
 
 # Document cloud image

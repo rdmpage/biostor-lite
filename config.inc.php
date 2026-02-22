@@ -33,7 +33,13 @@ else
 	$config['web_root']		= '/';
 }
 
-// Cloudimage-----------------------------------------------------------------------------
+// Image proxy----------------------------------------------------------------------------
+// Self-hosted BHL image proxy (pageimage.php), cacheable by Cloudflare.
+// Replaces the old CloudImage CDN integration.
+
+$config['use_image_proxy'] = true;
+
+// Cloudimage (legacy, superseded by use_image_proxy)-------------------------------------
 
 $config['use_cloudimage'] = true;
 $config['use_cloudimage'] = false;
@@ -78,5 +84,22 @@ else
 			'password' 	=> getenv('ELASTIC_PASSWORD'),			
 			);			
 }
-	
+
+// Image proxy URL helper-----------------------------------------------------------------
+
+/**
+ * Return the URL for a proxied BHL page thumbnail.
+ * The proxy serves images with long Cache-Control headers so Cloudflare caches them.
+ *
+ * @param int $pageID  BHL PageID
+ * @param int $w       Desired width in pixels
+ * @param int $h       Desired height in pixels
+ * @return string      Absolute URL to the local image proxy endpoint
+ */
+function pageimage_url($pageID, $w, $h)
+{
+	global $config;
+	return $config['web_server'] . $config['web_root'] . 'pageimage/' . (int)$pageID . '/' . (int)$w . '/' . (int)$h;
+}
+
 ?>

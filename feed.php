@@ -116,9 +116,11 @@ switch ($feed_format)
 					if (isset($hit->_source->search_result_data->thumbnailUrl))
 					{
 						$thumbnailUrl = $hit->_source->search_result_data->thumbnailUrl;
-						$thumbnailUrl = preg_replace('/,\d+,\d+$/', ',240,240', $thumbnailUrl);
-						
-					
+						if (preg_match('/pagethumb\/(\d+)/', $thumbnailUrl, $m))
+						{
+							$thumbnailUrl = pageimage_url($m[1], 240, 240);
+						}
+
 						$description_content = '<p>' . '<img src="' . $thumbnailUrl . '" width="240"></p>';
 						$description_content .= '<p>' . $hit->_source->search_result_data->description . '</p>';
 					}
@@ -279,7 +281,12 @@ switch ($feed_format)
 				
 				if (isset($dataFeedElement->thumbnailUrl))
 				{
-					$description_content = '<p>' . '<img src="' . $dataFeedElement->thumbnailUrl . '" width="240"></p>';
+					$feedThumbUrl = $dataFeedElement->thumbnailUrl;
+					if (preg_match('/pagethumb\/(\d+)/', $feedThumbUrl, $m))
+					{
+						$feedThumbUrl = pageimage_url($m[1], 240, 240);
+					}
+					$description_content = '<p>' . '<img src="' . $feedThumbUrl . '" width="240"></p>';
 					$description_content .= '<p>' . $dataFeedElement->description . '</p>';
 					$description_content .= '<p>' . $dataFeedElement->url . '</p>';
 					

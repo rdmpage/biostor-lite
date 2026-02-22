@@ -441,7 +441,7 @@ function display_entity_details($entity)
 	foreach ($entity->hasPart->hasPart as $image)
 	{
 		echo '<li>';
-		echo '<img src="' . $image->thumbnailUrl . ',80,80"';
+		echo '<img src="' . $image->thumbnailUrl . '"';
 		
 		echo ' title="' . $image->caption . '"';
 		
@@ -1175,15 +1175,15 @@ function display_list($data)
 		$html .=  '<div class="thumbnail">';
 		if (isset($dataFeedElement->item->thumbnailUrl))
 		{
-			if ($config['use_cloudimage'])
+			if (preg_match('/pagethumb\/(\d+)/', $dataFeedElement->item->thumbnailUrl, $m))
 			{
-				$html .= '<img src="https://aezjkodskr.cloudimg.io/' . $dataFeedElement->item->thumbnailUrl . '?height=200">';
+				$html .= '<img height="200" src="' . pageimage_url($m[1], 200, 200) . '">';
 			}
 			else
 			{
 				$html .= '<img height="200" src="' . $dataFeedElement->item->thumbnailUrl . '">';
 			}
-		}		
+		}
 		$html .= '</div>';
 		
 		$html .=  '<div style="margin-left:100px;">';
@@ -1295,13 +1295,13 @@ function display_decade_list($data)
 					
 					$html .='>';
 							
-					if ($config['use_cloudimage'])
+					if (preg_match('/pagethumb\/(\d+)/', $item->thumbnailUrl, $m))
 					{
-						$html .= '<img loading="lazy" class="works" src="https://aezjkodskr.cloudimg.io/' . $item->thumbnailUrl . '?height=200">';
+						$html .= '<img height="200" loading="lazy" class="works" src="' . pageimage_url($m[1], 200, 200) . '">';
 					}
 					else
 					{
-						$html .= '<img height="200" loading="lazy" class="works" src="' . $item->thumbnailUrl . '">';					
+						$html .= '<img height="200" loading="lazy" class="works" src="' . $item->thumbnailUrl . '">';
 					}
 					$html .= '</a>';
 				}		
@@ -1374,9 +1374,15 @@ function display_decade_list($data)
 		$html .=  '<div class="thumbnail">';
 		if (isset($dataFeedElement->item->thumbnailUrl))
 		{
-			//$html .= '<img src="' . $dataFeedElement->item->thumbnailUrl . '">';
-			$html .= '<img src="https://aezjkodskr.cloudimg.io/' . $dataFeedElement->item->thumbnailUrl . '?height=200">';
-		}		
+			if (preg_match('/pagethumb\/(\d+)/', $dataFeedElement->item->thumbnailUrl, $m))
+			{
+				$html .= '<img height="200" src="' . pageimage_url($m[1], 200, 200) . '">';
+			}
+			else
+			{
+				$html .= '<img height="200" src="' . $dataFeedElement->item->thumbnailUrl . '">';
+			}
+		}
 		$html .= '</div>';
 		
 		$html .=  '<div style="margin-left:100px;">';

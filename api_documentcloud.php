@@ -113,21 +113,12 @@ function display_documentcloud_page ($id, $page, $size, $callback = '')
 				switch ($size)
 				{
 					case 'small':
-						$image_url = 'http://www.biodiversitylibrary.org/pagethumb/' .  $PageID . ',100,100';
-						if ($config['use_cloudimage'])
-						{
-							$image_url = 'http://exeg5le.cloudimg.io/s/width/700/http://www.biodiversitylibrary.org/pagethumb/' .  $PageID . ',60,60';
-						}		
+						$image_url = pageimage_url($PageID, 100, 100);
 						break;
-					
+
 					case 'normal':
 					default:
-						$image_url = 'http://www.biodiversitylibrary.org/pagethumb/' .  $PageID . ',800,800';
-					
-						if ($config['use_cloudimage'])
-						{
-							$image_url = 'http://exeg5le.cloudimg.io/s/width/700/http://www.biodiversitylibrary.org/pagethumb/' .  $PageID . ',500,500';
-						}		
+						$image_url = pageimage_url($PageID, 800, 800);
 						break;
 				}
 			}

@@ -583,7 +583,7 @@ function do_one($id)
 		{
 			$image = new stdclass;
 			$image->{'@type'} = 'ImageObject';
-			$image->thumbnailUrl = 'https://www.biodiversitylibrary.org/pagethumb/' . $obj->_source->search_result_data->bhl_pages[$i];
+			$image->thumbnailUrl = pageimage_url($obj->_source->search_result_data->bhl_pages[$i], 80, 80);
 			$image->caption = $obj->_source->search_result_data->page_numbers[$i];
 			
 			$record->hasPart->hasPart[] = $image;
@@ -956,14 +956,7 @@ function do_welcome()
 	{
 		$html .= '<div class="example">';
 		$html .= '<a href="reference/' . $example->referenceID . '">';
-		if ($config['use_cloudimage'])
-		{
-			$html .= '<img src="https://aezjkodskr.cloudimg.io/https://www.biodiversitylibrary.org/pagethumb/' . $example->pageID . ',200,200?height=200">';
-		}
-		else
-		{
-			$html .= '<img src="https://www.biodiversitylibrary.org/pagethumb/' . $example->pageID . ',200,200">';
-		}
+		$html .= '<img src="' . pageimage_url($example->pageID, 200, 200) . '">';
 		
 		$html .= '</a>';
 		$html .= '</div>';
