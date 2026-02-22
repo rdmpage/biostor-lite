@@ -583,7 +583,7 @@ function do_one($id)
 		{
 			$image = new stdclass;
 			$image->{'@type'} = 'ImageObject';
-			$image->thumbnailUrl = pageimage_url($obj->_source->search_result_data->bhl_pages[$i], 80, 80);
+			$image->thumbnailUrl = 'https://www.biodiversitylibrary.org/pagethumb/' . $obj->_source->search_result_data->bhl_pages[$i];
 			$image->caption = $obj->_source->search_result_data->page_numbers[$i];
 			
 			$record->hasPart->hasPart[] = $image;
@@ -956,7 +956,7 @@ function do_welcome()
 	{
 		$html .= '<div class="example">';
 		$html .= '<a href="reference/' . $example->referenceID . '">';
-		$html .= '<img src="' . pageimage_url($example->pageID, 200, 200) . '">';
+		$html .= '<img src="https://www.biodiversitylibrary.org/pagethumb/' . $example->pageID . ',200,200">';
 		
 		$html .= '</a>';
 		$html .= '</div>';

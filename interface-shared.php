@@ -441,7 +441,7 @@ function display_entity_details($entity)
 	foreach ($entity->hasPart->hasPart as $image)
 	{
 		echo '<li>';
-		echo '<img src="' . $image->thumbnailUrl . '"';
+		echo '<img src="' . $image->thumbnailUrl . ',80,80"';
 		
 		echo ' title="' . $image->caption . '"';
 		
@@ -1175,17 +1175,10 @@ function display_list($data)
 		$html .=  '<div class="thumbnail">';
 		if (isset($dataFeedElement->item->thumbnailUrl))
 		{
-			if (preg_match('/pagethumb\/(\d+)/', $dataFeedElement->item->thumbnailUrl, $m))
-			{
-				$html .= '<img height="200" src="' . pageimage_url($m[1], 200, 200) . '">';
-			}
-			else
-			{
-				$html .= '<img height="200" src="' . $dataFeedElement->item->thumbnailUrl . '">';
-			}
+			$html .= '<img height="200" src="' . $dataFeedElement->item->thumbnailUrl . '">';
 		}
 		$html .= '</div>';
-		
+
 		$html .=  '<div style="margin-left:100px;">';
 		
 		$html .= '<div style="font-size:1.2em;line-height:1.2em;display:block;padding-bottom:0.5em;">' ;
@@ -1295,14 +1288,7 @@ function display_decade_list($data)
 					
 					$html .='>';
 							
-					if (preg_match('/pagethumb\/(\d+)/', $item->thumbnailUrl, $m))
-					{
-						$html .= '<img height="200" loading="lazy" class="works" src="' . pageimage_url($m[1], 200, 200) . '">';
-					}
-					else
-					{
-						$html .= '<img height="200" loading="lazy" class="works" src="' . $item->thumbnailUrl . '">';
-					}
+					$html .= '<img height="200" loading="lazy" class="works" src="' . $item->thumbnailUrl . '">';
 					$html .= '</a>';
 				}		
 				
@@ -1374,17 +1360,10 @@ function display_decade_list($data)
 		$html .=  '<div class="thumbnail">';
 		if (isset($dataFeedElement->item->thumbnailUrl))
 		{
-			if (preg_match('/pagethumb\/(\d+)/', $dataFeedElement->item->thumbnailUrl, $m))
-			{
-				$html .= '<img height="200" src="' . pageimage_url($m[1], 200, 200) . '">';
-			}
-			else
-			{
-				$html .= '<img height="200" src="' . $dataFeedElement->item->thumbnailUrl . '">';
-			}
+			$html .= '<img height="200" src="' . $dataFeedElement->item->thumbnailUrl . '">';
 		}
 		$html .= '</div>';
-		
+
 		$html .=  '<div style="margin-left:100px;">';
 		
 		$html .= '<div style="font-size:1.2em;line-height:1.2em;display:block;padding-bottom:1em;">' ;
