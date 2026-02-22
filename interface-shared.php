@@ -441,7 +441,7 @@ function display_entity_details($entity)
 	foreach ($entity->hasPart->hasPart as $image)
 	{
 		echo '<li>';
-		echo '<img src="' . $image->thumbnailUrl . ',80,80"';
+		echo '<img src="' . $image->thumbnailUrl . '"';
 		
 		echo ' title="' . $image->caption . '"';
 		
@@ -1175,7 +1175,7 @@ function display_list($data)
 		$html .=  '<div class="thumbnail">';
 		if (isset($dataFeedElement->item->thumbnailUrl))
 		{
-			$html .= '<img height="200" src="' . $dataFeedElement->item->thumbnailUrl . '">';
+			$html .= '<img height="200" src="' . bhl_pageimage_url($dataFeedElement->item->thumbnailUrl, 200, 200) . '">';
 		}
 		$html .= '</div>';
 
@@ -1288,7 +1288,7 @@ function display_decade_list($data)
 					
 					$html .='>';
 							
-					$html .= '<img height="200" loading="lazy" class="works" src="' . $item->thumbnailUrl . '">';
+					$html .= '<img height="200" loading="lazy" class="works" src="' . bhl_pageimage_url($item->thumbnailUrl, 200, 200) . '">';
 					$html .= '</a>';
 				}		
 				
@@ -1360,7 +1360,7 @@ function display_decade_list($data)
 		$html .=  '<div class="thumbnail">';
 		if (isset($dataFeedElement->item->thumbnailUrl))
 		{
-			$html .= '<img height="200" src="' . $dataFeedElement->item->thumbnailUrl . '">';
+			$html .= '<img height="200" src="' . bhl_pageimage_url($dataFeedElement->item->thumbnailUrl, 200, 200) . '">';
 		}
 		$html .= '</div>';
 

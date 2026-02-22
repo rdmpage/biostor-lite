@@ -115,8 +115,7 @@ switch ($feed_format)
 				
 					if (isset($hit->_source->search_result_data->thumbnailUrl))
 					{
-						$thumbnailUrl = $hit->_source->search_result_data->thumbnailUrl;
-						$thumbnailUrl = preg_replace('/,\\d+,\\d+$/', ',240,240', $thumbnailUrl);
+						$thumbnailUrl = bhl_pageimage_url($hit->_source->search_result_data->thumbnailUrl, 240, 240);
 
 						$description_content = '<p>' . '<img src="' . $thumbnailUrl . '" width="240"></p>';
 						$description_content .= '<p>' . $hit->_source->search_result_data->description . '</p>';

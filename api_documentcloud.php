@@ -113,12 +113,12 @@ function display_documentcloud_page ($id, $page, $size, $callback = '')
 				switch ($size)
 				{
 					case 'small':
-						$image_url = 'https://www.biodiversitylibrary.org/pagethumb/' . $PageID . ',100,100';
+						$image_url = pageimage_url($PageID, 100, 100);
 						break;
 
 					case 'normal':
 					default:
-						$image_url = 'https://www.biodiversitylibrary.org/pagethumb/' . $PageID . ',800,800';
+						$image_url = pageimage_url($PageID, 800, 800);
 						break;
 				}
 			}

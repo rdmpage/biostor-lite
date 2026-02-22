@@ -109,7 +109,7 @@ $html .= '<body>';
 $html .= '<h1>Item ' . $item . '</h1>';
 $html .= '<p>' .  $item_data->Result->SourceIdentifier . ', ' . $item_data->Result->Volume . '</p>';
 
-$html .= '<div><img style="float:left;border:1px solid rgb(192,192,192);" height="130" src="https://www.biodiversitylibrary.org/pagethumb/' . $item_data->Result->ThumbnailPageID . ',200,200" /></div>';
+$html .= '<div><img style="float:left;border:1px solid rgb(192,192,192);" height="130" src="' . pageimage_url($item_data->Result->ThumbnailPageID, 200, 200) . '" /></div>';
 
 $html .= '</div>';
 $html .= '<div style="clear:both;"></div>';
@@ -136,7 +136,7 @@ foreach ($item_data->Result->Pages as $page)
 	$html .= '>';
 	
 	
-	$html .= '<img style="border:1px solid rgb(192,192,192);" height="130" src="https://www.biodiversitylibrary.org/pagethumb/' . $page->PageID . ',200,200" />';
+	$html .= '<img style="border:1px solid rgb(192,192,192);" height="130" src="' . pageimage_url($page->PageID, 200, 200) . '" />';
 	
 	if (isset($page->PageNumbers) && count($page->PageNumbers) > 0)
 	{
