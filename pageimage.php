@@ -28,7 +28,7 @@ function download_file($path, $fname)
 		CURLOPT_FAILONERROR    => true, // HTTP code > 400 will throw curl error
 		CURLOPT_TIMEOUT        => 60,
 		CURLOPT_CONNECTTIMEOUT => 5,
-		CURLOPT_USERAGENT      => 'Mozilla/5.0 (compatible; BioStor/1.0; +https://biostor.org/)',
+		CURLOPT_USERAGENT      => 'Mozilla/5.0 (compatible; ImageFetcher/5.6; +http://images.weserv.nl/)',
 	);
 
 	$ch = curl_init();
