@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/1130103957",
+    "oclcnum": "1130103957",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/1130103957"
+    ],
+    "name": "Nat Hist Juan Fernandez and Easter Island"
+}
