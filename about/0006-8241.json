@@ -1,15 +1,24 @@
-{
-    "@context": "http://schema.org/",
-    "@type": "Periodical",
-    "@id": "https://biostor.org/issn/0006-8241",
-    "issn": [
-        "0006-8241"
-    ],
-    "sameAs": [
-        "http://issn.org/resource/ISSN/0006-8241",
-        "http://www.wikidata.org/entity/Q5732717",
-        "https://en.wikipedia.org/wiki/African_Biodiversity_%26_Conservation"
-    ],
-    "name": "African Biodiversity %26 Conservation",
-    "description": []
+{ 
+    "@context": "http://schema.org/", 
+    "@type": "Periodical", 
+    "@id": "https://biostor.org/issn/0006-8241", 
+    "issn": [ 
+        "0006-8241" 
+    ], 
+    "sameAs": [ 
+        "http://issn.org/resource/ISSN/0006-8241", 
+        "http://www.wikidata.org/entity/Q5732717", 
+        "https://en.wikipedia.org/wiki/Bothalia:_African_Biodiversity_%26_Conservation" 
+    ], 
+    "name": "African Biodiversity %26 Conservation", 
+    "description": [ 
+        { 
+            "@language": "en", 
+            "@value": "Bothalia: African Biodiversity & Conservation, formerly known as Bothalia is a South African peer-reviewed open access scientific journal covering the fields of botany, zoology and biodiversity, produced by the South African National Biodiversity Institute. According to the Journal Citation Reports, the journal has a 2023 impact factor of 0.8."
+        }, 
+        { 
+            "@language": "es", 
+            "@value": "Bothalia (abreviado Bothalia)​ es una revista ilustrada con descripciones botánicas que es editada en Sudáfrica desde el año 1921, con el nombre de Bothalia. A Record of Contributions from the National Herbarium, Union of South Africa. Pretoria."
+        }
+    ] 
 }
