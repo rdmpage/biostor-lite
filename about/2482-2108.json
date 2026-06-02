@@ -1,0 +1,13 @@
+{ 
+    "@context": "http://schema.org/", 
+    "@type": "Periodical", 
+    "@id": "https://biostor.org/issn/2482-2108", 
+    "issn": [ 
+        "2482-2108" 
+    ], 
+    "sameAs": [ 
+        "http://issn.org/resource/ISSN/2482-2108", 
+        "http://www.wikidata.org/entity/Q51399213"
+    ], 
+    "name": "Boletín de la Sociedad entomológica de España"
+}
