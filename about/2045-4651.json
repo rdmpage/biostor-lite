@@ -1,0 +1,21 @@
+{ 
+    "@context": "http://schema.org/", 
+    "@type": "Periodical", 
+    "@id": "https://biostor.org/issn/2045-4651", 
+    "issn": [ 
+        "2045-4651",
+        "2045-4643"
+    ], 
+    "sameAs": [ 
+        "http://issn.org/resource/ISSN/2045-4651", 
+        "http://issn.org/resource/ISSN/2045-4643", 
+        "http://www.wikidata.org/entity/Q21386068"
+    ], 
+    "name": "Zoological Bibliography",
+    "description": [
+        {
+            "@language": "en",
+            "@value": "An occasional publication reporting on investigations into the bibliography of zoology, chiefly relating to dates of publication (especially of works issued in parts), problems of authorship, examples of cancellantia, and other bibliographical features that might have a bearing on nomenclatural problems."
+        }
+    ]    
+}
