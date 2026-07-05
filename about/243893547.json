@@ -1,0 +1,14 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "oclcnum": "http://purl.org/library/oclcnum"
+    },
+    "@type": "Periodical",
+    "@id": "https://biostor.org/oclc/243893547",
+    "oclcnum": "243893547",
+    "sameAs": [
+        "http://www.worldcat.org/oclc/243893547",
+        "http://www.wikidata.org/entity/Q51382074",
+    ],
+    "name": "Collections zoologiques du baron Edm. de Selys Longchamps"
+}

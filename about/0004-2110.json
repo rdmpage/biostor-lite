@@ -1,15 +1,18 @@
 {
-    "@context": "http://schema.org/",
-    "@type": "Periodical",
-    "@id": "https://biostor.org/issn/0004-2110",
-    "issn": [
-        "0004-2110"
-    ],
-    "sameAs": [
-        "http://issn.org/resource/ISSN/0004-2110",
-        "http://www.wikidata.org/entity/Q10418043",
-        "https://en.wikipedia.org/wiki/Arkiv_f%C3%B6r_zoologi"
-    ],
-    "name": "Arkiv f%C3%B6r zoologi",
-    "description": []
+  "@context": "http://schema.org/",
+  "@type": "Periodical",
+  "@id": "https://biostor.org/issn/0004-2110",
+  "issn": [
+    "0004-2110"
+  ],
+  "sameAs": [
+    "http://issn.org/resource/ISSN/0004-2110",
+    "http://www.wikidata.org/entity/Q10418043",
+    "https://en.wikipedia.org/wiki/Arkiv_för_Zoologi"
+  ],
+  "name": "Arkiv för zoologi",
+  "description": [{
+    "@language": "en",
+    "@value": "Arkiv för Zoologi was a scientific journal on zoology, published by the Royal Swedish Academy of Sciences between 1903 and 1974. Prior to 1903, zoology articles were published in a supplement to the Transactions of the Academy. Arkiv för Zoologi was superseded by the journal Zoologica Scripta established in 1972."
+  }]
 }
