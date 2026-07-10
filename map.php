@@ -186,10 +186,27 @@ span.works {
 			overflow-y:auto;
 		}
 
+		/* Fixed-height, internally scrolling GeoJSON box. We deliberately do NOT
+		   use Materialize's .materialize-textarea class, which auto-grows the field
+		   as you move through the text and pushes the rest of the layout down. */
 		#geojson {
 			font-family: monospace;
 			font-size: 0.8em;
-			height: 6em;
+			height: 8em;
+			width: 100%;
+			box-sizing: border-box;
+			overflow-y: auto;
+			resize: vertical;
+			padding: 6px 8px;
+			border: 1px solid #9e9e9e;
+			border-radius: 2px;
+		}
+
+		#geojson-label {
+			display: block;
+			font-size: 0.8rem;
+			color: #9e9e9e;
+			margin-bottom: 4px;
 		}
 
 		h1 {
@@ -297,7 +314,13 @@ span.works {
 				} catch (err) {
 				}
 
-				do_search(layer.toGeoJSON());
+				var geo = layer.toGeoJSON();
+
+				// Put the drawn shape's GeoJSON in the text box so the user can
+				// copy it or tweak and re-run the same search.
+				document.getElementById('geojson').value = JSON.stringify(geo, null, 2);
+
+				do_search(geo);
 			});
 
 
@@ -528,11 +551,9 @@ span.works {
 					</div>
 				</div>
 
-				<div class="input-field">
-					<textarea id="geojson" class="materialize-textarea"
-						placeholder='{ "type": "Polygon", "coordinates": [ [ [lon,lat], ... ] ] }'></textarea>
-					<label for="geojson">GeoJSON</label>
-				</div>
+				<label id="geojson-label" for="geojson">GeoJSON</label>
+				<textarea id="geojson"
+					placeholder='{ "type": "Polygon", "coordinates": [ [ [lon,lat], ... ] ] }'></textarea>
 
 				<button class="btn waves-effect waves-light" onclick="run_search();">
 					Search
