@@ -771,10 +771,36 @@ function search_result_to_rdf($obj, $query_string = "")
 					if (isset($csl->DOI))
 					{
 						$dataFeedItem->item->doi = $csl->DOI;	
-					}							
+					}	
 					
+					//------------------------------------------------------------------------------------
+					// authors/creators
+					if (isset($csl->author))
+					{
+						$dataFeedItem->item->creator = array();
+					
+						foreach ($csl->author as $one_author)
+						{
+							$name_parts = [];
+							if (isset($one_author->literal))
+							{
+								$name_parts[] = $one_author->literal;
+							}
+							else
+							{
+								if (isset($one_author->given))
+								{
+									$name_parts[] = $one_author->given;
+								}
+								if (isset($one_author->family))
+								{
+									$name_parts[] = $one_author->family;
+								}							
+							}							
+							$dataFeedItem->item->creator[] = join(" ", $name_parts);		
+						}	
+					}		
 				}
-				
 
 				$output->{'@graph'}[0]->dataFeedElement[] = $dataFeedItem;
 			}			

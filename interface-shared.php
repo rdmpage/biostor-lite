@@ -1188,6 +1188,13 @@ function display_list($data)
 		
 		$html .=  '</div>';
 		
+		if (isset($dataFeedElement->item->creator))
+		{
+			$html .=  '<div style="color:rgb(64,64,64);display:block;padding-bottom:0.5em;">';
+			$html .= "Authors: " . join(" | ", $dataFeedElement->item->creator);
+			$html .=  '</div>';
+		}
+				
 		if (isset($dataFeedElement->item->description))
 		{
 			$html .=  '<div style="color:rgb(64,64,64)">';
