@@ -9,7 +9,7 @@ require_once(dirname(__FILE__) . '/config.inc.php');
 <!DOCTYPE html>
 <html>
 	<head>
-	
+
 		<!-- Google Analytics -->
 		<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -20,19 +20,19 @@ require_once(dirname(__FILE__) . '/config.inc.php');
 		ga('create', 'UA-12127487-1', 'auto');
 		ga('send', 'pageview');
 		</script>
-		<!-- End Google Analytics -->	
-	
-		<meta charset="utf-8" /> 
-		
+		<!-- End Google Analytics -->
+
+		<meta charset="utf-8" />
+
    		<!-- favicon -->
-		<link href="static/biostor-shadow32x32.png" rel="icon" type="image/png">    
-		
+		<link href="static/biostor-shadow32x32.png" rel="icon" type="image/png">
+
 		<title>
 			BioStor-Lite
 		</title>
 		<style>
 
-			
+
 /* dot on map */
 .mydivicon{
     width: 12px
@@ -41,7 +41,7 @@ require_once(dirname(__FILE__) . '/config.inc.php');
     background: rgb(208,104,85);
     border: 1px solid rgb(38,38,38);
     opacity: 0.85
-}			
+}
 
 
 section.covers{
@@ -66,7 +66,7 @@ img.covers{
   max-width: 100%;
   min-width: 100%;
   vertical-align: bottom;
-}	
+}
 
 section.works{
   display: flex;
@@ -103,7 +103,7 @@ div.works.year {
 a.works {
 	text-decoration:none;
 	color:#004d40;
-	
+
 }
 
 img.works{
@@ -111,7 +111,7 @@ img.works{
   max-width: 100%;
   min-width: 100%;
   vertical-align: bottom;
-}	
+}
 
 span.works {
 	font-size:0.7em;
@@ -128,51 +128,38 @@ span.works {
 	z-index:10;
 	padding:4px;
 }
-			
+
 		</style>
-		
-		
+
+
 		<!-- base -->
     	<base href="<?php echo $config['web_root']; ?>" /><!--[if IE]></base><![endif]-->
 
-		
-		<!--Let browser know website is optimized for mobile-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-		
-		<!--Import Google Icon Font-->
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
-		
 
-		
-		<!-- cloud -->
-		<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script> -->
-		<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">  -->
-		<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script> -->		
-		<!-- <script src="https://cdn.jsdelivr.net/npm/citation-js@0.4.0-7/build/citation.js" type="text/javascript"></script> -->
-		<!-- <script src="https://cdn.jsdelivr.net/npm/ejs@2.6.1/ejs.min.js" integrity="sha256-ZS2YSpipWLkQ1/no+uTJmGexwpda/op53QxO/UBJw4I=" crossorigin="anonymous"> -->
-  		 <!-- leaflet -->
-		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" /> -->
-		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js" type="text/javascript"></script> -->
-		
-		
-		
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!--Import Google Icon Font-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
 		<!-- local --->
-		<script src="js/jquery.js"></script> 
-		<script src="js/ejs.js"></script> 
+		<script src="js/jquery.js"></script>
+		<script src="js/ejs.js"></script>
 		<script src="js/citation.js" type="text/javascript"></script>
-		<link rel="stylesheet" type="text/css" href="css/materialize.min.css"> 
+		<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
 		<script type="text/javascript" src="js/materialize.min.js"></script>
-		
-		
+
+
 		<link rel="stylesheet" type="text/css" href="js/leaflet-0.7.3/leaflet.css" />
 		<script src="js/leaflet-0.7.3/leaflet.js" type="text/javascript"></script>
-		
-		<link rel="stylesheet" href="js/leaflet.draw/leaflet.draw.css" /> 
+
+		<link rel="stylesheet" href="js/leaflet.draw/leaflet.draw.css" />
 		<script src="js/leaflet.draw/leaflet.draw.js" type="text/javascript"></script>
-		
+
 
 	<style>
-		/* body and main styles to give us a fixed footer, see https://materializecss.com/footer.html */	
+		/* body and main styles; no footer, page is sized to one viewport */
 		body {
 			display: flex;
 			min-height: 100vh;
@@ -181,7 +168,13 @@ span.works {
 
 		main {
 			flex: 1 0 auto;
-		}		
+		}
+
+		/* kill the default Materialize row margin so the map fills the viewport
+		   exactly and the page does not scroll on desktop */
+		main .row {
+			margin-bottom: 0;
+		}
 
 		#map {
 			width:auto;
@@ -189,8 +182,14 @@ span.works {
 		}
 
 		#results {
-			height:70vh;
+			height:45vh;
 			overflow-y:auto;
+		}
+
+		#geojson {
+			font-family: monospace;
+			font-size: 0.8em;
+			height: 6em;
 		}
 
 		h1 {
@@ -214,20 +213,22 @@ span.works {
 			#heading {
 				visibility: hidden;
 				height:0px;
-			}	  
+			}
 
 			h1 {
 				visibility: hidden;
 				margin:0px;
 				padding:0px;
 			}
-		}		
-	</style>		
-    
+		}
+	</style>
+
   <script>
-    
+
 		var map;
-		var drawnItems = null;
+		var drawnItems = null;   // shapes drawn on the map
+		var searchLayer = null;  // uploaded / pasted GeoJSON polygon
+		var pointsLayer = null;  // point localities found inside the area
 
 		//--------------------------------------------------------------------------------
 		// The large map where we display results
@@ -236,28 +237,23 @@ span.works {
 
 			// create the tile layer with correct attribution
 			var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-	
-			/* This is where we can change the base map tiles */
-			// GBIF
-			// osmUrl = 'https://api.mapbox.com/v4/mapbox.outdoors/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoicmRtcGFnZSIsImEiOiJjajJrdmJzbW8wMDAxMnduejJvcmEza2k4In0.bpLlN9O6DylOJyACE8IteA';
-	
+
 			var osmAttrib='Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
-			var osm = new L.TileLayer(osmUrl, {minZoom: 1, maxZoom: 12, attribution: osmAttrib});		
+			var osm = new L.TileLayer(osmUrl, {minZoom: 1, maxZoom: 12, attribution: osmAttrib});
 
 			map.setView(new L.LatLng(0, 0),4);
-			map.addLayer(osm);	
-		
-			/* This is where we add custom tiles, e.g. with data points */
-			
+			map.addLayer(osm);
+
+			/* BioStor data points as tiles */
 			var dotsAttrib='BioStor';
-			var dots = new L.TileLayer('tile.php?x={x}&y={y}&z={z}', 
+			var dots = new L.TileLayer('tile.php?x={x}&y={y}&z={z}',
 				{minZoom: 0, maxZoom: 14, attribution: dotsAttrib});
-		
-			map.addLayer(dots);	
-			
+
+			map.addLayer(dots);
+
 			drawnItems = new L.FeatureGroup();
-			map.addLayer(drawnItems);			
-			
+			map.addLayer(drawnItems);
+
 			var drawControl = new L.Control.Draw({
 				position: 'topleft',
 				draw: {
@@ -287,179 +283,225 @@ span.works {
 					featureGroup: drawnItems
 				}
 			});
-			map.addControl(drawControl);	
-			
+			map.addControl(drawControl);
+
 			map.on('draw:created', function (e) {
-				var type = e.layerType,
-					layer = e.layer;
+				var layer = e.layer;
 
+				// a freshly drawn shape replaces any previous search area
+				clear_search_shapes();
 				drawnItems.addLayer(layer);
-		
-				// alert(JSON.stringify(layer.toGeoJSON()));
-			
-				console.log(JSON.stringify(layer.toGeoJSON()));
 
-				do_geo_search(layer.toGeoJSON());
-			
-			});						
-			
-	
+				try {
+					map.fitBounds(layer.getBounds());
+				} catch (err) {
+				}
+
+				do_search(layer.toGeoJSON());
+			});
+
+
 		}
-		
+
 		//--------------------------------------------------------------------------------
-		function do_geo_search(geo) {
-		
-			// clear stuff
-			document.getElementById('results').innerHTML = "Searching...";
-			
-			// move to where search is
-			for (var i in geo.geometry.coordinates) {
-				  minx = 180;
-				  miny = 90;
-				  maxx = -180;
-				  maxy = -90;
-		  
-				  for (var j in geo.geometry.coordinates[i]) {
-					minx = Math.min(minx, geo.geometry.coordinates[i][j][0]);
-					miny = Math.min(miny, geo.geometry.coordinates[i][j][1]);
-					maxx = Math.max(maxx, geo.geometry.coordinates[i][j][0]);
-					maxy = Math.max(maxy, geo.geometry.coordinates[i][j][1]);
-				  }
-				}
-			
-			bounds = L.latLngBounds(L.latLng(miny,minx), L.latLng(maxy,maxx));
-			map.fitBounds(bounds);			
-				
-			
-			// console.log(JSON.stringify(geo_filter, null, 2));				
-			
-			$.getJSON('api.php?geo=' 
-					+ encodeURI(JSON.stringify(geo))
-					+ '&callback=?',
-				function(data){
-					console.log(JSON.stringify(data, null, 2));
-					
-							if (data.hits) {
-								var hit_count = 0;
-								
-								if (typeof data.hits.total === 'object') {
-									hit_count = data.hits.total.value;
-								} else {
-									hit_count = data.hits.total;
-								}
-							
-								if (hit_count > 0) {
-									var hits = [];
-									for (var i in data.hits.hits) {
-										hits[data.hits.hits[i]._id] = data.hits.hits[i]._source.search_result_data;
-									}
-
-									// Render template 	
-									var html = ejs.render(template_results, { data : hits });
-			
-									// Display
-									document.getElementById('results').innerHTML = html;
-								}
-								else
-								{
-									document.getElementById('results').innerHTML = 'Nothing found!';
-								}
-							}		
-				
-				});								
+		// Remove any previously drawn / uploaded search area from the map
+		function clear_search_shapes() {
+			if (drawnItems) {
+				drawnItems.clearLayers();
+			}
+			if (searchLayer) {
+				map.removeLayer(searchLayer);
+				searchLayer = null;
+			}
 		}
-		
-		
-			//------------------------------------------------------------------------------------
-			// https://osric.com/chris/accidental-developer/2012/11/balancing-tags-in-html-and-xhtml-excerpts/
-			
-			// balance:
-			// - takes an excerpted or truncated XHTML string
-			// - returns a well-balanced XHTML string
-			function balance(string) {
-			  // Check for broken tags, e.g. <stro
-			  // Check for a < after the last >, indicating a broken tag
-			  if (string.lastIndexOf("<") > string.lastIndexOf(">")) {
-				// Truncate broken tag
-				string = string.substring(0,string.lastIndexOf("<"));
-			  }
-			
-			  // Check for broken elements, e.g. &lt;strong&gt;Hello, w
-			  // Get an array of all tags (start, end, and self-closing)
-			  var tags = string.match(/<[^>]+>/g);
-			  var stack = new Array();
-			  for (tag in tags) {
-				if (tags[tag].search("/") <= 0) {
-				  // start tag -- push onto the stack
-				  stack.push(tags[tag]);
-				} else if (tags[tag].search("/") == 1) {
-				  // end tag -- pop off of the stack
-				  stack.pop();
-				} else {
-				  // self-closing tag -- do nothing
+
+		//--------------------------------------------------------------------------------
+		// Read the file chooser, drop its contents into the textarea, and search
+		function handle_file(input) {
+			if (!input.files || input.files.length === 0) {
+				return;
+			}
+			var reader = new FileReader();
+			reader.onload = function (e) {
+				document.getElementById('geojson').value = e.target.result;
+				run_search();
+			};
+			reader.readAsText(input.files[0]);
+		}
+
+		//--------------------------------------------------------------------------------
+		// Draw supplied GeoJSON on the map. L.geoJson handles Polygon AND MultiPolygon
+		// (and Feature / FeatureCollection) natively, so getBounds() works for all of
+		// them without any hand-rolled coordinate walking.
+		function show_geojson(geo) {
+			searchLayer = L.geoJson(geo, {
+				style: {
+					color: 'purple',
+					weight: 2,
+					fillOpacity: 0.1
 				}
-			  }
-			
-			  // stack should now contain only the start tags of the broken elements,
-			  // the most deeply-nested start tag at the top
-			  while (stack.length > 0) {
-				// pop the unmatched tag off the stack
-				var endTag = stack.pop();
-				// get just the tag name
-				endTag = endTag.substring(1,endTag.search(/[ >]/));
-				// append the end tag
-				string += "</" + endTag + ">";
-			  }
-			
-			  // Return the well-balanced XHTML string
-			  return(string);
-			}	
-		
-		
+			});
+			map.addLayer(searchLayer);
+
+			try {
+				map.fitBounds(searchLayer.getBounds());
+			} catch (e) {
+				console.log('Could not fit bounds: ' + e);
+			}
+		}
+
+		//--------------------------------------------------------------------------------
+		// Search from the textarea (also used by the file uploader)
+		function run_search() {
+			var text = document.getElementById('geojson').value;
+
+			if (text.trim() === '') {
+				M.toast({html: 'Please paste or upload some GeoJSON, or draw on the map'});
+				return;
+			}
+
+			var geo;
+			try {
+				geo = JSON.parse(text);
+			} catch (e) {
+				document.getElementById('results').innerHTML =
+					'<p class="red-text">That is not valid JSON: ' + e + '</p>';
+				return;
+			}
+
+			clear_search_shapes();
+			show_geojson(geo);
+			do_search(geo);
+		}
+
+		//--------------------------------------------------------------------------------
+		// Plot the point localities found inside the area.
+		// api_geo.php returns coordinates as [lon, lat]; Leaflet wants [lat, lon].
+		function show_points(articles) {
+			if (pointsLayer) {
+				map.removeLayer(pointsLayer);
+				pointsLayer = null;
+			}
+
+			pointsLayer = L.layerGroup();
+
+			for (var i in articles) {
+				var coords = articles[i].coordinates || [];
+				for (var j in coords) {
+					var lon = coords[j][0];
+					var lat = coords[j][1];
+					var marker = L.circleMarker([lat, lon], {
+						radius: 5,
+						color: 'rgb(38,38,38)',
+						weight: 1,
+						fillColor: 'rgb(208,104,85)',
+						fillOpacity: 0.85
+					});
+					marker.bindPopup(articles[i].name || articles[i].id);
+					pointsLayer.addLayer(marker);
+				}
+			}
+
+			map.addLayer(pointsLayer);
+		}
+
+		//--------------------------------------------------------------------------------
+		// POST the GeoJSON (raw body) to api_geo.php and render the article list.
+		// Works for both drawn shapes (layer.toGeoJSON()) and uploaded/pasted GeoJSON.
+		function do_search(geo) {
+			document.getElementById('results').innerHTML = 'Searching&hellip;';
+
+			$.ajax({
+				url: 'api_geo.php',
+				type: 'POST',
+				data: JSON.stringify(geo),   // raw GeoJSON body; api_geo.php reads php://input
+				contentType: 'application/json',
+				dataType: 'text'
+			})
+			.done(function (response) {
+				var data;
+				try {
+					data = JSON.parse(response);
+				} catch (e) {
+					document.getElementById('results').innerHTML =
+						'<p class="red-text">Unexpected response from server.</p>';
+					return;
+				}
+
+				if (data.status && data.status >= 400) {
+					document.getElementById('results').innerHTML =
+						'<p class="red-text">' + (data.message || 'Search failed') + '</p>';
+					return;
+				}
+
+				var articles = data.articles || [];
+
+				if (articles.length === 0) {
+					document.getElementById('results').innerHTML = 'Nothing found in this area.';
+					return;
+				}
+
+				show_points(articles);
+
+				var html = ejs.render(template_results, {total: data.total, data: articles});
+				document.getElementById('results').innerHTML = html;
+			})
+			.fail(function (xhr) {
+				document.getElementById('results').innerHTML =
+					'<p class="red-text">Search request failed (' + xhr.status + ').</p>';
+			});
+		}
+
+
 			        //--------------------------------------------------------------------------------
+				// Result template. Uses the trimmed fields api_geo.php returns:
+				// id, name, url, thumbnailUrl, csl, year, container, authors, coordinates
 				var template_results = `
-					<% for(var i in data) {%>
+					<p class="grey-text"><%- total %> article<%- (total == 1 ? '' : 's') %> found</p>
+					<% for (var i in data) { %>
+						<% var ref = String(data[i].id).replace(/biostor-/, ''); %>
 						<div class="card-panel small">
-						
-							<div class="row">
+							<div class="row" style="margin-bottom:0;">
 								<div class="col s3">
-									<% if (data[i].thumbnailUrl)  {%>
-											<a href="reference/<%- i.replace(/biostor-/, '') %>">
-												<img class="z-depth-1" style="width:80px;background:white;" src="<%- data[i].thumbnailUrl %>?height=100" >
-											</a>
+									<% if (data[i].thumbnailUrl) { %>
+										<a href="reference/<%- ref %>" target="_new">
+											<img class="z-depth-1" style="width:80px;background:white;" src="<%- data[i].thumbnailUrl %>?height=100">
+										</a>
 									<% } %>
 								</div>
-								
 								<div class="col s9">
 									<span class="black-text">
-										<a href="reference/<%- i.replace(/biostor-/, '') %>" target="_new">
-										<%- balance(data[i].name) %>
-										</a>								
+										<a href="reference/<%- ref %>" target="_new"><%- data[i].name %></a>
 									</span>
 									<br />
-									<span style="grey-text">			
-										<%- data[i].description %>
+									<span class="grey-text">
+										<% if (data[i].authors) { %><%- data[i].authors.join(', ') %><% } %>
+										<% if (data[i].year) { %>(<%- data[i].year %>)<% } %>
+										<% if (data[i].container) { %>&mdash; <em><%- [].concat(data[i].container).join('; ') %></em><% } %>
+									</span>
+									<br />
+									<span class="grey-text" style="font-size:0.8em;">
+										<%- (data[i].coordinates ? data[i].coordinates.length : 0) %>
+										localit<%- ((data[i].coordinates ? data[i].coordinates.length : 0) == 1 ? 'y' : 'ies') %> in this area
 									</span>
 								</div>
-								
 							</div>
 						</div>
 					<% } %>
-			
-				`;				
-		
-		
-		
+				`;
+
+
+
     	</script>
-		
+
 	</head>
 	<body>
 		<header></header>
 		<main>
 			<div class="row">
-				
+
 			 <div class="col s12 m8">
-			   
+
 			   <div class="row">
 				  <div id="map"></div>
 				</div>
@@ -471,33 +513,41 @@ span.works {
 			  		<a href="./">BioStor</a>
 			  		<h1>Map</h1>
 			  	</div>
-				<p>Each dot represents (latitude, longitude) pair that is mentioned in an article in BioStor. 
-				Use the polygon or
-				square drawing tools on the map to search for articles by region.
-				<div id="results" class="row">
+				<p>Each dot represents a (latitude, longitude) pair mentioned in an article in BioStor.
+				Use the polygon or square drawing tools on the map to search by region, or upload / paste
+				GeoJSON below. Polygons and MultiPolygons (e.g. islands) are both supported.</p>
+
+				<div class="file-field input-field">
+					<div class="btn">
+						<span>File</span>
+						<input type="file" accept=".geojson,.json,application/geo+json,application/json"
+							onchange="handle_file(this);">
+					</div>
+					<div class="file-path-wrapper">
+						<input class="file-path validate" type="text" placeholder="Upload a .geojson file">
+					</div>
+				</div>
+
+				<div class="input-field">
+					<textarea id="geojson" class="materialize-textarea"
+						placeholder='{ "type": "Polygon", "coordinates": [ [ [lon,lat], ... ] ] }'></textarea>
+					<label for="geojson">GeoJSON</label>
+				</div>
+
+				<button class="btn waves-effect waves-light" onclick="run_search();">
+					Search
+					<i class="material-icons right">search</i>
+				</button>
+
+				<div id="results" class="row" style="margin-top:1em;">
 				</div>
 			  </div>
-				
+
 			</div>
 		</main>
-		
- 		
-		
-		<footer >
-			<div class="container">
-            	<div class="row">
-            	<div class="divider"></div>
-            		<a href=".">BioStor-Lite</a> is a project by <a href="https://twitter.com/rdmpage">Rod Page</a>. 
-            		It' goal is to make discoverable articles in the <a href="https://www.biodiversitylibrary.org">Biodiversity Heritage Library</a> (BHL). 
-            		See also <a href="match.html">Match references</a> reconciliation service.
-            	</div>
-            </div>
-		</footer>
-		
-		
+
 		<script>
 			create_map();
 		</script>
 	</body>
 </html>
-
