@@ -517,15 +517,15 @@ span.works {
 					<% for (var i in data) { %>
 						<% var ref = String(data[i].id).replace(/biostor-/, ''); %>
 						<div class="card-panel small">
-							<div class="row" style="margin-bottom:0;">
-								<div class="col s3">
-									<% if (data[i].thumbnailUrl) { %>
+							<div style="display:flex; align-items:flex-start;">
+								<% if (data[i].thumbnailUrl) { %>
+									<div style="flex:0 0 60px; margin-right:12px;">
 										<a href="reference/<%- ref %>" target="_new">
-											<img class="z-depth-1" style="width:80px;background:white;" src="<%- data[i].thumbnailUrl %>?height=100">
+											<img class="z-depth-1" style="width:60px;background:white;" src="<%- data[i].thumbnailUrl %>?height=100">
 										</a>
-									<% } %>
-								</div>
-								<div class="col s9">
+									</div>
+								<% } %>
+								<div style="flex:1 1 auto; min-width:0; overflow-wrap:break-word;">
 									<span class="black-text">
 										<a href="reference/<%- ref %>" target="_new"><%- data[i].name %></a>
 									</span>
