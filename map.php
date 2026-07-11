@@ -247,6 +247,10 @@ span.works {
 		var searchLayer = null;  // uploaded / pasted GeoJSON polygon
 		var pointsLayer = null;  // point localities found inside the area
 
+		// Shared style for the search area, whether drawn or uploaded, so both look
+		// identical and the outline stays solid/opaque in every browser.
+		var SEARCH_STYLE = { color: 'purple', weight: 3, opacity: 1, fillOpacity: 0.1 };
+
 		//--------------------------------------------------------------------------------
 		// The large map where we display results
 		function create_map() {
@@ -303,16 +307,23 @@ span.works {
 			map.addControl(drawControl);
 
 			map.on('draw:created', function (e) {
-				var geo = e.layer.toGeoJSON();
+				var layer = e.layer;
 
 				// a freshly drawn shape replaces any previous search area
 				clear_search_shapes();
 
-				// Render the drawn shape the SAME way as uploaded/pasted GeoJSON, so
-				// it is a solid, clearly-visible polygon in every browser. Leaflet
-				// 0.7's draw-default style uses a semi-transparent stroke, which
-				// renders very faintly in Safari.
-				show_geojson(geo);
+				// Keep the drawn shape in drawnItems so the edit / delete tools work
+				// on it, but give it the same solid, opaque style as uploaded/pasted
+				// GeoJSON so both look identical and the outline stays clearly visible.
+				layer.setStyle(SEARCH_STYLE);
+				drawnItems.addLayer(layer);
+
+				try {
+					map.fitBounds(layer.getBounds());
+				} catch (err) {
+				}
+
+				var geo = layer.toGeoJSON();
 
 				// Put the drawn shape's GeoJSON in the text box so the user can
 				// copy it or tweak and re-run the same search.
@@ -357,14 +368,7 @@ span.works {
 		// (and Feature / FeatureCollection) natively, so getBounds() works for all of
 		// them without any hand-rolled coordinate walking.
 		function show_geojson(geo) {
-			searchLayer = L.geoJson(geo, {
-				style: {
-					color: 'purple',
-					weight: 3,
-					opacity: 1,        // fully opaque stroke: crisp in Safari too
-					fillOpacity: 0.1
-				}
-			});
+			searchLayer = L.geoJson(geo, { style: SEARCH_STYLE });
 			map.addLayer(searchLayer);
 
 			try {
