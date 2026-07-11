@@ -319,6 +319,7 @@ span.works {
 				// Put the drawn shape's GeoJSON in the text box so the user can
 				// copy it or tweak and re-run the same search.
 				document.getElementById('geojson').value = JSON.stringify(geo, null, 2);
+				update_copy_button();
 
 				do_search(geo);
 			});
@@ -347,6 +348,7 @@ span.works {
 			var reader = new FileReader();
 			reader.onload = function (e) {
 				document.getElementById('geojson').value = e.target.result;
+				update_copy_button();
 				run_search();
 			};
 			reader.readAsText(input.files[0]);
@@ -427,6 +429,20 @@ span.works {
 				M.toast({html: 'GeoJSON copied to clipboard'});
 			} catch (e) {
 				M.toast({html: 'Could not copy'});
+			}
+		}
+
+		// Grey out the Copy button when there is nothing to copy, otherwise show it
+		// in the normal button colour like the other buttons.
+		function update_copy_button() {
+			var btn = document.getElementById('copy-btn');
+			if (!btn) {
+				return;
+			}
+			if (document.getElementById('geojson').value.trim() === '') {
+				btn.classList.add('grey', 'lighten-1');
+			} else {
+				btn.classList.remove('grey', 'lighten-1');
 			}
 		}
 
@@ -586,12 +602,12 @@ span.works {
 
 				<div style="display:flex; align-items:center; justify-content:space-between;">
 					<label id="geojson-label" for="geojson">GeoJSON</label>
-					<a class="btn-small waves-effect waves-light grey lighten-1" onclick="copy_geojson();"
+					<a id="copy-btn" class="btn-small waves-effect waves-light" onclick="copy_geojson();"
 						title="Copy GeoJSON to clipboard" style="margin-bottom:4px; cursor:pointer;">
 						<i class="material-icons left">content_copy</i>Copy
 					</a>
 				</div>
-				<textarea id="geojson"
+				<textarea id="geojson" oninput="update_copy_button();"
 					placeholder='{ "type": "Polygon", "coordinates": [ [ [lon,lat], ... ] ] }'></textarea>
 
 				<button class="btn waves-effect waves-light" onclick="run_search();">
@@ -608,6 +624,7 @@ span.works {
 
 		<script>
 			create_map();
+			update_copy_button();
 		</script>
 	</body>
 </html>
