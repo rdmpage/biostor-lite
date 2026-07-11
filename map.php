@@ -303,18 +303,16 @@ span.works {
 			map.addControl(drawControl);
 
 			map.on('draw:created', function (e) {
-				var layer = e.layer;
+				var geo = e.layer.toGeoJSON();
 
 				// a freshly drawn shape replaces any previous search area
 				clear_search_shapes();
-				drawnItems.addLayer(layer);
 
-				try {
-					map.fitBounds(layer.getBounds());
-				} catch (err) {
-				}
-
-				var geo = layer.toGeoJSON();
+				// Render the drawn shape the SAME way as uploaded/pasted GeoJSON, so
+				// it is a solid, clearly-visible polygon in every browser. Leaflet
+				// 0.7's draw-default style uses a semi-transparent stroke, which
+				// renders very faintly in Safari.
+				show_geojson(geo);
 
 				// Put the drawn shape's GeoJSON in the text box so the user can
 				// copy it or tweak and re-run the same search.
@@ -362,7 +360,8 @@ span.works {
 			searchLayer = L.geoJson(geo, {
 				style: {
 					color: 'purple',
-					weight: 2,
+					weight: 3,
+					opacity: 1,        // fully opaque stroke: crisp in Safari too
 					fillOpacity: 0.1
 				}
 			});
