@@ -398,6 +398,39 @@ span.works {
 		}
 
 		//--------------------------------------------------------------------------------
+		// Copy the current GeoJSON to the clipboard
+		function copy_geojson() {
+			var text = document.getElementById('geojson').value;
+
+			if (text.trim() === '') {
+				M.toast({html: 'Nothing to copy yet'});
+				return;
+			}
+
+			if (navigator.clipboard && navigator.clipboard.writeText) {
+				navigator.clipboard.writeText(text).then(
+					function () { M.toast({html: 'GeoJSON copied to clipboard'}); },
+					function () { fallback_copy(); }
+				);
+			} else {
+				fallback_copy();
+			}
+		}
+
+		// Fallback for browsers without the async clipboard API (or non-secure origins)
+		function fallback_copy() {
+			var ta = document.getElementById('geojson');
+			ta.focus();
+			ta.select();
+			try {
+				document.execCommand('copy');
+				M.toast({html: 'GeoJSON copied to clipboard'});
+			} catch (e) {
+				M.toast({html: 'Could not copy'});
+			}
+		}
+
+		//--------------------------------------------------------------------------------
 		// Plot the point localities found inside the area.
 		// api_geo.php returns coordinates as [lon, lat]; Leaflet wants [lat, lon].
 		function show_points(articles) {
@@ -551,7 +584,13 @@ span.works {
 					</div>
 				</div>
 
-				<label id="geojson-label" for="geojson">GeoJSON</label>
+				<div style="display:flex; align-items:center; justify-content:space-between;">
+					<label id="geojson-label" for="geojson">GeoJSON</label>
+					<a class="btn-small waves-effect waves-light grey lighten-1" onclick="copy_geojson();"
+						title="Copy GeoJSON to clipboard" style="margin-bottom:4px; cursor:pointer;">
+						<i class="material-icons left">content_copy</i>Copy
+					</a>
+				</div>
 				<textarea id="geojson"
 					placeholder='{ "type": "Polygon", "coordinates": [ [ [lon,lat], ... ] ] }'></textarea>
 
