@@ -249,7 +249,10 @@ span.works {
 
 		// Shared style for the search area, whether drawn or uploaded, so both look
 		// identical and the outline stays solid/opaque in every browser.
-		var SEARCH_STYLE = { color: 'purple', weight: 3, opacity: 1, fillOpacity: 0.1 };
+		// A bright, saturated magenta stays visible on both light basemaps and under
+		// dark-mode extensions (which wash out dark colours like plain 'purple'), and
+		// is distinct from the orange locality dots.
+		var SEARCH_STYLE = { color: '#d500f9', weight: 3, opacity: 1, fillOpacity: 0.15 };
 
 		//--------------------------------------------------------------------------------
 		// The large map where we display results
