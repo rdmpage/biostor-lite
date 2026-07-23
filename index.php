@@ -825,9 +825,10 @@ function do_search($q)
 		$obj->hits->hits = array();
 	}
 	else
-	{		
+	{
 		$matched = false;
-	
+		$sort_by_page = false;
+
 		if (!$matched)
 		{
 			if (preg_match('/^issn:(?<issn>[0-9]{4}-[0-9]{3}[0-9X])$/u', trim($q), $m))
@@ -880,10 +881,12 @@ function do_search($q)
 							}
 						}
 					}
-				}';	
-				
+				}';
+
+				$sort_by_page = true;
+
 				$matched = true;
-			}	
+			}
 		}	
 	
 		if (!$matched)
@@ -925,10 +928,15 @@ function do_search($q)
 		}
 		
 		$resp = $elastic->send('POST', '_search?pretty', $post_data = $query_json);
-		
+
 		$obj = json_decode($resp);
+
+		if ($sort_by_page)
+		{
+			$obj = sort_hits_by_page($obj);
+		}
 	}
-	
+
 	$output = search_result_to_rdf($obj, $q);
 
 	return $output;
@@ -1486,9 +1494,107 @@ function display_oclc_year($oclc, $year)
 
 
 //----------------------------------------------------------------------------------------
+function roman_to_int($roman)
+{
+	$values = array('i' => 1, 'v' => 5, 'x' => 10, 'l' => 50, 'c' => 100, 'd' => 500, 'm' => 1000);
+
+	$roman = strtolower($roman);
+
+	$total = 0;
+	$previous = 0;
+
+	$n = strlen($roman);
+	for ($i = $n - 1; $i >= 0; $i--)
+	{
+		$value = $values[$roman[$i]];
+		if ($value < $previous)
+		{
+			$total -= $value;
+		}
+		else
+		{
+			$total += $value;
+		}
+		$previous = $value;
+	}
+
+	return $total;
+}
+
+//----------------------------------------------------------------------------------------
+function sort_hits_by_page($obj)
+{
+	// Sort chapters by page number (year is less likely to matter within a book)
+	// Roman-numbered pages (e.g. front matter) sort before arabic-numbered pages
+	$sorted_hits = array();
+
+	if (isset($obj->hits->hits))
+	{
+		foreach ($obj->hits->hits as $hit)
+		{
+			$key = array();
+
+			if (isset($hit->_source->search_result_data->csl->page))
+			{
+				$page = $hit->_source->search_result_data->csl->page;
+				if (preg_match('/(.*?)[-–]/u', $hit->_source->search_result_data->csl->page, $m))
+				{
+					$page = $m[1];
+				}
+
+				if (preg_match('/^[ivxlcdm]+$/i', $page))
+				{
+					// roman-numbered pages come first, sorted by numeric value
+					$key[] = '0-' . str_pad(roman_to_int($page), 4, '0', STR_PAD_LEFT);
+				}
+				else
+				{
+					$key[] = '1-' . str_pad($page, 4, '0', STR_PAD_LEFT);
+				}
+			}
+			else
+			{
+				$key[] = '0-0000';
+			}
+
+			// handle cases where multiple items have same pages, e.g. plates with no pages
+			$key[] = mb_substr($hit->_source->search_result_data->csl->title, 0, 10);
+
+			$sorted_hits[join("-", $key)] = $hit;
+		}
+		ksort($sorted_hits);
+		$obj->hits->hits = $sorted_hits;
+	}
+
+	return $obj;
+}
+
+//----------------------------------------------------------------------------------------
 function do_isbn($isbn)
 {
-	return do_search('isbn:' . $isbn);
+	global $elastic;
+
+	$query_json = '{
+		"size": 100,
+		"_source": ["id", "search_result_data.name", "search_result_data.description", "search_result_data.thumbnailUrl", "search_data.year", "search_result_data.csl"],
+		"query": {
+			"bool": {
+				"must": {
+					"term": { "search_result_data.csl.ISBN.keyword" : "' . $isbn .'" }
+				}
+			}
+		}
+	}';
+
+	$resp = $elastic->send('POST', '_search?pretty', $post_data = $query_json);
+
+	$obj = json_decode($resp);
+
+	$obj = sort_hits_by_page($obj);
+
+	$output = search_result_to_rdf($obj, 'isbn:' . $isbn);
+
+	return $output;
 }
 
 //----------------------------------------------------------------------------------------
