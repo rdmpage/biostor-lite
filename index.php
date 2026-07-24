@@ -1088,13 +1088,7 @@ function do_issn_year($issn, $year)
 
 			if (isset($hit->_source->search_result_data->csl->page))
 			{
-				$page = $hit->_source->search_result_data->csl->page;
-				if (preg_match('/(.*)-/', $hit->_source->search_result_data->csl->page, $m))
-				{
-					$page = $m[1];
-				}
-			
-				$key[] = str_pad($page, 4, '0', STR_PAD_LEFT);
+				$key[] = page_sort_key($hit->_source->search_result_data->csl->page);
 			}
 
 			// handle cases where multiple items have same pages, e.g. volumes with plates with no pages
@@ -1323,13 +1317,7 @@ function do_oclc_year($oclc, $year)
 
 			if (isset($hit->_source->search_result_data->csl->page))
 			{
-				$page = $hit->_source->search_result_data->csl->page;
-				if (preg_match('/(.*)-/', $hit->_source->search_result_data->csl->page, $m))
-				{
-					$page = $m[1];
-				}
-			
-				$key[] = str_pad($page, 4, '0', STR_PAD_LEFT);
+				$key[] = page_sort_key($hit->_source->search_result_data->csl->page);
 			}
 			
 			$keys[] = join("-", $key);
@@ -1522,6 +1510,26 @@ function roman_to_int($roman)
 }
 
 //----------------------------------------------------------------------------------------
+// Build a sortable key fragment from a CSL page string. Roman-numbered pages
+// (e.g. front matter) sort before arabic-numbered pages, each in numeric order.
+function page_sort_key($page)
+{
+	// take the start of a page range
+	if (preg_match('/(.*?)[-–]/u', $page, $m))
+	{
+		$page = $m[1];
+	}
+
+	if (preg_match('/^[ivxlcdm]+$/i', $page))
+	{
+		// roman-numbered pages come first, sorted by numeric value
+		return '0-' . str_pad(roman_to_int($page), 4, '0', STR_PAD_LEFT);
+	}
+
+	return '1-' . str_pad($page, 4, '0', STR_PAD_LEFT);
+}
+
+//----------------------------------------------------------------------------------------
 function sort_hits_by_page($obj)
 {
 	// Sort chapters by page number (year is less likely to matter within a book)
@@ -1536,21 +1544,7 @@ function sort_hits_by_page($obj)
 
 			if (isset($hit->_source->search_result_data->csl->page))
 			{
-				$page = $hit->_source->search_result_data->csl->page;
-				if (preg_match('/(.*?)[-–]/u', $hit->_source->search_result_data->csl->page, $m))
-				{
-					$page = $m[1];
-				}
-
-				if (preg_match('/^[ivxlcdm]+$/i', $page))
-				{
-					// roman-numbered pages come first, sorted by numeric value
-					$key[] = '0-' . str_pad(roman_to_int($page), 4, '0', STR_PAD_LEFT);
-				}
-				else
-				{
-					$key[] = '1-' . str_pad($page, 4, '0', STR_PAD_LEFT);
-				}
+				$key[] = page_sort_key($hit->_source->search_result_data->csl->page);
 			}
 			else
 			{
